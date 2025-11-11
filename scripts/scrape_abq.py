@@ -26,8 +26,13 @@ class ABQPDFScraper:
             'ABQ_PDF_BASE_URL',
             'https://www.cabq.gov/environmentalhealth/documents'
         )
-        # Known inspection report URL
-        self.main_report_url = 'https://www.cabq.gov/environmentalhealth/documents/chpd_main_inspection_report.pdf'
+        # Known inspection report URLs
+        self.known_reports = [
+            'https://www.cabq.gov/environmentalhealth/documents/chpd_main_inspection_report.pdf',
+            'https://www.cabq.gov/environmentalhealth/documents/media-report-10-5-10-11.pdf',
+            'https://www.cabq.gov/environmentalhealth/documents/media-report-9-28-10-04.pdf',
+            'https://www.cabq.gov/environmentalhealth/documents/media-report-9-21-9-27.pdf'
+        ]
         self.session = requests.Session()
     
     def find_recent_pdfs(self, weeks_back: int = 12) -> List[str]:
@@ -40,18 +45,19 @@ class ABQPDFScraper:
         Returns:
             List of PDF URLs
         """
-        logger.info(f"Searching for ABQ PDFs from last {weeks_back} weeks")
+        logger.info(f"Searching for ABQ PDFs")
         
         pdf_urls = []
         
-        # Try the main inspection report first
-        try:
-            response = self.session.head(self.main_report_url, timeout=10)
-            if response.status_code == 200:
-                pdf_urls.append(self.main_report_url)
-                logger.info(f"Found main inspection report: {self.main_report_url}")
-        except Exception as e:
-            logger.warning(f"Main report not accessible: {e}")
+        # Try all known reports
+        for report_url in self.known_reports:
+            try:
+                response = self.session.head(report_url, timeout=10)
+                if response.status_code == 200:
+                    pdf_urls.append(report_url)
+                    logger.info(f"Found report: {report_url}")
+            except Exception as e:
+                logger.warning(f"Report not accessible {report_url}: {e}")
         
         # Try historical weekly reports
         now = datetime.now()
@@ -215,11 +221,23 @@ class ABQPDFScraper:
         unique_records = []
         
         for record in all_records:
-            key = (record['name'], record['address'], record['date'])
-            # Only include if not already seen AND not just "approved"
-            if key not in seen and record['outcome'] != 'approved':
+            # Skip approved status entirely
+            if record['outcome'] == 'approved':
+                continue
+            
+            # Use name and date for deduplication (address can vary slightly)
+            key = (record['name'].lower().strip(), record['date'])
+            
+            if key not in seen:
                 seen.add(key)
                 unique_records.append(record)
+            else:
+                # If duplicate, keep the one with more violations
+                for i, existing in enumerate(unique_records):
+                    if (existing['name'].lower().strip(), existing['date']) == key:
+                        if len(record['violations']) > len(existing['violations']):
+                            unique_records[i] = record
+                        break
         
         logger.info(f"Total unique ABQ records (non-approved): {len(unique_records)}")
         return unique_records

@@ -165,5 +165,236 @@
       "Physical Facilities, Construction and Repair",
       "Equipment, Food Contact Surfaces, and Utensils Clean"
     ]
+  },
+  {
+    "name": "999 SEAFOOD SUPERMARKET INC",
+    "address": "5315 GIBSON BLVD SE",
+    "date": "2025-10-06",
+    "outcome": "failed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Thawing",
+      "Hot Holding & Reheating",
+      "Knowledgeable"
+    ]
+  },
+  {
+    "name": "COMFORT INN",
+    "address": "1801 YALE BLVD SE",
+    "date": "2025-10-08",
+    "outcome": "failed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Poisonous and Toxic/Chemical Substances",
+      "Thawing",
+      "Use Limitations"
+    ]
+  },
+  {
+    "name": "Duke City BBQ 3 LLC",
+    "address": "12501 CANDELARIA RD NE",
+    "date": "2025-10-08",
+    "outcome": "failed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Date Marking and Disposition",
+      "Training Records",
+      "Food Identification, Safe, Unadulterated and Honestly Presented"
+    ]
+  },
+  {
+    "name": "EL DORADO BAKERY",
+    "address": "640 COORS BLVD NW, 20",
+    "date": "2025-10-07",
+    "outcome": "failed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Consumer Advisories",
+      "Storage"
+    ]
+  },
+  {
+    "name": "MOKA JOES COFFEE",
+    "address": "219 CENTRAL AVE NW",
+    "date": "2025-10-08",
+    "outcome": "failed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "SUNNYSIDE UP",
+    "address": "6909 MENAUL BLVD NE, 1",
+    "date": "2025-10-09",
+    "outcome": "conditional",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "LIMONATIA CAFE",
+    "address": "3222 SILVER AVE SE",
+    "date": "2025-10-09",
+    "outcome": "failed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Designated Areas",
+      "Poisonous and Toxic/Chemical Substances",
+      "Hands Clean & Properly Washed"
+    ]
+  },
+  {
+    "name": "HONG KONG BUFFET",
+    "address": "10100 COORS BLVD NW",
+    "date": "2025-10-10",
+    "outcome": "failed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Use Limitation",
+      "Cold Holding",
+      "Warewashing Temperature and Concentration",
+      "Cooling",
+      "Use Limitations",
+      "Food Identification, Safe, Unadulterated and Honestly Presented"
+    ]
+  },
+  {
+    "name": "ALB HEIGHTS HEALTHCARE & REHAB",
+    "address": "103 HOSPITAL NE",
+    "date": "2025-10-03",
+    "outcome": "failed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Designated Areas",
+      "Warewashing Temperature and Concentration",
+      "Lighting",
+      "Personal Cleanliness",
+      "Physical Facilities, Cleaning",
+      "Records",
+      "Miscellaneous",
+      "Plumbing"
+    ]
+  },
+  {
+    "name": "Krispy Kreme Doughnuts",
+    "address": "3709 ELLISON DR NW",
+    "date": "2025-09-30",
+    "outcome": "conditional",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Operation and Maintenance",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Maintenance and Operation",
+      "Plumbing",
+      "Training Records",
+      "Food Separation"
+    ]
+  },
+  {
+    "name": "TOMASITAS",
+    "address": "4949 PAN AMERICAN FWY NE",
+    "date": "2025-09-29",
+    "outcome": "conditional",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Plumbing",
+      "Consumer Advisories",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Plumbing",
+      "Food Identification, Safe, Unadulterated and Honestly Presented",
+      "Toilet Facilities",
+      "Cold Holding",
+      "Personal Cleanliness",
+      "Hands Clean & Properly Washed",
+      "Physical Facilities, Cleaning",
+      "Consumer Advisories",
+      "Storage",
+      "Surface Not Clean",
+      "Maintenance and Operation"
+    ]
+  },
+  {
+    "name": "FARMACY COFFEE SHOP LLC",
+    "address": "3718 CENTRAL AVE SE",
+    "date": "2025-09-25",
+    "outcome": "conditional",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Cooling",
+      "Cold Holding",
+      "Poisonous and Toxic/Chemical Substances",
+      "Use Limitations",
+      "Date Marking and Disposition"
+    ]
+  },
+  {
+    "name": "FILIBERTOS",
+    "address": "5201 4TH ST NW",
+    "date": "2025-09-24",
+    "outcome": "failed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Records",
+      "Pest Control",
+      "Date Marking and Disposition",
+      "Plumbing",
+      "Training Records",
+      "Food Separation",
+      "Testing Devices"
+    ]
+  },
+  {
+    "name": "LINDYS COFFEE SHOP",
+    "address": "500 CENTRAL AVE SW, 3114",
+    "date": "2025-09-24",
+    "outcome": "failed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Use Limitations",
+      "Date Marking and Disposition",
+      "Training Records",
+      "Ventilation and Hood Systems",
+      "Cold Holding"
+    ]
+  },
+  {
+    "name": "LITTLE LOBITOS",
+    "address": "5015 4TH ST NW",
+    "date": "2025-09-25",
+    "outcome": "failed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Date Marking and Disposition",
+      "Training Records",
+      "Testing Devices",
+      "Operation and Maintenance",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
+  },
+  {
+    "name": "NINOS BRILLANTES ACADEMY LLC",
+    "address": "1500 COORS BLVD NW, A",
+    "date": "2025-09-25",
+    "outcome": "failed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
   }
 ]
