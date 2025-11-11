@@ -1,0 +1,42 @@
+// Status Key (explanation dropdown)
+
+.status-key {
+  margin-top: $space--md;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__toggle {
+    cursor: pointer;
+    font-size: $body-small--size;
+    color: $color--primary;
+    font-weight: $weight--semibold;
+    padding: $space--sm;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__content {
+    margin-top: $space--md;
+    padding: $space--md;
+    background: $color--white;
+    border: 1px solid $color--light;
+    border-radius: $radius--md;
+    font-size: $body-small--size;
+  }
+
+  &__item {
+    margin-bottom: $space--sm;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      color: $text--default;
+    }
+  }
+}
