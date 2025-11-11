@@ -59,7 +59,8 @@ document.addEventListener('alpine:init', () => {
           violations: v.inspection.violations,
           individualScore: v.score.severity,
           reasons: v.score.reasons,
-          links: v.links
+          links: v.links,
+          operationalStatus: v.operational_status || 'Open'
         });
       });
       
@@ -68,9 +69,9 @@ document.addEventListener('alpine:init', () => {
         // Sort inspections by date (most recent first)
         restaurant.inspections.sort((a, b) => new Date(b.date) - new Date(a.date));
         
-        // Check if closed (most recent non-approved inspection is closed AND no approved after)
-        const mostRecentIssue = restaurant.inspections.find(i => i.outcome !== 'approved');
-        restaurant.isClosed = mostRecentIssue?.outcome === 'closed';
+        // Check if closed using Operational Status from most recent inspection
+        const mostRecent = restaurant.inspections[0];
+        restaurant.isClosed = mostRecent?.operationalStatus === 'Closed';
         
         // Calculate restaurant score from all inspections
         let totalScore = 0;

@@ -4,6 +4,7 @@
     "address": "3216 SILVER AVE SE",
     "date": "2025-10-31",
     "outcome": "conditional",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -19,6 +20,7 @@
     "address": "727 TIJERAS AVE NW",
     "date": "2025-10-31",
     "outcome": "conditional",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -36,6 +38,7 @@
     "address": "6205 CENTRAL AVE NW, 5",
     "date": "2025-10-31",
     "outcome": "failed",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -51,6 +54,7 @@
     "address": "4011 CENTRAL AVE NW",
     "date": "2025-10-28",
     "outcome": "conditional",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -67,6 +71,7 @@
     "address": "10701 CORRALES RD, A-1",
     "date": "2025-10-31",
     "outcome": "conditional",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -83,6 +88,7 @@
     "address": "118 RICHMOND DR NE",
     "date": "2025-10-31",
     "outcome": "failed",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -96,6 +102,7 @@
     "address": "118 RICHMOND DR NE",
     "date": "2025-10-29",
     "outcome": "closed",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": []
@@ -105,6 +112,7 @@
     "address": "10100 COORS BLVD NW",
     "date": "2025-10-30",
     "outcome": "failed",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -120,6 +128,7 @@
     "address": "10100 COORS BLVD NW",
     "date": "2025-10-23",
     "outcome": "closed",
+    "operational_status": "Closed",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": []
@@ -129,6 +138,7 @@
     "address": "10100 COORS BLVD NW",
     "date": "2025-10-10",
     "outcome": "closed",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -145,6 +155,7 @@
     "address": "505 CENTRAL AVE NW, C",
     "date": "2025-10-29",
     "outcome": "conditional",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -160,6 +171,7 @@
     "address": "401 EUBANK BLVD SE, A",
     "date": "2025-10-28",
     "outcome": "closed",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -173,6 +185,7 @@
     "address": "DBA Hello Deli - 7600 JEFFERSON AVE NE",
     "date": "2025-10-30",
     "outcome": "conditional",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": []
@@ -182,6 +195,7 @@
     "address": "3222 CENTRAL SE",
     "date": "2025-10-27",
     "outcome": "conditional",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -196,6 +210,7 @@
     "address": "106 BUENA VISTA DR SE",
     "date": "2025-10-20",
     "outcome": "closed",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -215,6 +230,7 @@
     "address": "8900 HOLLY ST NE, B",
     "date": "2025-10-23",
     "outcome": "failed",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -230,6 +246,7 @@
     "address": "109 YALE SE",
     "date": "2025-10-22",
     "outcome": "conditional",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -245,6 +262,7 @@
     "address": "4040 PAN AMERICAN FWY NE",
     "date": "2025-10-21",
     "outcome": "conditional",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -260,6 +278,7 @@
     "address": "110 LOUISIANA BLVD SE, A",
     "date": "2025-10-22",
     "outcome": "conditional",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -276,6 +295,7 @@
     "address": "5161 LANG AVE NE, 100",
     "date": "2025-10-22",
     "outcome": "conditional",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -291,6 +311,7 @@
     "address": "5315 GIBSON BLVD SE",
     "date": "2025-10-06",
     "outcome": "closed",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -304,6 +325,7 @@
     "address": "1801 YALE BLVD SE",
     "date": "2025-10-08",
     "outcome": "closed",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -317,6 +339,7 @@
     "address": "12501 CANDELARIA RD NE",
     "date": "2025-10-08",
     "outcome": "closed",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -331,6 +354,7 @@
     "address": "640 COORS BLVD NW, 20",
     "date": "2025-10-07",
     "outcome": "closed",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -343,6 +367,7 @@
     "address": "219 CENTRAL AVE NW",
     "date": "2025-10-08",
     "outcome": "failed",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": []
@@ -352,6 +377,7 @@
     "address": "6909 MENAUL BLVD NE, 1",
     "date": "2025-10-09",
     "outcome": "conditional",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": []
@@ -361,6 +387,7 @@
     "address": "3222 SILVER AVE SE",
     "date": "2025-10-09",
     "outcome": "closed",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -374,6 +401,7 @@
     "address": "103 HOSPITAL NE",
     "date": "2025-10-03",
     "outcome": "closed",
+    "operational_status": "Closed",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -392,6 +420,7 @@
     "address": "3709 ELLISON DR NW",
     "date": "2025-09-30",
     "outcome": "conditional",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -408,6 +437,7 @@
     "address": "4949 PAN AMERICAN FWY NE",
     "date": "2025-09-29",
     "outcome": "conditional",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -433,6 +463,7 @@
     "address": "5201 4TH ST NW",
     "date": "2025-10-01",
     "outcome": "approved",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -446,6 +477,7 @@
     "address": "5201 4TH ST NW",
     "date": "2025-09-24",
     "outcome": "failed",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -463,6 +495,7 @@
     "address": "3718 CENTRAL AVE SE",
     "date": "2025-09-25",
     "outcome": "conditional",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -478,6 +511,7 @@
     "address": "500 CENTRAL AVE SW, 3114",
     "date": "2025-09-24",
     "outcome": "failed",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -494,6 +528,7 @@
     "address": "5015 4TH ST NW",
     "date": "2025-09-25",
     "outcome": "failed",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -510,6 +545,7 @@
     "address": "1500 COORS BLVD NW, A",
     "date": "2025-09-26",
     "outcome": "approved",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": []
@@ -519,6 +555,7 @@
     "address": "1500 COORS BLVD NW, A",
     "date": "2025-09-25",
     "outcome": "closed",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": []

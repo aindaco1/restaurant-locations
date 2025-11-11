@@ -229,7 +229,7 @@ class ABQNormalizer:
             
             record_id = f"abq:{establishment.name.lower().replace(' ', '-')}:{inspection.date}"
             
-            return ViolationRecord(
+            record = ViolationRecord(
                 id=record_id,
                 source='ABQ',
                 establishment=establishment,
@@ -240,6 +240,12 @@ class ABQNormalizer:
                     'document': raw_record.get('pdf_url')
                 }
             )
+            
+            # Add operational status as custom field
+            record_dict = record.dict()
+            record_dict['operational_status'] = raw_record.get('operational_status', 'Open')
+            
+            return record_dict
             
         except Exception as e:
             logger.error(f"Failed to normalize ABQ record: {e}")

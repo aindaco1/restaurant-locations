@@ -155,12 +155,13 @@ class ABQPDFScraper:
         return violations
     
     def _parse_summary_page(self, text: str) -> List[Dict]:
-        """Parse ABQ PDF - extracts restaurant name, address, date, outcome"""
+        """Parse ABQ PDF - extracts restaurant name, address, date, outcome, operational status"""
         records = []
         lines = text.split('\n')
         
         current_establishment = None
         current_address = None
+        current_operational_status = 'Open'
         
         for line in lines:
             line = line.strip()
@@ -171,6 +172,14 @@ class ABQPDFScraper:
                 if len(parts) == 2:
                     current_establishment = parts[0].strip()
                     current_address = parts[1].strip()
+                    current_operational_status = 'Open'  # Reset
+            
+            # Capture operational status
+            elif 'Operational Status' in line:
+                if 'Closed' in line:
+                    current_operational_status = 'Closed'
+                else:
+                    current_operational_status = 'Open'
             
             # Inspection record: starts with date MM/DD/YYYY
             elif re.match(r'\d{1,2}/\d{1,2}/\d{4}', line) and current_establishment:
@@ -193,6 +202,7 @@ class ABQPDFScraper:
                         'address': current_address or '',
                         'date': inspection_date.strftime('%Y-%m-%d'),
                         'outcome': status,
+                        'operational_status': current_operational_status,
                         'city': 'Albuquerque',
                         'county': 'Bernalillo',
                         'violations': []
