@@ -206,11 +206,8 @@ class ABQPDFScraper:
         """
         Fetch and parse all available inspection PDFs
         
-        Args:
-            weeks_back: How many weeks back to search
-        
-        Returns:
-            Combined list of all inspection records (excluding approved-only)
+        Returns ALL inspections, including approved follow-ups.
+        Frontend will group by restaurant and determine status.
         """
         pdf_urls = self.find_recent_pdfs(weeks_back)
         
@@ -219,16 +216,28 @@ class ABQPDFScraper:
             records = self.parse_pdf(url)
             all_records.extend(records)
         
-        # Deduplicate and filter
+        # Group by restaurant to filter out approved-only
+        restaurant_inspections = {}
+        
+        for record in all_records:
+            key = record['name'].lower().strip()
+            if key not in restaurant_inspections:
+                restaurant_inspections[key] = []
+            restaurant_inspections[key].append(record)
+        
+        # Only include restaurants that have at least one non-approved inspection
+        filtered_records = []
+        for name, inspections in restaurant_inspections.items():
+            has_issue = any(i['outcome'] != 'approved' for i in inspections)
+            if has_issue:
+                # Include ALL inspections for this restaurant
+                filtered_records.extend(inspections)
+        
+        # Deduplicate by (name, date)
         seen = set()
         unique_records = []
         
-        for record in all_records:
-            # Skip approved status entirely
-            if record['outcome'] == 'approved':
-                continue
-            
-            # Use name and date for deduplication (address can vary slightly)
+        for record in filtered_records:
             key = (record['name'].lower().strip(), record['date'])
             
             if key not in seen:
@@ -242,7 +251,7 @@ class ABQPDFScraper:
                             unique_records[i] = record
                         break
         
-        logger.info(f"Total unique ABQ records (non-approved): {len(unique_records)}")
+        logger.info(f"Total unique inspection records: {len(unique_records)}")
         return unique_records
     
     def save_raw_data(self, records: List[Dict], output_dir: str = 'data'):

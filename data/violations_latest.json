@@ -432,6 +432,97 @@
     }
   },
   {
+    "id": "abq:hong-kong-buffet:2025-10-23",
+    "source": "ABQ",
+    "establishment": {
+      "name": "HONG KONG BUFFET",
+      "address": "10100 COORS BLVD NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-23",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": []
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:hong-kong-buffet:2025-10-10",
+    "source": "ABQ",
+    "establishment": {
+      "name": "HONG KONG BUFFET",
+      "address": "10100 COORS BLVD NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-10",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Use Limitation"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Cold Holding"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Warewashing Temperature and Concentration"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Cooling"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Use Limitations"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Food Identification, Safe, Unadulterated and Honestly Presented"
+        }
+      ]
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
     "id": "abq:humble-coffee:2025-10-29",
     "source": "ABQ",
     "establishment": {
@@ -607,36 +698,6 @@
       "severity": 2.0,
       "reasons": [
         "conditional/failed within 180d"
-      ]
-    },
-    "links": {
-      "source": "https://www.cabq.gov/environmentalhealth",
-      "document": null
-    }
-  },
-  {
-    "id": "abq:hong-kong-buffet:2025-10-23",
-    "source": "ABQ",
-    "establishment": {
-      "name": "HONG KONG BUFFET",
-      "address": "10100 COORS BLVD NW",
-      "city": "Albuquerque",
-      "county": "Bernalillo",
-      "geo": {
-        "lat": 35.0844,
-        "lng": -106.6504
-      }
-    },
-    "inspection": {
-      "date": "2025-10-23",
-      "type": "routine",
-      "outcome": "closed",
-      "violations": []
-    },
-    "score": {
-      "severity": 3.0,
-      "reasons": [
-        "closure within 180d"
       ]
     },
     "links": {
@@ -1296,67 +1357,6 @@
     }
   },
   {
-    "id": "abq:hong-kong-buffet:2025-10-10",
-    "source": "ABQ",
-    "establishment": {
-      "name": "HONG KONG BUFFET",
-      "address": "10100 COORS BLVD NW",
-      "city": "Albuquerque",
-      "county": "Bernalillo",
-      "geo": {
-        "lat": 35.0844,
-        "lng": -106.6504
-      }
-    },
-    "inspection": {
-      "date": "2025-10-10",
-      "type": "routine",
-      "outcome": "closed",
-      "violations": [
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Use Limitation"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Cold Holding"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Warewashing Temperature and Concentration"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Cooling"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Use Limitations"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Food Identification, Safe, Unadulterated and Honestly Presented"
-        }
-      ]
-    },
-    "score": {
-      "severity": 3.0,
-      "reasons": [
-        "closure within 180d"
-      ]
-    },
-    "links": {
-      "source": "https://www.cabq.gov/environmentalhealth",
-      "document": null
-    }
-  },
-  {
     "id": "abq:alb-heights-healthcare-&-rehab:2025-10-03",
     "source": "ABQ",
     "establishment": {
@@ -1595,11 +1595,11 @@
     }
   },
   {
-    "id": "abq:farmacy-coffee-shop-llc:2025-09-25",
+    "id": "abq:filibertos:2025-10-01",
     "source": "ABQ",
     "establishment": {
-      "name": "FARMACY COFFEE SHOP LLC",
-      "address": "3718 CENTRAL AVE SE",
+      "name": "FILIBERTOS",
+      "address": "5201 4TH ST NW",
       "city": "Albuquerque",
       "county": "Bernalillo",
       "geo": {
@@ -1608,41 +1608,33 @@
       }
     },
     "inspection": {
-      "date": "2025-09-25",
+      "date": "2025-10-01",
       "type": "routine",
-      "outcome": "conditional",
+      "outcome": "approved",
       "violations": [
         {
           "code": "",
           "critical": false,
-          "desc": "Cooling"
+          "desc": "Food Identification, Safe, Unadulterated and Honestly Presented"
         },
         {
           "code": "",
           "critical": false,
-          "desc": "Cold Holding"
+          "desc": "Personal Cleanliness"
         },
         {
           "code": "",
           "critical": false,
-          "desc": "Poisonous and Toxic/Chemical Substances"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Use Limitations"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Date Marking and Disposition"
+          "desc": "Storage"
         }
       ]
     },
     "score": {
-      "severity": 2.0,
+      "severity": 0.0,
       "reasons": [
-        "conditional/failed within 180d"
+        "Food Identification, Safe, Unadulterated and Honestly Presented",
+        "Personal Cleanliness",
+        "Storage"
       ]
     },
     "links": {
@@ -1702,6 +1694,62 @@
           "code": "",
           "critical": false,
           "desc": "Testing Devices"
+        }
+      ]
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:farmacy-coffee-shop-llc:2025-09-25",
+    "source": "ABQ",
+    "establishment": {
+      "name": "FARMACY COFFEE SHOP LLC",
+      "address": "3718 CENTRAL AVE SE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-09-25",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Cooling"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Cold Holding"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Poisonous and Toxic/Chemical Substances"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Use Limitations"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Date Marking and Disposition"
         }
       ]
     },
@@ -1832,6 +1880,34 @@
       "reasons": [
         "conditional/failed within 180d"
       ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:ninos-brillantes-academy-llc:2025-09-26",
+    "source": "ABQ",
+    "establishment": {
+      "name": "NINOS BRILLANTES ACADEMY LLC",
+      "address": "1500 COORS BLVD NW, A",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-09-26",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
     },
     "links": {
       "source": "https://www.cabq.gov/environmentalhealth",

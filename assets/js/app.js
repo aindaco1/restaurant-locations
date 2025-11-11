@@ -42,25 +42,53 @@ document.addEventListener('alpine:init', () => {
       const grouped = {};
       
       violations.forEach(v => {
-        const key = `${v.establishment.name}-${v.establishment.address}`;
+        const key = `${v.establishment.name.toLowerCase().trim()}`;
         if (!grouped[key]) {
           grouped[key] = {
             name: v.establishment.name,
             address: v.establishment.address,
             city: v.establishment.city,
             inspections: [],
-            maxScore: 0
+            score: 0,
+            isClosed: false
           };
         }
         grouped[key].inspections.push({
           date: v.inspection.date,
           outcome: v.inspection.outcome,
           violations: v.inspection.violations,
-          score: v.score.severity,
+          individualScore: v.score.severity,
           reasons: v.score.reasons,
           links: v.links
         });
-        grouped[key].maxScore = Math.max(grouped[key].maxScore, v.score.severity);
+      });
+      
+      // Calculate restaurant-level score and determine closure status
+      Object.values(grouped).forEach(restaurant => {
+        // Sort inspections by date (most recent first)
+        restaurant.inspections.sort((a, b) => new Date(b.date) - new Date(a.date));
+        
+        // Check if closed (most recent non-approved inspection is closed AND no approved after)
+        const mostRecentIssue = restaurant.inspections.find(i => i.outcome !== 'approved');
+        restaurant.isClosed = mostRecentIssue?.outcome === 'closed';
+        
+        // Calculate restaurant score from all inspections
+        let totalScore = 0;
+        const now = new Date();
+        
+        restaurant.inspections.forEach(insp => {
+          const inspDate = new Date(insp.date);
+          const daysAgo = Math.floor((now - inspDate) / (1000 * 60 * 60 * 24));
+          
+          // Add to score based on recency and severity
+          if (insp.outcome === 'closed' && daysAgo <= 180) {
+            totalScore += 3.0;
+          } else if ((insp.outcome === 'conditional' || insp.outcome === 'failed') && daysAgo <= 180) {
+            totalScore += 2.0;
+          }
+        });
+        
+        restaurant.score = totalScore;
       });
       
       return Object.values(grouped);
@@ -121,7 +149,7 @@ document.addEventListener('alpine:init', () => {
       
       switch (this.sortBy) {
         case 'severity':
-          sorted.sort((a, b) => b.maxScore - a.maxScore);
+          sorted.sort((a, b) => b.score - a.score);
           break;
         case 'date':
           // Sort by most recent inspection

@@ -51,17 +51,17 @@ title: NM Health Code Violations
         <div>
           <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
             <h3 class="restaurant-card__title" x-text="restaurant.name"></h3>
-            <template x-if="restaurant.inspections[0].outcome === 'closed'">
+            <template x-if="restaurant.isClosed">
               <span class="status-tag status-tag--closed">CLOSED</span>
             </template>
           </div>
           <p class="restaurant-card__address" x-text="`${restaurant.address}, ${restaurant.city}`"></p>
-          <p class="restaurant-card__score" x-text="`Score: ${restaurant.maxScore.toFixed(1)}`"></p>
+          <p class="restaurant-card__score" x-text="`Score: ${restaurant.score.toFixed(1)}`"></p>
         </div>
         <span 
           class="badge"
-          :class="`badge--${getSeverityLevel(restaurant.maxScore)}`"
-          x-text="getSeverityLevel(restaurant.maxScore).toUpperCase()">
+          :class="`badge--${getSeverityLevel(restaurant.score)}`"
+          x-text="getSeverityLevel(restaurant.score).toUpperCase()">
         </span>
       </div>
       
@@ -73,7 +73,6 @@ title: NM Health Code Violations
               <div class="inspection-item__meta">
                 <span class="inspection-item__date" x-text="inspection.date"></span>
                 <span class="inspection-item__outcome" x-text="inspection.outcome"></span>
-                <span class="inspection-item__score" x-text="`Score: ${inspection.score}`"></span>
               </div>
             </div>
             
