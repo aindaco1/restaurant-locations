@@ -136,8 +136,10 @@ document.addEventListener('alpine:init', () => {
     }
   });
 
-  // Initialize the store
-  Alpine.store('violations').init();
+  // Initialize store data after Alpine is ready
+  queueMicrotask(() => {
+    Alpine.store('violations').init();
+  });
 
   // Filter controls component
   Alpine.data('filterControls', () => ({
@@ -180,6 +182,28 @@ document.addEventListener('alpine:init', () => {
         severity: this.selectedSeverity,
         search: this.searchQuery
       });
+    }
+  }));
+
+  // Toolbar controls component
+  Alpine.data('toolbarControls', () => ({
+    get sortBy() {
+      return Alpine.store('violations').sortBy;
+    },
+    set sortBy(value) {
+      Alpine.store('violations').sortBy = value;
+    },
+    get resultsCount() {
+      return Alpine.store('violations').filteredViolations.length;
+    },
+    changeSortOrder() {
+      Alpine.store('violations').sortViolations();
+    },
+    exportToCSV() {
+      Alpine.store('violations').exportToCSV();
+    },
+    exportToJSON() {
+      Alpine.store('violations').exportToJSON();
     }
   }));
 

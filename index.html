@@ -11,10 +11,10 @@ title: NM Health Code Violations
 </div>
 
 <!-- Toolbar with sort and export (shared data with violations list below) -->
-<div class="toolbar" x-data="{ get violations() { return Alpine.store('violations') } }">
+<div class="toolbar" x-data="toolbarControls()">
   <div class="toolbar__section">
     <span class="toolbar__label">Sort by:</span>
-    <select x-model="$store.violations.sortBy" @change="$store.violations.sortViolations()" class="select" style="width: auto;">
+    <select x-model="sortBy" @change="changeSortOrder" class="select" style="width: auto;">
       <option value="severity">Severity (High to Low)</option>
       <option value="date">Most Recent</option>
       <option value="name">Name (A-Z)</option>
@@ -22,11 +22,11 @@ title: NM Health Code Violations
   </div>
   
   <div class="toolbar__section">
-    <span class="toolbar__label" x-text="`${$store.violations.filteredViolations.length} results`"></span>
-    <button @click="$store.violations.exportToCSV()" class="btn btn--small btn--secondary">
+    <span class="toolbar__label" x-text="`${resultsCount} results`"></span>
+    <button @click="exportToCSV" class="btn btn--small btn--secondary">
       📥 Export CSV
     </button>
-    <button @click="$store.violations.exportToJSON()" class="btn btn--small btn--secondary">
+    <button @click="exportToJSON" class="btn btn--small btn--secondary">
       📥 Export JSON
     </button>
   </div>
