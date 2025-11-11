@@ -7,6 +7,25 @@ title: NM Health Code Violations
   <p class="page-title__subtitle">
     Find restaurants with recent health code violations across NM's 10 biggest cities
   </p>
+  
+  <!-- Status Key -->
+  <details class="status-key">
+    <summary class="status-key__toggle">What do these statuses mean?</summary>
+    <div class="status-key__content">
+      <div class="status-key__item">
+        <strong>Conditional Approved:</strong> Violations found, but facility can operate while correcting them. Must take corrective action.
+      </div>
+      <div class="status-key__item">
+        <strong>Unsatisfactory Re-Inspection Required:</strong> Serious violations found. Facility can temporarily operate but must be re-inspected soon.
+      </div>
+      <div class="status-key__item">
+        <strong>Closure Re-Inspection Required:</strong> Critical violations. Facility must close and cannot reopen until passing re-inspection.
+      </div>
+      <div class="status-key__item">
+        <strong>CLOSED tag:</strong> Facility's operational status is currently closed (based on most recent inspection).
+      </div>
+    </div>
+  </details>
 </div>
 
 <!-- Unified Filter & Control Bar -->
@@ -72,7 +91,20 @@ title: NM Health Code Violations
             <div class="inspection-item__header">
               <div class="inspection-item__meta">
                 <span class="inspection-item__date" x-text="inspection.date"></span>
-                <span class="inspection-item__outcome" x-text="inspection.outcome"></span>
+                <span class="inspection-item__outcome">
+                  <template x-if="inspection.outcome === 'conditional'">
+                    <span>Conditional Approved</span>
+                  </template>
+                  <template x-if="inspection.outcome === 'failed'">
+                    <span>Unsatisfactory Re-Inspection Required</span>
+                  </template>
+                  <template x-if="inspection.outcome === 'closed'">
+                    <span>Closure Re-Inspection Required</span>
+                  </template>
+                  <template x-if="inspection.outcome === 'approved'">
+                    <span>Approved</span>
+                  </template>
+                </span>
               </div>
             </div>
             

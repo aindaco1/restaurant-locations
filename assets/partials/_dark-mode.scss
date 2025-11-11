@@ -32,9 +32,14 @@
   .filter-bar,
   .restaurant-card,
   .empty-state,
-  .mobile-filter-drawer__content {
+  .mobile-filter-drawer__content,
+  .status-key__content {
     background: #1a1a1a;
     border-color: #333333;
+  }
+
+  .status-key__toggle {
+    color: #ffffff;
   }
 
   // Restaurant card specific
