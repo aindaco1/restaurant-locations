@@ -244,20 +244,20 @@ class ABQPDFScraper:
                 # Include ALL inspections for this restaurant
                 filtered_records.extend(inspections)
         
-        # Deduplicate by (name, date)
+        # Deduplicate by (name, date, outcome) - allows multiple inspections same day
         seen = set()
         unique_records = []
         
         for record in filtered_records:
-            key = (record['name'].lower().strip(), record['date'])
+            key = (record['name'].lower().strip(), record['date'], record['outcome'])
             
             if key not in seen:
                 seen.add(key)
                 unique_records.append(record)
             else:
-                # If duplicate, keep the one with more violations
+                # If exact duplicate, keep the one with more violations
                 for i, existing in enumerate(unique_records):
-                    if (existing['name'].lower().strip(), existing['date']) == key:
+                    if (existing['name'].lower().strip(), existing['date'], existing['outcome']) == key:
                         if len(record['violations']) > len(existing['violations']):
                             unique_records[i] = record
                         break
