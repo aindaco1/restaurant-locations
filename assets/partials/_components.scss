@@ -186,7 +186,132 @@ a {
   }
 }
 
-// ===== Filter Bar (Compact Inline) =====
+// ===== Mobile Filter Trigger =====
+
+.mobile-filter-trigger {
+  display: none;
+  margin-bottom: $space--md;
+
+  @include sm {
+    display: block;
+  }
+}
+
+.mobile-filter-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $space--sm;
+  position: relative;
+
+  &__badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 6px;
+    background: $color--danger;
+    color: white;
+    border-radius: $radius--full;
+    font-size: 11px;
+    font-weight: $weight--bold;
+  }
+}
+
+// ===== Mobile Filter Drawer (Bottom Sheet) =====
+
+.mobile-filter-drawer {
+  display: none;
+  
+  @include sm {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z--modal-backdrop;
+    background: rgba(0, 0, 0, 0.5);
+
+    &__content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-height: 85vh;
+      background: $color--white;
+      border-radius: $radius--lg $radius--lg 0 0;
+      box-shadow: $shadow--xl;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: $space--lg;
+      border-bottom: 1px solid $color--light;
+      flex-shrink: 0;
+
+      h2 {
+        font-size: $h4--size;
+        margin: 0;
+      }
+    }
+
+    &__close {
+      @include btn-reset;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: $text--default;
+      
+      &:hover {
+        color: $color--danger;
+      }
+    }
+
+    &__body {
+      flex: 1;
+      overflow-y: auto;
+      padding: $space--lg;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    &__actions {
+      display: flex;
+      gap: $space--md;
+      padding: $space--lg;
+      border-top: 1px solid $color--light;
+      background: $color--white;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.mobile-filter-group {
+  margin-bottom: $space--lg;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.mobile-filter-label {
+  display: block;
+  margin-bottom: $space--sm;
+  font-size: $body--size;
+  font-weight: $weight--semibold;
+  color: $text--default;
+}
+
+// ===== Filter Bar (Desktop/Tablet Only) =====
 
 .filter-bar {
   margin-bottom: $space--lg;
@@ -194,6 +319,10 @@ a {
   background: $color--white;
   border-radius: $radius--md;
   border: 1px solid $color--light;
+
+  @include sm {
+    display: none;
+  }
 
   &__row {
     display: flex;
@@ -204,24 +333,10 @@ a {
     &--primary {
       padding-bottom: $space--md;
       border-bottom: 1px solid $color--light;
-      
-      @include sm {
-        flex-direction: column;
-        align-items: stretch;
-      }
     }
 
     &--secondary {
       padding-top: $space--md;
-      
-      @include sm {
-        flex-direction: column;
-        align-items: stretch;
-      }
-    }
-
-    @include sm {
-      gap: $space--sm;
     }
   }
 
@@ -232,11 +347,6 @@ a {
     &--search {
       flex: 1;
       min-width: 200px;
-
-      @include sm {
-        flex: 1 1 100%;
-        order: -1;
-      }
     }
   }
 }
@@ -286,6 +396,14 @@ a {
   &--low.active {
     background: lighten($color--caution, 40%);
     border-color: $color--caution;
+  }
+
+  &--mobile {
+    width: auto;
+    flex: 1;
+    padding: $space--md;
+    font-size: $body-small--size;
+    gap: $space--xs;
   }
 }
 

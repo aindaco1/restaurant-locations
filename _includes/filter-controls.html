@@ -1,5 +1,129 @@
-<!-- Unified Filter & Control Bar -->
-<div class="filter-bar" x-data="filterControls()">
+<!-- Mobile Filter Button (only visible on mobile) -->
+<div class="mobile-filter-trigger" x-data="{ mobileFiltersOpen: false }">
+  <button 
+    @click="mobileFiltersOpen = true"
+    class="btn mobile-filter-btn"
+    aria-label="Open filters">
+    <span>🔍 Filters & Sort</span>
+    <span class="mobile-filter-btn__badge" x-data="filterControls()" x-show="activeFilterCount > 0" x-text="activeFilterCount"></span>
+  </button>
+
+  <!-- Mobile Filter Drawer (bottom sheet) -->
+  <div 
+    class="mobile-filter-drawer"
+    :class="{ 'mobile-filter-drawer--open': mobileFiltersOpen }"
+    x-show="mobileFiltersOpen"
+    @click.self="mobileFiltersOpen = false"
+    x-transition:enter="transition ease-out duration-200"
+    x-transition:enter-start="opacity-0"
+    x-transition:enter-end="opacity-100"
+    x-transition:leave="transition ease-in duration-150"
+    x-transition:leave-start="opacity-100"
+    x-transition:leave-end="opacity-0">
+    
+    <div 
+      class="mobile-filter-drawer__content"
+      x-transition:enter="transition ease-out duration-200"
+      x-transition:enter-start="transform translate-y-full"
+      x-transition:enter-end="transform translate-y-0"
+      x-transition:leave="transition ease-in duration-150"
+      x-transition:leave-start="transform translate-y-0"
+      x-transition:leave-end="transform translate-y-full">
+      
+      <div class="mobile-filter-drawer__header">
+        <h2>Filters & Sort</h2>
+        <button 
+          @click="mobileFiltersOpen = false" 
+          class="mobile-filter-drawer__close"
+          aria-label="Close filters">
+          ✕
+        </button>
+      </div>
+      
+      <div class="mobile-filter-drawer__body" x-data="filterControls()">
+        <!-- All filter controls in mobile drawer -->
+        <div class="mobile-filter-group">
+          <label class="mobile-filter-label">Search</label>
+          <input 
+            type="text" 
+            class="input" 
+            placeholder="Restaurant name..." 
+            x-model="searchQuery"
+            @input="applyFilters">
+        </div>
+
+        <div class="mobile-filter-group">
+          <label class="mobile-filter-label">Severity</label>
+          <div class="severity-pills">
+            <button 
+              @click="toggleSeverity('high')" 
+              :class="{ 'active': selectedSeverity.includes('high') }"
+              class="severity-pill severity-pill--high severity-pill--mobile"
+              :title="`High severity ${selectedSeverity.includes('high') ? '(active)' : ''}`">
+              🔴 High
+            </button>
+            <button 
+              @click="toggleSeverity('medium')" 
+              :class="{ 'active': selectedSeverity.includes('medium') }"
+              class="severity-pill severity-pill--medium severity-pill--mobile"
+              :title="`Medium severity ${selectedSeverity.includes('medium') ? '(active)' : ''}`">
+              🟠 Medium
+            </button>
+            <button 
+              @click="toggleSeverity('low')" 
+              :class="{ 'active': selectedSeverity.includes('low') }"
+              class="severity-pill severity-pill--low severity-pill--mobile"
+              :title="`Low severity ${selectedSeverity.includes('low') ? '(active)' : ''}`">
+              🟡 Low
+            </button>
+          </div>
+        </div>
+
+        <div class="mobile-filter-group">
+          <label class="mobile-filter-label">Sort By</label>
+          <select x-model="sortBy" @change="changeSortOrder" class="select">
+            <option value="severity">Severity (High to Low)</option>
+            <option value="date">Most Recent</option>
+            <option value="name">Name (A-Z)</option>
+          </select>
+        </div>
+
+        <div class="mobile-filter-group">
+          <label class="mobile-filter-label">Date Range</label>
+          <select x-model="dateRange" @change="applyFilters" class="select">
+            <option value="all">All time</option>
+            <option value="30">Last 30 days</option>
+            <option value="90">Last 90 days</option>
+            <option value="180">Last 6 months</option>
+            <option value="365">Last year</option>
+          </select>
+        </div>
+
+        <div class="mobile-filter-group">
+          <label class="mobile-filter-label">City</label>
+          <select x-model="cityFilter" @change="handleCityFilter" class="select">
+            <option value="">All cities</option>
+            <template x-for="city in cities" :key="city">
+              <option :value="city" x-text="city"></option>
+            </template>
+          </select>
+        </div>
+
+        <div class="mobile-filter-drawer__actions">
+          <button @click="resetFilters" class="btn btn--secondary" style="flex: 1;">
+            Clear Filters
+          </button>
+          <button @click="mobileFiltersOpen = false" class="btn" style="flex: 2;">
+            Show <span x-text="resultsCount"></span> Results
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Unified Filter & Control Bar (desktop/tablet only) -->
+<div class="filter-bar filter-bar--desktop" x-data="filterControls()">
   <!-- Primary Row: Search + Severity + Sort -->
   <div class="filter-bar__row filter-bar__row--primary">
     <!-- Search (primary action, expandable) -->
