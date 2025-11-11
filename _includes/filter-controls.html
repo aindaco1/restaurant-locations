@@ -85,15 +85,7 @@
           </select>
         </div>
 
-        <div class="mobile-filter-group">
-          <label class="mobile-filter-label">City</label>
-          <select x-model="cityFilter" @change="handleCityFilter" class="select">
-            <option value="">All cities</option>
-            <template x-for="city in cities" :key="city">
-              <option :value="city" x-text="city"></option>
-            </template>
-          </select>
-        </div>
+
 
         <div class="mobile-filter-drawer__actions">
           <button @click="resetFilters" class="btn btn--secondary" style="flex: 1;">
@@ -185,19 +177,7 @@
       </select>
     </div>
     
-    <!-- City dropdown -->
-    <div class="filter-bar__item">
-      <select 
-        x-model="cityFilter" 
-        @change="handleCityFilter" 
-        class="select select--compact"
-        aria-label="Filter by city">
-        <option value="">🏙️ All cities</option>
-        <template x-for="city in cities" :key="city">
-          <option :value="city" x-text="city"></option>
-        </template>
-      </select>
-    </div>
+
     
     <!-- Spacer to push right-side content -->
     <div style="flex: 1;"></div>

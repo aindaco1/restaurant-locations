@@ -238,15 +238,18 @@ python scripts/build_dataset.py --validate
 
 ## Data Sources
 
-### NMED (New Mexico Environment Department)
-- **Coverage**: 9 cities (all except Albuquerque)
-- **Format**: REST API (Apigee or ArcGIS FeatureServer)
-- **Update**: Nightly via GitHub Actions
-
-### City of Albuquerque
+### ✅ City of Albuquerque (ACTIVE)
 - **Coverage**: Albuquerque & Bernalillo County
 - **Format**: Weekly PDF reports
-- **Update**: Weekly scraping via GitHub Actions
+- **Current Data**: 88 inspections from 5 weeks (Sept-Nov 2025)
+- **Update**: Automated scraping via GitHub Actions
+- **URL**: https://www.cabq.gov/environmentalhealth/documents/
+
+### ⏸️ NMED (Pending - 9 Other Cities)
+- **Coverage**: Las Cruces, Rio Rancho, Santa Fe, Roswell, Farmington, Hobbs, Clovis, Carlsbad, Alamogordo
+- **Status**: NMED API portal does not include food inspection data
+- **Next Step**: Contact NMED Food Safety Program for data access
+- **Contact**: NMED.Food.Program@env.nm.gov or (505) 827-2821
 
 ## Next Steps
 
