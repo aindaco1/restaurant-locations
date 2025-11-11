@@ -71,7 +71,7 @@ a {
   z-index: $z--sticky;
   width: 100%;
   min-height: $header--height;
-  background: var(--color-header-bg);
+  background: $color--white;
   border-bottom: 1px solid $color--light;
   box-shadow: $shadow--sm;
   transition: background-color 0.3s ease;
@@ -329,7 +329,7 @@ a {
 .filter-bar {
   margin-bottom: $space--lg;
   padding: $space--md;
-  background: $color--surface;
+  background: $color--white;
   border-radius: $radius--md;
   border: 1px solid $color--light;
   transition: background-color 0.3s ease;
@@ -516,7 +516,6 @@ a {
   grid-template-columns: 1fr auto;
   gap: $space--lg;
   align-items: start;
-  background: $color--surface;
   transition: background-color 0.3s ease;
 
   @include sm {

@@ -1,0 +1,128 @@
+// Dark Mode Overrides
+
+[data-theme="dark"] {
+  // Background and surfaces
+  background-color: #0a0a0a;
+  
+  body {
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+  }
+
+  // Text colors
+  h1, h2, h3, h4, h5, h6, h1 a, p, span, div {
+    color: #e0e0e0;
+  }
+
+  a {
+    color: #e0e0e0;
+    
+    &:hover {
+      color: #9e9e9e;
+    }
+  }
+
+  // Header
+  .header {
+    background: #1a1a1a;
+    border-bottom-color: #333333;
+  }
+
+  // Cards and surfaces
+  .filter-bar,
+  .violation-card,
+  .empty-state,
+  .mobile-filter-drawer__content {
+    background: #1a1a1a;
+    border-color: #333333;
+  }
+
+  // Inputs and selects
+  .input,
+  .select {
+    background: #0a0a0a;
+    border-color: #ffffff;
+    color: #e0e0e0;
+
+    &::placeholder {
+      color: #9e9e9e;
+    }
+  }
+
+  // Buttons - invert colors
+  .btn {
+    background-color: #ffffff;
+    color: #1a1a1a !important;
+    border-color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3);
+
+    &:before {
+      background-color: #ffffff;
+    }
+
+    &--secondary {
+      background-color: #333333;
+      color: #e0e0e0 !important;
+      border-color: #555555;
+      text-shadow: none;
+
+      &:before {
+        background-color: #333333;
+      }
+    }
+  }
+
+  // Theme toggle
+  .theme-toggle {
+    background: #1a1a1a;
+    border-color: #333333;
+  }
+
+  // Export menu
+  .export-menu {
+    background: #1a1a1a;
+    border-color: #333333;
+
+    &__item {
+      color: #e0e0e0;
+
+      &:hover,
+      &:focus-visible {
+        background: #0a0a0a;
+      }
+    }
+  }
+
+  // Results count
+  .results-count {
+    color: #9e9e9e;
+  }
+
+  // Muted text
+  .text-muted,
+  .footer__text,
+  .page-title__subtitle,
+  .violation-card__meta {
+    color: #9e9e9e;
+  }
+
+  // Severity pills (inactive state)
+  .severity-pill {
+    background: #0a0a0a;
+    
+    &:not(.active) {
+      opacity: 0.5;
+    }
+  }
+
+  // Filter badge
+  .filter-badge {
+    background: #ffffff;
+    color: #1a1a1a;
+  }
+
+  // Mobile filter drawer
+  .mobile-filter-drawer {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
