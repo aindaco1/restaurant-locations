@@ -118,8 +118,9 @@ class ABQPDFScraper:
                     if text:
                         page_records = self._parse_summary_page(text)
                         for rec in page_records:
-                            key = (rec['name'], rec['date'])
-                            if key not in summary_records or rec['outcome'] != 'approved':
+                            # Include outcome in key to allow multiple inspections same day
+                            key = (rec['name'], rec['date'], rec['outcome'])
+                            if key not in summary_records:
                                 summary_records[key] = rec
                 
                 # Second pass: extract violations from detail pages

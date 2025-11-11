@@ -3,7 +3,7 @@
     "name": "AJIACO COLOMBIAN BISTRO",
     "address": "3216 SILVER AVE SE",
     "date": "2025-10-31",
-    "outcome": "conditional",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -14,6 +14,16 @@
       "Food Identification, Safe, Unadulterated and Honestly Presented",
       "Surface Condition"
     ]
+  },
+  {
+    "name": "AJIACO COLOMBIAN BISTRO",
+    "address": "3216 SILVER AVE SE",
+    "date": "2025-10-31",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
   },
   {
     "name": "CASTLE COFFEE",
@@ -53,7 +63,7 @@
     "name": "FILIBERTOS MEXICAN FOOD",
     "address": "4011 CENTRAL AVE NW",
     "date": "2025-10-28",
-    "outcome": "conditional",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -65,6 +75,16 @@
       "Cooling",
       "Training Records"
     ]
+  },
+  {
+    "name": "FILIBERTOS MEXICAN FOOD",
+    "address": "4011 CENTRAL AVE NW",
+    "date": "2025-10-28",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
   },
   {
     "name": "FREDDYS FROZEN CUSTARD & STEAKBURGERS",
@@ -170,7 +190,7 @@
     "name": "JIMMY JOHNS",
     "address": "401 EUBANK BLVD SE, A",
     "date": "2025-10-28",
-    "outcome": "closed",
+    "outcome": "failed",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -179,6 +199,26 @@
       "Physical Facilities, Construction and Repair",
       "Equipment, Food Contact Surfaces, and Utensils Clean"
     ]
+  },
+  {
+    "name": "JIMMY JOHNS",
+    "address": "401 EUBANK BLVD SE, A",
+    "date": "2025-10-28",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "MMRV LLC",
+    "address": "DBA Hello Deli - 7600 JEFFERSON AVE NE",
+    "date": "2025-10-30",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
   },
   {
     "name": "MMRV LLC",
@@ -194,7 +234,7 @@
     "name": "M'TUCCI'S CENTRALE",
     "address": "3222 CENTRAL SE",
     "date": "2025-10-27",
-    "outcome": "conditional",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -204,6 +244,16 @@
       "Physical Facilities, Construction and Repair",
       "Equipment, Food Contact Surfaces, and Utensils Clean"
     ]
+  },
+  {
+    "name": "M'TUCCI'S CENTRALE",
+    "address": "3222 CENTRAL SE",
+    "date": "2025-10-27",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
   },
   {
     "name": "ORTIZ CREATIONS INC",
@@ -226,7 +276,27 @@
     "name": "SANTIAGOS TACOS",
     "address": "1911 EUBANK BLVD NE",
     "date": "2025-10-30",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "SANTIAGOS TACOS",
+    "address": "1911 EUBANK BLVD NE",
+    "date": "2025-10-30",
     "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "SQUEEZED JUICE BAR",
+    "address": "7900 SAN PEDRO DR NE, A12",
+    "date": "2025-10-29",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -246,7 +316,7 @@
     "name": "STARBUCKS CORP",
     "address": "6828 SAN MATEO BLVD NE",
     "date": "2025-10-31",
-    "outcome": "failed",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -269,7 +339,7 @@
     "name": "STARBUCKS CORP",
     "address": "6828 SAN MATEO BLVD NE",
     "date": "2025-10-27",
-    "outcome": "failed",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -280,6 +350,26 @@
     "address": "6828 SAN MATEO BLVD NE",
     "date": "2025-10-30",
     "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "STARBUCKS CORP",
+    "address": "6828 SAN MATEO BLVD NE",
+    "date": "2025-10-27",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "STARBUCKS CORP",
+    "address": "6828 SAN MATEO BLVD NE",
+    "date": "2025-10-31",
+    "outcome": "failed",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -325,7 +415,7 @@
     "name": "IL LOCALETTO ROSSI",
     "address": "106 BUENA VISTA DR SE",
     "date": "2025-10-20",
-    "outcome": "closed",
+    "outcome": "conditional",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -342,10 +432,20 @@
     ]
   },
   {
+    "name": "IL LOCALETTO ROSSI",
+    "address": "106 BUENA VISTA DR SE",
+    "date": "2025-10-20",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
     "name": "JINJA BAR AND BISTRO",
     "address": "8900 HOLLY ST NE, B",
     "date": "2025-10-23",
-    "outcome": "failed",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -358,10 +458,20 @@
     ]
   },
   {
+    "name": "JINJA BAR AND BISTRO",
+    "address": "8900 HOLLY ST NE, B",
+    "date": "2025-10-23",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
     "name": "LA URRACA MEXICAN FOOD Y UN POQUITO DE COLOMBIA",
     "address": "109 YALE SE",
     "date": "2025-10-22",
-    "outcome": "conditional",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -374,10 +484,20 @@
     ]
   },
   {
+    "name": "LA URRACA MEXICAN FOOD Y UN POQUITO DE COLOMBIA",
+    "address": "109 YALE SE",
+    "date": "2025-10-22",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
     "name": "MAIN EVENT ENTERTAINMENT",
     "address": "4040 PAN AMERICAN FWY NE",
     "date": "2025-10-21",
-    "outcome": "conditional",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -390,10 +510,20 @@
     ]
   },
   {
+    "name": "MAIN EVENT ENTERTAINMENT",
+    "address": "4040 PAN AMERICAN FWY NE",
+    "date": "2025-10-21",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
     "name": "PAD THAI CAFE THAI CUISINE",
     "address": "110 LOUISIANA BLVD SE, A",
     "date": "2025-10-22",
-    "outcome": "conditional",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -407,10 +537,20 @@
     ]
   },
   {
+    "name": "PAD THAI CAFE THAI CUISINE",
+    "address": "110 LOUISIANA BLVD SE, A",
+    "date": "2025-10-22",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
     "name": "RESTORATION PIZZA",
     "address": "5161 LANG AVE NE, 100",
     "date": "2025-10-22",
-    "outcome": "conditional",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -421,6 +561,16 @@
       "Records",
       "Equipment, Food Contact Surfaces, and Utensils Clean"
     ]
+  },
+  {
+    "name": "RESTORATION PIZZA",
+    "address": "5161 LANG AVE NE, 100",
+    "date": "2025-10-22",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
   },
   {
     "name": "SZECHWAN CHINESE RESTAURANT",
@@ -453,7 +603,7 @@
     "name": "THE WATERMARK AT CHERRY HILLS",
     "address": "6901 SAN VICENTE AVE NE",
     "date": "2025-10-22",
-    "outcome": "failed",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -466,10 +616,20 @@
     ]
   },
   {
+    "name": "THE WATERMARK AT CHERRY HILLS",
+    "address": "6901 SAN VICENTE AVE NE",
+    "date": "2025-10-22",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
     "name": "WIENERSCHNITZEL",
     "address": "9651 MENAUL BLVD NE",
     "date": "2025-10-21",
-    "outcome": "failed",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -482,10 +642,20 @@
     ]
   },
   {
+    "name": "WIENERSCHNITZEL",
+    "address": "9651 MENAUL BLVD NE",
+    "date": "2025-10-21",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
     "name": "999 SEAFOOD SUPERMARKET INC",
     "address": "5315 GIBSON BLVD SE",
     "date": "2025-10-06",
-    "outcome": "closed",
+    "outcome": "failed",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -496,10 +666,20 @@
     ]
   },
   {
+    "name": "999 SEAFOOD SUPERMARKET INC",
+    "address": "5315 GIBSON BLVD SE",
+    "date": "2025-10-06",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
     "name": "COMFORT INN",
     "address": "1801 YALE BLVD SE",
     "date": "2025-10-08",
-    "outcome": "closed",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -510,10 +690,20 @@
     ]
   },
   {
+    "name": "COMFORT INN",
+    "address": "1801 YALE BLVD SE",
+    "date": "2025-10-08",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
     "name": "Duke City BBQ 3 LLC",
     "address": "12501 CANDELARIA RD NE",
     "date": "2025-10-08",
-    "outcome": "closed",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -525,10 +715,20 @@
     ]
   },
   {
+    "name": "Duke City BBQ 3 LLC",
+    "address": "12501 CANDELARIA RD NE",
+    "date": "2025-10-08",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
     "name": "EL DORADO BAKERY",
     "address": "640 COORS BLVD NW, 20",
     "date": "2025-10-07",
-    "outcome": "closed",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -536,6 +736,16 @@
       "Consumer Advisories",
       "Storage"
     ]
+  },
+  {
+    "name": "EL DORADO BAKERY",
+    "address": "640 COORS BLVD NW, 20",
+    "date": "2025-10-07",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
   },
   {
     "name": "MOKA JOES COFFEE",
@@ -561,7 +771,7 @@
     "name": "LIMONATIA CAFE",
     "address": "3222 SILVER AVE SE",
     "date": "2025-10-09",
-    "outcome": "closed",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -570,6 +780,16 @@
       "Poisonous and Toxic/Chemical Substances",
       "Hands Clean & Properly Washed"
     ]
+  },
+  {
+    "name": "LIMONATIA CAFE",
+    "address": "3222 SILVER AVE SE",
+    "date": "2025-10-09",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
   },
   {
     "name": "ALB HEIGHTS HEALTHCARE & REHAB",
@@ -606,6 +826,16 @@
       "Training Records",
       "Food Separation"
     ]
+  },
+  {
+    "name": "Krispy Kreme Doughnuts",
+    "address": "3709 ELLISON DR NW",
+    "date": "2025-09-30",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
   },
   {
     "name": "Silver Street Market",
@@ -655,7 +885,7 @@
     "name": "TOMASITAS",
     "address": "4949 PAN AMERICAN FWY NE",
     "date": "2025-09-29",
-    "outcome": "conditional",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -676,6 +906,16 @@
       "Surface Not Clean",
       "Maintenance and Operation"
     ]
+  },
+  {
+    "name": "TOMASITAS",
+    "address": "4949 PAN AMERICAN FWY NE",
+    "date": "2025-09-29",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
   },
   {
     "name": "FILIBERTOS",
@@ -713,7 +953,7 @@
     "name": "FARMACY COFFEE SHOP LLC",
     "address": "3718 CENTRAL AVE SE",
     "date": "2025-09-25",
-    "outcome": "conditional",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -724,6 +964,16 @@
       "Use Limitations",
       "Date Marking and Disposition"
     ]
+  },
+  {
+    "name": "FARMACY COFFEE SHOP LLC",
+    "address": "3718 CENTRAL AVE SE",
+    "date": "2025-09-25",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
   },
   {
     "name": "LINDYS COFFEE SHOP",
@@ -743,10 +993,20 @@
     ]
   },
   {
+    "name": "LINDYS COFFEE SHOP",
+    "address": "500 CENTRAL AVE SW, 3114",
+    "date": "2025-09-24",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
     "name": "LITTLE LOBITOS",
     "address": "5015 4TH ST NW",
     "date": "2025-09-25",
-    "outcome": "failed",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -758,6 +1018,16 @@
       "Operation and Maintenance",
       "Equipment, Food Contact Surfaces, and Utensils Clean"
     ]
+  },
+  {
+    "name": "LITTLE LOBITOS",
+    "address": "5015 4TH ST NW",
+    "date": "2025-09-25",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
   },
   {
     "name": "NINOS BRILLANTES ACADEMY LLC",
@@ -783,7 +1053,7 @@
     "name": "OJOS LOCOS SPORTS CANTINA",
     "address": "2105 LOUISIANA BLVD NE",
     "date": "2025-09-26",
-    "outcome": "conditional",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -795,10 +1065,20 @@
     ]
   },
   {
+    "name": "OJOS LOCOS SPORTS CANTINA",
+    "address": "2105 LOUISIANA BLVD NE",
+    "date": "2025-09-26",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
     "name": "OLD TOWN PIZZA PARLOR",
     "address": "108 RIO GRANDE BLVD NW",
     "date": "2025-09-26",
-    "outcome": "failed",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -810,10 +1090,20 @@
     ]
   },
   {
+    "name": "OLD TOWN PIZZA PARLOR",
+    "address": "108 RIO GRANDE BLVD NW",
+    "date": "2025-09-26",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
     "name": "SIDEWINDERS BAR & LOUNGE",
     "address": "4200 CENTRAL AVE SE",
     "date": "2025-09-25",
-    "outcome": "conditional",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -825,10 +1115,20 @@
     ]
   },
   {
+    "name": "SIDEWINDERS BAR & LOUNGE",
+    "address": "4200 CENTRAL AVE SE",
+    "date": "2025-09-25",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
     "name": "TORRES BILLIA AND TACO SHOP",
     "address": "5400 CENTRAL AVE SE, A101",
     "date": "2025-09-25",
-    "outcome": "closed",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -844,5 +1144,15 @@
       "Training Records",
       "Cold Holding"
     ]
+  },
+  {
+    "name": "TORRES BILLIA AND TACO SHOP",
+    "address": "5400 CENTRAL AVE SE, A101",
+    "date": "2025-09-25",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
   }
 ]
