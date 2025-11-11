@@ -26,6 +26,8 @@ class ABQPDFScraper:
             'ABQ_PDF_BASE_URL',
             'https://www.cabq.gov/environmentalhealth/documents'
         )
+        # Known inspection report URL
+        self.main_report_url = 'https://www.cabq.gov/environmentalhealth/documents/chpd_main_inspection_report.pdf'
         self.session = requests.Session()
     
     def find_recent_pdfs(self, weeks_back: int = 12) -> List[str]:
@@ -40,10 +42,18 @@ class ABQPDFScraper:
         """
         logger.info(f"Searching for ABQ PDFs from last {weeks_back} weeks")
         
-        # ABQ typically posts weekly reports with standardized naming
-        # Format: "RestaurantInspections_YYYY_WW.pdf"
         pdf_urls = []
         
+        # Try the main inspection report first
+        try:
+            response = self.session.head(self.main_report_url, timeout=10)
+            if response.status_code == 200:
+                pdf_urls.append(self.main_report_url)
+                logger.info(f"Found main inspection report: {self.main_report_url}")
+        except Exception as e:
+            logger.warning(f"Main report not accessible: {e}")
+        
+        # Try historical weekly reports
         now = datetime.now()
         for week_offset in range(weeks_back):
             date = now - timedelta(weeks=week_offset)
@@ -54,7 +64,8 @@ class ABQPDFScraper:
             patterns = [
                 f"{self.base_url}/RestaurantInspections_{year}_{week:02d}.pdf",
                 f"{self.base_url}/restaurant-inspections-{year}-week{week:02d}.pdf",
-                f"{self.base_url}/inspections_{year}_{week:02d}.pdf"
+                f"{self.base_url}/inspections_{year}_{week:02d}.pdf",
+                f"{self.base_url}/chpd_main_inspection_report_{year}_{week:02d}.pdf"
             ]
             
             for url in patterns:
@@ -68,7 +79,7 @@ class ABQPDFScraper:
                     continue
         
         if not pdf_urls:
-            logger.warning("No ABQ PDFs found - URLs may need to be configured")
+            logger.warning("No ABQ PDFs found - trying fallback URL")
         
         return pdf_urls
     
