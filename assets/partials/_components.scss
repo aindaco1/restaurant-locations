@@ -93,13 +93,13 @@ a {
     }
 
     h1 {
-      font-size: $body--size;
+      font-size: $body-small--size;
       margin: 0;
-      line-height: 1.2;
+      line-height: 1;
       white-space: nowrap;
 
       @include sm {
-        font-size: $body-small--size;
+        font-size: $caption--size;
         white-space: normal;
         text-align: center;
       }
@@ -113,6 +113,7 @@ a {
   &__logo {
     font-size: $h4--size;
     flex-shrink: 0;
+    line-height: 1;
     
     @include sm {
       font-size: $body--size;
