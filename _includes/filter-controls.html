@@ -1,10 +1,21 @@
 <!-- Mobile Filter Button (only visible on mobile) -->
 <div class="mobile-filter-trigger" x-data="{ mobileFiltersOpen: false }">
+  <!-- Mobile Search (always visible) -->
+  <div class="mobile-search" x-data="filterControls()">
+    <input 
+      type="text" 
+      class="input" 
+      placeholder="🔍 Search restaurants..." 
+      x-model="searchQuery"
+      @input="applyFilters"
+      aria-label="Search restaurants by name">
+  </div>
+
   <button 
     @click="mobileFiltersOpen = true"
     class="btn mobile-filter-btn"
     aria-label="Open filters">
-    <span>🔍 Filters & Sort</span>
+    <span>Filters & Sort</span>
     <span class="mobile-filter-btn__badge" x-data="filterControls()" x-show="activeFilterCount > 0" x-text="activeFilterCount"></span>
   </button>
 
@@ -43,18 +54,8 @@
       <div class="mobile-filter-drawer__body" x-data="filterControls()">
         <!-- All filter controls in mobile drawer -->
         <div class="mobile-filter-group">
-          <label class="mobile-filter-label">Search</label>
-          <input 
-            type="text" 
-            class="input" 
-            placeholder="Restaurant name..." 
-            x-model="searchQuery"
-            @input="applyFilters">
-        </div>
-
-        <div class="mobile-filter-group">
           <label class="mobile-filter-label">Severity</label>
-          <div class="severity-pills">
+          <div class="severity-pills" style="display: flex; flex-direction: column; gap: 8px;">
             <button 
               @click="toggleSeverity('high')" 
               :class="{ 'active': selectedSeverity.includes('high') }"
