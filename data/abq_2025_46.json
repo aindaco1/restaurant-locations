@@ -95,7 +95,7 @@
     "name": "Guava Tree Cafe",
     "address": "118 RICHMOND DR NE",
     "date": "2025-10-29",
-    "outcome": "failed",
+    "outcome": "closed",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": []
@@ -134,7 +134,7 @@
     "name": "JIMMY JOHNS",
     "address": "401 EUBANK BLVD SE, A",
     "date": "2025-10-28",
-    "outcome": "failed",
+    "outcome": "closed",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -167,10 +167,114 @@
     ]
   },
   {
+    "name": "HONG KONG BUFFET",
+    "address": "10100 COORS BLVD NW",
+    "date": "2025-10-23",
+    "outcome": "closed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "IL LOCALETTO ROSSI",
+    "address": "106 BUENA VISTA DR SE",
+    "date": "2025-10-20",
+    "outcome": "closed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Food Separation",
+      "Cold Holding",
+      "Designated Areas",
+      "Hands Clean & Properly Washed",
+      "Records",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Poisonous and Toxic/Chemical Substances",
+      "Pest Control",
+      "Date Marking and Disposition"
+    ]
+  },
+  {
+    "name": "JINJA BAR AND BISTRO",
+    "address": "8900 HOLLY ST NE, B",
+    "date": "2025-10-23",
+    "outcome": "failed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Consumer Advisories",
+      "Date Marking and Disposition",
+      "Date Marking and Disposition",
+      "Operation and Maintenance",
+      "Preparation"
+    ]
+  },
+  {
+    "name": "LA URRACA MEXICAN FOOD Y UN POQUITO DE COLOMBIA",
+    "address": "109 YALE SE",
+    "date": "2025-10-22",
+    "outcome": "conditional",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Warewashing Temperature and Concentration",
+      "Use Limitations",
+      "Use Limitations",
+      "Training Records",
+      "Storage"
+    ]
+  },
+  {
+    "name": "MAIN EVENT ENTERTAINMENT",
+    "address": "4040 PAN AMERICAN FWY NE",
+    "date": "2025-10-21",
+    "outcome": "conditional",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Designated Areas",
+      "Operation and Maintenance",
+      "Warewashing Temperature and Concentration",
+      "Records",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
+  },
+  {
+    "name": "PAD THAI CAFE THAI CUISINE",
+    "address": "110 LOUISIANA BLVD SE, A",
+    "date": "2025-10-22",
+    "outcome": "conditional",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Use Limitations",
+      "Date Marking and Disposition",
+      "Training Records",
+      "Surface Condition",
+      "Maintenance",
+      "Cold Holding"
+    ]
+  },
+  {
+    "name": "RESTORATION PIZZA",
+    "address": "5161 LANG AVE NE, 100",
+    "date": "2025-10-22",
+    "outcome": "conditional",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Designated Areas",
+      "Personal Cleanliness",
+      "Physical Facilities, Cleaning",
+      "Records",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
+  },
+  {
     "name": "999 SEAFOOD SUPERMARKET INC",
     "address": "5315 GIBSON BLVD SE",
     "date": "2025-10-06",
-    "outcome": "failed",
+    "outcome": "closed",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -183,7 +287,7 @@
     "name": "COMFORT INN",
     "address": "1801 YALE BLVD SE",
     "date": "2025-10-08",
-    "outcome": "failed",
+    "outcome": "closed",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -196,7 +300,7 @@
     "name": "Duke City BBQ 3 LLC",
     "address": "12501 CANDELARIA RD NE",
     "date": "2025-10-08",
-    "outcome": "failed",
+    "outcome": "closed",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -210,7 +314,7 @@
     "name": "EL DORADO BAKERY",
     "address": "640 COORS BLVD NW, 20",
     "date": "2025-10-07",
-    "outcome": "failed",
+    "outcome": "closed",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -240,7 +344,7 @@
     "name": "LIMONATIA CAFE",
     "address": "3222 SILVER AVE SE",
     "date": "2025-10-09",
-    "outcome": "failed",
+    "outcome": "closed",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -253,7 +357,7 @@
     "name": "HONG KONG BUFFET",
     "address": "10100 COORS BLVD NW",
     "date": "2025-10-10",
-    "outcome": "failed",
+    "outcome": "closed",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -269,7 +373,7 @@
     "name": "ALB HEIGHTS HEALTHCARE & REHAB",
     "address": "103 HOSPITAL NE",
     "date": "2025-10-03",
-    "outcome": "failed",
+    "outcome": "closed",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
@@ -392,7 +496,7 @@
     "name": "NINOS BRILLANTES ACADEMY LLC",
     "address": "1500 COORS BLVD NW, A",
     "date": "2025-09-25",
-    "outcome": "failed",
+    "outcome": "closed",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": []

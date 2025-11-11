@@ -29,6 +29,7 @@ class ABQPDFScraper:
         # Known inspection report URLs
         self.known_reports = [
             'https://www.cabq.gov/environmentalhealth/documents/chpd_main_inspection_report.pdf',
+            'https://www.cabq.gov/environmentalhealth/documents/media-report-10-19-10-25.pdf',
             'https://www.cabq.gov/environmentalhealth/documents/media-report-10-5-10-11.pdf',
             'https://www.cabq.gov/environmentalhealth/documents/media-report-9-28-10-04.pdf',
             'https://www.cabq.gov/environmentalhealth/documents/media-report-9-21-9-27.pdf'
@@ -176,12 +177,14 @@ class ABQPDFScraper:
                 date_str = line.split()[0]
                 
                 status = 'approved'
-                if 'Conditional' in line:
+                if 'Closure' in line:
+                    status = 'closed'
+                elif 'Closed' in line:
+                    status = 'closed'
+                elif 'Conditional' in line:
                     status = 'conditional'
                 elif 'Unsatisfactory' in line or 'Re-Inspection' in line:
                     status = 'failed'
-                elif 'Closed' in line:
-                    status = 'closed'
                 
                 try:
                     inspection_date = datetime.strptime(date_str, '%m/%d/%Y')
