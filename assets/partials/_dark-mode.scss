@@ -30,11 +30,46 @@
 
   // Cards and surfaces
   .filter-bar,
-  .violation-card,
+  .restaurant-card,
   .empty-state,
   .mobile-filter-drawer__content {
     background: #1a1a1a;
     border-color: #333333;
+  }
+
+  // Restaurant card specific
+  .restaurant-card__header {
+    border-bottom-color: #333333;
+  }
+
+  .restaurant-card__title {
+    color: #f5f5f5;
+  }
+
+  .restaurant-card__address {
+    color: #b8b8b8;
+  }
+
+  // Inspection sub-cards
+  .inspection-item {
+    background: rgba(255, 255, 255, 0.03);
+    border-left-color: #333333;
+  }
+
+  .inspection-item__date,
+  .inspection-item__violations strong {
+    color: #f5f5f5;
+  }
+
+  .inspection-item__outcome,
+  .inspection-item__score {
+    color: #b8b8b8;
+  }
+
+  .inspection-item__violations {
+    ul li {
+      color: #f5f5f5;
+    }
   }
 
   // Inputs and selects
