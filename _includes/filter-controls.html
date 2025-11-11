@@ -1,7 +1,8 @@
-<!-- Compact inline filter bar -->
+<!-- Unified Filter & Control Bar -->
 <div class="filter-bar" x-data="filterControls()">
-  <div class="filter-bar__controls">
-    <!-- Search (primary action) -->
+  <!-- Primary Row: Search + Severity + Sort -->
+  <div class="filter-bar__row filter-bar__row--primary">
+    <!-- Search (primary action, expandable) -->
     <div class="filter-bar__item filter-bar__item--search">
       <input 
         type="text" 
@@ -20,27 +21,46 @@
           @click="toggleSeverity('high')" 
           :class="{ 'active': selectedSeverity.includes('high') }"
           class="severity-pill severity-pill--high"
-          aria-label="Filter by high severity">
-          🔴 High
+          aria-label="Filter by high severity"
+          :title="`High severity ${selectedSeverity.includes('high') ? '(active)' : ''}`">
+          🔴
         </button>
         <button 
           @click="toggleSeverity('medium')" 
           :class="{ 'active': selectedSeverity.includes('medium') }"
           class="severity-pill severity-pill--medium"
-          aria-label="Filter by medium severity">
-          🟠 Medium
+          aria-label="Filter by medium severity"
+          :title="`Medium severity ${selectedSeverity.includes('medium') ? '(active)' : ''}`">
+          🟠
         </button>
         <button 
           @click="toggleSeverity('low')" 
           :class="{ 'active': selectedSeverity.includes('low') }"
           class="severity-pill severity-pill--low"
-          aria-label="Filter by low severity">
-          🟡 Low
+          aria-label="Filter by low severity"
+          :title="`Low severity ${selectedSeverity.includes('low') ? '(active)' : ''}`">
+          🟡
         </button>
       </div>
     </div>
     
-    <!-- Date dropdown (compact) -->
+    <!-- Sort dropdown (compact) -->
+    <div class="filter-bar__item">
+      <select 
+        x-model="sortBy" 
+        @change="changeSortOrder" 
+        class="select select--compact"
+        aria-label="Sort results">
+        <option value="severity">↓ Severity</option>
+        <option value="date">↓ Recent</option>
+        <option value="name">A→Z Name</option>
+      </select>
+    </div>
+  </div>
+  
+  <!-- Secondary Row: Refinements + Actions -->
+  <div class="filter-bar__row filter-bar__row--secondary">
+    <!-- Date dropdown -->
     <div class="filter-bar__item">
       <select 
         x-model="dateRange" 
@@ -55,7 +75,7 @@
       </select>
     </div>
     
-    <!-- City dropdown (compact) -->
+    <!-- City dropdown -->
     <div class="filter-bar__item">
       <select 
         x-model="cityFilter" 
@@ -69,17 +89,48 @@
       </select>
     </div>
     
-    <!-- Active filters badge -->
-    <div class="filter-bar__item" x-show="activeFilterCount > 0">
-      <span class="filter-badge" x-text="`${activeFilterCount} active`"></span>
+    <!-- Spacer to push right-side content -->
+    <div style="flex: 1;"></div>
+    
+    <!-- Results count (prominent feedback) -->
+    <div class="filter-bar__item">
+      <span class="results-count" x-text="`${resultsCount} result${resultsCount !== 1 ? 's' : ''}`"></span>
     </div>
     
-    <!-- Reset button (only show when filters applied) -->
-    <div class="filter-bar__item" x-show="activeFilterCount > 0">
+    <!-- Export menu (progressive disclosure) -->
+    <div class="filter-bar__item" x-data="{ exportOpen: false }">
+      <div style="position: relative;">
+        <button 
+          @click="exportOpen = !exportOpen"
+          class="btn btn--small btn--secondary"
+          aria-label="Export options"
+          aria-expanded="exportOpen">
+          📥 Export
+        </button>
+        
+        <div 
+          x-show="exportOpen" 
+          @click.outside="exportOpen = false"
+          class="export-menu"
+          x-transition>
+          <button @click="exportToCSV(); exportOpen = false" class="export-menu__item">
+            📄 CSV
+          </button>
+          <button @click="exportToJSON(); exportOpen = false" class="export-menu__item">
+            🔧 JSON
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Clear filters (only when active) -->
+    <div class="filter-bar__item" x-show="activeFilterCount > 0" x-transition>
       <button 
         @click="resetFilters" 
-        class="btn btn--small btn--secondary"
-        aria-label="Reset all filters">
+        class="btn btn--small"
+        style="background: transparent; color: #f57c00; border: 1px solid #f57c00;"
+        aria-label="Clear all filters"
+        :title="`Clear ${activeFilterCount} active filter${activeFilterCount !== 1 ? 's' : ''}`">
         ✕ Clear
       </button>
     </div>

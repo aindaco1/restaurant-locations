@@ -207,23 +207,25 @@ document.addEventListener('alpine:init', () => {
         severity: this.selectedSeverity,
         search: this.searchQuery
       });
-    }
-  }));
+    },
 
-  // Toolbar controls component
-  Alpine.data('toolbarControls', () => ({
+    // Sorting (integrated into filter controls)
     get sortBy() {
       return Alpine.store('violations').sortBy;
     },
     set sortBy(value) {
       Alpine.store('violations').sortBy = value;
     },
-    get resultsCount() {
-      return Alpine.store('violations').filteredViolations.length;
-    },
     changeSortOrder() {
       Alpine.store('violations').sortViolations();
     },
+
+    // Results count
+    get resultsCount() {
+      return Alpine.store('violations').filteredViolations.length;
+    },
+
+    // Export functions
     exportToCSV() {
       Alpine.store('violations').exportToCSV();
     },
@@ -231,6 +233,8 @@ document.addEventListener('alpine:init', () => {
       Alpine.store('violations').exportToJSON();
     }
   }));
+
+
 
   // Violations list component (simplified - uses store)
   Alpine.data('violationsList', () => ({

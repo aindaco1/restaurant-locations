@@ -177,11 +177,24 @@ a {
   border-radius: $radius--md;
   box-shadow: $shadow--sm;
 
-  &__controls {
+  &__row {
     display: flex;
     flex-wrap: wrap;
     gap: $space--md;
     align-items: center;
+
+    &--primary {
+      padding-bottom: $space--md;
+      border-bottom: 1px solid $color--light;
+    }
+
+    &--secondary {
+      padding-top: $space--md;
+    }
+
+    @include sm {
+      gap: $space--sm;
+    }
   }
 
   &__item {
@@ -191,6 +204,7 @@ a {
 
       @include sm {
         flex: 1 1 100%;
+        order: -1;
       }
     }
   }
@@ -200,7 +214,7 @@ a {
 
 .severity-pills {
   display: flex;
-  gap: $space--sm;
+  gap: $space--xs;
 }
 
 .severity-pill {
@@ -208,41 +222,87 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: $size--unit * 4;
   height: $size--unit * 4;
-  padding: 0 $space--md;
   background: $color--background;
   border: 2px solid transparent;
   border-radius: $radius--full;
-  font-size: $body-small--size;
-  font-weight: $weight--semibold;
+  font-size: 18px;
   transition: all $transition--fast;
-  opacity: 0.5;
+  opacity: 0.4;
 
   &:hover {
-    opacity: 0.7;
+    opacity: 0.6;
+    transform: scale(1.1);
   }
 
   &.active {
     opacity: 1;
-    transform: scale(1.05);
+    transform: scale(1.15);
+    box-shadow: $shadow--md;
   }
 
   &--high.active {
     background: lighten($color--danger, 45%);
     border-color: $color--danger;
-    color: darken($color--danger, 10%);
   }
 
   &--medium.active {
     background: lighten($color--warning, 40%);
     border-color: $color--warning;
-    color: darken($color--warning, 15%);
   }
 
   &--low.active {
     background: lighten($color--caution, 40%);
     border-color: $color--caution;
-    color: darken($color--caution, 20%);
+  }
+}
+
+// ===== Results Count =====
+
+.results-count {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 $space--md;
+  font-size: $body-small--size;
+  font-weight: $weight--semibold;
+  color: $text--muted;
+  white-space: nowrap;
+}
+
+// ===== Export Menu =====
+
+.export-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  z-index: $z--dropdown;
+  min-width: 120px;
+  background: $color--white;
+  border: 1px solid $color--light;
+  border-radius: $radius--md;
+  box-shadow: $shadow--lg;
+  overflow: hidden;
+
+  &__item {
+    @include btn-reset;
+    display: block;
+    width: 100%;
+    padding: $space--sm $space--md;
+    text-align: left;
+    font-size: $body-small--size;
+    color: $text--default;
+    transition: background $transition--fast;
+
+    &:hover {
+      background: $color--background;
+    }
+
+    &:focus-visible {
+      background: $color--background;
+      outline: 2px solid $color--primary;
+      outline-offset: -2px;
+    }
   }
 }
 
