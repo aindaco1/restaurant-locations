@@ -89,6 +89,11 @@ document.addEventListener('alpine:init', () => {
           }
         });
         
+        // Major boost if currently operationally closed
+        if (restaurant.isClosed) {
+          totalScore += 5.0;
+        }
+        
         restaurant.score = totalScore;
       });
       
