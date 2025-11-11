@@ -159,7 +159,7 @@
 @mixin btn-core($bg) {
   @include btn-reset;
   display: inline-block;
-  color: $text--inverse;
+  color: $text--inverse !important;
   background-color: $bg;
   border: 1px solid darken($bg, $btn--border-darken);
   text-shadow: 2px 2px 5px darken($bg, $btn--border-darken);
@@ -171,6 +171,12 @@
   letter-spacing: $btn--letter-spacing;
   padding: $btn--padding-y $btn--padding-x;
   text-align: center;
+  text-decoration: none;
+  
+  &:hover {
+    color: $text--inverse !important;
+    text-decoration: none;
+  }
   
   &:focus-visible {
     outline: 2px solid $bg;
