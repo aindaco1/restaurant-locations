@@ -20,17 +20,25 @@ body {
   padding: 0;
   font-family: $font--primary;
   font-size: $body--size;
-  line-height: $line-height--normal;
+  line-height: $line-height--relaxed;
   color: $text--default;
   background-color: $color--background;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, h1 a {
   margin: 0;
+  font-family: $font--headings;
   font-weight: $weight--bold;
 }
 
-h1 { @include heading-1; }
+h1, h1 a { 
+  font-size: $h1--size; 
+  margin-bottom: $size--unit * 4;
+  
+  @include sm {
+    font-size: $h2--size;
+  }
+}
 h2 { @include heading-2; }
 h3 { @include heading-3; }
 
@@ -60,7 +68,7 @@ a {
   top: 0;
   z-index: $z--sticky;
   width: 100%;
-  height: $header--height;
+  min-height: $header--height;
   background: $header--bg;
   border-bottom: 1px solid $header--border;
   box-shadow: $shadow--sm;
@@ -70,34 +78,53 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
+    min-height: $header--height;
+    padding-top: $space--md;
+    padding-bottom: $space--md;
   }
 
   &__branding {
     display: flex;
     align-items: center;
     gap: $space--md;
+    flex: 1;
 
     h1 {
       font-size: $h4--size;
       margin: 0;
+      line-height: 1.2;
 
       @include sm {
         font-size: $body--size;
+      }
+
+      a {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
     }
   }
 
   &__logo {
     font-size: $h3--size;
+    flex-shrink: 0;
   }
 
   &__nav {
     display: flex;
     gap: $space--lg;
+    flex-shrink: 0;
 
     @include sm {
-      gap: $space--md;
+      gap: $space--sm;
+    }
+
+    a {
+      font-size: $body-small--size;
+      font-weight: $weight--semibold;
+      white-space: nowrap;
     }
   }
 }
@@ -175,7 +202,7 @@ a {
   padding: $space--md;
   background: $color--white;
   border-radius: $radius--md;
-  box-shadow: $shadow--sm;
+  border: 1px solid $color--light;
 
   &__row {
     display: flex;
@@ -186,10 +213,20 @@ a {
     &--primary {
       padding-bottom: $space--md;
       border-bottom: 1px solid $color--light;
+      
+      @include sm {
+        flex-direction: column;
+        align-items: stretch;
+      }
     }
 
     &--secondary {
       padding-top: $space--md;
+      
+      @include sm {
+        flex-direction: column;
+        align-items: stretch;
+      }
     }
 
     @include sm {
@@ -198,6 +235,9 @@ a {
   }
 
   &__item {
+    display: flex;
+    align-items: center;
+    
     &--search {
       flex: 1;
       min-width: 200px;
@@ -327,6 +367,11 @@ a {
   padding: 0 $space--lg 0 $space--md;
   font-size: $body-small--size;
   min-width: 140px;
+  
+  @include sm {
+    width: 100%;
+    font-size: 16px;
+  }
 }
 
 // ===== Violation Cards =====
@@ -440,27 +485,25 @@ a {
   }
 }
 
-// ===== Buttons =====
+// ===== Buttons (dust-wave-shop style) =====
 
 .btn {
   @include btn-core($color--primary);
+  @include button-hover($color--primary);
 
   &--secondary {
-    @include btn-core(lighten($color--default, 45%), $color--default);
+    @include btn-core(lighten($color--default, 30%));
+    @include button-hover(lighten($color--default, 30%));
   }
 
   &--danger {
     @include btn-core($color--danger);
-  }
-
-  &--outline {
-    @include btn-outline($color--primary);
+    @include button-hover($color--danger);
   }
 
   &--small {
-    height: $size--unit * 4;
-    padding: 0 $size--unit * 2;
-    font-size: $body-small--size;
+    padding: $size--unit $size--unit * 2;
+    font-size: 10px;
   }
 }
 
@@ -468,16 +511,28 @@ a {
 
 .input {
   @include input-base;
+  border: 1px solid $color--primary;
+  background: transparent;
+  
+  @include sm {
+    font-size: 16px;
+  }
 }
 
 .select {
   @include input-base;
   appearance: none;
+  background: transparent;
+  border: 1px solid $color--primary;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%233a3a3a' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right $space--md center;
   padding-right: $space--xl;
   cursor: pointer;
+  
+  @include sm {
+    font-size: 16px;
+  }
 }
 
 .checkbox {

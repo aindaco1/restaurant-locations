@@ -4,7 +4,7 @@
 // ===== Base Unit System =====
 $size--unit: 8px;
 
-// ===== Colors =====
+// ===== Colors (dust-wave-shop palette) =====
 
 // Severity levels (health inspection theme)
 $color--danger: #d32f2f;      // HIGH - Closures, critical violations
@@ -12,11 +12,11 @@ $color--warning: #f57c00;     // MEDIUM - Conditional approvals
 $color--caution: #fbc02d;     // LOW - Minor violations
 $color--safe: #388e3c;        // APPROVED - Clean inspections
 
-// UI Colors
-$color--primary: #1976d2;     // Primary actions, links
+// UI Colors (dust-wave-shop)
+$color--primary: #000000;     // Primary actions, buttons (black)
 $color--default: #3a3a3a;     // Body text
-$color--light: #e0e0e0;       // Borders, dividers
-$color--background: #f5f5f5;  // Page background
+$color--light: #d9d9d9;       // Borders, dividers
+$color--background: #f8faff;  // Page background (soft blue-gray)
 $color--white: #ffffff;
 $color--black: #000000;
 
@@ -25,20 +25,21 @@ $text--default: $color--default;
 $text--muted: lighten($color--default, 35%);
 $text--inverse: $color--white;
 
-// ===== Typography =====
+// ===== Typography (dust-wave-shop) =====
 
 // Font families
-$font--primary: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-$font--mono: "SF Mono", "Monaco", "Inconsolata", "Fira Code", "Droid Sans Mono", "Source Code Pro", monospace;
+$font--primary: "Inter", sans-serif;
+$font--headings: "gambado-sans", sans-serif;
+$font--mono: "SF Mono", "Monaco", "Inconsolata", monospace;
 
-// Font sizes (unit-based scale)
+// Font sizes (dust-wave-shop scale)
 $h1--size: $size--unit * 7;           // 56px
-$h2--size: $size--unit * 5;           // 40px
+$h2--size: $size--unit * 5;           // 40px (product-title)
 $h3--size: $size--unit * 4;           // 32px
 $h4--size: $size--unit * 3;           // 24px
-$body--size: $size--unit * 2;         // 16px
+$body--size: $size--unit * 2.5;       // 20px (body-copy)
 $body-small--size: $size--unit * 1.75; // 14px
-$caption--size: $size--unit * 1.5;    // 12px
+$caption--size: $size--unit * 1.5;    // 12px (button text)
 
 // Font weights
 $weight--regular: 400;
@@ -52,9 +53,9 @@ $line-height--relaxed: 1.8;
 
 // ===== Layout =====
 
-$layout--max-width: 1200px;           // Wider than shop for data density
-$layout--padding: $size--unit * 3;    // 24px
-$layout--padding-sm: $size--unit * 2; // 16px
+$layout--max-width: 1000px;           // Match dust-wave-shop
+$layout--padding: $size--unit * 4;    // 32px
+$layout--padding-sm: $size--unit * 3; // 24px
 
 // ===== Spacing =====
 
@@ -71,9 +72,9 @@ $card--gap: $size--unit * 3;           // 24px between cards
 $filter--gap: $size--unit * 2;         // 16px between filter groups
 $section--gap: $size--unit * 8;        // 64px between sections
 
-// ===== Border Radius =====
+// ===== Border Radius (dust-wave-shop) =====
 
-$radius--sm: 4px;
+$radius--sm: 3px;
 $radius--md: 8px;
 $radius--lg: 12px;
 $radius--full: 9999px;
@@ -134,12 +135,15 @@ $filter--border: $color--light;
 $filter--width: 280px;
 $filter--padding: $size--unit * 2;     // 16px
 
-// Buttons
-$btn--height: $size--unit * 5;         // 40px
+// Buttons (dust-wave-shop style)
+$btn--height: auto;
+$btn--padding-y: $size--unit * 2;      // 16px
 $btn--padding-x: $size--unit * 3;      // 24px
-$btn--radius: $radius--md;
-$btn--font-size: $body--size;
-$btn--font-weight: $weight--semibold;
+$btn--radius: $radius--sm;
+$btn--font-size: $caption--size;       // 12px
+$btn--font-weight: $weight--bold;
+$btn--letter-spacing: 2px;
+$btn--border-darken: 3%;
 
 // Inputs
 $input--height: $size--unit * 5;       // 40px
