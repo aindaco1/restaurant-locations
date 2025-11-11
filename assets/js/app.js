@@ -25,7 +25,8 @@ document.addEventListener('alpine:init', () => {
         
         const data = await response.json();
         this.violations = data;
-        this.filteredViolations = [...data];
+        // Group immediately after loading
+        this.filteredViolations = this.groupByRestaurant(data);
         this.loading = false;
         this.sortViolations();
       } catch (error) {
