@@ -110,12 +110,11 @@ a {
   }
 
   &__logo {
-    font-size: $h4--size;
+    max-height: $size--unit * 4;
     flex-shrink: 0;
-    line-height: 1;
     
     @include sm {
-      font-size: $body--size;
+      max-height: $size--unit * 3;
     }
   }
 }
