@@ -168,45 +168,105 @@ a {
   }
 }
 
-// ===== Filter Panel =====
+// ===== Filter Bar (Compact Inline) =====
 
-.filter-panel {
-  @include panel-frame;
-  margin-bottom: $space--xl;
-
-  &__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: $space--lg;
-
-    h3 {
-      @include heading-3;
-      margin: 0;
-    }
-  }
-
-  &__group {
-    margin-bottom: $space--lg;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  &__label {
-    display: block;
-    margin-bottom: $space--sm;
-    font-size: $body-small--size;
-    font-weight: $weight--semibold;
-    color: $text--default;
-  }
+.filter-bar {
+  margin-bottom: $space--lg;
+  padding: $space--md;
+  background: $color--white;
+  border-radius: $radius--md;
+  box-shadow: $shadow--sm;
 
   &__controls {
     display: flex;
     flex-wrap: wrap;
-    gap: $space--sm;
+    gap: $space--md;
+    align-items: center;
   }
+
+  &__item {
+    &--search {
+      flex: 1;
+      min-width: 200px;
+
+      @include sm {
+        flex: 1 1 100%;
+      }
+    }
+  }
+}
+
+// ===== Severity Pills =====
+
+.severity-pills {
+  display: flex;
+  gap: $space--sm;
+}
+
+.severity-pill {
+  @include btn-reset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: $size--unit * 4;
+  padding: 0 $space--md;
+  background: $color--background;
+  border: 2px solid transparent;
+  border-radius: $radius--full;
+  font-size: $body-small--size;
+  font-weight: $weight--semibold;
+  transition: all $transition--fast;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &.active {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  &--high.active {
+    background: lighten($color--danger, 45%);
+    border-color: $color--danger;
+    color: darken($color--danger, 10%);
+  }
+
+  &--medium.active {
+    background: lighten($color--warning, 40%);
+    border-color: $color--warning;
+    color: darken($color--warning, 15%);
+  }
+
+  &--low.active {
+    background: lighten($color--caution, 40%);
+    border-color: $color--caution;
+    color: darken($color--caution, 20%);
+  }
+}
+
+// ===== Filter Badge =====
+
+.filter-badge {
+  display: inline-flex;
+  align-items: center;
+  height: $size--unit * 4;
+  padding: 0 $space--md;
+  background: $color--primary;
+  color: $text--inverse;
+  border-radius: $radius--full;
+  font-size: $body-small--size;
+  font-weight: $weight--semibold;
+}
+
+// ===== Select Compact =====
+
+.select--compact {
+  height: $size--unit * 4;
+  padding: 0 $space--lg 0 $space--md;
+  font-size: $body-small--size;
+  min-width: 140px;
 }
 
 // ===== Violation Cards =====

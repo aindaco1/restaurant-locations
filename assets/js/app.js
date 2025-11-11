@@ -155,29 +155,54 @@ document.addEventListener('alpine:init', () => {
       'Carlsbad',
       'Alamogordo'
     ],
-    selectedCities: [],
-    dateRange: '365',
+    cityFilter: '', // Single city filter (empty = all)
+    dateRange: 'all',
     selectedSeverity: [],
     searchQuery: '',
 
     init() {
-      // Initialize with all cities selected
-      this.selectedCities = [...this.cities];
+      // Start with all severity levels selected
       this.selectedSeverity = ['high', 'medium', 'low'];
     },
 
+    get activeFilterCount() {
+      let count = 0;
+      if (this.cityFilter !== '') count++;
+      if (this.dateRange !== 'all') count++;
+      if (this.selectedSeverity.length < 3) count++;
+      if (this.searchQuery.trim() !== '') count++;
+      return count;
+    },
+
+    toggleSeverity(level) {
+      const index = this.selectedSeverity.indexOf(level);
+      if (index > -1) {
+        this.selectedSeverity.splice(index, 1);
+      } else {
+        this.selectedSeverity.push(level);
+      }
+      this.applyFilters();
+    },
+
+    handleCityFilter() {
+      this.applyFilters();
+    },
+
     resetFilters() {
-      this.selectedCities = [...this.cities];
-      this.dateRange = '365';
+      this.cityFilter = '';
+      this.dateRange = 'all';
       this.selectedSeverity = ['high', 'medium', 'low'];
       this.searchQuery = '';
       this.applyFilters();
     },
 
     applyFilters() {
+      // Build cities array based on filter
+      const cities = this.cityFilter === '' ? this.cities : [this.cityFilter];
+      
       // Update the global store
       Alpine.store('violations').filterViolations({
-        cities: this.selectedCities,
+        cities: cities,
         dateRange: this.dateRange,
         severity: this.selectedSeverity,
         search: this.searchQuery

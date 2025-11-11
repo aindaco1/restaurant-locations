@@ -1,77 +1,87 @@
-<div class="filter-panel" x-data="filterControls()">
-  <div class="filter-panel__header">
-    <h3>Filters</h3>
-    <button 
-      @click="resetFilters" 
-      class="btn btn--small btn--secondary"
-      aria-label="Reset all filters">
-      Reset
-    </button>
-  </div>
-  
-  <!-- City Filter -->
-  <div class="filter-panel__group">
-    <label class="filter-panel__label">City</label>
-    <select 
-      x-model="selectedCities" 
-      @change="applyFilters" 
-      class="select"
-      multiple
-      size="4"
-      style="height: auto; min-height: 100px;"
-      aria-label="Select cities">
-      <template x-for="city in cities" :key="city">
-        <option :value="city" x-text="city"></option>
-      </template>
-    </select>
-    <small style="display: block; margin-top: 4px; color: #757575;">Hold Cmd/Ctrl to select multiple</small>
-  </div>
-  
-  <!-- Date Range Filter -->
-  <div class="filter-panel__group">
-    <label class="filter-panel__label">Date Range</label>
-    <select 
-      x-model="dateRange" 
-      @change="applyFilters" 
-      class="select"
-      aria-label="Select date range">
-      <option value="30">Last 30 days</option>
-      <option value="90">Last 90 days</option>
-      <option value="180">Last 6 months</option>
-      <option value="365">Last year</option>
-      <option value="all">All time</option>
-    </select>
-  </div>
-  
-  <!-- Severity Filter -->
-  <div class="filter-panel__group">
-    <label class="filter-panel__label">Severity</label>
-    <div class="filter-panel__controls" style="display: flex; gap: 8px; flex-wrap: wrap;">
-      <label class="checkbox">
-        <input type="checkbox" value="high" x-model="selectedSeverity" @change="applyFilters">
-        <span class="checkbox__label">🔴 High</span>
-      </label>
-      <label class="checkbox">
-        <input type="checkbox" value="medium" x-model="selectedSeverity" @change="applyFilters">
-        <span class="checkbox__label">🟠 Medium</span>
-      </label>
-      <label class="checkbox">
-        <input type="checkbox" value="low" x-model="selectedSeverity" @change="applyFilters">
-        <span class="checkbox__label">🟡 Low</span>
-      </label>
+<!-- Compact inline filter bar -->
+<div class="filter-bar" x-data="filterControls()">
+  <div class="filter-bar__controls">
+    <!-- Search (primary action) -->
+    <div class="filter-bar__item filter-bar__item--search">
+      <input 
+        type="text" 
+        id="search-input"
+        class="input" 
+        placeholder="🔍 Search restaurants..." 
+        x-model="searchQuery"
+        @input="applyFilters"
+        aria-label="Search restaurants by name">
     </div>
-  </div>
-  
-  <!-- Search -->
-  <div class="filter-panel__group">
-    <label class="filter-panel__label" for="search-input">Search by name</label>
-    <input 
-      type="text" 
-      id="search-input"
-      class="input" 
-      placeholder="Restaurant name..." 
-      x-model="searchQuery"
-      @input="applyFilters"
-      aria-label="Search restaurants by name">
+    
+    <!-- Severity pills (visual, immediate) -->
+    <div class="filter-bar__item">
+      <div class="severity-pills">
+        <button 
+          @click="toggleSeverity('high')" 
+          :class="{ 'active': selectedSeverity.includes('high') }"
+          class="severity-pill severity-pill--high"
+          aria-label="Filter by high severity">
+          🔴 High
+        </button>
+        <button 
+          @click="toggleSeverity('medium')" 
+          :class="{ 'active': selectedSeverity.includes('medium') }"
+          class="severity-pill severity-pill--medium"
+          aria-label="Filter by medium severity">
+          🟠 Medium
+        </button>
+        <button 
+          @click="toggleSeverity('low')" 
+          :class="{ 'active': selectedSeverity.includes('low') }"
+          class="severity-pill severity-pill--low"
+          aria-label="Filter by low severity">
+          🟡 Low
+        </button>
+      </div>
+    </div>
+    
+    <!-- Date dropdown (compact) -->
+    <div class="filter-bar__item">
+      <select 
+        x-model="dateRange" 
+        @change="applyFilters" 
+        class="select select--compact"
+        aria-label="Select date range">
+        <option value="all">📅 All time</option>
+        <option value="30">Last 30 days</option>
+        <option value="90">Last 90 days</option>
+        <option value="180">Last 6 months</option>
+        <option value="365">Last year</option>
+      </select>
+    </div>
+    
+    <!-- City dropdown (compact) -->
+    <div class="filter-bar__item">
+      <select 
+        x-model="cityFilter" 
+        @change="handleCityFilter" 
+        class="select select--compact"
+        aria-label="Filter by city">
+        <option value="">🏙️ All cities</option>
+        <template x-for="city in cities" :key="city">
+          <option :value="city" x-text="city"></option>
+        </template>
+      </select>
+    </div>
+    
+    <!-- Active filters badge -->
+    <div class="filter-bar__item" x-show="activeFilterCount > 0">
+      <span class="filter-badge" x-text="`${activeFilterCount} active`"></span>
+    </div>
+    
+    <!-- Reset button (only show when filters applied) -->
+    <div class="filter-bar__item" x-show="activeFilterCount > 0">
+      <button 
+        @click="resetFilters" 
+        class="btn btn--small btn--secondary"
+        aria-label="Reset all filters">
+        ✕ Clear
+      </button>
+    </div>
   </div>
 </div>
