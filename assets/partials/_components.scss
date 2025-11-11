@@ -581,8 +581,22 @@ a {
 
   &__text {
     font-size: $body-small--size;
+    color: $text--muted;
+    margin: 0 0 $space--md 0;
+  }
+
+  &__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $space--sm;
+    margin-top: $space--lg;
     color: $text--default;
-    margin: 0;
+  }
+
+  &__logo {
+    max-height: $size--unit * 4;
+    vertical-align: middle;
   }
 }
 
