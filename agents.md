@@ -222,7 +222,7 @@ Risks & Mitigations
 Ops & Maintenance
 	•	Monitoring: GitHub Actions badges for failures (optional)
 	•	Versioning: Each dataset snapshot stored in /data/snapshots/ with date stamp
-	•	Documentation: Keep this agents.md updated per milestone; add CONTRIBUTING.md with local dev steps
+	•	Documentation: Keep this agents.md updated per milestone
 
 ⸻
 
@@ -237,3 +237,60 @@ Quick Start (Local Dev)
 	2.	Open http://localhost:4000 and verify UI loads
 	3.	Run python scripts/build_dataset.py to generate /data/violations_latest.json
 	4.	Commit and push to trigger Pages deploy
+
+⸻
+
+Implementation Status
+
+✅ Milestone 0 — Bootstrap (COMPLETED)
+	•	Jekyll scaffold with _config.yml, Gemfile, directory structure
+	•	SCSS architecture: main.scss + partials (_variables, _mixins, _components)
+	•	8px unit system, BEM naming, dust-wave-shop styling patterns
+	•	Base layouts (default.html, page.html)
+	•	Includes (head, header, footer, filter-controls, violation-card)
+	•	Alpine.js integration for interactivity
+	•	GitHub Pages workflow (.github/workflows/pages.yml)
+
+✅ Milestone 1 — Data Pipeline (COMPLETED)
+	•	scripts/fetch_nmed.py - NMED API fetcher (ArcGIS + Apigee support)
+	•	scripts/scrape_abq.py - ABQ PDF scraper with pdfplumber
+	•	scripts/normalize.py - Schema normalization + Pydantic models
+	•	scripts/build_dataset.py - Full pipeline orchestrator
+	•	Unit tests (scripts/tests/test_scoring.py)
+	•	GitHub Actions pipeline workflow (nightly + manual)
+
+✅ Milestone 2 — UI MVP (COMPLETED)
+	•	index.html with Alpine.js-powered UI
+	•	Filter panel: city multi-select, date range, severity, search
+	•	Sort controls: severity desc, most recent, alphabetically
+	•	CSV/JSON export functionality
+	•	Responsive design (mobile-first breakpoints)
+	•	Accessibility: keyboard nav, semantic HTML, ARIA labels, focus states
+	•	Sample data for testing (data/violations_latest.json)
+
+✅ Milestone 3 — Polish (PARTIAL)
+	•	sitemap.xml and robots.txt
+	•	Complete documentation (README.md, agents.md)
+
+⏸️ Deferred (Lower Priority)
+	•	Cloudflare Workers for edge caching
+	•	Lighthouse performance tuning beyond baseline
+	•	Map view with clustering
+
+⸻
+
+Tech Stack (Final)
+	•	Frontend: Jekyll 4.3, SCSS, Alpine.js 3.x
+	•	Backend: Python 3.11, pdfplumber, requests, pydantic, pytest
+	•	CI/CD: GitHub Actions (2 workflows)
+	•	Hosting: GitHub Pages
+	•	Styling: 8px unit system, BEM naming, dust-wave-shop patterns
+
+⸻
+
+Key Design Decisions
+	1.	Alpine.js over HTMX: Better fit for complex filtering/sorting logic
+	2.	Pydantic for validation: Type-safe schema enforcement
+	3.	Graceful API failures: Return empty datasets, don't block builds
+	4.	Sample data included: Site works immediately without API access
+	5.	Progressive enhancement: Core content works without JavaScript

@@ -1,0 +1,19 @@
+<footer class="footer">
+  <div class="footer__container">
+    <p class="footer__text">
+      Data sourced from <strong>NMED</strong> and <strong>City of Albuquerque</strong> public records.
+      <br>
+      For informational purposes only. Verify current status through official channels.
+    </p>
+    
+    <div class="footer__links">
+      <a href="https://www.env.nm.gov/" target="_blank" rel="noopener">NMED</a>
+      <a href="https://www.cabq.gov/environmentalhealth" target="_blank" rel="noopener">ABQ Environmental Health</a>
+      <a href="{{ '/LICENSE' | relative_url }}">License</a>
+    </div>
+    
+    <p class="footer__text mt-md">
+      &copy; {{ 'now' | date: "%Y" }} {{ site.title }}
+    </p>
+  </div>
+</footer>

@@ -1,0 +1,60 @@
+# NM Health Code Violations Finder
+# Jekyll Configuration
+
+# Site Settings
+title: "NM Health Code Violations"
+description: "Restaurant health inspection tracker for New Mexico's 10 biggest cities"
+url: "https://aindaco1.github.io"
+baseurl: "/restaurant-locations"
+lang: en
+
+# Build Settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# SCSS/SASS Configuration
+sass:
+  sass_dir: assets/partials
+  style: compressed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - scripts/
+  - .git/
+  - .github/
+  - README.md
+  - LICENSE
+  - agents.md
+  - requirements.txt
+  - "*.py"
+
+# Include data files
+include:
+  - data
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Performance
+livereload: true
+open_url: false
+
+# SEO
+twitter:
+  username: 
+github:
+  username: aindaco1
+
+# Google Analytics (optional)
+# google_analytics: UA-XXXXXXXXX-X

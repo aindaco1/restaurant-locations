@@ -1,0 +1,22 @@
+# Python dependencies for data pipeline
+
+# PDF parsing
+pdfplumber>=0.10.0
+
+# HTTP requests
+requests>=2.31.0
+
+# Data validation
+pydantic>=2.5.0
+
+# HTML/XML parsing
+lxml>=4.9.0
+beautifulsoup4>=4.12.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Utilities
+python-dateutil>=2.8.0
+pytz>=2023.3

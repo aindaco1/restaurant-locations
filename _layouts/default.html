@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+{% include head.html %}
+<body>
+  {% include header.html %}
+  
+  <main class="main">
+    {{ content }}
+  </main>
+  
+  {% include footer.html %}
+  
+  <!-- Alpine.js for lightweight interactivity -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+</html>

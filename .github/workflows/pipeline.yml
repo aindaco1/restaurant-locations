@@ -1,0 +1,78 @@
+name: Data Pipeline
+
+on:
+  schedule:
+    # Run nightly at 2 AM UTC (7 PM MST / 8 PM MDT)
+    - cron: '0 2 * * *'
+  
+  workflow_dispatch:  # Allow manual trigger
+  
+  push:
+    branches: ["main"]
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/pipeline.yml'
+
+permissions:
+  contents: write  # Needed to commit data files
+
+jobs:
+  fetch-and-build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+      
+      - name: Run data pipeline
+        env:
+          NMED_API_KEY: ${{ secrets.NMED_API_KEY }}
+          NMED_APIGEE_URL: ${{ secrets.NMED_APIGEE_URL }}
+          NMED_ARCGIS_URL: ${{ secrets.NMED_ARCGIS_URL }}
+          ABQ_PDF_BASE_URL: ${{ secrets.ABQ_PDF_BASE_URL }}
+        run: |
+          echo "Running data pipeline..."
+          python scripts/build_dataset.py --validate
+      
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet data/violations_latest.json; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "Update violations data - $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
+      
+      - name: No changes detected
+        if: steps.check_changes.outputs.has_changes == 'false'
+        run: |
+          echo "No changes detected in violations data"
+      
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: violations-data
+          path: |
+            data/violations_latest.json
+            data/manifest.json
+            data/snapshots/*.json
+          retention-days: 30

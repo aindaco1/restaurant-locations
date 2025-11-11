@@ -1,0 +1,11 @@
+---
+---
+@charset "utf-8";
+
+// Import Google Fonts - Inter for clean, readable UI
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+// Import partials in order
+@import "variables";
+@import "mixins";
+@import "components";

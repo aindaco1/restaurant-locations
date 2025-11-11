@@ -1,0 +1,76 @@
+<div class="filter-panel" x-data="filterControls()">
+  <div class="filter-panel__header">
+    <h3>Filters</h3>
+    <button 
+      @click="resetFilters" 
+      class="btn btn--small btn--secondary"
+      aria-label="Reset all filters">
+      Reset
+    </button>
+  </div>
+  
+  <!-- City Filter -->
+  <div class="filter-panel__group">
+    <label class="filter-panel__label">City</label>
+    <div class="filter-panel__controls">
+      <template x-for="city in cities" :key="city">
+        <label class="checkbox">
+          <input 
+            type="checkbox" 
+            :value="city" 
+            x-model="selectedCities"
+            @change="applyFilters">
+          <span class="checkbox__label" x-text="city"></span>
+        </label>
+      </template>
+    </div>
+  </div>
+  
+  <!-- Date Range Filter -->
+  <div class="filter-panel__group">
+    <label class="filter-panel__label">Date Range</label>
+    <select 
+      x-model="dateRange" 
+      @change="applyFilters" 
+      class="select"
+      aria-label="Select date range">
+      <option value="30">Last 30 days</option>
+      <option value="90">Last 90 days</option>
+      <option value="180">Last 6 months</option>
+      <option value="365">Last year</option>
+      <option value="all">All time</option>
+    </select>
+  </div>
+  
+  <!-- Severity Filter -->
+  <div class="filter-panel__group">
+    <label class="filter-panel__label">Severity</label>
+    <div class="filter-panel__controls">
+      <label class="checkbox">
+        <input type="checkbox" value="high" x-model="selectedSeverity" @change="applyFilters">
+        <span class="checkbox__label">🔴 High</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="medium" x-model="selectedSeverity" @change="applyFilters">
+        <span class="checkbox__label">🟠 Medium</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="low" x-model="selectedSeverity" @change="applyFilters">
+        <span class="checkbox__label">🟡 Low</span>
+      </label>
+    </div>
+  </div>
+  
+  <!-- Search -->
+  <div class="filter-panel__group">
+    <label class="filter-panel__label" for="search-input">Search by name</label>
+    <input 
+      type="text" 
+      id="search-input"
+      class="input" 
+      placeholder="Restaurant name..." 
+      x-model="searchQuery"
+      @input="applyFilters"
+      aria-label="Search restaurants by name">
+  </div>
+</div>

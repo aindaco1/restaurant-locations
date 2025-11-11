@@ -1,0 +1,149 @@
+// Design Tokens - NM Health Code Violations Finder
+// Based on dust-wave-shop 8px unit system
+
+// ===== Base Unit System =====
+$size--unit: 8px;
+
+// ===== Colors =====
+
+// Severity levels (health inspection theme)
+$color--danger: #d32f2f;      // HIGH - Closures, critical violations
+$color--warning: #f57c00;     // MEDIUM - Conditional approvals
+$color--caution: #fbc02d;     // LOW - Minor violations
+$color--safe: #388e3c;        // APPROVED - Clean inspections
+
+// UI Colors
+$color--primary: #1976d2;     // Primary actions, links
+$color--default: #3a3a3a;     // Body text
+$color--light: #e0e0e0;       // Borders, dividers
+$color--background: #f5f5f5;  // Page background
+$color--white: #ffffff;
+$color--black: #000000;
+
+// Text colors
+$text--default: $color--default;
+$text--muted: lighten($color--default, 35%);
+$text--inverse: $color--white;
+
+// ===== Typography =====
+
+// Font families
+$font--primary: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font--mono: "SF Mono", "Monaco", "Inconsolata", "Fira Code", "Droid Sans Mono", "Source Code Pro", monospace;
+
+// Font sizes (unit-based scale)
+$h1--size: $size--unit * 7;           // 56px
+$h2--size: $size--unit * 5;           // 40px
+$h3--size: $size--unit * 4;           // 32px
+$h4--size: $size--unit * 3;           // 24px
+$body--size: $size--unit * 2;         // 16px
+$body-small--size: $size--unit * 1.75; // 14px
+$caption--size: $size--unit * 1.5;    // 12px
+
+// Font weights
+$weight--regular: 400;
+$weight--semibold: 600;
+$weight--bold: 700;
+
+// Line heights
+$line-height--tight: 1.2;
+$line-height--normal: 1.5;
+$line-height--relaxed: 1.8;
+
+// ===== Layout =====
+
+$layout--max-width: 1200px;           // Wider than shop for data density
+$layout--padding: $size--unit * 3;    // 24px
+$layout--padding-sm: $size--unit * 2; // 16px
+
+// ===== Spacing =====
+
+// Common spacing values (multiples of 8px)
+$space--xs: $size--unit * 0.5;  // 4px
+$space--sm: $size--unit;        // 8px
+$space--md: $size--unit * 2;    // 16px
+$space--lg: $size--unit * 3;    // 24px
+$space--xl: $size--unit * 4;    // 32px
+$space--xxl: $size--unit * 6;   // 48px
+
+// Component-specific spacing
+$card--gap: $size--unit * 3;           // 24px between cards
+$filter--gap: $size--unit * 2;         // 16px between filter groups
+$section--gap: $size--unit * 8;        // 64px between sections
+
+// ===== Border Radius =====
+
+$radius--sm: 4px;
+$radius--md: 8px;
+$radius--lg: 12px;
+$radius--full: 9999px;
+
+// ===== Shadows =====
+
+$shadow--sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow--md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow--lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$shadow--xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+// ===== Transitions =====
+
+$transition--fast: 150ms ease-in-out;
+$transition--normal: 250ms ease-in-out;
+$transition--slow: 350ms ease-in-out;
+
+// ===== Breakpoints =====
+
+$breakpoint--sm: 640px;   // Mobile
+$breakpoint--md: 768px;   // Tablet
+$breakpoint--lg: 1024px;  // Desktop
+$breakpoint--xl: 1280px;  // Wide desktop
+
+// ===== Z-Index Scale =====
+
+$z--base: 1;
+$z--dropdown: 100;
+$z--sticky: 200;
+$z--fixed: 300;
+$z--modal-backdrop: 400;
+$z--modal: 500;
+$z--tooltip: 600;
+
+// ===== Component Variables =====
+
+// Header
+$header--height: $size--unit * 8;      // 64px
+$header--bg: $color--white;
+$header--border: $color--light;
+
+// Violation Cards
+$card--bg: $color--white;
+$card--border: $color--light;
+$card--padding: $size--unit * 3;       // 24px
+$card--radius: $radius--md;
+
+// Severity Badges
+$badge--height: $size--unit * 3;       // 24px
+$badge--padding-x: $size--unit * 1.5;  // 12px
+$badge--radius: $radius--full;
+$badge--font-size: $body-small--size;
+$badge--font-weight: $weight--semibold;
+
+// Filter Panel
+$filter--bg: $color--white;
+$filter--border: $color--light;
+$filter--width: 280px;
+$filter--padding: $size--unit * 2;     // 16px
+
+// Buttons
+$btn--height: $size--unit * 5;         // 40px
+$btn--padding-x: $size--unit * 3;      // 24px
+$btn--radius: $radius--md;
+$btn--font-size: $body--size;
+$btn--font-weight: $weight--semibold;
+
+// Inputs
+$input--height: $size--unit * 5;       // 40px
+$input--padding-x: $size--unit * 2;    // 16px
+$input--radius: $radius--md;
+$input--border: $color--light;
+$input--focus: $color--primary;

@@ -1,0 +1,49 @@
+<!-- Single violation card component -->
+<article class="violation-card">
+  <div>
+    <div class="violation-card__header">
+      <h3 class="violation-card__title">{{ include.name }}</h3>
+      <span class="badge badge--{{ include.severity }}">
+        {{ include.severity | upcase }}
+      </span>
+    </div>
+    
+    <div class="violation-card__meta">
+      <div class="violation-card__meta-item">
+        <strong>City:</strong> {{ include.city }}
+      </div>
+      <div class="violation-card__meta-item">
+        <strong>Date:</strong> {{ include.date }}
+      </div>
+      <div class="violation-card__meta-item">
+        <strong>Outcome:</strong> {{ include.outcome }}
+      </div>
+    </div>
+    
+    <div class="violation-card__details">
+      <p><strong>Address:</strong> {{ include.address }}</p>
+      
+      {% if include.violations %}
+      <div class="violation-card__violations">
+        <strong>Violations:</strong>
+        <ul>
+          {% for violation in include.violations limit:3 %}
+            <li>{{ violation }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  
+  <div class="violation-card__actions">
+    {% if include.source_url %}
+    <a href="{{ include.source_url }}" 
+       target="_blank" 
+       rel="noopener"
+       class="btn btn--small btn--outline">
+      View Source
+    </a>
+    {% endif %}
+  </div>
+</article>
