@@ -293,16 +293,16 @@ document.addEventListener('alpine:init', () => {
   // Violations list component (simplified - uses store)
   Alpine.data('violationsList', () => ({
     get violations() {
-      return Alpine.store('violations').filteredViolations;
+      return Alpine.store('violations')?.filteredViolations || [];
     },
     get loading() {
-      return Alpine.store('violations').loading;
+      return Alpine.store('violations')?.loading || false;
     },
     get error() {
-      return Alpine.store('violations').error;
+      return Alpine.store('violations')?.error || null;
     },
     getSeverityLevel(score) {
-      return Alpine.store('violations').getSeverityLevel(score);
+      return Alpine.store('violations')?.getSeverityLevel(score) || 'low';
     }
   }));
 });
