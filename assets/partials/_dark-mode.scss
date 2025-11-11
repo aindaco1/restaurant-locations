@@ -153,5 +153,46 @@
   // Mobile filter drawer
   .mobile-filter-drawer {
     background: rgba(0, 0, 0, 0.8);
+
+    &__actions {
+      background: #1a1a1a;
+      border-top-color: #333333;
+    }
+  }
+
+  // Mobile filter labels
+  .mobile-filter-label {
+    color: #f5f5f5;
+  }
+
+  // Mobile filter button - keep text dark for white button
+  .mobile-filter-btn {
+    background-color: #ffffff;
+    color: #1a1a1a !important;
+    border-color: #ffffff;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+
+    &__badge {
+      background: #d32f2f;
+      color: #ffffff;
+    }
+  }
+
+  // Severity pills in mobile drawer need better text contrast
+  .severity-pill--mobile {
+    &.severity-pill--high.active {
+      color: #ffffff;
+    }
+
+    &.severity-pill--medium.active {
+      color: #ffffff;
+    }
+
+    &.severity-pill--low.active {
+      color: #1a1a1a;
+    }
   }
 }
