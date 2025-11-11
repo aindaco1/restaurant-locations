@@ -2,10 +2,10 @@
 # Jekyll Configuration
 
 # Site Settings
-title: "NM Health Code Violations"
-description: "Restaurant health inspection tracker for New Mexico's 10 biggest cities"
-url: "https://aindaco1.github.io"
-baseurl: "/restaurant-locations"
+title: "ABQ Health Code Violations"
+description: "Restaurant health inspection tracker for Albuquerque"
+url: "https://healthcode.dustwave.xyz"
+baseurl: ""
 lang: en
 
 # Build Settings
