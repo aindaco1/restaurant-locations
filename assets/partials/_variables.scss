@@ -20,9 +20,9 @@ $color--background: #f8faff;
 $color--white: #ffffff;
 $color--black: #000000;
 
-// Text colors
+// Text colors (WCAG AA compliant)
 $text--default: $color--default;
-$text--muted: lighten($color--default, 35%);
+$text--muted: lighten($color--default, 30%);
 $text--inverse: $color--white;
 
 // ===== Typography (dust-wave-shop) =====

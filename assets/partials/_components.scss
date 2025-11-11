@@ -402,18 +402,24 @@ a {
   }
 
   &--high.active {
-    background: lighten($color--danger, 45%);
-    border-color: $color--danger;
+    background: lighten($color--danger, 43%);
+    border-color: darken($color--danger, 5%);
+    color: darken($color--danger, 15%);
+    font-weight: $weight--bold;
   }
 
   &--medium.active {
-    background: lighten($color--warning, 40%);
-    border-color: $color--warning;
+    background: lighten($color--warning, 38%);
+    border-color: darken($color--warning, 5%);
+    color: darken($color--warning, 20%);
+    font-weight: $weight--bold;
   }
 
   &--low.active {
-    background: lighten($color--caution, 40%);
-    border-color: $color--caution;
+    background: lighten($color--caution, 35%);
+    border-color: darken($color--caution, 10%);
+    color: darken($color--caution, 30%);
+    font-weight: $weight--bold;
   }
 
   &--mobile {
