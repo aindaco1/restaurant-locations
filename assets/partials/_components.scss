@@ -508,92 +508,99 @@ a {
   }
 }
 
-// ===== Violation Cards =====
+// ===== Restaurant Cards =====
 
 .violations {
   display: grid;
   grid-template-columns: 1fr;
-  gap: $card--gap;
+  gap: $space--xl;
 }
 
-.violation-card {
+.restaurant-card {
   @include card-frame;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: $space--lg;
-  align-items: start;
   transition: background-color 0.3s ease;
-
-  @include sm {
-    grid-template-columns: 1fr;
-  }
 
   &__header {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     justify-content: space-between;
     gap: $space--md;
-    margin-bottom: $space--md;
+    margin-bottom: $space--lg;
+    padding-bottom: $space--md;
+    border-bottom: 2px solid $color--light;
   }
 
   &__title {
     @include heading-3;
-    margin: 0;
+    margin: 0 0 $space--xs 0;
     color: $text--default;
   }
 
-  &__severity {
-    flex-shrink: 0;
+  &__address {
+    font-size: $body-small--size;
+    color: $text--muted;
+    margin: 0;
+  }
+}
+
+// ===== Inspection Sub-cards =====
+
+.inspections-list {
+  display: flex;
+  flex-direction: column;
+  gap: $space--md;
+}
+
+.inspection-item {
+  padding: $space--md;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: $radius--sm;
+  border-left: 3px solid $color--light;
+
+  &__header {
+    margin-bottom: $space--sm;
   }
 
   &__meta {
     display: flex;
     flex-wrap: wrap;
     gap: $space--md;
-    margin-bottom: $space--md;
-    @include body-small;
+    font-size: $body-small--size;
+  }
+
+  &__date {
+    font-weight: $weight--semibold;
+    color: $text--default;
+  }
+
+  &__outcome {
+    text-transform: capitalize;
     color: $text--muted;
   }
 
-  &__meta-item {
-    display: flex;
-    align-items: center;
-    gap: $space--xs;
-
-    strong {
-      font-weight: $weight--semibold;
-      color: $text--default;
-    }
-  }
-
-  &__details {
-    @include body-text;
+  &__score {
+    color: $text--muted;
   }
 
   &__violations {
-    margin-top: $space--md;
+    margin-top: $space--sm;
+
+    strong {
+      font-size: $body-small--size;
+      color: $text--default;
+    }
 
     ul {
-      margin: 0;
-      padding-left: $space--lg;
+      margin: $space--xs 0 0 $space--lg;
+      padding: 0;
       list-style: disc;
 
       li {
         margin-bottom: $space--xs;
-        @include body-small;
+        font-size: $body-small--size;
+        color: $text--default;
+        line-height: 1.4;
       }
-    }
-  }
-
-  &__actions {
-    display: flex;
-    flex-direction: column;
-    gap: $space--sm;
-    align-items: flex-end;
-
-    @include sm {
-      flex-direction: row;
-      align-items: center;
     }
   }
 }
