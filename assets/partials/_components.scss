@@ -98,7 +98,7 @@ a {
       white-space: nowrap;
 
       @include sm {
-        font-size: $caption--size;
+        font-size: $size--unit * 2.75;
         white-space: normal;
         text-align: center;
       }
