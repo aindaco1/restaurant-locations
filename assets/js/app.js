@@ -67,7 +67,9 @@ document.addEventListener('alpine:init', () => {
 
     async loadViolations() {
       try {
-        const response = await fetch('/restaurant-locations/data/violations_latest.json');
+        // Get baseurl from page meta tag or default to /restaurant-locations
+        const baseurl = document.querySelector('meta[name="baseurl"]')?.content || '/restaurant-locations';
+        const response = await fetch(`${baseurl}/data/violations_latest.json`);
         
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
