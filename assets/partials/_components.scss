@@ -88,21 +88,28 @@ a {
     align-items: center;
     gap: $space--md;
     flex: 1;
+    min-width: 0;
 
     h1 {
-      font-size: $h4--size;
+      font-size: $body--size;
       margin: 0;
-      line-height: 1.2;
+      line-height: 1.3;
+      flex: 1;
+      min-width: 0;
 
       @include sm {
-        font-size: $body--size;
+        font-size: $body-small--size;
       }
 
       a {
         display: block;
-        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        
+        @include sm {
+          white-space: normal;
+          line-height: 1.2;
+        }
       }
     }
   }
