@@ -26,6 +26,11 @@
     white-space: nowrap;
     color: $text--muted;
 
+    @include sm {
+      white-space: normal;
+      width: 100%;
+    }
+
     &--closed .status-key__label {
       color: $color--danger;
       font-weight: $weight--bold;
