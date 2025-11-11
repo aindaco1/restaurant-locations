@@ -86,7 +86,7 @@ title: NM Health Code Violations
       
       <!-- Inspections List -->
       <div class="inspections-list">
-        <template x-for="inspection in restaurant.inspections" :key="`${restaurant.name}-${inspection.date}`">
+        <template x-for="(inspection, index) in restaurant.inspections" :key="`${restaurant.name}-${inspection.date}-${inspection.outcome}-${index}`">
           <div class="inspection-item">
             <div class="inspection-item__header">
               <div class="inspection-item__meta">
@@ -108,12 +108,12 @@ title: NM Health Code Violations
               </div>
             </div>
             
-            <template x-if="inspection.violations && inspection.violations.length > 0">
+            <template x-if="inspection.violations && Array.isArray(inspection.violations) && inspection.violations.length > 0">
               <div class="inspection-item__violations">
                 <strong>Violations:</strong>
                 <ul>
-                  <template x-for="v in inspection.violations" :key="v.desc">
-                    <li x-text="v.desc"></li>
+                  <template x-for="(v, vIndex) in inspection.violations" :key="`${inspection.date}-${vIndex}`">
+                    <li x-text="v.desc || v"></li>
                   </template>
                 </ul>
               </div>
