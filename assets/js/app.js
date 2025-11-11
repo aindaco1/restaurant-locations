@@ -37,9 +37,38 @@ document.addEventListener('alpine:init', () => {
       }
     },
 
+    groupByRestaurant(violations) {
+      const grouped = {};
+      
+      violations.forEach(v => {
+        const key = `${v.establishment.name}-${v.establishment.address}`;
+        if (!grouped[key]) {
+          grouped[key] = {
+            name: v.establishment.name,
+            address: v.establishment.address,
+            city: v.establishment.city,
+            inspections: [],
+            maxScore: 0
+          };
+        }
+        grouped[key].inspections.push({
+          date: v.inspection.date,
+          outcome: v.inspection.outcome,
+          violations: v.inspection.violations,
+          score: v.score.severity,
+          reasons: v.score.reasons,
+          links: v.links
+        });
+        grouped[key].maxScore = Math.max(grouped[key].maxScore, v.score.severity);
+      });
+      
+      return Object.values(grouped);
+    },
+
     filterViolations(filters) {
       let result = [...this.violations];
 
+      // Apply filters to individual inspections
       if (filters.cities && filters.cities.length > 0) {
         result = result.filter(v => filters.cities.includes(v.establishment.city));
       }
@@ -70,7 +99,9 @@ document.addEventListener('alpine:init', () => {
         );
       }
 
-      this.filteredViolations = result;
+      // Group by restaurant
+      const groupedRestaurants = this.groupByRestaurant(result);
+      this.filteredViolations = groupedRestaurants;
       this.sortViolations();
     },
 
@@ -85,30 +116,46 @@ document.addEventListener('alpine:init', () => {
       
       switch (this.sortBy) {
         case 'severity':
-          sorted.sort((a, b) => b.score.severity - a.score.severity);
+          sorted.sort((a, b) => b.maxScore - a.maxScore);
           break;
         case 'date':
-          sorted.sort((a, b) => new Date(b.inspection.date) - new Date(a.inspection.date));
+          // Sort by most recent inspection
+          sorted.sort((a, b) => {
+            const aDate = new Date(Math.max(...a.inspections.map(i => new Date(i.date))));
+            const bDate = new Date(Math.max(...b.inspections.map(i => new Date(i.date))));
+            return bDate - aDate;
+          });
           break;
         case 'name':
-          sorted.sort((a, b) => a.establishment.name.localeCompare(b.establishment.name));
+          sorted.sort((a, b) => a.name.localeCompare(b.name));
           break;
       }
+      
+      // Sort inspections within each restaurant by date (most recent first)
+      sorted.forEach(restaurant => {
+        restaurant.inspections.sort((a, b) => new Date(b.date) - new Date(a.date));
+      });
       
       this.filteredViolations = sorted;
     },
 
     exportToCSV() {
-      const headers = ['Name', 'City', 'Address', 'Date', 'Outcome', 'Severity Score', 'Severity'];
-      const rows = this.filteredViolations.map(v => [
-        v.establishment.name,
-        v.establishment.city,
-        v.establishment.address,
-        v.inspection.date,
-        v.inspection.outcome,
-        v.score.severity,
-        this.getSeverityLevel(v.score.severity)
-      ]);
+      const headers = ['Name', 'City', 'Address', 'Date', 'Outcome', 'Severity Score', 'Violations'];
+      const rows = [];
+      
+      this.filteredViolations.forEach(restaurant => {
+        restaurant.inspections.forEach(insp => {
+          rows.push([
+            restaurant.name,
+            restaurant.city,
+            restaurant.address,
+            insp.date,
+            insp.outcome,
+            insp.score,
+            insp.violations.map(v => v.desc).join('; ')
+          ]);
+        });
+      });
 
       const csv = [
         headers.join(','),

@@ -43,88 +43,45 @@ title: NM Health Code Violations
     </div>
   </template>
   
-  <!-- Violations Cards -->
-  <template x-for="violation in violations" :key="violation.id">
-    <article class="violation-card">
-      <div>
-        <div class="violation-card__header">
-          <h3 class="violation-card__title" x-text="violation.establishment.name"></h3>
-          <span 
-            class="badge"
-            :class="`badge--${getSeverityLevel(violation.score.severity)}`"
-            x-text="getSeverityLevel(violation.score.severity).toUpperCase()">
-          </span>
+  <!-- Restaurant Cards -->
+  <template x-for="restaurant in violations" :key="`${restaurant.name}-${restaurant.address}`">
+    <article class="restaurant-card">
+      <!-- Restaurant Header -->
+      <div class="restaurant-card__header">
+        <div>
+          <h3 class="restaurant-card__title" x-text="restaurant.name"></h3>
+          <p class="restaurant-card__address" x-text="`${restaurant.address}, ${restaurant.city}`"></p>
         </div>
-        
-        <div class="violation-card__meta">
-          <div class="violation-card__meta-item">
-            <strong>City:</strong>
-            <span x-text="violation.establishment.city"></span>
-          </div>
-          <div class="violation-card__meta-item">
-            <strong>Date:</strong>
-            <span x-text="violation.inspection.date"></span>
-          </div>
-          <div class="violation-card__meta-item">
-            <strong>Outcome:</strong>
-            <span x-text="violation.inspection.outcome"></span>
-          </div>
-          <div class="violation-card__meta-item">
-            <strong>Score:</strong>
-            <span x-text="violation.score.severity"></span>
-          </div>
-        </div>
-        
-        <div class="violation-card__details">
-          <p style="font-size: 14px;">
-            <strong>Address:</strong>
-            <span x-text="violation.establishment.address"></span>
-          </p>
-          
-          <template x-if="violation.score.reasons && violation.score.reasons.length > 0">
-            <div>
-              <strong>Reasons:</strong>
-              <ul style="margin: 8px 0 0 20px; list-style: disc;">
-                <template x-for="reason in violation.score.reasons" :key="reason">
-                  <li x-text="reason" style="margin-bottom: 4px; font-size: 14px;"></li>
-                </template>
-              </ul>
-            </div>
-          </template>
-          
-          <template x-if="violation.inspection.violations && violation.inspection.violations.length > 0">
-            <div class="violation-card__violations" style="margin-top: 16px;">
-              <strong>Violations:</strong>
-              <ul style="margin: 8px 0 0 20px; list-style: disc;">
-                <template x-for="v in violation.inspection.violations.slice(0, 3)" :key="v.code">
-                  <li style="margin-bottom: 4px; font-size: 14px;">
-                    <span x-text="`[${v.code}] ${v.desc}`"></span>
-                    <template x-if="v.critical">
-                      <strong style="color: #d32f2f;"> (CRITICAL)</strong>
-                    </template>
-                  </li>
-                </template>
-                <template x-if="violation.inspection.violations.length > 3">
-                  <li style="font-size: 14px; color: #757575;">
-                    <span x-text="`+${violation.inspection.violations.length - 3} more violations`"></span>
-                  </li>
-                </template>
-              </ul>
-            </div>
-          </template>
-        </div>
+        <span 
+          class="badge"
+          :class="`badge--${getSeverityLevel(restaurant.maxScore)}`"
+          x-text="getSeverityLevel(restaurant.maxScore).toUpperCase()">
+        </span>
       </div>
       
-      <div class="violation-card__actions">
-        <template x-if="violation.links && violation.links.source">
-          <a 
-            :href="violation.links.source" 
-            target="_blank" 
-            rel="noopener"
-            class="btn btn--small"
-            style="text-decoration: none;">
-            View Source
-          </a>
+      <!-- Inspections List -->
+      <div class="inspections-list">
+        <template x-for="inspection in restaurant.inspections" :key="`${restaurant.name}-${inspection.date}`">
+          <div class="inspection-item">
+            <div class="inspection-item__header">
+              <div class="inspection-item__meta">
+                <span class="inspection-item__date" x-text="inspection.date"></span>
+                <span class="inspection-item__outcome" x-text="inspection.outcome"></span>
+                <span class="inspection-item__score" x-text="`Score: ${inspection.score}`"></span>
+              </div>
+            </div>
+            
+            <template x-if="inspection.violations && inspection.violations.length > 0">
+              <div class="inspection-item__violations">
+                <strong>Violations:</strong>
+                <ul>
+                  <template x-for="v in inspection.violations" :key="v.desc">
+                    <li x-text="v.desc"></li>
+                  </template>
+                </ul>
+              </div>
+            </template>
+          </div>
         </template>
       </div>
     </article>
