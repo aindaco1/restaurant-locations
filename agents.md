@@ -8,11 +8,11 @@ Target cities (top 10 by population): Albuquerque, Las Cruces, Rio Rancho, Santa
 
 Approach in One Glance
 	•	Static site: Jekyll on GitHub Pages (HTML/SCSS/JS), performance‑first “Amp coding” style (see principles below).
-	•	Data pipeline: GitHub Actions runs small Python scrapers/fetchers on a schedule; writes normalized JSON into /data/ and commits.
-	•	APIs & sources (programmatic where possible):
-	•	NMED (New Mexico Environment Department) — statewide restaurant inspections and outcomes. Expect REST endpoints (Apigee) and/or ArcGIS FeatureServer. Use for all cities except Albuquerque/Bernalillo.
-	•	City of Albuquerque — publishes weekly Restaurant Inspection Report PDFs; scrape and normalize. (Bernalillo/ABQ has city‑run inspections.)
-	•	Edge helpers (optional): Cloudflare Workers to proxy NMED endpoints (CORS + caching) and to serve a compact, versioned JSON manifest.
+	•	Data pipeline: GitHub Actions runs weekly (Mondays 2 AM UTC); scrapes ABQ PDFs, merges with existing data, writes normalized JSON into /data/ and commits.
+	•	Data source:
+	•	City of Albuquerque — publishes weekly Restaurant Inspection Report PDFs; scrape and normalize. Includes violations, operational status, dates.
+	•	Archive mode: Accumulates inspection data over time (merges weekly, deduplicates by ID)
+	•	Edge helpers (optional): Cloudflare Workers for caching and serving JSON manifest.
 	•	Scoring: Rule‑based severity score (closures > conditional approvals > multiple criticals).
 	•	UI: Single page with city/date filters, quick severity badges, CSV/JSON export.
 

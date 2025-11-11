@@ -236,35 +236,42 @@ python scripts/build_dataset.py --validate
 - Check browser console for fetch errors
 - Verify `baseurl` in `_config.yml` matches deployment
 
-## Data Sources
+## Data Source
 
-### ✅ City of Albuquerque (ACTIVE)
+### City of Albuquerque Environmental Health Department
+
 - **Coverage**: Albuquerque & Bernalillo County
-- **Format**: Weekly PDF reports
-- **Current Data**: 88 inspections from 5 weeks (Sept-Nov 2025)
-- **Update**: Automated scraping via GitHub Actions
-- **URL**: https://www.cabq.gov/environmentalhealth/documents/
+- **Format**: Weekly PDF inspection reports
+- **Current Data**: 88+ inspections (growing weekly)
+- **Update Frequency**: Weekly automated scraping (Mondays 2 AM UTC)
+- **Archive Mode**: Accumulates all inspections over time
+- **Source URL**: https://www.cabq.gov/environmentalhealth/documents/
 
-### ⏸️ NMED (Pending - 9 Other Cities)
-- **Coverage**: Las Cruces, Rio Rancho, Santa Fe, Roswell, Farmington, Hobbs, Clovis, Carlsbad, Alamogordo
-- **Status**: NMED API portal does not include food inspection data
-- **Next Step**: Contact NMED Food Safety Program for data access
-- **Contact**: NMED.Food.Program@env.nm.gov or (505) 827-2821
+**Active PDFs Monitored:**
+- `chpd_main_inspection_report.pdf` (current week)
+- `media-report-[dates].pdf` (historical weeks)
 
-## Next Steps
+**Data Includes:**
+- Establishment name, address
+- Inspection date and outcome
+- Operational status (Open/Closed)
+- Violation descriptions
+- Only non-approved inspections (Conditional, Unsatisfactory, Closure)
 
-### API Configuration
-Once you have API access:
-1. Update endpoint URLs in scripts
-2. Add API keys to GitHub Secrets
-3. Test pipeline: `python scripts/build_dataset.py`
-4. Monitor GitHub Actions for nightly runs
+## Expanding Beyond Albuquerque
+
+To add other NM cities, contact **NMED Food Safety Program**:
+- Email: NMED.Food.Program@env.nm.gov  
+- Phone: (505) 827-2821
+- Request: Bulk data export for Las Cruces, Rio Rancho, Santa Fe, etc.
+- See [NMED_REQUEST.md](NMED_REQUEST.md) for email template
 
 ### Optional Enhancements
-- [ ] Cloudflare Workers for API proxy and edge caching
+- [ ] Cloudflare Workers for edge caching
 - [ ] Lighthouse optimization (target: Perf ≥95, A11y ≥95)
 - [ ] Map view with Leaflet (if geocoding available)
 - [ ] Historical trends charts
+- [ ] Email alerts for new closures
 
 ## Contributing
 
