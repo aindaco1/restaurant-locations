@@ -241,8 +241,8 @@ class ABQNormalizer:
                 }
             )
             
-            # Add operational status as custom field
-            record_dict = record.dict()
+            # Convert to dict and add operational status
+            record_dict = record.model_dump() if hasattr(record, 'model_dump') else record.dict()
             record_dict['operational_status'] = raw_record.get('operational_status', 'Open')
             
             return record_dict
@@ -290,7 +290,8 @@ def normalize_dataset(nmed_file: str = None, abq_file: str = None) -> List[Dict]
             for record in abq_data:
                 normalized_record = ABQNormalizer.normalize(record)
                 if normalized_record:
-                    normalized.append(normalized_record.dict())
+                    # Already a dict now (includes operational_status)
+                    normalized.append(normalized_record)
         except Exception as e:
             logger.error(f"Failed to process ABQ file: {e}")
     
