@@ -192,10 +192,12 @@ class ABQNormalizer:
                 geo=GeoLocation(lat=35.0844, lng=-106.6504)  # ABQ center
             )
             
-            # Map outcome
+            # Map outcome (pass through most, standardize variations)
             outcome_map = {
                 'pass': 'approved',
+                'approved': 'approved',
                 'fail': 'failed',
+                'failed': 'failed',
                 'conditional': 'conditional',
                 'closed': 'closed'
             }
