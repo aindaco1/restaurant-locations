@@ -206,6 +206,122 @@
     ]
   },
   {
+    "name": "ORTIZ CREATIONS INC",
+    "address": "306 SAN FELIPE ST NW",
+    "date": "2025-10-30",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Records",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Training Records",
+      "Cold Holding",
+      "Testing Devices",
+      "Operation and Maintenance"
+    ]
+  },
+  {
+    "name": "SANTIAGOS TACOS",
+    "address": "1911 EUBANK BLVD NE",
+    "date": "2025-10-30",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "SQUEEZED JUICE BAR",
+    "address": "7900 SAN PEDRO DR NE, A12",
+    "date": "2025-10-29",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "STARBUCKS CORP",
+    "address": "6828 SAN MATEO BLVD NE",
+    "date": "2025-10-31",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Consumer Advisories",
+      "Storage",
+      "Pest Control",
+      "Use Limitations",
+      "Ventilation and Hood Systems",
+      "Physical Facilities",
+      "Storage",
+      "Personal Cleanliness",
+      "Hands Clean & Properly Washed",
+      "Storage",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Plumbing"
+    ]
+  },
+  {
+    "name": "STARBUCKS CORP",
+    "address": "6828 SAN MATEO BLVD NE",
+    "date": "2025-10-27",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "STARBUCKS CORP",
+    "address": "6828 SAN MATEO BLVD NE",
+    "date": "2025-10-30",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "STARBUCKS CORP",
+    "address": "4407 LOMAS BLVD NE",
+    "date": "2025-10-07",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Designated Areas",
+      "Personal Cleanliness",
+      "Physical Facilities, Cleaning",
+      "Surface Not Clean"
+    ]
+  },
+  {
+    "name": "Waffletopia",
+    "address": "3710 CAMPUS AVE NE",
+    "date": "2025-10-30",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Waffletopia",
+    "address": "3710 CAMPUS AVE NE",
+    "date": "2025-10-22",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
     "name": "IL LOCALETTO ROSSI",
     "address": "106 BUENA VISTA DR SE",
     "date": "2025-10-20",
@@ -304,6 +420,65 @@
       "Physical Facilities, Cleaning",
       "Records",
       "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
+  },
+  {
+    "name": "SZECHWAN CHINESE RESTAURANT",
+    "address": "1605 JUAN TABO BLVD NE, M",
+    "date": "2025-10-22",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Thai House",
+    "address": "2000 CARLISLE BLVD NE, C",
+    "date": "2025-10-23",
+    "outcome": "closed",
+    "operational_status": "Closed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Operation and Maintenance",
+      "Lighting",
+      "Consumer Advisories",
+      "Surface Not Clean",
+      "Records",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
+  },
+  {
+    "name": "THE WATERMARK AT CHERRY HILLS",
+    "address": "6901 SAN VICENTE AVE NE",
+    "date": "2025-10-22",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Installation",
+      "Testing Devices",
+      "Highly Susceptible Populations",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
+  },
+  {
+    "name": "WIENERSCHNITZEL",
+    "address": "9651 MENAUL BLVD NE",
+    "date": "2025-10-21",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Date Marking and Disposition",
+      "Plumbing",
+      "Toilet Facilities",
+      "Physical Facilities"
     ]
   },
   {
@@ -433,6 +608,50 @@
     ]
   },
   {
+    "name": "Silver Street Market",
+    "address": "205 SILVER AVE SW, A",
+    "date": "2025-09-30",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Plumbing",
+      "Hands Clean & Properly Washed",
+      "Knowledgeable",
+      "Plumbing",
+      "Toilet Facilities",
+      "Physical Facilities, Cleaning"
+    ]
+  },
+  {
+    "name": "Silver Street Market",
+    "address": "205 SILVER AVE SW, A",
+    "date": "2025-09-23",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Cold Holding",
+      "Testing Devices",
+      "Surface Not Clean",
+      "Food Separation",
+      "Plumbing",
+      "Records"
+    ]
+  },
+  {
+    "name": "Silver Street Market",
+    "address": "205 SILVER AVE SW, A",
+    "date": "2025-09-22",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
     "name": "TOMASITAS",
     "address": "4949 PAN AMERICAN FWY NE",
     "date": "2025-09-29",
@@ -559,5 +778,71 @@
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": []
+  },
+  {
+    "name": "OJOS LOCOS SPORTS CANTINA",
+    "address": "2105 LOUISIANA BLVD NE",
+    "date": "2025-09-26",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Food Separation",
+      "Physical Facilities",
+      "Storage"
+    ]
+  },
+  {
+    "name": "OLD TOWN PIZZA PARLOR",
+    "address": "108 RIO GRANDE BLVD NW",
+    "date": "2025-09-26",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Date Marking and Disposition",
+      "Training Records",
+      "Physical Facilities"
+    ]
+  },
+  {
+    "name": "SIDEWINDERS BAR & LOUNGE",
+    "address": "4200 CENTRAL AVE SE",
+    "date": "2025-09-25",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Operation and Maintenance",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Date Marking and Disposition",
+      "Warewashing Temperature and Concentration"
+    ]
+  },
+  {
+    "name": "TORRES BILLIA AND TACO SHOP",
+    "address": "5400 CENTRAL AVE SE, A101",
+    "date": "2025-09-25",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Designated Areas",
+      "Functionality and Accuracy",
+      "Physical Facilities, Cleaning",
+      "Physical Facilities, Construction and Repair",
+      "Medications and First Aid Kits",
+      "Poisonous and Toxic/Chemical Substances",
+      "Date Marking and Disposition",
+      "Cooling",
+      "Training Records",
+      "Cold Holding"
+    ]
   }
 ]

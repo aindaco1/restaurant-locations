@@ -112,7 +112,8 @@ class ABQPDFScraper:
             with pdfplumber.open(pdf_bytes) as pdf:
                 # First pass: get summary records with establishments and statuses
                 summary_records = {}
-                for i, page in enumerate(pdf.pages[:2]):  # Summary tables in first 2 pages
+                # Parse ALL pages for summaries (not just first 2)
+                for i, page in enumerate(pdf.pages):
                     text = page.extract_text()
                     if text:
                         page_records = self._parse_summary_page(text)
