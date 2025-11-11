@@ -359,7 +359,11 @@ a {
 
 .severity-pills {
   display: flex;
-  gap: $space--xs;
+  gap: $space--sm;
+  
+  &--mobile-container {
+    gap: 20px;
+  }
 }
 
 .severity-pill {

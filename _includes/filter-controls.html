@@ -55,7 +55,7 @@
         <!-- All filter controls in mobile drawer -->
         <div class="mobile-filter-group">
           <label class="mobile-filter-label">Severity</label>
-          <div class="severity-pills" style="display: flex; gap: 8px;">
+          <div class="severity-pills severity-pills--mobile-container">
             <button 
               @click="toggleSeverity('high')" 
               :class="{ 'active': selectedSeverity.includes('high') }"
