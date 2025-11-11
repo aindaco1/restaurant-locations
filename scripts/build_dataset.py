@@ -21,7 +21,6 @@ from typing import List, Dict
 # Add scripts to path for imports
 sys.path.insert(0, str(Path(__file__).parent))
 
-from fetch_nmed import NMEDFetcher
 from scrape_abq import ABQPDFScraper
 from normalize import normalize_dataset
 
@@ -58,21 +57,10 @@ class DatasetBuilder:
             'files_generated': []
         }
         
-        # Step 1: Fetch NMED data
-        logger.info("\n[1/5] Fetching NMED data...")
-        nmed_file = None
-        try:
-            fetcher = NMEDFetcher()
-            nmed_records = fetcher.fetch_inspections()
-            nmed_file = fetcher.save_raw_data(nmed_records, str(self.output_dir))
-            metadata['nmed_records'] = len(nmed_records)
-        except Exception as e:
-            logger.error(f"NMED fetch failed: {e}")
-            logger.warning("Continuing with empty NMED dataset")
-        
-        # Step 2: Scrape ABQ PDFs
-        logger.info("\n[2/5] Scraping ABQ PDFs...")
+        # Step 1: Scrape ABQ PDFs (only data source)
+        logger.info("\n[1/3] Scraping ABQ PDFs...")
         abq_file = None
+        nmed_file = None
         try:
             scraper = ABQPDFScraper()
             abq_records = scraper.fetch_all_inspections()
@@ -82,13 +70,13 @@ class DatasetBuilder:
             logger.error(f"ABQ scrape failed: {e}")
             logger.warning("Continuing with empty ABQ dataset")
         
-        # Step 3: Normalize data
-        logger.info("\n[3/5] Normalizing data...")
+        # Step 2: Normalize data
+        logger.info("\n[2/3] Normalizing data...")
         normalized = normalize_dataset(nmed_file, abq_file)
         metadata['total_records'] = len(normalized)
         
-        # Step 4: Save datasets
-        logger.info("\n[4/5] Saving datasets...")
+        # Step 3: Save datasets
+        logger.info("\n[3/3] Saving datasets...")
         
         # Save latest dataset
         latest_file = self.output_dir / 'violations_latest.json'
@@ -105,8 +93,8 @@ class DatasetBuilder:
         logger.info(f"Saved monthly snapshot: {snapshot_file}")
         metadata['files_generated'].append(str(snapshot_file))
         
-        # Step 5: Generate manifest
-        logger.info("\n[5/5] Generating manifest...")
+        # Generate manifest
+        logger.info("\nGenerating manifest...")
         manifest = self.generate_manifest(normalized)
         
         manifest_file = self.output_dir / 'manifest.json'
@@ -117,7 +105,6 @@ class DatasetBuilder:
         
         logger.info("\n" + "=" * 60)
         logger.info("Pipeline complete!")
-        logger.info(f"  NMED records: {metadata['nmed_records']}")
         logger.info(f"  ABQ records: {metadata['abq_records']}")
         logger.info(f"  Total normalized: {metadata['total_records']}")
         logger.info("=" * 60)

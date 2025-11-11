@@ -103,11 +103,7 @@ document.addEventListener('alpine:init', () => {
     filterViolations(filters) {
       let result = [...this.violations];
 
-      // Apply filters to individual inspections
-      if (filters.cities && filters.cities.length > 0) {
-        result = result.filter(v => filters.cities.includes(v.establishment.city));
-      }
-
+      // Apply filters to individual inspections (no city filter - all ABQ)
       if (filters.dateRange && filters.dateRange !== 'all') {
         const daysAgo = parseInt(filters.dateRange);
         const cutoffDate = new Date();
@@ -255,19 +251,6 @@ document.addEventListener('alpine:init', () => {
 
   // Filter controls component
   Alpine.data('filterControls', () => ({
-    cities: [
-      'Albuquerque',
-      'Las Cruces',
-      'Rio Rancho',
-      'Santa Fe',
-      'Roswell',
-      'Farmington',
-      'Hobbs',
-      'Clovis',
-      'Carlsbad',
-      'Alamogordo'
-    ],
-    cityFilter: '', // Single city filter (empty = all)
     dateRange: 'all',
     selectedSeverity: [],
     searchQuery: '',
@@ -279,7 +262,6 @@ document.addEventListener('alpine:init', () => {
 
     get activeFilterCount() {
       let count = 0;
-      if (this.cityFilter !== '') count++;
       if (this.dateRange !== 'all') count++;
       if (this.selectedSeverity.length < 3) count++;
       if (this.searchQuery.trim() !== '') count++;
@@ -296,12 +278,7 @@ document.addEventListener('alpine:init', () => {
       this.applyFilters();
     },
 
-    handleCityFilter() {
-      this.applyFilters();
-    },
-
     resetFilters() {
-      this.cityFilter = '';
       this.dateRange = 'all';
       this.selectedSeverity = ['high', 'medium', 'low'];
       this.searchQuery = '';
@@ -309,12 +286,8 @@ document.addEventListener('alpine:init', () => {
     },
 
     applyFilters() {
-      // Build cities array based on filter
-      const cities = this.cityFilter === '' ? this.cities : [this.cityFilter];
-      
-      // Update the global store
+      // Update the global store (no city filter needed - all ABQ)
       Alpine.store('violations').filterViolations({
-        cities: cities,
         dateRange: this.dateRange,
         severity: this.selectedSeverity,
         search: this.searchQuery
