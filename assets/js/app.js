@@ -16,7 +16,7 @@ document.addEventListener('alpine:init', () => {
 
     async loadViolations() {
       try {
-        const baseurl = document.querySelector('meta[name="baseurl"]')?.content || '/restaurant-locations';
+        const baseurl = document.querySelector('meta[name="baseurl"]')?.content || '';
         const response = await fetch(`${baseurl}/data/violations_latest.json`);
         
         if (!response.ok) {
