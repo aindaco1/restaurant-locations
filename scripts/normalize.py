@@ -200,17 +200,30 @@ class ABQNormalizer:
                 'closed': 'closed'
             }
             
+            # Convert violations list (if strings) to Violation objects
+            violations_list = []
+            for v in raw_record.get('violations', []):
+                if isinstance(v, str):
+                    violations_list.append(Violation(code='', critical=False, desc=v))
+                else:
+                    violations_list.append(Violation(
+                        code=v.get('code', ''),
+                        critical=v.get('critical', False),
+                        desc=v.get('desc', '')
+                    ))
+            
             inspection = Inspection(
                 date=raw_record['date'],
                 type='routine',
                 outcome=outcome_map.get(raw_record['outcome'], 'approved'),
-                violations=[
-                    Violation(code=v.get('code', ''), critical=v.get('critical', False), desc=v.get('desc', ''))
-                    for v in raw_record.get('violations', [])
-                ]
+                violations=violations_list
             )
             
             score = SeverityCalculator.calculate(inspection)
+            
+            # Add violations to reasons for better display
+            if violations_list and not score.reasons:
+                score.reasons = [v.desc for v in violations_list[:3]]
             
             record_id = f"abq:{establishment.name.lower().replace(' ', '-')}:{inspection.date}"
             

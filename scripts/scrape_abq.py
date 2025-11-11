@@ -85,7 +85,7 @@ class ABQPDFScraper:
     
     def parse_pdf(self, pdf_url: str) -> List[Dict]:
         """
-        Parse a single PDF and extract inspection records
+        Parse a single PDF and extract inspection records with violations
         
         Args:
             pdf_url: URL to PDF
@@ -103,11 +103,29 @@ class ABQPDFScraper:
             records = []
             
             with pdfplumber.open(pdf_bytes) as pdf:
-                for page in pdf.pages:
+                # First pass: get summary records with establishments and statuses
+                summary_records = {}
+                for i, page in enumerate(pdf.pages[:2]):  # Summary tables in first 2 pages
                     text = page.extract_text()
                     if text:
-                        page_records = self._parse_page_text(text)
-                        records.extend(page_records)
+                        page_records = self._parse_summary_page(text)
+                        for rec in page_records:
+                            key = (rec['name'], rec['date'])
+                            if key not in summary_records or rec['outcome'] != 'approved':
+                                summary_records[key] = rec
+                
+                # Second pass: extract violations from detail pages
+                for page in pdf.pages:
+                    text = page.extract_text()
+                    if text and 'Violation:' in text:
+                        violations = self._extract_violations(text)
+                        # Match violations to establishments
+                        for key, record in summary_records.items():
+                            if record['name'] in text:
+                                record['violations'].extend(violations)
+                                break
+                
+                records = list(summary_records.values())
             
             logger.info(f"Extracted {len(records)} records from {pdf_url}")
             return records
@@ -116,7 +134,20 @@ class ABQPDFScraper:
             logger.error(f"Failed to parse {pdf_url}: {e}")
             return []
     
-    def _parse_page_text(self, text: str) -> List[Dict]:
+    def _extract_violations(self, text: str) -> List[str]:
+        """Extract violation descriptions from detail page"""
+        violations = []
+        lines = text.split('\n')
+        
+        for i, line in enumerate(lines):
+            if line.startswith('Violation:'):
+                # Get the violation category
+                violation_category = line.replace('Violation:', '').strip()
+                violations.append(violation_category)
+        
+        return violations
+    
+    def _parse_summary_page(self, text: str) -> List[Dict]:
         """Parse ABQ PDF - extracts restaurant name, address, date, outcome"""
         records = []
         lines = text.split('\n')
@@ -170,7 +201,7 @@ class ABQPDFScraper:
             weeks_back: How many weeks back to search
         
         Returns:
-            Combined list of all inspection records
+            Combined list of all inspection records (excluding approved-only)
         """
         pdf_urls = self.find_recent_pdfs(weeks_back)
         
@@ -179,17 +210,18 @@ class ABQPDFScraper:
             records = self.parse_pdf(url)
             all_records.extend(records)
         
-        # Deduplicate by (name, address, date)
+        # Deduplicate and filter
         seen = set()
         unique_records = []
         
         for record in all_records:
             key = (record['name'], record['address'], record['date'])
-            if key not in seen:
+            # Only include if not already seen AND not just "approved"
+            if key not in seen and record['outcome'] != 'approved':
                 seen.add(key)
                 unique_records.append(record)
         
-        logger.info(f"Total unique ABQ records: {len(unique_records)}")
+        logger.info(f"Total unique ABQ records (non-approved): {len(unique_records)}")
         return unique_records
     
     def save_raw_data(self, records: List[Dict], output_dir: str = 'data'):

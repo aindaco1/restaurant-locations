@@ -3,19 +3,16 @@
     "name": "AJIACO COLOMBIAN BISTRO",
     "address": "3216 SILVER AVE SE",
     "date": "2025-10-31",
-    "outcome": "approved",
+    "outcome": "conditional",
     "city": "Albuquerque",
     "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "CARLS JR #7447",
-    "address": "1401 RENAISSANCE BLVD NE",
-    "date": "2025-10-28",
-    "outcome": "approved",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
+    "violations": [
+      "Poisonous and Toxic/Chemical Substances",
+      "Use Limitations",
+      "Training Records",
+      "Food Identification, Safe, Unadulterated and Honestly Presented",
+      "Surface Condition"
+    ]
   },
   {
     "name": "CASTLE COFFEE",
@@ -24,7 +21,15 @@
     "outcome": "conditional",
     "city": "Albuquerque",
     "county": "Bernalillo",
-    "violations": []
+    "violations": [
+      "Ventilation and Hood Systems",
+      "Physical Facilities",
+      "Physical Facilities, Cleaning",
+      "Storage",
+      "Surface Not Clean",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Maintenance and Operation"
+    ]
   },
   {
     "name": "CAVEMAN BURGERS & TACOS",
@@ -33,34 +38,29 @@
     "outcome": "failed",
     "city": "Albuquerque",
     "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "CONNIE CHALAMIDAS",
-    "address": "4720 HANNETT NE",
-    "date": "2025-10-30",
-    "outcome": "approved",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "CONTEXT BREWING CO",
-    "address": "816 3RD ST NW",
-    "date": "2025-10-30",
-    "outcome": "approved",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
+    "violations": [
+      "Hot Holding & Reheating",
+      "Date Marking and Disposition",
+      "Training Records",
+      "Surface Not Clean",
+      "Records"
+    ]
   },
   {
     "name": "FILIBERTOS MEXICAN FOOD",
     "address": "4011 CENTRAL AVE NW",
     "date": "2025-10-28",
-    "outcome": "approved",
+    "outcome": "conditional",
     "city": "Albuquerque",
     "county": "Bernalillo",
-    "violations": []
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Date Marking and Disposition",
+      "Maintenance and Operation",
+      "Receptacle Condition",
+      "Cooling",
+      "Training Records"
+    ]
   },
   {
     "name": "FREDDYS FROZEN CUSTARD & STEAKBURGERS",
@@ -69,7 +69,14 @@
     "outcome": "conditional",
     "city": "Albuquerque",
     "county": "Bernalillo",
-    "violations": []
+    "violations": [
+      "Ventilation and Hood Systems",
+      "Food Identification, Safe, Unadulterated and Honestly Presented",
+      "Storage",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Plumbing",
+      "Cold Holding"
+    ]
   },
   {
     "name": "Guava Tree Cafe",
@@ -78,7 +85,11 @@
     "outcome": "failed",
     "city": "Albuquerque",
     "county": "Bernalillo",
-    "violations": []
+    "violations": [
+      "Designated Areas",
+      "Plumbing",
+      "Training Records"
+    ]
   },
   {
     "name": "Guava Tree Cafe",
@@ -96,7 +107,13 @@
     "outcome": "failed",
     "city": "Albuquerque",
     "county": "Bernalillo",
-    "violations": []
+    "violations": [
+      "Pest Control",
+      "Equipment Design",
+      "Plumbing",
+      "Physical Facilities",
+      "Maintenance"
+    ]
   },
   {
     "name": "HUMBLE COFFEE",
@@ -105,7 +122,13 @@
     "outcome": "conditional",
     "city": "Albuquerque",
     "county": "Bernalillo",
-    "violations": []
+    "violations": [
+      "Functionality and Accuracy",
+      "Surface Not Clean",
+      "Physical Facilities, Construction and Repair",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Poisonous and Toxic/Chemical Substances"
+    ]
   },
   {
     "name": "JIMMY JOHNS",
@@ -114,67 +137,17 @@
     "outcome": "failed",
     "city": "Albuquerque",
     "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "JOY LEARNING CENTER",
-    "address": "3200 COORS BLVD NW, H/I",
-    "date": "2025-10-27",
-    "outcome": "approved",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "KELLERS FARM STORE",
-    "address": "2912 EUBANK BLVD NE",
-    "date": "2025-10-29",
-    "outcome": "approved",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "KUNG FU TEA",
-    "address": "4410 WYOMING BLVD NE, H",
-    "date": "2025-10-27",
-    "outcome": "approved",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "LALA BEAN GREEN CAFE LLC",
-    "address": "6239 MONTGOMERY BLVD NE",
-    "date": "2025-10-30",
-    "outcome": "approved",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "LEAF & FLOWER LLC",
-    "address": "6015 4TH ST",
-    "date": "2025-10-29",
-    "outcome": "approved",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "MCDONALDS OF MCMAHON",
-    "address": "5700 MCMAHON BLVD NW",
-    "date": "2025-10-31",
-    "outcome": "approved",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
+    "violations": [
+      "Consumer Advisories",
+      "Physical Facilities, Construction and Repair",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
   },
   {
     "name": "MMRV LLC",
     "address": "DBA Hello Deli - 7600 JEFFERSON AVE NE",
     "date": "2025-10-30",
-    "outcome": "approved",
+    "outcome": "conditional",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": []
@@ -183,135 +156,14 @@
     "name": "M'TUCCI'S CENTRALE",
     "address": "3222 CENTRAL SE",
     "date": "2025-10-27",
-    "outcome": "approved",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "M'TUCCI'S ITALIAN PROVISIONS, LLC DBA M'TUCCI'S ITALIAN MARKET & DELI",
-    "address": "3222 CENTRAL AVE SE,",
-    "date": "2025-10-27",
-    "outcome": "approved",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "O RAMEN AND CURRY HOUSE",
-    "address": "2114 CENTRAL AVE",
-    "date": "2025-10-29",
-    "outcome": "approved",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "ORTIZ CREATIONS INC",
-    "address": "306 SAN FELIPE ST NW",
-    "date": "2025-10-30",
     "outcome": "conditional",
     "city": "Albuquerque",
     "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "PAPA JOHNS\u2019 PIZZA",
-    "address": "2206 CENTRAL AVE SE",
-    "date": "2025-10-29",
-    "outcome": "approved",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "SANTIAGOS TACOS",
-    "address": "1911 EUBANK BLVD NE",
-    "date": "2025-10-30",
-    "outcome": "approved",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "SHAMROCK FOODS WAREHOUSE",
-    "address": "1221 S RENAISSANCE BLVD NE",
-    "date": "2025-10-31",
-    "outcome": "approved",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "SQUEEZED JUICE BAR",
-    "address": "7900 SAN PEDRO DR NE, A12",
-    "date": "2025-10-29",
-    "outcome": "approved",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "STARBUCKS CORP",
-    "address": "6828 SAN MATEO BLVD NE",
-    "date": "2025-10-31",
-    "outcome": "approved",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "STARBUCKS CORP",
-    "address": "6828 SAN MATEO BLVD NE",
-    "date": "2025-10-27",
-    "outcome": "approved",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "STARBUCKS CORP",
-    "address": "6828 SAN MATEO BLVD NE",
-    "date": "2025-10-30",
-    "outcome": "approved",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "ULTRA HEALTH MENAUL",
-    "address": "7401 MENAUL BLVD NE, C",
-    "date": "2025-10-28",
-    "outcome": "approved",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "Waffletopia",
-    "address": "3710 CAMPUS AVE NE",
-    "date": "2025-10-30",
-    "outcome": "approved",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "WAL MART NEIGHBORHOOD MRKT 3385",
-    "address": "9600 SAGE RD SW",
-    "date": "2025-10-27",
-    "outcome": "approved",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "WENDYS",
-    "address": "6204 SAN MATEO BLVD NE",
-    "date": "2025-10-30",
-    "outcome": "approved",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
+    "violations": [
+      "Physical Facilities, Cleaning",
+      "Consumer Advisories",
+      "Physical Facilities, Construction and Repair",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
   }
 ]
