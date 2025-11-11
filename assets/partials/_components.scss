@@ -403,13 +403,12 @@ a {
   }
 
   &--mobile {
-    width: 100%;
-    height: auto;
-    padding: $space--md;
+    flex: 1;
+    height: $size--unit * 5;
+    padding: $space--sm $space--md;
     font-size: $body-small--size;
     font-weight: $weight--semibold;
     justify-content: center;
-    gap: $space--xs;
   }
 }
 

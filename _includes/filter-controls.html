@@ -55,26 +55,23 @@
         <!-- All filter controls in mobile drawer -->
         <div class="mobile-filter-group">
           <label class="mobile-filter-label">Severity</label>
-          <div class="severity-pills" style="display: flex; flex-direction: column; gap: 8px;">
+          <div class="severity-pills" style="display: flex; gap: 8px;">
             <button 
               @click="toggleSeverity('high')" 
               :class="{ 'active': selectedSeverity.includes('high') }"
-              class="severity-pill severity-pill--high severity-pill--mobile"
-              :title="`High severity ${selectedSeverity.includes('high') ? '(active)' : ''}`">
+              class="severity-pill severity-pill--high severity-pill--mobile">
               🔴 High
             </button>
             <button 
               @click="toggleSeverity('medium')" 
               :class="{ 'active': selectedSeverity.includes('medium') }"
-              class="severity-pill severity-pill--medium severity-pill--mobile"
-              :title="`Medium severity ${selectedSeverity.includes('medium') ? '(active)' : ''}`">
-              🟠 Medium
+              class="severity-pill severity-pill--medium severity-pill--mobile">
+              🟠 Med
             </button>
             <button 
               @click="toggleSeverity('low')" 
               :class="{ 'active': selectedSeverity.includes('low') }"
-              class="severity-pill severity-pill--low severity-pill--mobile"
-              :title="`Low severity ${selectedSeverity.includes('low') ? '(active)' : ''}`">
+              class="severity-pill severity-pill--low severity-pill--mobile">
               🟡 Low
             </button>
           </div>
