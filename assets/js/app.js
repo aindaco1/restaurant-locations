@@ -112,6 +112,10 @@ document.addEventListener('alpine:init', () => {
     },
 
     sortViolations() {
+      if (!this.filteredViolations || this.filteredViolations.length === 0) {
+        return;
+      }
+
       const sorted = [...this.filteredViolations];
       
       switch (this.sortBy) {
@@ -121,6 +125,7 @@ document.addEventListener('alpine:init', () => {
         case 'date':
           // Sort by most recent inspection
           sorted.sort((a, b) => {
+            if (!a.inspections || !b.inspections) return 0;
             const aDate = new Date(Math.max(...a.inspections.map(i => new Date(i.date))));
             const bDate = new Date(Math.max(...b.inspections.map(i => new Date(i.date))));
             return bDate - aDate;
@@ -133,7 +138,9 @@ document.addEventListener('alpine:init', () => {
       
       // Sort inspections within each restaurant by date (most recent first)
       sorted.forEach(restaurant => {
-        restaurant.inspections.sort((a, b) => new Date(b.date) - new Date(a.date));
+        if (restaurant.inspections) {
+          restaurant.inspections.sort((a, b) => new Date(b.date) - new Date(a.date));
+        }
       });
       
       this.filteredViolations = sorted;
