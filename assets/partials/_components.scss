@@ -541,6 +541,42 @@ a {
     color: $text--muted;
     margin: 0;
   }
+
+  &__score {
+    font-size: $body-small--size;
+    font-weight: $weight--semibold;
+    color: $text--default;
+    margin: $space--xs 0 0 0;
+  }
+}
+
+// ===== Status Tags =====
+
+.status-tag {
+  display: inline-flex;
+  align-items: center;
+  height: 20px;
+  padding: 0 $space--sm;
+  border-radius: $radius--sm;
+  font-size: 10px;
+  font-weight: $weight--bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  &--closed {
+    background: $color--danger;
+    color: $text--inverse;
+    animation: pulse 2s infinite;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
 }
 
 // ===== Inspection Sub-cards =====
