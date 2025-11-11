@@ -27,7 +27,7 @@
     color: $text--muted;
 
     @include sm {
-      font-size: 10px;
+      font-size: 9px;
     }
 
     &--closed .status-key__label {
