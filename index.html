@@ -7,25 +7,22 @@ title: NM Health Code Violations
   <p class="page-title__subtitle">
     Find restaurants with recent health code violations across NM's 10 biggest cities
   </p>
-  
-  <!-- Status Key -->
-  <details class="status-key">
-    <summary class="status-key__toggle">What do these statuses mean?</summary>
-    <div class="status-key__content">
-      <div class="status-key__item">
-        <strong>Conditional Approved:</strong> Violations found, but facility can operate while correcting them. Must take corrective action.
-      </div>
-      <div class="status-key__item">
-        <strong>Unsatisfactory Re-Inspection Required:</strong> Serious violations found. Facility can temporarily operate but must be re-inspected soon.
-      </div>
-      <div class="status-key__item">
-        <strong>Closure Re-Inspection Required:</strong> Critical violations. Facility must close and cannot reopen until passing re-inspection.
-      </div>
-      <div class="status-key__item">
-        <strong>CLOSED tag:</strong> Facility's operational status is currently closed (based on most recent inspection).
-      </div>
-    </div>
-  </details>
+</div>
+
+<!-- Status Key (always visible) -->
+<div class="status-key">
+  <div class="status-key__item">
+    <span class="status-key__label">Conditional:</span> Can operate, must correct violations
+  </div>
+  <div class="status-key__item">
+    <span class="status-key__label">Unsatisfactory:</span> Serious violations, re-inspection required
+  </div>
+  <div class="status-key__item">
+    <span class="status-key__label">Closure Required:</span> Must close until passing re-inspection
+  </div>
+  <div class="status-key__item status-key__item--closed">
+    <span class="status-key__label">CLOSED:</span> Currently not operating
+  </div>
 </div>
 
 <!-- Unified Filter & Control Bar -->

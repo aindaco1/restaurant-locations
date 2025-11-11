@@ -45,7 +45,7 @@ document.addEventListener('alpine:init', () => {
         const key = `${v.establishment.name.toLowerCase().trim()}`;
         if (!grouped[key]) {
           grouped[key] = {
-            name: v.establishment.name,
+            name: this.toTitleCase(v.establishment.name),
             address: v.establishment.address,
             city: v.establishment.city,
             inspections: [],
@@ -146,6 +146,22 @@ document.addEventListener('alpine:init', () => {
       return 'low';
     },
 
+    toTitleCase(str) {
+      return str.toLowerCase().split(' ').map(word => {
+        // Keep abbreviations and special cases uppercase
+        if (word.match(/^(llc|inc|dba|nw|ne|sw|se)$/i)) {
+          return word.toUpperCase();
+        }
+        // Handle hyphenated words
+        if (word.includes('-')) {
+          return word.split('-').map(part => 
+            part.charAt(0).toUpperCase() + part.slice(1)
+          ).join('-');
+        }
+        return word.charAt(0).toUpperCase() + word.slice(1);
+      }).join(' ');
+    },
+
     sortViolations() {
       if (!this.filteredViolations || this.filteredViolations.length === 0) {
         return;
@@ -155,7 +171,17 @@ document.addEventListener('alpine:init', () => {
       
       switch (this.sortBy) {
         case 'severity':
-          sorted.sort((a, b) => b.score - a.score);
+          sorted.sort((a, b) => {
+            // Primary sort by score
+            if (b.score !== a.score) {
+              return b.score - a.score;
+            }
+            // Tie-breaker: closed restaurants first
+            if (a.isClosed !== b.isClosed) {
+              return b.isClosed ? 1 : -1;
+            }
+            return 0;
+          });
           break;
         case 'date':
           // Sort by most recent inspection

@@ -33,13 +33,21 @@
   .restaurant-card,
   .empty-state,
   .mobile-filter-drawer__content,
-  .status-key__content {
+  .status-key {
     background: #1a1a1a;
     border-color: #333333;
   }
 
-  .status-key__toggle {
-    color: #ffffff;
+  .status-key__label {
+    color: #f5f5f5;
+  }
+
+  .status-key__item {
+    color: #b8b8b8;
+
+    &--closed .status-key__label {
+      color: #ff6b6b;
+    }
   }
 
   // Restaurant card specific

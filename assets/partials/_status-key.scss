@@ -1,42 +1,37 @@
-// Status Key (explanation dropdown)
+// Status Key (always visible, compact)
 
 .status-key {
-  margin-top: $space--md;
-  text-align: left;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $space--md;
+  margin-bottom: $space--lg;
+  padding: $space--md;
+  background: $color--white;
+  border: 1px solid $color--light;
+  border-radius: $radius--md;
+  font-size: $caption--size;
 
-  &__toggle {
-    cursor: pointer;
-    font-size: $body-small--size;
-    color: $color--primary;
-    font-weight: $weight--semibold;
+  @include sm {
+    gap: $space--sm;
     padding: $space--sm;
-    
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  &__content {
-    margin-top: $space--md;
-    padding: $space--md;
-    background: $color--white;
-    border: 1px solid $color--light;
-    border-radius: $radius--md;
-    font-size: $body-small--size;
   }
 
   &__item {
-    margin-bottom: $space--sm;
-    
-    &:last-child {
-      margin-bottom: 0;
-    }
+    display: flex;
+    align-items: center;
+    gap: $space--xs;
+    white-space: nowrap;
+    color: $text--muted;
 
-    strong {
-      color: $text--default;
+    &--closed .status-key__label {
+      color: $color--danger;
+      font-weight: $weight--bold;
     }
+  }
+
+  &__label {
+    font-weight: $weight--semibold;
+    color: $text--default;
   }
 }
