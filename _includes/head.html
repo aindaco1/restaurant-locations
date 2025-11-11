@@ -12,7 +12,10 @@
   <!-- Preconnect to CDN for performance -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   
-  <!-- Alpine.js MUST load before app.js -->
+  <!-- Load app.js BEFORE Alpine.js so components are registered -->
+  <script src="{{ '/assets/js/app.js' | relative_url }}" defer></script>
+  
+  <!-- Alpine.js must load AFTER app.js -->
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   
   {% feed_meta %}
