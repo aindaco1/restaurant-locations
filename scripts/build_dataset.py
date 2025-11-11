@@ -78,12 +78,30 @@ class DatasetBuilder:
         # Step 3: Save datasets
         logger.info("\n[3/3] Saving datasets...")
         
-        # Save latest dataset
+        # Load existing data to merge (accumulate over time)
         latest_file = self.output_dir / 'violations_latest.json'
+        existing_data = []
+        if latest_file.exists():
+            try:
+                with open(latest_file, 'r') as f:
+                    existing_data = json.load(f)
+                logger.info(f"Loaded {len(existing_data)} existing records")
+            except Exception as e:
+                logger.warning(f"Could not load existing data: {e}")
+        
+        # Merge with new data (deduplicate by ID)
+        existing_ids = {record['id'] for record in existing_data}
+        new_records = [record for record in normalized if record['id'] not in existing_ids]
+        
+        merged_data = existing_data + new_records
+        logger.info(f"Added {len(new_records)} new records, total: {len(merged_data)}")
+        
+        # Save merged dataset
         with open(latest_file, 'w') as f:
-            json.dump(normalized, f, indent=2)
+            json.dump(merged_data, f, indent=2)
         logger.info(f"Saved latest dataset: {latest_file}")
         metadata['files_generated'].append(str(latest_file))
+        metadata['total_records'] = len(merged_data)
         
         # Save monthly snapshot
         now = datetime.now()

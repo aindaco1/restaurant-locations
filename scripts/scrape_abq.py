@@ -214,12 +214,13 @@ class ABQPDFScraper:
         
         return records
     
-    def fetch_all_inspections(self, weeks_back: int = 12) -> List[Dict]:
+    def fetch_all_inspections(self, weeks_back: int = 52) -> List[Dict]:
         """
         Fetch and parse all available inspection PDFs
         
         Returns ALL inspections, including approved follow-ups.
         Frontend will group by restaurant and determine status.
+        Accumulates historical data over time.
         """
         pdf_urls = self.find_recent_pdfs(weeks_back)
         
