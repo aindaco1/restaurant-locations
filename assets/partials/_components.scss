@@ -32,10 +32,12 @@ h1, h2, h3, h4, h5, h6, h1 a {
 }
 
 h1, h1 a { 
-  font-size: $h1--size; 
+  font-size: $body-small--size;
+  line-height: 1;
+  margin: 0;
   
   @include sm {
-    font-size: $h2--size;
+    font-size: $size--unit * 2.75;
   }
 }
 h2 { @include heading-2; }
