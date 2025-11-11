@@ -149,7 +149,7 @@ a {
     color: $text--muted;
     
     @include sm {
-      font-size: $body--size;
+      font-size: $size--unit * 2;
     }
   }
 }
