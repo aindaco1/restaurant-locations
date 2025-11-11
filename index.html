@@ -10,11 +10,11 @@ title: NM Health Code Violations
   </p>
 </div>
 
-<!-- Toolbar with sort and export -->
-<div class="toolbar" x-data="violationsList()">
+<!-- Toolbar with sort and export (shared data with violations list below) -->
+<div class="toolbar" x-data="{ get violations() { return Alpine.store('violations') } }">
   <div class="toolbar__section">
     <span class="toolbar__label">Sort by:</span>
-    <select @change="changeSortOrder($event.target.value)" class="select" style="width: auto;">
+    <select x-model="$store.violations.sortBy" @change="$store.violations.sortViolations()" class="select" style="width: auto;">
       <option value="severity">Severity (High to Low)</option>
       <option value="date">Most Recent</option>
       <option value="name">Name (A-Z)</option>
@@ -22,11 +22,11 @@ title: NM Health Code Violations
   </div>
   
   <div class="toolbar__section">
-    <span class="toolbar__label" x-text="`${filteredViolations.length} results`"></span>
-    <button @click="exportToCSV" class="btn btn--small btn--secondary">
+    <span class="toolbar__label" x-text="`${$store.violations.filteredViolations.length} results`"></span>
+    <button @click="$store.violations.exportToCSV()" class="btn btn--small btn--secondary">
       📥 Export CSV
     </button>
-    <button @click="exportToJSON" class="btn btn--small btn--secondary">
+    <button @click="$store.violations.exportToJSON()" class="btn btn--small btn--secondary">
       📥 Export JSON
     </button>
   </div>
@@ -58,7 +58,7 @@ title: NM Health Code Violations
   </template>
   
   <!-- Empty State (no results) -->
-  <template x-if="!loading && !error && filteredViolations.length === 0">
+  <template x-if="!loading && !error && violations.length === 0">
     <div class="empty-state">
       <div class="empty-state__icon">🔍</div>
       <h3 class="empty-state__message">No violations found</h3>
@@ -67,7 +67,7 @@ title: NM Health Code Violations
   </template>
   
   <!-- Violations Cards -->
-  <template x-for="violation in filteredViolations" :key="violation.id">
+  <template x-for="violation in violations" :key="violation.id">
     <article class="violation-card">
       <div>
         <div class="violation-card__header">

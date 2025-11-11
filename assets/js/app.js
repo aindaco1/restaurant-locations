@@ -2,54 +2,8 @@
 // Uses Alpine.js for reactive UI
 
 document.addEventListener('alpine:init', () => {
-  // Filter controls component
-  Alpine.data('filterControls', () => ({
-    cities: [
-      'Albuquerque',
-      'Las Cruces',
-      'Rio Rancho',
-      'Santa Fe',
-      'Roswell',
-      'Farmington',
-      'Hobbs',
-      'Clovis',
-      'Carlsbad',
-      'Alamogordo'
-    ],
-    selectedCities: [],
-    dateRange: '365',
-    selectedSeverity: [],
-    searchQuery: '',
-
-    init() {
-      // Initialize with all cities selected
-      this.selectedCities = [...this.cities];
-      this.selectedSeverity = ['high', 'medium', 'low'];
-    },
-
-    resetFilters() {
-      this.selectedCities = [...this.cities];
-      this.dateRange = '365';
-      this.selectedSeverity = ['high', 'medium', 'low'];
-      this.searchQuery = '';
-      this.applyFilters();
-    },
-
-    applyFilters() {
-      // Dispatch custom event for violation list to listen to
-      window.dispatchEvent(new CustomEvent('filters-changed', {
-        detail: {
-          cities: this.selectedCities,
-          dateRange: this.dateRange,
-          severity: this.selectedSeverity,
-          search: this.searchQuery
-        }
-      }));
-    }
-  }));
-
-  // Violations list component
-  Alpine.data('violationsList', () => ({
+  // Global store for violations data (shared between toolbar and list)
+  Alpine.store('violations', {
     violations: [],
     filteredViolations: [],
     sortBy: 'severity',
@@ -58,16 +12,10 @@ document.addEventListener('alpine:init', () => {
 
     async init() {
       await this.loadViolations();
-      
-      // Listen for filter changes
-      window.addEventListener('filters-changed', (e) => {
-        this.filterViolations(e.detail);
-      });
     },
 
     async loadViolations() {
       try {
-        // Get baseurl from page meta tag or default to /restaurant-locations
         const baseurl = document.querySelector('meta[name="baseurl"]')?.content || '/restaurant-locations';
         const response = await fetch(`${baseurl}/data/violations_latest.json`);
         
@@ -79,11 +27,11 @@ document.addEventListener('alpine:init', () => {
         this.violations = data;
         this.filteredViolations = [...data];
         this.loading = false;
+        this.sortViolations();
       } catch (error) {
         console.error('Failed to load violations:', error);
         this.error = error.message;
         this.loading = false;
-        // Use empty array for demo
         this.violations = [];
         this.filteredViolations = [];
       }
@@ -92,14 +40,10 @@ document.addEventListener('alpine:init', () => {
     filterViolations(filters) {
       let result = [...this.violations];
 
-      // Filter by city
       if (filters.cities && filters.cities.length > 0) {
-        result = result.filter(v => 
-          filters.cities.includes(v.establishment.city)
-        );
+        result = result.filter(v => filters.cities.includes(v.establishment.city));
       }
 
-      // Filter by date range
       if (filters.dateRange && filters.dateRange !== 'all') {
         const daysAgo = parseInt(filters.dateRange);
         const cutoffDate = new Date();
@@ -111,7 +55,6 @@ document.addEventListener('alpine:init', () => {
         });
       }
 
-      // Filter by severity
       if (filters.severity && filters.severity.length > 0) {
         result = result.filter(v => {
           const severity = this.getSeverityLevel(v.score.severity);
@@ -119,7 +62,6 @@ document.addEventListener('alpine:init', () => {
         });
       }
 
-      // Filter by search query
       if (filters.search && filters.search.trim() !== '') {
         const query = filters.search.toLowerCase();
         result = result.filter(v =>
@@ -146,23 +88,14 @@ document.addEventListener('alpine:init', () => {
           sorted.sort((a, b) => b.score.severity - a.score.severity);
           break;
         case 'date':
-          sorted.sort((a, b) => 
-            new Date(b.inspection.date) - new Date(a.inspection.date)
-          );
+          sorted.sort((a, b) => new Date(b.inspection.date) - new Date(a.inspection.date));
           break;
         case 'name':
-          sorted.sort((a, b) => 
-            a.establishment.name.localeCompare(b.establishment.name)
-          );
+          sorted.sort((a, b) => a.establishment.name.localeCompare(b.establishment.name));
           break;
       }
       
       this.filteredViolations = sorted;
-    },
-
-    changeSortOrder(order) {
-      this.sortBy = order;
-      this.sortViolations();
     },
 
     exportToCSV() {
@@ -200,6 +133,69 @@ document.addEventListener('alpine:init', () => {
       link.click();
       document.body.removeChild(link);
       URL.revokeObjectURL(url);
+    }
+  });
+
+  // Initialize the store
+  Alpine.store('violations').init();
+
+  // Filter controls component
+  Alpine.data('filterControls', () => ({
+    cities: [
+      'Albuquerque',
+      'Las Cruces',
+      'Rio Rancho',
+      'Santa Fe',
+      'Roswell',
+      'Farmington',
+      'Hobbs',
+      'Clovis',
+      'Carlsbad',
+      'Alamogordo'
+    ],
+    selectedCities: [],
+    dateRange: '365',
+    selectedSeverity: [],
+    searchQuery: '',
+
+    init() {
+      // Initialize with all cities selected
+      this.selectedCities = [...this.cities];
+      this.selectedSeverity = ['high', 'medium', 'low'];
+    },
+
+    resetFilters() {
+      this.selectedCities = [...this.cities];
+      this.dateRange = '365';
+      this.selectedSeverity = ['high', 'medium', 'low'];
+      this.searchQuery = '';
+      this.applyFilters();
+    },
+
+    applyFilters() {
+      // Update the global store
+      Alpine.store('violations').filterViolations({
+        cities: this.selectedCities,
+        dateRange: this.dateRange,
+        severity: this.selectedSeverity,
+        search: this.searchQuery
+      });
+    }
+  }));
+
+  // Violations list component (simplified - uses store)
+  Alpine.data('violationsList', () => ({
+    get violations() {
+      return Alpine.store('violations').filteredViolations;
+    },
+    get loading() {
+      return Alpine.store('violations').loading;
+    },
+    get error() {
+      return Alpine.store('violations').error;
+    },
+    getSeverityLevel(score) {
+      return Alpine.store('violations').getSeverityLevel(score);
     }
   }));
 });

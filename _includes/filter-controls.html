@@ -12,18 +12,19 @@
   <!-- City Filter -->
   <div class="filter-panel__group">
     <label class="filter-panel__label">City</label>
-    <div class="filter-panel__controls">
+    <select 
+      x-model="selectedCities" 
+      @change="applyFilters" 
+      class="select"
+      multiple
+      size="4"
+      style="height: auto; min-height: 100px;"
+      aria-label="Select cities">
       <template x-for="city in cities" :key="city">
-        <label class="checkbox">
-          <input 
-            type="checkbox" 
-            :value="city" 
-            x-model="selectedCities"
-            @change="applyFilters">
-          <span class="checkbox__label" x-text="city"></span>
-        </label>
+        <option :value="city" x-text="city"></option>
       </template>
-    </div>
+    </select>
+    <small style="display: block; margin-top: 4px; color: #757575;">Hold Cmd/Ctrl to select multiple</small>
   </div>
   
   <!-- Date Range Filter -->
@@ -45,7 +46,7 @@
   <!-- Severity Filter -->
   <div class="filter-panel__group">
     <label class="filter-panel__label">Severity</label>
-    <div class="filter-panel__controls">
+    <div class="filter-panel__controls" style="display: flex; gap: 8px; flex-wrap: wrap;">
       <label class="checkbox">
         <input type="checkbox" value="high" x-model="selectedSeverity" @change="applyFilters">
         <span class="checkbox__label">🔴 High</span>
