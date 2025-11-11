@@ -147,6 +147,10 @@ a {
   &__subtitle {
     @include body-text;
     color: $text--muted;
+    
+    @include sm {
+      font-size: $body--size;
+    }
   }
 }
 
