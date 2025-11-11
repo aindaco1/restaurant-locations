@@ -14,7 +14,9 @@
 
   @include sm {
     gap: $space--sm;
-    padding: $space--sm;
+    padding: $space--md;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   &__item {
