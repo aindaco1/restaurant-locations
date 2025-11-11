@@ -10,8 +10,8 @@ document.addEventListener('alpine:init', () => {
     loading: true,
     error: null,
 
-    async init() {
-      await this.loadViolations();
+    init() {
+      this.loadViolations();
     },
 
     async loadViolations() {
@@ -190,10 +190,7 @@ document.addEventListener('alpine:init', () => {
     }
   });
 
-  // Initialize store data after Alpine is ready
-  queueMicrotask(() => {
-    Alpine.store('violations').init();
-  });
+  // No need for queueMicrotask - Alpine handles this
 
   // Filter controls component
   Alpine.data('filterControls', () => ({

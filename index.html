@@ -13,7 +13,7 @@ title: NM Health Code Violations
 {% include filter-controls.html %}
 
 <!-- Violations List -->
-<div class="violations" x-data="violationsList()">
+<div class="violations" x-data="violationsList()" x-init="$store.violations.init()">
   <!-- Loading State -->
   <template x-if="loading">
     <div class="empty-state">
