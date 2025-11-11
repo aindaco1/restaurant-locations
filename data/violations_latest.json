@@ -1,1 +1,990 @@
-[]
+[
+  {
+    "id": "abq:ajiaco-colombian-bistro:2025-10-31",
+    "source": "ABQ",
+    "establishment": {
+      "name": "AJIACO COLOMBIAN BISTRO",
+      "address": "3216 SILVER AVE SE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-31",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:carls-jr-#7447:2025-10-28",
+    "source": "ABQ",
+    "establishment": {
+      "name": "CARLS JR #7447",
+      "address": "1401 RENAISSANCE BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-28",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:castle-coffee:2025-10-31",
+    "source": "ABQ",
+    "establishment": {
+      "name": "CASTLE COFFEE",
+      "address": "727 TIJERAS AVE NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-31",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": []
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:caveman-burgers-&-tacos:2025-10-31",
+    "source": "ABQ",
+    "establishment": {
+      "name": "CAVEMAN BURGERS & TACOS",
+      "address": "6205 CENTRAL AVE NW, 5",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-31",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:connie-chalamidas:2025-10-30",
+    "source": "ABQ",
+    "establishment": {
+      "name": "CONNIE CHALAMIDAS",
+      "address": "4720 HANNETT NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-30",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:context-brewing-co:2025-10-30",
+    "source": "ABQ",
+    "establishment": {
+      "name": "CONTEXT BREWING CO",
+      "address": "816 3RD ST NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-30",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:filibertos-mexican-food:2025-10-28",
+    "source": "ABQ",
+    "establishment": {
+      "name": "FILIBERTOS MEXICAN FOOD",
+      "address": "4011 CENTRAL AVE NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-28",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:freddys-frozen-custard-&-steakburgers:2025-10-31",
+    "source": "ABQ",
+    "establishment": {
+      "name": "FREDDYS FROZEN CUSTARD & STEAKBURGERS",
+      "address": "10701 CORRALES RD, A-1",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-31",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": []
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:guava-tree-cafe:2025-10-31",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Guava Tree Cafe",
+      "address": "118 RICHMOND DR NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-31",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:guava-tree-cafe:2025-10-29",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Guava Tree Cafe",
+      "address": "118 RICHMOND DR NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-29",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:hong-kong-buffet:2025-10-30",
+    "source": "ABQ",
+    "establishment": {
+      "name": "HONG KONG BUFFET",
+      "address": "10100 COORS BLVD NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-30",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:humble-coffee:2025-10-29",
+    "source": "ABQ",
+    "establishment": {
+      "name": "HUMBLE COFFEE",
+      "address": "505 CENTRAL AVE NW, C",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-29",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": []
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:jimmy-johns:2025-10-28",
+    "source": "ABQ",
+    "establishment": {
+      "name": "JIMMY JOHNS",
+      "address": "401 EUBANK BLVD SE, A",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-28",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:joy-learning-center:2025-10-27",
+    "source": "ABQ",
+    "establishment": {
+      "name": "JOY LEARNING CENTER",
+      "address": "3200 COORS BLVD NW, H/I",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-27",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:kellers-farm-store:2025-10-29",
+    "source": "ABQ",
+    "establishment": {
+      "name": "KELLERS FARM STORE",
+      "address": "2912 EUBANK BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-29",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:kung-fu-tea:2025-10-27",
+    "source": "ABQ",
+    "establishment": {
+      "name": "KUNG FU TEA",
+      "address": "4410 WYOMING BLVD NE, H",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-27",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:lala-bean-green-cafe-llc:2025-10-30",
+    "source": "ABQ",
+    "establishment": {
+      "name": "LALA BEAN GREEN CAFE LLC",
+      "address": "6239 MONTGOMERY BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-30",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:leaf-&-flower-llc:2025-10-29",
+    "source": "ABQ",
+    "establishment": {
+      "name": "LEAF & FLOWER LLC",
+      "address": "6015 4TH ST",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-29",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:mcdonalds-of-mcmahon:2025-10-31",
+    "source": "ABQ",
+    "establishment": {
+      "name": "MCDONALDS OF MCMAHON",
+      "address": "5700 MCMAHON BLVD NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-31",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:mmrv-llc:2025-10-30",
+    "source": "ABQ",
+    "establishment": {
+      "name": "MMRV LLC",
+      "address": "DBA Hello Deli - 7600 JEFFERSON AVE NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-30",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:m'tucci's-centrale:2025-10-27",
+    "source": "ABQ",
+    "establishment": {
+      "name": "M'TUCCI'S CENTRALE",
+      "address": "3222 CENTRAL SE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-27",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:m'tucci's-italian-provisions,-llc-dba-m'tucci's-italian-market-&-deli:2025-10-27",
+    "source": "ABQ",
+    "establishment": {
+      "name": "M'TUCCI'S ITALIAN PROVISIONS, LLC DBA M'TUCCI'S ITALIAN MARKET & DELI",
+      "address": "3222 CENTRAL AVE SE,",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-27",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:o-ramen-and-curry-house:2025-10-29",
+    "source": "ABQ",
+    "establishment": {
+      "name": "O RAMEN AND CURRY HOUSE",
+      "address": "2114 CENTRAL AVE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-29",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:ortiz-creations-inc:2025-10-30",
+    "source": "ABQ",
+    "establishment": {
+      "name": "ORTIZ CREATIONS INC",
+      "address": "306 SAN FELIPE ST NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-30",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": []
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:papa-johns\u2019-pizza:2025-10-29",
+    "source": "ABQ",
+    "establishment": {
+      "name": "PAPA JOHNS\u2019 PIZZA",
+      "address": "2206 CENTRAL AVE SE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-29",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:santiagos-tacos:2025-10-30",
+    "source": "ABQ",
+    "establishment": {
+      "name": "SANTIAGOS TACOS",
+      "address": "1911 EUBANK BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-30",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:shamrock-foods-warehouse:2025-10-31",
+    "source": "ABQ",
+    "establishment": {
+      "name": "SHAMROCK FOODS WAREHOUSE",
+      "address": "1221 S RENAISSANCE BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-31",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:squeezed-juice-bar:2025-10-29",
+    "source": "ABQ",
+    "establishment": {
+      "name": "SQUEEZED JUICE BAR",
+      "address": "7900 SAN PEDRO DR NE, A12",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-29",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:starbucks-corp:2025-10-31",
+    "source": "ABQ",
+    "establishment": {
+      "name": "STARBUCKS CORP",
+      "address": "6828 SAN MATEO BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-31",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:starbucks-corp:2025-10-27",
+    "source": "ABQ",
+    "establishment": {
+      "name": "STARBUCKS CORP",
+      "address": "6828 SAN MATEO BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-27",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:starbucks-corp:2025-10-30",
+    "source": "ABQ",
+    "establishment": {
+      "name": "STARBUCKS CORP",
+      "address": "6828 SAN MATEO BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-30",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:ultra-health-menaul:2025-10-28",
+    "source": "ABQ",
+    "establishment": {
+      "name": "ULTRA HEALTH MENAUL",
+      "address": "7401 MENAUL BLVD NE, C",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-28",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:waffletopia:2025-10-30",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Waffletopia",
+      "address": "3710 CAMPUS AVE NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-30",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:wal-mart-neighborhood-mrkt-3385:2025-10-27",
+    "source": "ABQ",
+    "establishment": {
+      "name": "WAL MART NEIGHBORHOOD MRKT 3385",
+      "address": "9600 SAGE RD SW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-27",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  },
+  {
+    "id": "abq:wendys:2025-10-30",
+    "source": "ABQ",
+    "establishment": {
+      "name": "WENDYS",
+      "address": "6204 SAN MATEO BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-10-30",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    }
+  }
+]

@@ -117,58 +117,48 @@ class ABQPDFScraper:
             return []
     
     def _parse_page_text(self, text: str) -> List[Dict]:
-        """
-        Parse text extracted from PDF page
-        
-        This is a template - actual implementation depends on ABQ PDF format
-        Common formats include:
-        - Tabular data
-        - Line-by-line records
-        - Structured sections
-        """
+        """Parse ABQ PDF - extracts restaurant name, address, date, outcome"""
         records = []
-        
-        # Example pattern (adjust based on actual PDF format):
-        # "Restaurant Name | Address | Date | Outcome | Violations"
-        
         lines = text.split('\n')
         
+        current_establishment = None
+        current_address = None
+        
         for line in lines:
-            # Skip headers and empty lines
-            if not line.strip() or 'ESTABLISHMENT' in line.upper():
-                continue
+            line = line.strip()
             
-            # Attempt to parse structured data
-            # This is a simplified example - real implementation needs PDF analysis
-            match = re.match(
-                r'(.+?)\s+(\d+\s+\w+.*?)\s+(\d{1,2}/\d{1,2}/\d{2,4})\s+(PASS|FAIL|CONDITIONAL|CLOSED)',
-                line,
-                re.IGNORECASE
-            )
+            # Establishment name pattern: "NAME - ADDRESS"
+            if ' - ' in line and not any(x in line for x in ['Inspection', 'Food', 'Permit', 'Operational']):
+                parts = line.split(' - ', 1)
+                if len(parts) == 2:
+                    current_establishment = parts[0].strip()
+                    current_address = parts[1].strip()
             
-            if match:
-                name, address, date_str, outcome = match.groups()
+            # Inspection record: starts with date MM/DD/YYYY
+            elif re.match(r'\d{1,2}/\d{1,2}/\d{4}', line) and current_establishment:
+                date_str = line.split()[0]
                 
-                # Parse date
+                status = 'approved'
+                if 'Conditional' in line:
+                    status = 'conditional'
+                elif 'Unsatisfactory' in line or 'Re-Inspection' in line:
+                    status = 'failed'
+                elif 'Closed' in line:
+                    status = 'closed'
+                
                 try:
                     inspection_date = datetime.strptime(date_str, '%m/%d/%Y')
+                    records.append({
+                        'name': current_establishment,
+                        'address': current_address or '',
+                        'date': inspection_date.strftime('%Y-%m-%d'),
+                        'outcome': status,
+                        'city': 'Albuquerque',
+                        'county': 'Bernalillo',
+                        'violations': []
+                    })
                 except ValueError:
-                    try:
-                        inspection_date = datetime.strptime(date_str, '%m/%d/%y')
-                    except ValueError:
-                        continue
-                
-                record = {
-                    'name': name.strip(),
-                    'address': address.strip(),
-                    'date': inspection_date.strftime('%Y-%m-%d'),
-                    'outcome': outcome.lower(),
-                    'city': 'Albuquerque',
-                    'county': 'Bernalillo',
-                    'violations': []  # Would need additional parsing
-                }
-                
-                records.append(record)
+                    pass
         
         return records
     
