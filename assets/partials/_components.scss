@@ -23,6 +23,7 @@ body {
   line-height: $line-height--relaxed;
   color: $text--default;
   background-color: $color--background;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3, h4, h5, h6, h1 a {
@@ -48,12 +49,12 @@ p {
 }
 
 a {
-  color: $color--primary;
+  color: $text--default;
   text-decoration: none;
   transition: color $transition--fast;
 
   &:hover {
-    color: darken($color--primary, 15%);
+    color: $text--muted;
     text-decoration: underline;
   }
 
@@ -70,15 +71,16 @@ a {
   z-index: $z--sticky;
   width: 100%;
   min-height: $header--height;
-  background: $header--bg;
-  border-bottom: 1px solid $header--border;
+  background: var(--color-header-bg);
+  border-bottom: 1px solid $color--light;
   box-shadow: $shadow--sm;
+  transition: background-color 0.3s ease;
 
   &__container {
     @include container;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     min-height: $header--height;
     padding-top: $space--md;
     padding-bottom: $space--md;
@@ -88,6 +90,8 @@ a {
     display: flex;
     align-items: center;
     gap: $space--sm;
+    flex: 1;
+    justify-content: center;
 
     &--centered {
       justify-content: center;
@@ -325,9 +329,10 @@ a {
 .filter-bar {
   margin-bottom: $space--lg;
   padding: $space--md;
-  background: $color--white;
+  background: $color--surface;
   border-radius: $radius--md;
   border: 1px solid $color--light;
+  transition: background-color 0.3s ease;
 
   @include sm {
     display: none;
@@ -511,6 +516,8 @@ a {
   grid-template-columns: 1fr auto;
   gap: $space--lg;
   align-items: start;
+  background: $color--surface;
+  transition: background-color 0.3s ease;
 
   @include sm {
     grid-template-columns: 1fr;

@@ -8,5 +8,15 @@
         </a>
       </h1>
     </div>
+    
+    <!-- Theme Toggle -->
+    <button 
+      @click="$store.theme.toggle()"
+      class="theme-toggle"
+      :aria-label="$store.theme.isDark ? 'Switch to light mode' : 'Switch to dark mode'"
+      x-data>
+      <span x-show="$store.theme.isDark">☀️</span>
+      <span x-show="!$store.theme.isDark">🌙</span>
+    </button>
   </div>
 </header>
