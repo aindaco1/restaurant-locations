@@ -573,7 +573,6 @@ a {
 .footer {
   margin-top: $section--gap;
   padding: $space--xl 0;
-  border-top: 1px solid $color--light;
   text-align: center;
 
   &__container {
@@ -581,19 +580,9 @@ a {
   }
 
   &__text {
-    @include body-small;
-    color: $text--muted;
-  }
-
-  &__links {
-    display: flex;
-    justify-content: center;
-    gap: $space--lg;
-    margin-top: $space--md;
-
-    a {
-      @include body-small;
-    }
+    font-size: $body-small--size;
+    color: $text--default;
+    margin: 0;
   }
 }
 
