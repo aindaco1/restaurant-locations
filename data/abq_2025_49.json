@@ -1,0 +1,660 @@
+[
+  {
+    "name": "BRISTOL DOUGHNUTS",
+    "address": "10301 COMANCHE RD NE, 7A",
+    "date": "2025-11-21",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Training Records",
+      "Toilet Facilities",
+      "Designated Areas",
+      "Personal Cleanliness",
+      "Operations"
+    ]
+  },
+  {
+    "name": "Chispitas",
+    "address": "6600 MENAUL BLVD NE",
+    "date": "2025-11-19",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Medications and First Aid Kits",
+      "Poisonous and Toxic/Chemical Substances",
+      "Pest Control"
+    ]
+  },
+  {
+    "name": "CRAZY FISH",
+    "address": "3015 CENTRAL AVE NE",
+    "date": "2025-11-21",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Date Marking and Disposition",
+      "Plumbing",
+      "Training Records",
+      "Ventilation and Hood Systems"
+    ]
+  },
+  {
+    "name": "HONG KONG BUFFET",
+    "address": "10100 COORS BLVD NW",
+    "date": "2025-11-19",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Poisonous and Toxic/Chemical Substances",
+      "Plumbing",
+      "Storage"
+    ]
+  },
+  {
+    "name": "HONG KONG BUFFET",
+    "address": "10100 COORS BLVD NW",
+    "date": "2025-11-19",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "HONG KONG BUFFET",
+    "address": "10100 COORS BLVD NW",
+    "date": "2025-10-23",
+    "outcome": "closed",
+    "operational_status": "Closed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "HONG KONG BUFFET",
+    "address": "10100 COORS BLVD NW",
+    "date": "2025-10-10",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Use Limitation",
+      "Cold Holding",
+      "Warewashing Temperature and Concentration",
+      "Cooling",
+      "Use Limitations",
+      "Food Identification, Safe, Unadulterated and Honestly Presented"
+    ]
+  },
+  {
+    "name": "OUMI SUSHI",
+    "address": "5112 LOMAS BLVD NE",
+    "date": "2025-11-18",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "OUMI SUSHI",
+    "address": "6300 SAN MATEO BLVD NE",
+    "date": "2025-10-20",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "RUBENS GRILL",
+    "address": "9708 CANDELARIA RD NE",
+    "date": "2025-11-17",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Date Marking and Disposition",
+      "Maintenance and Operation"
+    ]
+  },
+  {
+    "name": "RUBENS GRILL",
+    "address": "9708 CANDELARIA RD NE",
+    "date": "2025-11-17",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "SBARRO INC. UNIT # 160",
+    "address": "6600 MENAUL NE",
+    "date": "2025-11-19",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Use Limitations",
+      "Plumbing",
+      "Training Records"
+    ]
+  },
+  {
+    "name": "Sprout's Farmer's Market #702",
+    "address": "5112 LOMAS BLVD NE",
+    "date": "2025-11-18",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "THAI CUISINE III LLC",
+    "address": "6200 COORS BLVD NW, E-3",
+    "date": "2025-11-17",
+    "outcome": "failed",
+    "operational_status": "Closed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Poisonous and Toxic/Chemical Substances",
+      "Pest Control",
+      "Date Marking and Disposition",
+      "Ventilation and Hood Systems",
+      "Food Separation"
+    ]
+  },
+  {
+    "name": "THE BREW BY VM LLC",
+    "address": "311 GOLD ST SW",
+    "date": "2025-11-17",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Date Marking and Disposition",
+      "Plumbing",
+      "Training Records",
+      "Training Records",
+      "Testing Devices"
+    ]
+  },
+  {
+    "name": "WENDYS",
+    "address": "4900 CENTRAL AVE SE",
+    "date": "2025-11-17",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Training Records",
+      "Ventilation and Hood Systems",
+      "Cold Holding",
+      "Testing Devices",
+      "Lighting",
+      "Personal Cleanliness",
+      "Hands Clean & Properly Washed",
+      "Training Records",
+      "Ventilation and Hood Systems",
+      "Cold Holding",
+      "Testing Devices"
+    ]
+  },
+  {
+    "name": "WENDYS",
+    "address": "4900 CENTRAL AVE SE",
+    "date": "2025-11-17",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "YASMINES EXPRESS (SHAWARMA EXPRESS)",
+    "address": "6600 MENAUL BLVD NE",
+    "date": "2025-11-19",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Thawing",
+      "Hot Holding & Reheating",
+      "Use Limitations",
+      "Maintenance and Operation",
+      "Ventilation and Hood Systems",
+      "Food Identification, Safe, Unadulterated and Honestly Presented",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Thawing",
+      "Hot Holding & Reheating",
+      "Use Limitations",
+      "Date Marking and Disposition",
+      "Maintenance and Operation"
+    ]
+  },
+  {
+    "name": "YASMINES EXPRESS (SHAWARMA EXPRESS)",
+    "address": "6600 MENAUL BLVD NE",
+    "date": "2025-11-19",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "IL LOCALETTO ROSSI",
+    "address": "106 BUENA VISTA DR SE",
+    "date": "2025-10-20",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Food Separation",
+      "Cold Holding",
+      "Designated Areas",
+      "Hands Clean & Properly Washed",
+      "Records",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Poisonous and Toxic/Chemical Substances",
+      "Pest Control",
+      "Date Marking and Disposition"
+    ]
+  },
+  {
+    "name": "IL LOCALETTO ROSSI",
+    "address": "106 BUENA VISTA DR SE",
+    "date": "2025-10-20",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "JINJA BAR AND BISTRO",
+    "address": "8900 HOLLY ST NE, B",
+    "date": "2025-10-23",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Consumer Advisories",
+      "Date Marking and Disposition",
+      "Date Marking and Disposition",
+      "Operation and Maintenance",
+      "Preparation"
+    ]
+  },
+  {
+    "name": "JINJA BAR AND BISTRO",
+    "address": "8900 HOLLY ST NE, B",
+    "date": "2025-10-23",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "LA URRACA MEXICAN FOOD Y UN POQUITO DE COLOMBIA",
+    "address": "109 YALE SE",
+    "date": "2025-10-22",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Warewashing Temperature and Concentration",
+      "Use Limitations",
+      "Use Limitations",
+      "Training Records",
+      "Storage"
+    ]
+  },
+  {
+    "name": "LA URRACA MEXICAN FOOD Y UN POQUITO DE COLOMBIA",
+    "address": "109 YALE SE",
+    "date": "2025-10-22",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "MAIN EVENT ENTERTAINMENT",
+    "address": "4040 PAN AMERICAN FWY NE",
+    "date": "2025-10-21",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Designated Areas",
+      "Operation and Maintenance",
+      "Warewashing Temperature and Concentration",
+      "Records",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
+  },
+  {
+    "name": "MAIN EVENT ENTERTAINMENT",
+    "address": "4040 PAN AMERICAN FWY NE",
+    "date": "2025-10-21",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "PAD THAI CAFE THAI CUISINE",
+    "address": "110 LOUISIANA BLVD SE, A",
+    "date": "2025-10-22",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Use Limitations",
+      "Date Marking and Disposition",
+      "Training Records",
+      "Surface Condition",
+      "Maintenance",
+      "Cold Holding"
+    ]
+  },
+  {
+    "name": "PAD THAI CAFE THAI CUISINE",
+    "address": "110 LOUISIANA BLVD SE, A",
+    "date": "2025-10-22",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "RESTORATION PIZZA",
+    "address": "5161 LANG AVE NE, 100",
+    "date": "2025-10-22",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Designated Areas",
+      "Personal Cleanliness",
+      "Physical Facilities, Cleaning",
+      "Records",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
+  },
+  {
+    "name": "RESTORATION PIZZA",
+    "address": "5161 LANG AVE NE, 100",
+    "date": "2025-10-22",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "SZECHWAN CHINESE RESTAURANT",
+    "address": "1605 JUAN TABO BLVD NE, M",
+    "date": "2025-10-22",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Thai House",
+    "address": "2000 CARLISLE BLVD NE, C",
+    "date": "2025-10-23",
+    "outcome": "closed",
+    "operational_status": "Closed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Operation and Maintenance",
+      "Lighting",
+      "Consumer Advisories",
+      "Surface Not Clean",
+      "Records",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
+  },
+  {
+    "name": "THE WATERMARK AT CHERRY HILLS",
+    "address": "6901 SAN VICENTE AVE NE",
+    "date": "2025-10-22",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Installation",
+      "Testing Devices",
+      "Highly Susceptible Populations",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
+  },
+  {
+    "name": "THE WATERMARK AT CHERRY HILLS",
+    "address": "6901 SAN VICENTE AVE NE",
+    "date": "2025-10-22",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Waffletopia",
+    "address": "3710 CAMPUS AVE NE",
+    "date": "2025-10-22",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "WIENERSCHNITZEL",
+    "address": "9651 MENAUL BLVD NE",
+    "date": "2025-10-21",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Date Marking and Disposition",
+      "Plumbing",
+      "Toilet Facilities",
+      "Physical Facilities"
+    ]
+  },
+  {
+    "name": "WIENERSCHNITZEL",
+    "address": "9651 MENAUL BLVD NE",
+    "date": "2025-10-21",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "999 SEAFOOD SUPERMARKET INC",
+    "address": "5315 GIBSON BLVD SE",
+    "date": "2025-10-06",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Thawing",
+      "Hot Holding & Reheating",
+      "Knowledgeable"
+    ]
+  },
+  {
+    "name": "999 SEAFOOD SUPERMARKET INC",
+    "address": "5315 GIBSON BLVD SE",
+    "date": "2025-10-06",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "COMFORT INN",
+    "address": "1801 YALE BLVD SE",
+    "date": "2025-10-08",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Poisonous and Toxic/Chemical Substances",
+      "Thawing",
+      "Use Limitations"
+    ]
+  },
+  {
+    "name": "COMFORT INN",
+    "address": "1801 YALE BLVD SE",
+    "date": "2025-10-08",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Duke City BBQ 3 LLC",
+    "address": "12501 CANDELARIA RD NE",
+    "date": "2025-10-08",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Date Marking and Disposition",
+      "Training Records",
+      "Food Identification, Safe, Unadulterated and Honestly Presented"
+    ]
+  },
+  {
+    "name": "Duke City BBQ 3 LLC",
+    "address": "12501 CANDELARIA RD NE",
+    "date": "2025-10-08",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "EL DORADO BAKERY",
+    "address": "640 COORS BLVD NW, 20",
+    "date": "2025-10-07",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Consumer Advisories",
+      "Storage"
+    ]
+  },
+  {
+    "name": "EL DORADO BAKERY",
+    "address": "640 COORS BLVD NW, 20",
+    "date": "2025-10-07",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "MOKA JOES COFFEE",
+    "address": "219 CENTRAL AVE NW",
+    "date": "2025-10-08",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "SUNNYSIDE UP",
+    "address": "6909 MENAUL BLVD NE, 1",
+    "date": "2025-10-09",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "LIMONATIA CAFE",
+    "address": "3222 SILVER AVE SE",
+    "date": "2025-10-09",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Designated Areas",
+      "Poisonous and Toxic/Chemical Substances",
+      "Hands Clean & Properly Washed"
+    ]
+  },
+  {
+    "name": "LIMONATIA CAFE",
+    "address": "3222 SILVER AVE SE",
+    "date": "2025-10-09",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  }
+]
