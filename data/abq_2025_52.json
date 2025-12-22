@@ -1,0 +1,318 @@
+[
+  {
+    "name": "Chili's Grill & Bar",
+    "address": "10220 CENTRAL AVE SE",
+    "date": "2025-12-08",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Physical Facilities, Construction and Repair",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Operation and Maintenance",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Use Limitations",
+      "Plumbing",
+      "Training Records",
+      "Surface Condition",
+      "Testing Devices",
+      "Personal Cleanliness",
+      "Hands Clean & Properly Washed",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
+  },
+  {
+    "name": "Chili's Grill & Bar",
+    "address": "10220 CENTRAL AVE SE",
+    "date": "2025-12-08",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Chili's Grill & Bar",
+    "address": "10021 COORS BLVD NW",
+    "date": "2025-12-12",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Chili's Grill & Bar",
+    "address": "10021 COORS BLVD NW",
+    "date": "2025-12-12",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Howie\u2019s Sports Page",
+    "address": "12500 MONTGOMERY BLVD NE",
+    "date": "2025-12-11",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Surface Not Clean",
+      "Physical Facilities, Construction and Repair",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Pest Control",
+      "Date Marking and Disposition"
+    ]
+  },
+  {
+    "name": "Howie\u2019s Sports Page",
+    "address": "12500 MONTGOMERY BLVD NE",
+    "date": "2025-12-11",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "JADE RESTAURANT LLC",
+    "address": "8001 WYOMING BLVD NE, C4",
+    "date": "2025-12-11",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Surface Not Clean",
+      "Records",
+      "Poisonous and Toxic/Chemical Substances",
+      "Use Limitations",
+      "Ventilation and Hood Systems",
+      "Food Identification, Safe, Unadulterated and Honestly Presented"
+    ]
+  },
+  {
+    "name": "JADE RESTAURANT LLC",
+    "address": "8001 WYOMING BLVD NE, C4",
+    "date": "2025-12-11",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "KABAB & CURRY",
+    "address": "3617 WYOMING BLVD NE",
+    "date": "2025-12-09",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Plumbing",
+      "Ventilation and Hood Systems",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Date Marking and Disposition",
+      "Training Records"
+    ]
+  },
+  {
+    "name": "LONGHORN STEAKHOUSE #5522",
+    "address": "9975 COORS BYPASS BLVD NW",
+    "date": "2025-12-08",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Maintenance and Operation",
+      "Plumbing",
+      "Physical Facilities",
+      "Surface Not Clean",
+      "Plumbing"
+    ]
+  },
+  {
+    "name": "LONGHORN STEAKHOUSE #5522",
+    "address": "9975 COORS BYPASS BLVD NW",
+    "date": "2025-12-08",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Louisiana Meats Market",
+    "address": "520 LOUISIANA BLVD SE",
+    "date": "2025-12-09",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Operation and Maintenance",
+      "Surface Not Clean",
+      "Training Records",
+      "Surface Condition",
+      "Physical Facilities, Construction and Repair",
+      "Records",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Operation and Maintenance",
+      "Personal Cleanliness",
+      "Surface Condition",
+      "Records"
+    ]
+  },
+  {
+    "name": "Louisiana Meats Market",
+    "address": "520 LOUISIANA BLVD SE",
+    "date": "2025-12-09",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "MOONWALK/PACKIES FULL PACKAGE",
+    "address": "505 CENTRAL AVE NW",
+    "date": "2025-12-10",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Designated Areas",
+      "Toilet Facilities",
+      "Poisonous and Toxic/Chemical Substances",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Plumbing",
+      "Testing Devices",
+      "Operation and Maintenance"
+    ]
+  },
+  {
+    "name": "PETER PIPER PIZZA",
+    "address": "9260 GOLF COURSE RD NW",
+    "date": "2025-12-12",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Pest Control"
+    ]
+  },
+  {
+    "name": "PETER PIPER PIZZA",
+    "address": "9260 GOLF COURSE RD NW",
+    "date": "2025-12-09",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "SHAPE UP NUTRITION",
+    "address": "6001 LOMAS BLVD NE, K",
+    "date": "2025-12-12",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "SHAPE UP NUTRITION",
+    "address": "6001 LOMAS BLVD NE, K",
+    "date": "2025-12-11",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "SPINNS BURGER AND BEER",
+    "address": "4411 MONTANO RD NW, A",
+    "date": "2025-12-12",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Surface Not Clean",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Medications and First Aid Kits",
+      "Poisonous and Toxic/Chemical Substances"
+    ]
+  },
+  {
+    "name": "SPINNS BURGER AND BEER",
+    "address": "4411 MONTANO RD NW, A",
+    "date": "2025-12-12",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "THE BREW BY VM LLC",
+    "address": "311 GOLD ST SW",
+    "date": "2025-12-11",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Plumbing",
+      "Training Records",
+      "Testing Devices"
+    ]
+  },
+  {
+    "name": "THE WOODMARK AT UPTOWN",
+    "address": "7201 PROSPECT PL NE",
+    "date": "2025-12-12",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "THE WOODMARK AT UPTOWN",
+    "address": "7201 PROSPECT PL NE",
+    "date": "2025-12-09",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "TRIANA",
+    "address": "111 CARLISLE BLVD NE",
+    "date": "2025-12-10",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Hands Clean & Properly Washed",
+      "Storage",
+      "Physical Facilities, Construction and Repair",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Maintenance and Operation"
+    ]
+  }
+]
