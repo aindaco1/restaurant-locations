@@ -1,0 +1,457 @@
+[
+  {
+    "name": "Apna Bazaar",
+    "address": "7200 MONTGOMERY BLVD NE, F3",
+    "date": "2025-12-19",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Physical Facilities",
+      "Pest Control",
+      "Poisonous and Toxic/Chemical Substances",
+      "Physical Facilities",
+      "Pest Control"
+    ]
+  },
+  {
+    "name": "Apna Bazaar",
+    "address": "7200 MONTGOMERY BLVD NE, F3",
+    "date": "2025-12-17",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "APPLEBEES NEIGHBORHOOD GRILL & BAR",
+    "address": "10895 MONTGOMERY BLVD NE",
+    "date": "2025-12-20",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Storage",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Operation and Maintenance",
+      "Poisonous and Toxic/Chemical Substances",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Date Marking and Disposition",
+      "Knowledgeable",
+      "Plumbing",
+      "Physical Facilities, Cleaning",
+      "Surface Not Clean",
+      "Physical Facilities, Construction and Repair",
+      "Records",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
+  },
+  {
+    "name": "APPLEBEES NEIGHBORHOOD GRILL & BAR",
+    "address": "10895 MONTGOMERY BLVD NE",
+    "date": "2025-12-19",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "APPLEBEES NEIGHBORHOOD GRILL & BAR",
+    "address": "10895 MONTGOMERY BLVD NE",
+    "date": "2025-12-17",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "APPLEBEES NEIGHBORHOOD GRILL & BAR",
+    "address": "10895 MONTGOMERY BLVD NE",
+    "date": "2025-12-17",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "AZUMA SUSHI AND TEPPAN",
+    "address": "8104 WYOMING BLVD NE, B",
+    "date": "2025-12-19",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Medications and First Aid Kits",
+      "Poisonous and Toxic/Chemical Substances",
+      "Pest Control",
+      "Use Limitations"
+    ]
+  },
+  {
+    "name": "AZUMA SUSHI AND TEPPAN",
+    "address": "8104 WYOMING BLVD NE, B",
+    "date": "2025-12-19",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "BLAKES LOTABURGER 14",
+    "address": "7701 MENAUL BLVD NE",
+    "date": "2025-12-17",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Consumer Advisories",
+      "Storage",
+      "Surface Not Clean",
+      "Physical Facilities, Construction and Repair",
+      "Pest Control",
+      "Plumbing",
+      "Training Records",
+      "Cold Holding",
+      "Physical Facilities, Cleaning",
+      "Surface Not Clean"
+    ]
+  },
+  {
+    "name": "BLAKES LOTABURGER 14",
+    "address": "7701 MENAUL BLVD NE",
+    "date": "2025-12-16",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Bravo Cucina Italiana",
+    "address": "2220 LOUISIANA BLVD NE",
+    "date": "2025-12-17",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Date Marking and Disposition",
+      "Plumbing",
+      "Ventilation and Hood Systems",
+      "Food Identification, Safe, Unadulterated and Honestly Presented"
+    ]
+  },
+  {
+    "name": "CAFE DEL SOL",
+    "address": "4374 ALEXANDER BLVD NE, 1",
+    "date": "2025-12-15",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "CAFE DEL SOL",
+    "address": "4374 ALEXANDER BLVD NE, 1",
+    "date": "2025-12-15",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "CARNICERIA LA ESPECIAL",
+    "address": "633 OLD COORS DR SW",
+    "date": "2025-12-15",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Records",
+      "Physical Facilities, Construction and Repair",
+      "Storage",
+      "Hands Clean & Properly Washed",
+      "Physical Facilities, Cleaning",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Installation",
+      "Date Marking and Disposition",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Installation",
+      "Testing Devices",
+      "Physical Facilities, Cleaning",
+      "Records",
+      "Date Marking and Disposition",
+      "Training Records",
+      "Date Marking and Disposition",
+      "Physical Facilities, Cleaning"
+    ]
+  },
+  {
+    "name": "CARNICERIA LA ESPECIAL",
+    "address": "633 OLD COORS DR SW",
+    "date": "2025-12-15",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "CATTLE TAGS FOOD TRUCK",
+    "address": "1601 4TH ST NW",
+    "date": "2025-12-17",
+    "outcome": "closed",
+    "operational_status": "Closed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "EL BOTANERO DE GUAYMAS LLC",
+    "address": "475 COORS BLVD NW, H",
+    "date": "2025-12-17",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Physical Facilities, Construction and Repair",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Cold Holding",
+      "Testing Devices",
+      "Records",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
+  },
+  {
+    "name": "EL BOTANERO DE GUAYMAS LLC",
+    "address": "475 COORS BLVD NW, H",
+    "date": "2025-12-17",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "GECKOS BAR & TAPAS",
+    "address": "3500 CENTRAL AVE SE",
+    "date": "2025-12-17",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Physical Facilities, Cleaning",
+      "Physical Facilities, Construction and Repair",
+      "Records",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Surface Condition",
+      "Availability"
+    ]
+  },
+  {
+    "name": "GECKOS BAR & TAPAS",
+    "address": "3500 CENTRAL AVE SE",
+    "date": "2025-12-17",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "La Michocana Premium de New Mexico",
+    "address": "4201 CENTRAL AVE NW, E",
+    "date": "2025-12-19",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "LA PASADA",
+    "address": "2206 4TH ST NW",
+    "date": "2025-12-17",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Operations",
+      "Pest Control",
+      "Plumbing"
+    ]
+  },
+  {
+    "name": "LA PASADA",
+    "address": "2206 4TH ST NW",
+    "date": "2025-12-15",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Little Anitas",
+    "address": "10200 CORRALES RD NW",
+    "date": "2025-12-20",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Little Anitas",
+    "address": "10200 CORRALES RD NW",
+    "date": "2025-12-18",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Moons Coffee and Tea",
+    "address": "1605 JUAN TABO BLVD NE, #F",
+    "date": "2025-12-18",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Physical Facilities",
+      "Plumbing",
+      "Training Records"
+    ]
+  },
+  {
+    "name": "Moons Coffee and Tea",
+    "address": "1605 JUAN TABO BLVD NE, #F",
+    "date": "2025-12-18",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Morningstar Memory Care at North Ridge",
+    "address": "8101 PALOMAS AVE NE",
+    "date": "2025-12-16",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Availability",
+      "Functionality and Accuracy",
+      "Physical Facilities, Cleaning",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Plumbing"
+    ]
+  },
+  {
+    "name": "Morningstar Memory Care at North Ridge",
+    "address": "8101 PALOMAS AVE NE",
+    "date": "2025-12-16",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "PHO NHO",
+    "address": "2641 COORS BLVD NW, D",
+    "date": "2025-12-19",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Food Separation",
+      "Surface Not Clean",
+      "Physical Facilities, Construction and Repair",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
+  },
+  {
+    "name": "PHO NHO",
+    "address": "2641 COORS BLVD NW, D",
+    "date": "2025-12-16",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "PHO NHO",
+    "address": "2641 COORS BLVD NW, D",
+    "date": "2025-12-16",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "SUSHIBUCKS",
+    "address": "2106 CENTRAL AVE SE, A",
+    "date": "2025-12-18",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "SUSHIBUCKS",
+    "address": "2106 CENTRAL AVE SE, A",
+    "date": "2025-12-18",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "THE ORIGINAL HONEY BAKED HAM CO",
+    "address": "5307 MENAUL BLVD NE",
+    "date": "2025-12-18",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "THE ORIGINAL HONEY BAKED HAM CO",
+    "address": "5307 MENAUL BLVD NE",
+    "date": "2025-12-18",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  }
+]
