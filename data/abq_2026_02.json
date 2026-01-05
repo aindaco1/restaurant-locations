@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Bravo Cucina Italiana",
+    "address": "2220 LOUISIANA BLVD NE",
+    "date": "2025-12-24",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Pest Control",
+      "Plumbing",
+      "Physical Facilities"
+    ]
+  },
+  {
+    "name": "Bravo Cucina Italiana",
+    "address": "2220 LOUISIANA BLVD NE",
+    "date": "2025-12-22",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "CHURCHS CHICKEN 10386",
+    "address": "9250 GOLF COURSE RD NW",
+    "date": "2025-12-22",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "DENNYS 6301",
+    "address": "1602 COORS BLVD NW",
+    "date": "2025-12-24",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "SENIOR CARE LLC",
+    "address": "1813 KRISS PL NE",
+    "date": "2025-12-22",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "SENIOR CARE LLC",
+    "address": "1813 KRISS PL NE",
+    "date": "2025-12-22",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "UPTOWN REHABILITATION CENTER",
+    "address": "7900 CONSTITUTION AVE NE",
+    "date": "2025-12-22",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Poisonous and Toxic/Chemical Substances",
+      "Training Records",
+      "Food Separation",
+      "Warewashing Temperature and Concentration"
+    ]
+  }
+]

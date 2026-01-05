@@ -10987,5 +10987,266 @@
       "document": null
     },
     "operational_status": "Open"
+  },
+  {
+    "id": "abq:bravo-cucina-italiana:2025-12-24",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Bravo Cucina Italiana",
+      "address": "2220 LOUISIANA BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-12-24",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Pest Control"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Plumbing"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities"
+        }
+      ]
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "Pest Control",
+        "Plumbing"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:bravo-cucina-italiana:2025-12-22",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Bravo Cucina Italiana",
+      "address": "2220 LOUISIANA BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-12-22",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": []
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:churchs-chicken-10386:2025-12-22",
+    "source": "ABQ",
+    "establishment": {
+      "name": "CHURCHS CHICKEN 10386",
+      "address": "9250 GOLF COURSE RD NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-12-22",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": []
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:dennys-6301:2025-12-24",
+    "source": "ABQ",
+    "establishment": {
+      "name": "DENNYS 6301",
+      "address": "1602 COORS BLVD NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-12-24",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": []
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:senior-care-llc:2025-12-22",
+    "source": "ABQ",
+    "establishment": {
+      "name": "SENIOR CARE LLC",
+      "address": "1813 KRISS PL NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-12-22",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": []
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:senior-care-llc:2025-12-22",
+    "source": "ABQ",
+    "establishment": {
+      "name": "SENIOR CARE LLC",
+      "address": "1813 KRISS PL NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-12-22",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": []
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:uptown-rehabilitation-center:2025-12-22",
+    "source": "ABQ",
+    "establishment": {
+      "name": "UPTOWN REHABILITATION CENTER",
+      "address": "7900 CONSTITUTION AVE NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-12-22",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Poisonous and Toxic/Chemical Substances"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Training Records"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Food Separation"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Warewashing Temperature and Concentration"
+        }
+      ]
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
   }
 ]
