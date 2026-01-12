@@ -1,0 +1,150 @@
+[
+  {
+    "name": "FROST, A GELATO SHOPPE-PT0160304",
+    "address": "2201 Q ST NE, 9-A",
+    "date": "2026-01-02",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Rose Garden",
+    "address": "10401 GOLF COURSE RD NW, 103",
+    "date": "2025-12-30",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Use Limitations",
+      "Plumbing",
+      "Storage",
+      "Designated Areas",
+      "Consumer Advisories",
+      "Storage",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Use Limitations"
+    ]
+  },
+  {
+    "name": "Rose Garden",
+    "address": "10401 GOLF COURSE RD NW, 103",
+    "date": "2025-12-30",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "SERGIOS BAKERY AND CAFE",
+    "address": "2740 WYOMING STE #8 BLVD NE",
+    "date": "2025-12-30",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Training Records",
+      "Surface Not Clean",
+      "Plumbing",
+      "Personal Cleanliness",
+      "Poisonous and Toxic/Chemical Substances",
+      "Date Marking and Disposition",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
+  },
+  {
+    "name": "SERGIOS BAKERY AND CAFE",
+    "address": "2740 WYOMING STE #8 BLVD NE",
+    "date": "2025-12-30",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "SKATE-O-MANIA",
+    "address": "400 PAISANO ST NE",
+    "date": "2025-12-30",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Hot Holding & Reheating",
+      "Training Records",
+      "Functionality and Accuracy",
+      "Operations",
+      "Hot & Cold-Water Availability & Pressure"
+    ]
+  },
+  {
+    "name": "SKATE-O-MANIA",
+    "address": "400 PAISANO ST NE",
+    "date": "2025-12-30",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "STRIPES BURRITO LLC",
+    "address": "5211 GIBSON BLVD SE",
+    "date": "2025-12-30",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Pooled Eggs",
+      "Time as Public Health Control",
+      "Cooling",
+      "Ventilation and Hood Systems"
+    ]
+  },
+  {
+    "name": "STRIPES BURRITO LLC",
+    "address": "5211 GIBSON BLVD SE",
+    "date": "2025-12-30",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "TWIN PEAKS RESTAURANT",
+    "address": "4441 THE 25 WAY NE",
+    "date": "2025-12-31",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Plumbing",
+      "Ventilation and Hood Systems",
+      "Food Separation",
+      "Cold Holding",
+      "Physical Facilities, Construction and Repair",
+      "Plumbing",
+      "Operation and Maintenance"
+    ]
+  },
+  {
+    "name": "TWIN PEAKS RESTAURANT",
+    "address": "4441 THE 25 WAY NE",
+    "date": "2025-12-29",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  }
+]

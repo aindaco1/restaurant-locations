@@ -11248,5 +11248,522 @@
       "document": null
     },
     "operational_status": "Open"
+  },
+  {
+    "id": "abq:frost,-a-gelato-shoppe-pt0160304:2026-01-02",
+    "source": "ABQ",
+    "establishment": {
+      "name": "FROST, A GELATO SHOPPE-PT0160304",
+      "address": "2201 Q ST NE, 9-A",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-01-02",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": []
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:rose-garden:2025-12-30",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Rose Garden",
+      "address": "10401 GOLF COURSE RD NW, 103",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-12-30",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Use Limitations"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Plumbing"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Storage"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Designated Areas"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Consumer Advisories"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Storage"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Use Limitations"
+        }
+      ]
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "Use Limitations",
+        "Plumbing"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:rose-garden:2025-12-30",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Rose Garden",
+      "address": "10401 GOLF COURSE RD NW, 103",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-12-30",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": []
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:sergios-bakery-and-cafe:2025-12-30",
+    "source": "ABQ",
+    "establishment": {
+      "name": "SERGIOS BAKERY AND CAFE",
+      "address": "2740 WYOMING STE #8 BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-12-30",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Training Records"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Not Clean"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Plumbing"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Personal Cleanliness"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Poisonous and Toxic/Chemical Substances"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Date Marking and Disposition"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
+        }
+      ]
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:sergios-bakery-and-cafe:2025-12-30",
+    "source": "ABQ",
+    "establishment": {
+      "name": "SERGIOS BAKERY AND CAFE",
+      "address": "2740 WYOMING STE #8 BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-12-30",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": []
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:skate-o-mania:2025-12-30",
+    "source": "ABQ",
+    "establishment": {
+      "name": "SKATE-O-MANIA",
+      "address": "400 PAISANO ST NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-12-30",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Hot Holding & Reheating"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Training Records"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Functionality and Accuracy"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Operations"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Hot & Cold-Water Availability & Pressure"
+        }
+      ]
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Hot Holding & Reheating",
+        "Training Records",
+        "Functionality and Accuracy"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:skate-o-mania:2025-12-30",
+    "source": "ABQ",
+    "establishment": {
+      "name": "SKATE-O-MANIA",
+      "address": "400 PAISANO ST NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-12-30",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": []
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:stripes-burrito-llc:2025-12-30",
+    "source": "ABQ",
+    "establishment": {
+      "name": "STRIPES BURRITO LLC",
+      "address": "5211 GIBSON BLVD SE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-12-30",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Pooled Eggs"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Time as Public Health Control"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Cooling"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Ventilation and Hood Systems"
+        }
+      ]
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "Pooled Eggs",
+        "Time as Public Health Control"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:stripes-burrito-llc:2025-12-30",
+    "source": "ABQ",
+    "establishment": {
+      "name": "STRIPES BURRITO LLC",
+      "address": "5211 GIBSON BLVD SE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-12-30",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": []
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:twin-peaks-restaurant:2025-12-31",
+    "source": "ABQ",
+    "establishment": {
+      "name": "TWIN PEAKS RESTAURANT",
+      "address": "4441 THE 25 WAY NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-12-31",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Plumbing"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Ventilation and Hood Systems"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Food Separation"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Cold Holding"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Construction and Repair"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Plumbing"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Operation and Maintenance"
+        }
+      ]
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:twin-peaks-restaurant:2025-12-29",
+    "source": "ABQ",
+    "establishment": {
+      "name": "TWIN PEAKS RESTAURANT",
+      "address": "4441 THE 25 WAY NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2025-12-29",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": []
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
   }
 ]
