@@ -1,0 +1,289 @@
+[
+  {
+    "name": "Allsup's #102460",
+    "address": "9501 Gibson BLVD SW",
+    "date": "2026-01-09",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Physical Facilities",
+      "Storage",
+      "Physical Facilities, Cleaning",
+      "Date Marking and Disposition",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
+  },
+  {
+    "name": "Allsup's #102460",
+    "address": "9501 Gibson BLVD SW",
+    "date": "2026-01-09",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "COURTYARD ALBUQUERQUE",
+    "address": "5151 JOURNAL CENTER BLVD NE",
+    "date": "2026-01-09",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Date Marking and Disposition",
+      "Plumbing",
+      "Food Identification, Safe, Unadulterated and Honestly Presented"
+    ]
+  },
+  {
+    "name": "COURTYARD ALBUQUERQUE",
+    "address": "5151 JOURNAL CENTER BLVD NE",
+    "date": "2026-01-09",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Curry Leaf",
+    "address": "6910 MONTGOMERY BLVD NE, C",
+    "date": "2026-01-07",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Date Marking and Disposition",
+      "Plumbing",
+      "Personal Cleanliness"
+    ]
+  },
+  {
+    "name": "Curry Leaf",
+    "address": "6910 MONTGOMERY BLVD NE, C",
+    "date": "2026-01-07",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "DRAGONHORN TAVERN",
+    "address": "2906A JUAN TABO NE",
+    "date": "2026-01-07",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "DRAGONHORN TAVERN",
+    "address": "2906A JUAN TABO NE",
+    "date": "2026-01-07",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "FLYING STAR 4",
+    "address": "4026 RIO GRANDE BLVD NW",
+    "date": "2026-01-08",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "FROST, A GELATO SHOPPE-PT0160304",
+    "address": "2201 Q ST NE, 9-A",
+    "date": "2026-01-08",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Date Marking and Disposition",
+      "Training Records",
+      "Food Separation",
+      "Physical Facilities",
+      "Training Records",
+      "Ventilation and Hood Systems",
+      "Food Identification, Safe, Unadulterated and Honestly Presented",
+      "Toilet Facilities",
+      "Physical Facilities"
+    ]
+  },
+  {
+    "name": "FROST, A GELATO SHOPPE-PT0160304",
+    "address": "2201 Q ST NE, 9-A",
+    "date": "2026-01-05",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Good Fellas Pizzeria",
+    "address": "5844 OSUNA RD NE",
+    "date": "2026-01-06",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Surface Not Clean",
+      "Physical Facilities, Construction and Repair",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Poisonous and Toxic/Chemical Substances",
+      "Plumbing"
+    ]
+  },
+  {
+    "name": "Good Fellas Pizzeria",
+    "address": "5844 OSUNA RD NE",
+    "date": "2026-01-06",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Pollito Con Papas",
+    "address": "6105 GIBSON BLVD SE",
+    "date": "2026-01-08",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Use Limitations",
+      "Date Marking and Disposition"
+    ]
+  },
+  {
+    "name": "Pollito Con Papas",
+    "address": "6105 GIBSON BLVD SE",
+    "date": "2026-01-07",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "QUICK TRACK 93",
+    "address": "2625 WYOMING BLVD NE",
+    "date": "2026-01-08",
+    "outcome": "approved",
+    "operational_status": "Closed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Records",
+      "Food Identification, Safe, Unadulterated and Honestly Presented",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
+  },
+  {
+    "name": "QUICK TRACK 93",
+    "address": "2625 WYOMING BLVD NE",
+    "date": "2026-01-08",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "SAHARA MIDDLE EASTERN EATERY",
+    "address": "2622 CENTRAL AVE SE, #A",
+    "date": "2026-01-06",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Testing Devices",
+      "Operation and Maintenance",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Poisonous and Toxic/Chemical Substances"
+    ]
+  },
+  {
+    "name": "SAHARA MIDDLE EASTERN EATERY",
+    "address": "2622 CENTRAL AVE SE, #A",
+    "date": "2026-01-06",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "STACKERS BURGER COMPANY",
+    "address": "505 CENTRAL AVE NW",
+    "date": "2026-01-05",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Operations",
+      "Poisonous and Toxic/Chemical Substances",
+      "Date Marking and Disposition",
+      "Food Identification, Safe, Unadulterated and Honestly Presented",
+      "Cold Holding"
+    ]
+  },
+  {
+    "name": "SUBWAY 48841",
+    "address": "933 SAN MATEO BLVD NE, 103",
+    "date": "2026-01-09",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Hands Clean & Properly Washed",
+      "Physical Facilities, Cleaning",
+      "Knowledgeable",
+      "Training Records",
+      "Cold Holding"
+    ]
+  },
+  {
+    "name": "ZU HOT POT",
+    "address": "1405 JUAN TABO BLVD NE",
+    "date": "2026-01-06",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "ZU HOT POT",
+    "address": "1405 JUAN TABO BLVD NE",
+    "date": "2026-01-06",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  }
+]
