@@ -13,6 +13,9 @@ on:
       - 'scripts/**'
       - '.github/workflows/pipeline.yml'
 
+# Keep workflow alive - GitHub disables scheduled workflows after 60 days of inactivity
+# This workflow self-commits to data/ which triggers pages.yml rebuild
+
 permissions:
   contents: write  # Needed to commit data files
 

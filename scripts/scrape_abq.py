@@ -26,15 +26,51 @@ class ABQPDFScraper:
             'ABQ_PDF_BASE_URL',
             'https://www.cabq.gov/environmentalhealth/documents'
         )
-        # Known inspection report URLs
-        self.known_reports = [
-            'https://www.cabq.gov/environmentalhealth/documents/chpd_main_inspection_report.pdf',
-            'https://www.cabq.gov/environmentalhealth/documents/media-report-10-19-10-25.pdf',
-            'https://www.cabq.gov/environmentalhealth/documents/media-report-10-5-10-11.pdf',
-            'https://www.cabq.gov/environmentalhealth/documents/media-report-9-28-10-04.pdf',
-            'https://www.cabq.gov/environmentalhealth/documents/media-report-9-21-9-27.pdf'
-        ]
+        self.documents_page = 'https://www.cabq.gov/environmentalhealth/documents'
+        # Main report that's always current
+        self.main_report = 'https://www.cabq.gov/environmentalhealth/documents/chpd_main_inspection_report.pdf'
         self.session = requests.Session()
+    
+    def discover_pdf_links(self) -> List[str]:
+        """
+        Scrape the ABQ documents page to find all inspection report PDFs
+        
+        Returns:
+            List of PDF URLs
+        """
+        logger.info(f"Discovering PDFs from {self.documents_page}")
+        pdf_urls = [self.main_report]
+        
+        try:
+            response = self.session.get(self.documents_page, timeout=30)
+            response.raise_for_status()
+            
+            # Find all PDF links that look like inspection reports
+            # Patterns: media-report-*, inspection*, chpd*
+            patterns = [
+                r'href="([^"]*media-report[^"]*\.pdf)"',
+                r'href="([^"]*inspection[^"]*\.pdf)"',
+                r'href="([^"]*chpd[^"]*\.pdf)"',
+            ]
+            
+            for pattern in patterns:
+                matches = re.findall(pattern, response.text, re.IGNORECASE)
+                for match in matches:
+                    if match.startswith('http'):
+                        url = match
+                    elif match.startswith('/'):
+                        url = f"https://www.cabq.gov{match}"
+                    else:
+                        url = f"{self.base_url}/{match}"
+                    
+                    if url not in pdf_urls:
+                        pdf_urls.append(url)
+                        logger.info(f"Discovered: {url}")
+            
+        except Exception as e:
+            logger.warning(f"Could not scrape documents page: {e}")
+        
+        return pdf_urls
     
     def find_recent_pdfs(self, weeks_back: int = 12) -> List[str]:
         """
@@ -48,45 +84,38 @@ class ABQPDFScraper:
         """
         logger.info(f"Searching for ABQ PDFs")
         
-        pdf_urls = []
+        # First, try to discover PDFs from the documents page
+        pdf_urls = self.discover_pdf_links()
         
-        # Try all known reports
-        for report_url in self.known_reports:
-            try:
-                response = self.session.head(report_url, timeout=10)
-                if response.status_code == 200:
-                    pdf_urls.append(report_url)
-                    logger.info(f"Found report: {report_url}")
-            except Exception as e:
-                logger.warning(f"Report not accessible {report_url}: {e}")
-        
-        # Try historical weekly reports
+        # Also try date-based URL patterns for recent weeks
         now = datetime.now()
         for week_offset in range(weeks_back):
             date = now - timedelta(weeks=week_offset)
-            year = date.year
-            week = date.isocalendar()[1]
             
-            # Try common naming patterns
-            patterns = [
-                f"{self.base_url}/RestaurantInspections_{year}_{week:02d}.pdf",
-                f"{self.base_url}/restaurant-inspections-{year}-week{week:02d}.pdf",
-                f"{self.base_url}/inspections_{year}_{week:02d}.pdf",
-                f"{self.base_url}/chpd_main_inspection_report_{year}_{week:02d}.pdf"
+            # Generate date range for the week (Mon-Sun)
+            week_start = date - timedelta(days=date.weekday())
+            week_end = week_start + timedelta(days=6)
+            
+            # Try media-report pattern with date ranges (e.g., media-report-1-13-1-19.pdf)
+            date_patterns = [
+                f"{self.base_url}/media-report-{week_start.month}-{week_start.day}-{week_end.month}-{week_end.day}.pdf",
+                f"{self.base_url}/media-report-{week_start.strftime('%m-%d')}-{week_end.strftime('%m-%d')}.pdf",
             ]
             
-            for url in patterns:
-                try:
-                    response = self.session.head(url, timeout=10)
-                    if response.status_code == 200:
-                        pdf_urls.append(url)
-                        logger.info(f"Found PDF: {url}")
-                        break
-                except Exception:
-                    continue
+            for url in date_patterns:
+                if url not in pdf_urls:
+                    try:
+                        response = self.session.head(url, timeout=10)
+                        if response.status_code == 200:
+                            pdf_urls.append(url)
+                            logger.info(f"Found dated PDF: {url}")
+                    except Exception:
+                        continue
         
         if not pdf_urls:
-            logger.warning("No ABQ PDFs found - trying fallback URL")
+            logger.warning("No ABQ PDFs found")
+        else:
+            logger.info(f"Found {len(pdf_urls)} PDFs total")
         
         return pdf_urls
     
