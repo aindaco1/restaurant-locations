@@ -1,0 +1,222 @@
+[
+  {
+    "name": "ABQ COFFEE",
+    "address": "1321 EUBANK BLVD NE, A",
+    "date": "2026-01-14",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "ABQ COFFEE",
+    "address": "1321 EUBANK BLVD NE, A",
+    "date": "2026-01-14",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Cafe es Amor LLC",
+    "address": "2209 Central Ave, Suite B",
+    "date": "2026-01-12",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Testing Devices",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Use Limitations",
+      "Date Marking and Disposition",
+      "Personal Cleanliness"
+    ]
+  },
+  {
+    "name": "Chile Chicken",
+    "address": "3005 EUBANK BLVD NE",
+    "date": "2026-01-16",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Knowledgeable",
+      "Plumbing",
+      "Ventilation and Hood Systems"
+    ]
+  },
+  {
+    "name": "Chile Chicken",
+    "address": "3005 EUBANK BLVD NE",
+    "date": "2026-01-14",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "M'tucci's Twenty Five",
+    "address": "4939 PAN AMERICAN FWY NE",
+    "date": "2026-01-14",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "M'tucci's Twenty Five",
+    "address": "4939 PAN AMERICAN FWY NE",
+    "date": "2026-01-14",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "NEXUS BREWERY",
+    "address": "1511 BROADWAY BLVD SE",
+    "date": "2026-01-14",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Personal Cleanliness",
+      "Surface Not Clean",
+      "Records",
+      "Thawing"
+    ]
+  },
+  {
+    "name": "NEXUS BREWERY",
+    "address": "1511 BROADWAY BLVD SE",
+    "date": "2026-01-14",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "QUICK TRACK 93",
+    "address": "2625 WYOMING BLVD NE",
+    "date": "2026-01-16",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Designated Areas",
+      "Personal Cleanliness",
+      "Surface Not Clean",
+      "Records"
+    ]
+  },
+  {
+    "name": "Restoration Pizza",
+    "address": "5161 LANG AVE NE, 100",
+    "date": "2026-01-12",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Surface Not Clean",
+      "Pest Control",
+      "Hot Holding & Reheating",
+      "Use Limitations",
+      "Plumbing",
+      "Ventilation and Hood Systems"
+    ]
+  },
+  {
+    "name": "Restoration Pizza",
+    "address": "5161 LANG AVE NE, 100",
+    "date": "2026-01-12",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "ROSE GARDEN CHINESE RESTAURANT LLC",
+    "address": "6541 PARADISE RD NW, E",
+    "date": "2026-01-14",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Surface Not Clean",
+      "Records",
+      "Date Marking and Disposition",
+      "Plumbing"
+    ]
+  },
+  {
+    "name": "ROSE GARDEN CHINESE RESTAURANT LLC",
+    "address": "6541 PARADISE RD NW, E",
+    "date": "2026-01-14",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "ROSE GARDEN CHINESE RESTAURANT LLC",
+    "address": "6541 PARADISE RD NW, E",
+    "date": "2026-01-15",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "ROSE GARDEN CHINESE RESTAURANT LLC",
+    "address": "6541 PARADISE RD NW, E",
+    "date": "2026-01-15",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "SUNNYSIDE LEARNING ACADEMY LLC",
+    "address": "515 OLD COORS DR SW",
+    "date": "2026-01-16",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Designated Areas",
+      "Maintenance and Operation",
+      "Thawing",
+      "Date Marking and Disposition",
+      "Miscellaneous"
+    ]
+  },
+  {
+    "name": "THE WOODMARK AT UPTOWN",
+    "address": "7201 PROSPECT PL NE",
+    "date": "2026-01-15",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  }
+]
