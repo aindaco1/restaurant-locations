@@ -1,0 +1,108 @@
+[
+  {
+    "name": "CHEDDARS CASUAL CAFE",
+    "address": "4865 PAN AMERICAN FWY",
+    "date": "2026-01-23",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "CHEDDARS CASUAL CAFE",
+    "address": "4865 PAN AMERICAN FWY",
+    "date": "2026-01-23",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "NOODLEWORKS",
+    "address": "5901 WYOMING BLVD NE, S",
+    "date": "2026-01-21",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Thawing",
+      "Date Marking and Disposition"
+    ]
+  },
+  {
+    "name": "NOODLEWORKS",
+    "address": "5901 WYOMING BLVD NE, S",
+    "date": "2026-01-21",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "NOODLEWORKS",
+    "address": "5901 WYOMING BLVD NE, S",
+    "date": "2026-01-22",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "THE WOODMARK AT UPTOWN",
+    "address": "7201 PROSPECT PL NE",
+    "date": "2026-01-20",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "WAL MART SUPER CENTER 5491",
+    "address": "2266 WYOMING BLVD NE",
+    "date": "2026-01-22",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Surface Not Clean",
+      "Hands Clean & Properly Washed",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Operation and Maintenance"
+    ]
+  },
+  {
+    "name": "WAL MART SUPER CENTER 5491",
+    "address": "2266 WYOMING BLVD NE",
+    "date": "2026-01-22",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "WESTERN VIEW DINER AND STEAK HOUSE LLC",
+    "address": "6411 CENTRAL AVE NW",
+    "date": "2026-01-23",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Maintenance and Operation",
+      "Preventing Contamination From Hands",
+      "Miscellaneous",
+      "Training Records",
+      "Ventilation and Hood Systems"
+    ]
+  }
+]

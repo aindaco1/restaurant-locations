@@ -13461,5 +13461,350 @@
       "document": null
     },
     "operational_status": "Open"
+  },
+  {
+    "id": "abq:cheddars-casual-cafe:2026-01-23",
+    "source": "ABQ",
+    "establishment": {
+      "name": "CHEDDARS CASUAL CAFE",
+      "address": "4865 PAN AMERICAN FWY",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-01-23",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:cheddars-casual-cafe:2026-01-23",
+    "source": "ABQ",
+    "establishment": {
+      "name": "CHEDDARS CASUAL CAFE",
+      "address": "4865 PAN AMERICAN FWY",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-01-23",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": []
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:noodleworks:2026-01-21",
+    "source": "ABQ",
+    "establishment": {
+      "name": "NOODLEWORKS",
+      "address": "5901 WYOMING BLVD NE, S",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-01-21",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Thawing"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Date Marking and Disposition"
+        }
+      ]
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:noodleworks:2026-01-21",
+    "source": "ABQ",
+    "establishment": {
+      "name": "NOODLEWORKS",
+      "address": "5901 WYOMING BLVD NE, S",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-01-21",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": []
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:noodleworks:2026-01-22",
+    "source": "ABQ",
+    "establishment": {
+      "name": "NOODLEWORKS",
+      "address": "5901 WYOMING BLVD NE, S",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-01-22",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": []
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:the-woodmark-at-uptown:2026-01-20",
+    "source": "ABQ",
+    "establishment": {
+      "name": "THE WOODMARK AT UPTOWN",
+      "address": "7201 PROSPECT PL NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-01-20",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": []
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:wal-mart-super-center-5491:2026-01-22",
+    "source": "ABQ",
+    "establishment": {
+      "name": "WAL MART SUPER CENTER 5491",
+      "address": "2266 WYOMING BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-01-22",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Not Clean"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Hands Clean & Properly Washed"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Operation and Maintenance"
+        }
+      ]
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Surface Not Clean",
+        "Hands Clean & Properly Washed",
+        "Equipment, Food Contact Surfaces, and Utensils Clean"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:wal-mart-super-center-5491:2026-01-22",
+    "source": "ABQ",
+    "establishment": {
+      "name": "WAL MART SUPER CENTER 5491",
+      "address": "2266 WYOMING BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-01-22",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": []
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:western-view-diner-and-steak-house-llc:2026-01-23",
+    "source": "ABQ",
+    "establishment": {
+      "name": "WESTERN VIEW DINER AND STEAK HOUSE LLC",
+      "address": "6411 CENTRAL AVE NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-01-23",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Maintenance and Operation"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Preventing Contamination From Hands"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Miscellaneous"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Training Records"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Ventilation and Hood Systems"
+        }
+      ]
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
   }
 ]
