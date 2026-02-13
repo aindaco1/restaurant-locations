@@ -64,6 +64,8 @@ class DatasetBuilder:
         try:
             scraper = ABQPDFScraper()
             abq_records = scraper.fetch_all_inspections()
+            if not abq_records:
+                logger.warning("ABQ scraper returned 0 records - PDF may have changed format")
             abq_file = scraper.save_raw_data(abq_records, str(self.output_dir))
             metadata['abq_records'] = len(abq_records)
         except Exception as e:

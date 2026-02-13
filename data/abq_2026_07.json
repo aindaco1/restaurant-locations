@@ -1,0 +1,267 @@
+[
+  {
+    "name": "DUTCH BROS COFFEE",
+    "address": "2070 GIBSON BLVD SE",
+    "date": "2026-02-06",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "DUTCH BROS COFFEE",
+    "address": "2070 GIBSON BLVD SE",
+    "date": "2026-02-06",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "DUTCH BROS COFFEE",
+    "address": "2070 GIBSON BLVD SE",
+    "date": "2026-02-04",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Fun Noodle Bar ABQ LLC",
+    "address": "5317 MENAUL BLVD NE",
+    "date": "2026-02-02",
+    "outcome": "failed",
+    "operational_status": "Closed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Physical Facilities",
+      "Physical Facilities, Construction and Repair",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
+  },
+  {
+    "name": "HIBACHI ONE",
+    "address": "3230 COORS BLVD NW",
+    "date": "2026-02-06",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "HIBACHI ONE",
+    "address": "3230 COORS BLVD NW",
+    "date": "2026-02-05",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "HO HO LIN OF MONTGOMERY LLC",
+    "address": "6205 MONTGOMERY BLVD NE, A",
+    "date": "2026-02-06",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Pest Control",
+      "Date Marking and Disposition",
+      "Plumbing",
+      "Training Records",
+      "Ventilation and Hood Systems",
+      "Physical Facilities",
+      "Physical Facilities, Cleaning",
+      "Surface Not Clean",
+      "Physical Facilities, Construction and Repair",
+      "Pest Control"
+    ]
+  },
+  {
+    "name": "HO HO LIN OF MONTGOMERY LLC",
+    "address": "6205 MONTGOMERY BLVD NE, A",
+    "date": "2026-02-03",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "ICON MOTION PICTURES AND MUSIC INC",
+    "address": "13120 CENTRAL AVE SE",
+    "date": "2026-02-02",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Physical Facilities, Cleaning",
+      "Surface Not Clean",
+      "Physical Facilities, Construction and Repair",
+      "Poisonous and Toxic/Chemical Substances",
+      "Training Records"
+    ]
+  },
+  {
+    "name": "ICON MOTION PICTURES AND MUSIC INC",
+    "address": "13120 CENTRAL AVE SE",
+    "date": "2026-02-02",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "IL VICINO INC./DBA IL VICINO NOB HILL",
+    "address": "3403 CENTRAL AVE NE",
+    "date": "2026-02-04",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Storage",
+      "Operation and Maintenance",
+      "Storage",
+      "Physical Facilities, Construction and Repair",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Cold Holding"
+    ]
+  },
+  {
+    "name": "IL VICINO INC./DBA IL VICINO NOB HILL",
+    "address": "3403 CENTRAL AVE NE",
+    "date": "2026-02-04",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "La Michoacana Del Norte",
+    "address": "1417 4th SW ST",
+    "date": "2026-02-02",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "PIZZA HUT #40111",
+    "address": "303 COORS BLVD NW",
+    "date": "2026-02-04",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "RELISH GOURMET SANDWICHES",
+    "address": "8019 MENAUL BLVD NE, E",
+    "date": "2026-02-05",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Training Records",
+      "Designated Areas",
+      "Personal Cleanliness",
+      "Records",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
+  },
+  {
+    "name": "RELISH GOURMET SANDWICHES",
+    "address": "8019 MENAUL BLVD NE, E",
+    "date": "2026-02-05",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "TACO BELL/KFC 24051",
+    "address": "6810 CENTRAL AVE SW",
+    "date": "2026-02-05",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Physical Facilities, Cleaning",
+      "Records",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
+  },
+  {
+    "name": "TACO BELL/KFC 24051",
+    "address": "6810 CENTRAL AVE SW",
+    "date": "2026-02-05",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Taco Mex Garcia",
+    "address": "5420 central Ave SW",
+    "date": "2026-02-03",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Knowledgeable",
+      "Plumbing",
+      "Physical Facilities, Cleaning",
+      "Surface Not Clean",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
+  },
+  {
+    "name": "TASTY NOODLE AND DUMPLINGS",
+    "address": "2325 SAN PERDRO DR NE, 1E",
+    "date": "2026-02-04",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Poisonous and Toxic/Chemical Substances",
+      "Thawing",
+      "Use Limitations"
+    ]
+  },
+  {
+    "name": "TWINS A & V DAYCARE CENTER",
+    "address": "1216 4TH ST SW",
+    "date": "2026-02-04",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Poisonous and Toxic/Chemical Substances",
+      "Training Records",
+      "Cold Holding",
+      "Physical Facilities, Construction and Repair",
+      "Records"
+    ]
+  }
+]

@@ -74,49 +74,33 @@ class ABQPDFScraper:
     
     def find_recent_pdfs(self, weeks_back: int = 12) -> List[str]:
         """
-        Find recent inspection report PDFs
+        Find recent inspection report PDFs.
+        
+        The main report (chpd_main_inspection_report.pdf) is always current
+        and is the primary data source. Additional PDFs are discovered from
+        the documents page if available.
         
         Args:
-            weeks_back: How many weeks back to search
+            weeks_back: How many weeks back to search (used for date-based discovery)
         
         Returns:
             List of PDF URLs
         """
-        logger.info(f"Searching for ABQ PDFs")
+        logger.info("Searching for ABQ PDFs")
         
-        # First, try to discover PDFs from the documents page
-        pdf_urls = self.discover_pdf_links()
+        # Start with the main report (always current)
+        pdf_urls = [self.main_report]
         
-        # Also try date-based URL patterns for recent weeks
-        now = datetime.now()
-        for week_offset in range(weeks_back):
-            date = now - timedelta(weeks=week_offset)
-            
-            # Generate date range for the week (Mon-Sun)
-            week_start = date - timedelta(days=date.weekday())
-            week_end = week_start + timedelta(days=6)
-            
-            # Try media-report pattern with date ranges (e.g., media-report-1-13-1-19.pdf)
-            date_patterns = [
-                f"{self.base_url}/media-report-{week_start.month}-{week_start.day}-{week_end.month}-{week_end.day}.pdf",
-                f"{self.base_url}/media-report-{week_start.strftime('%m-%d')}-{week_end.strftime('%m-%d')}.pdf",
-            ]
-            
-            for url in date_patterns:
+        # Try to discover additional PDFs from the documents page
+        try:
+            discovered = self.discover_pdf_links()
+            for url in discovered:
                 if url not in pdf_urls:
-                    try:
-                        response = self.session.head(url, timeout=10)
-                        if response.status_code == 200:
-                            pdf_urls.append(url)
-                            logger.info(f"Found dated PDF: {url}")
-                    except Exception:
-                        continue
+                    pdf_urls.append(url)
+        except Exception as e:
+            logger.warning(f"PDF discovery failed, using main report only: {e}")
         
-        if not pdf_urls:
-            logger.warning("No ABQ PDFs found")
-        else:
-            logger.info(f"Found {len(pdf_urls)} PDFs total")
-        
+        logger.info(f"Found {len(pdf_urls)} PDF(s) to process")
         return pdf_urls
     
     def parse_pdf(self, pdf_url: str) -> List[Dict]:
