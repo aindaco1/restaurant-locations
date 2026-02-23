@@ -1,0 +1,211 @@
+[
+  {
+    "name": "12TH STREET TAVERN",
+    "address": "2500 12TH ST NW, D",
+    "date": "2026-02-12",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Preventing Contamination From Hands",
+      "Cold Holding",
+      "Operations",
+      "Hands Clean & Properly Washed",
+      "Food Identification, Safe, Unadulterated and Honestly Presented"
+    ]
+  },
+  {
+    "name": "12TH STREET TAVERN",
+    "address": "2500 12TH ST NW, D",
+    "date": "2026-02-12",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "CHILDCARE SUNFLOWER LEARNING CENTER",
+    "address": "2912 CORONA DR NW",
+    "date": "2026-02-09",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "CHOWS 88 LLC",
+    "address": "3523 CENTRAL AVE NE",
+    "date": "2026-02-10",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Storage",
+      "Plumbing",
+      "Lighting",
+      "Personal Cleanliness",
+      "Surface Not Clean",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
+  },
+  {
+    "name": "CHOWS 88 LLC",
+    "address": "3523 CENTRAL AVE NE",
+    "date": "2026-02-10",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Fun Noodle Bar ABQ LLC DBA Fun Noodle Bar",
+    "address": "5317 MENAUL BLVD NE",
+    "date": "2026-02-09",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "HOLIDAY INN EXPRESS ALBUQUERQUE EAST",
+    "address": "10501 COPPER POINTE WAY NE",
+    "date": "2026-02-10",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Food Identification, Safe, Unadulterated and Honestly Presented",
+      "Operations",
+      "Records",
+      "Warewashing Temperature and Concentration",
+      "Personal Cleanliness"
+    ]
+  },
+  {
+    "name": "HOLIDAY INN EXPRESS ALBUQUERQUE EAST",
+    "address": "10501 COPPER POINTE WAY NE",
+    "date": "2026-02-10",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Honeybunch LLC",
+    "address": "700 1ST ST NW",
+    "date": "2026-02-12",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Honeybunch LLC",
+    "address": "700 1ST ST NW",
+    "date": "2026-02-12",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "PRESBYTERIAN HEALTH CARE SYSTS",
+    "address": "1100 CENTRAL AVE SE",
+    "date": "2026-02-09",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Records",
+      "Hot Holding & Reheating",
+      "Maintenance and Operation",
+      "Plumbing",
+      "Surface Condition",
+      "Physical Facilities, Construction and Repair",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Poisonous and Toxic/Chemical Substances",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Surface Not Clean"
+    ]
+  },
+  {
+    "name": "PRESBYTERIAN HEALTH CARE SYSTS",
+    "address": "1100 CENTRAL AVE SE",
+    "date": "2026-02-09",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "SONIC DRIVE IN 5479",
+    "address": "2119 VISTA OESTE NW",
+    "date": "2026-02-12",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Equipment Maintenance and Design",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Date Marking and Disposition",
+      "Plumbing",
+      "Ventilation and Hood Systems"
+    ]
+  },
+  {
+    "name": "SPRING ROLLIN COTTONWOOD LLC",
+    "address": "10131 COORS BLVD NW",
+    "date": "2026-02-11",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Cold Holding",
+      "Physical Facilities, Cleaning",
+      "Surface Not Clean",
+      "Physical Facilities, Construction and Repair",
+      "Equipment, Food Contact Surfaces, and Utensils Clean",
+      "Poisonous and Toxic/Chemical Substances"
+    ]
+  },
+  {
+    "name": "Takumi Restaurant",
+    "address": "2100 LOUISIANA BLVD NE, 800",
+    "date": "2026-02-09",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      "Designated Areas",
+      "Plumbing",
+      "Training Records",
+      "Records",
+      "Equipment, Food Contact Surfaces, and Utensils Clean"
+    ]
+  },
+  {
+    "name": "Takumi Restaurant",
+    "address": "2100 LOUISIANA BLVD NE, 800",
+    "date": "2026-02-09",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  }
+]
