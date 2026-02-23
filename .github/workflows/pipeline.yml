@@ -2,8 +2,8 @@ name: Data Pipeline
 
 on:
   schedule:
-    # Run weekly on Mondays at 2 AM UTC (7 PM MST / 8 PM MDT Sunday)
-    - cron: '0 2 * * 1'
+    # Run daily at 2 AM UTC to catch main report before it's overwritten
+    - cron: '0 2 * * *'
   
   workflow_dispatch:  # Allow manual trigger
   

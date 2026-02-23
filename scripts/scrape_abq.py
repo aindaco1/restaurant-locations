@@ -156,18 +156,59 @@ class ABQPDFScraper:
             logger.error(f"Failed to parse {pdf_url}: {e}")
             return []
     
-    def _extract_violations(self, text: str) -> List[str]:
-        """Extract violation descriptions from detail page"""
+    def _extract_violations(self, text: str) -> List[Dict]:
+        """Extract violation categories and observed findings from detail page"""
         violations = []
         lines = text.split('\n')
         
-        for i, line in enumerate(lines):
-            if line.startswith('Violation:'):
-                # Get the violation category
-                violation_category = line.replace('Violation:', '').strip()
-                violations.append(violation_category)
+        current_category = None
+        current_observed = []
+        in_observed = False
         
-        return violations
+        for line in lines:
+            stripped = line.strip()
+            
+            if stripped.startswith('Violation:'):
+                # Save previous violation if exists
+                if current_category:
+                    violations.append({
+                        'category': current_category,
+                        'observation': ' '.join(current_observed).strip(),
+                    })
+                
+                current_category = stripped.replace('Violation:', '').strip()
+                current_observed = []
+                in_observed = False
+            elif current_category:
+                # Only capture "Observed..." sentences (the actual findings)
+                if 'Observed' in stripped:
+                    in_observed = True
+                    current_observed.append(stripped)
+                elif in_observed and stripped and not any(stripped.startswith(p) for p in
+                        ['Violation:', 'Instructed', 'Violation corrected', '•',
+                         'Inspection', 'Permit', 'Food Code', 'Page ']):
+                    # Continue capturing multi-line observed text
+                    current_observed.append(stripped)
+                else:
+                    in_observed = False
+        
+        # Save last violation
+        if current_category:
+            violations.append({
+                'category': current_category,
+                'observation': ' '.join(current_observed).strip(),
+            })
+        
+        # Deduplicate by category name
+        seen = set()
+        unique = []
+        for v in violations:
+            key = v['category'].lower().strip()
+            if key not in seen:
+                seen.add(key)
+                unique.append(v)
+        
+        return unique
     
     def _parse_summary_page(self, text: str) -> List[Dict]:
         """Parse ABQ PDF - extracts restaurant name, address, date, outcome, operational status"""

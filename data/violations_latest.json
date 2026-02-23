@@ -119,11 +119,6 @@
           "code": "",
           "critical": false,
           "desc": "Physical Facilities, Construction and Repair"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Pest Control"
         }
       ]
     },
@@ -334,11 +329,6 @@
           "code": "",
           "critical": false,
           "desc": "Operation and Maintenance"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Storage"
         },
         {
           "code": "",
@@ -1664,11 +1654,6 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Training Records"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Ventilation and Hood Systems"
         },
         {
@@ -1680,11 +1665,6 @@
           "code": "",
           "critical": false,
           "desc": "Toilet Facilities"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Physical Facilities"
         }
       ]
     },
@@ -2221,11 +2201,6 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Plumbing"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Operation and Maintenance"
         }
       ]
@@ -2289,21 +2264,6 @@
           "code": "",
           "critical": false,
           "desc": "Consumer Advisories"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Storage"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Use Limitations"
         }
       ]
     },
@@ -2808,11 +2768,6 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Date Marking and Disposition"
         },
         {
@@ -2844,11 +2799,6 @@
           "code": "",
           "critical": false,
           "desc": "Records"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
         }
       ]
     },
@@ -2927,16 +2877,6 @@
           "code": "",
           "critical": false,
           "desc": "Poisonous and Toxic/Chemical Substances"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Physical Facilities"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Pest Control"
         }
       ]
     },
@@ -3112,11 +3052,6 @@
           "code": "",
           "critical": false,
           "desc": "Physical Facilities, Construction and Repair"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
         }
       ]
     },
@@ -3398,11 +3333,6 @@
           "code": "",
           "critical": false,
           "desc": "Physical Facilities, Cleaning"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Surface Not Clean"
         }
       ]
     },
@@ -3550,11 +3480,6 @@
           "code": "",
           "critical": false,
           "desc": "Records"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
         }
       ]
     },
@@ -3896,47 +3821,12 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Installation"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Testing Devices"
         },
         {
           "code": "",
           "critical": false,
-          "desc": "Physical Facilities, Cleaning"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Records"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Date Marking and Disposition"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Training Records"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Date Marking and Disposition"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Physical Facilities, Cleaning"
         }
       ]
     },
@@ -4608,22 +4498,7 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Operation and Maintenance"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Personal Cleanliness"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Surface Condition"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Records"
         }
       ]
     },
@@ -4739,11 +4614,6 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Use Limitations"
         },
         {
@@ -4775,11 +4645,6 @@
           "code": "",
           "critical": false,
           "desc": "Hands Clean & Properly Washed"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
         }
       ]
     },
@@ -4834,11 +4699,6 @@
           "code": "",
           "critical": false,
           "desc": "Surface Not Clean"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Plumbing"
         }
       ]
     },
@@ -4912,17 +4772,7 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Maintenance and Operation"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Poisonous and Toxic/Chemical Substances"
         }
       ]
     },
@@ -5438,11 +5288,6 @@
           "code": "",
           "critical": false,
           "desc": "Physical Facilities, Cleaning"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
         }
       ]
     },
@@ -6133,11 +5978,6 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Poisonous and Toxic/Chemical Substances"
         },
         {
@@ -6272,27 +6112,7 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Thawing"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Hot Holding & Reheating"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Use Limitations"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Date Marking and Disposition"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Maintenance and Operation"
         }
       ]
     },
@@ -6522,11 +6342,6 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Training Records"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Testing Devices"
         }
       ]
@@ -6595,26 +6410,6 @@
           "code": "",
           "critical": false,
           "desc": "Hands Clean & Properly Washed"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Training Records"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Ventilation and Hood Systems"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Cold Holding"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Testing Devices"
         }
       ]
     },
@@ -6799,11 +6594,6 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Date Marking and Disposition"
         },
         {
@@ -6829,52 +6619,12 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Maintenance and Operation"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Operation and Maintenance"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Ventilation and Hood Systems"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Physical Facilities, Construction and Repair"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Surface Not Clean"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Plumbing"
         },
         {
           "code": "",
           "critical": false,
           "desc": "Designated Areas"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Maintenance and Operation"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Ventilation and Hood Systems"
         },
         {
           "code": "",
@@ -6894,37 +6644,7 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Surface Not Clean"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Physical Facilities, Cleaning"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Surface Not Clean"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Food Separation"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Plumbing"
         },
         {
           "code": "",
@@ -6935,11 +6655,6 @@
           "code": "",
           "critical": false,
           "desc": "Single-Service"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
         }
       ]
     },
@@ -7106,22 +6821,7 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Surface Not Clean"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Poisonous and Toxic/Chemical Substances"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Pest Control"
         },
         {
           "code": "",
@@ -7205,22 +6905,12 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Physical Facilities"
         },
         {
           "code": "",
           "critical": false,
           "desc": "Testing Devices"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Operations"
         }
       ]
     },
@@ -7387,22 +7077,12 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Knowledgeable"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Surface Condition"
         },
         {
           "code": "",
           "critical": false,
           "desc": "Cold Holding"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Physical Facilities, Construction and Repair"
         }
       ]
     },
@@ -7675,22 +7355,7 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Records"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Physical Facilities"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Physical Facilities, Construction and Repair"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
         },
         {
           "code": "",
@@ -7983,16 +7648,6 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Surface Not Clean"
         },
         {
@@ -8150,11 +7805,6 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Maintenance and Operation"
         }
       ]
@@ -8224,22 +7874,12 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Poisonous and Toxic/Chemical Substances"
         },
         {
           "code": "",
           "critical": false,
           "desc": "Pooled Eggs"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Training Records"
         }
       ]
     },
@@ -8600,22 +8240,12 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Storage"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Personal Cleanliness"
         },
         {
           "code": "",
           "critical": false,
           "desc": "Hands Clean & Properly Washed"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Storage"
         },
         {
           "code": "",
@@ -9259,11 +8889,6 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Date Marking and Disposition"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Operation and Maintenance"
         },
         {
@@ -9402,11 +9027,6 @@
           "code": "",
           "critical": false,
           "desc": "Warewashing Temperature and Concentration"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Use Limitations"
         },
         {
           "code": "",
@@ -9630,11 +9250,6 @@
           "code": "",
           "critical": false,
           "desc": "Highly Susceptible Populations"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
         }
       ]
     },
@@ -10520,11 +10135,6 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Plumbing"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Toilet Facilities"
         },
         {
@@ -10584,16 +10194,6 @@
         {
           "code": "",
           "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Plumbing"
-        },
-        {
-          "code": "",
-          "critical": false,
           "desc": "Food Identification, Safe, Unadulterated and Honestly Presented"
         },
         {
@@ -10620,11 +10220,6 @@
           "code": "",
           "critical": false,
           "desc": "Physical Facilities, Cleaning"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Consumer Advisories"
         },
         {
           "code": "",
@@ -10895,11 +10490,6 @@
           "code": "",
           "critical": false,
           "desc": "Operation and Maintenance"
-        },
-        {
-          "code": "",
-          "critical": false,
-          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean"
         }
       ]
     },
@@ -11300,6 +10890,779 @@
       "severity": 3.0,
       "reasons": [
         "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:12th-street-tavern:2026-02-12",
+    "source": "ABQ",
+    "establishment": {
+      "name": "12TH STREET TAVERN",
+      "address": "2500 12TH ST NW, D",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-12",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Preventing Contamination From Hands",
+          "observation": "Observed a food employee touching ready-to-eat food with bare hands. Location: Prep top cooler Activity: Handling dinner rolls Food Contacted: King Hawaiian Dinner Rolls"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Cold Holding",
+          "observation": "Observed food items in cold holding unit measuring above 41\u00b0F. Location: Prep top cooler Food Items: Pre-packaged raw bacon, Chopped green chile, and sliced pickles Temperature:48\u00b0F, 52\u00b0F, and 57\u00b0F"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Operations",
+          "observation": "Observed that the facility was operating with an expired permit."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Hands Clean & Properly Washed",
+          "observation": "Observed food employee not wash hands when required. Condition: Donning new gloves and switching tasks ALLSUPS CONVENIENCE STORES - 1605 INDIAN SCHOOL RD NW - Approved ALLSUPS CONVENIENCE STORES - 1605 INDIAN SCHOOL RD NW Retail Food Establishment Class 3 Date: 02/13/2026 - #: PT0043390 - Inspection Result: Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Food Identification, Safe, Unadulterated and Honestly Presented",
+          "observation": ""
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Preventing Contamination From Hands",
+        "Cold Holding",
+        "Operations"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:12th-street-tavern:2026-02-12",
+    "source": "ABQ",
+    "establishment": {
+      "name": "12TH STREET TAVERN",
+      "address": "2500 12TH ST NW, D",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-12",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:childcare-sunflower-learning-center:2026-02-09",
+    "source": "ABQ",
+    "establishment": {
+      "name": "CHILDCARE SUNFLOWER LEARNING CENTER",
+      "address": "2912 CORONA DR NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-09",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:chows-88-llc:2026-02-10",
+    "source": "ABQ",
+    "establishment": {
+      "name": "CHOWS 88 LLC",
+      "address": "3523 CENTRAL AVE NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-10",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Storage",
+          "observation": "Observed cleaned utensils stored improperly. Utensils were not stored in a clean, dry location. Utensil Type: Plastic spoons and forks. Location: Storage racks in containers. Condition of the Location: spoons and forks stored with the handles down. CHOWS 88 LLC - 3523 CENTRAL AVE NE - Approved CHOWS 88 LLC - 3523 CENTRAL AVE NE Food Establishment Class C Date: 02/10/2026 - #: RT-FOODEST-013580-2026 - Inspection Result: Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Plumbing",
+          "observation": "Observed faucet of ware wash rinse sink is not maintained in good repair or is not repaired by law. Observed faucet of ware wash rinse sink found in disrepair by leaking."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Lighting",
+          "observation": "Observed inadequate amount of lighting. Location: Hood vent Manner: Burned bulb"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Personal Cleanliness",
+          "observation": "Observed a food employee without proper hair restraints. Location: Cook line Activity: Working cook line"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Not Clean",
+          "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located throughout facility The surface was made out of stainless steel and plastic The condition of the surface had extreme grease and food debris buildup CHOWS 88 LLC - 3523 CENTRAL AVE NE Food Establishment Class C Date: 02/10/2026 - #: PT0110512 - Inspection Result: Closure Re-Inspection Required"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": ""
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Storage",
+        "Plumbing",
+        "Lighting"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:chows-88-llc:2026-02-10",
+    "source": "ABQ",
+    "establishment": {
+      "name": "CHOWS 88 LLC",
+      "address": "3523 CENTRAL AVE NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-10",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:fun-noodle-bar-abq-llc-dba-fun-noodle-bar:2026-02-09",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Fun Noodle Bar ABQ LLC DBA Fun Noodle Bar",
+      "address": "5317 MENAUL BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-09",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:holiday-inn-express-albuquerque-east:2026-02-10",
+    "source": "ABQ",
+    "establishment": {
+      "name": "HOLIDAY INN EXPRESS ALBUQUERQUE EAST",
+      "address": "10501 COPPER POINTE WAY NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-10",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Food Identification, Safe, Unadulterated and Honestly Presented",
+          "observation": "Observed food packaging not in good condition and failing to protect the integrity of the contents of the food from adulteration or potential contaminants. Packaged Food: Sausage Gravy and Grape Jelly Location: dry storage rack Condition: dented cans"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Operations",
+          "observation": "Observed that the facility was operating with an expired permit."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Records",
+          "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: All TCS food items in facility Activity of the Food: stored HOLIDAY INN EXPRESS ALBUQUERQUE EAST - 10501 COPPER POINTE WAY NE Retail Food Establishment Class 3 Date: 02/10/2026 - #: PT0157174 - Inspection Result: Approved Honeybunch LLC - 700 1ST ST NW - Approved Honeybunch LLC - 700 1ST ST NW Food Establishment Class C Date: 02/12/2026 - #: RT-FOODEST-114710-2025 - Inspection Result: Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Warewashing Temperature and Concentration",
+          "observation": "Observed chemical sanitizer concentration exceeding the maximum level permitted. Type of Sanitizer: Chlorine Location: Three-compartment Concentration: Above 200 PPM"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Personal Cleanliness",
+          "observation": "Observed a food employee without proper hair restraints. Location: Working cook line Activity: Preparing sandwiches on cook line LA PETITE ACADEMY INC. \u2013 6000 FORTUNA RD NW - Approved LA PETITE ACADEMY INC. \u2013 6000 FORTUNA RD NW Food Establishment Class C Date: 02/12/2026 - #: CAC-Food-014372-2026 - Inspection Result: Approved When toxic or poisonous substances are purchased in bulk, it is common practice to divide the contents into working containers for use around"
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Food Identification, Safe, Unadulterated and Honestly Presented",
+        "Operations",
+        "Records"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:holiday-inn-express-albuquerque-east:2026-02-10",
+    "source": "ABQ",
+    "establishment": {
+      "name": "HOLIDAY INN EXPRESS ALBUQUERQUE EAST",
+      "address": "10501 COPPER POINTE WAY NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-10",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:honeybunch-llc:2026-02-12",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Honeybunch LLC",
+      "address": "700 1ST ST NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-12",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:honeybunch-llc:2026-02-12",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Honeybunch LLC",
+      "address": "700 1ST ST NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-12",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:presbyterian-health-care-systs:2026-02-09",
+    "source": "ABQ",
+    "establishment": {
+      "name": "PRESBYTERIAN HEALTH CARE SYSTS",
+      "address": "1100 CENTRAL AVE SE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-09",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Records",
+          "observation": "Observed the food establishment does not have calibration logs for temperature measuring devices. Premier Gas and Food Mart Inc - 1734 JUAN TABO BLVD NE - Approved Premier Gas and Food Mart Inc - 1734 JUAN TABO BLVD NE Retail Food Establishment Class 3 Date: 02/09/2026 - #: PT0134729 - Inspection Result: Approved PRESBYTERIAN HEALTH CARE SYSTS - 1100 CENTRAL AVE SE \u2013 Approved PRESBYTERIAN HEALTH CARE SYSTS - 1100 CENTRAL AVE SE Food Establishment Class C Date: 02/09/2026 - #: RT-FOODEST-061757-2025 - Inspection Result: Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Hot Holding & Reheating",
+          "observation": "Observed time/temperature control for safety food not hot held at 135\u00b0F or above. Food Item: Chicken tenders Food Temperature: 120\u00b0F"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Maintenance and Operation",
+          "observation": "Observed equipment not maintained in good repair. Location: Clean dish storage (Utensil dish pit) Type of Equipment: Spatulas, whisks and ladles Condition of the equipment: Equipment handles had burns and deep scoring beyond repair Observed cutting surface with deep scratches and scoring which limit the ability to be effectively cleaned and sanitized. Location: Make line Type: Prep cooler cutting board"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Plumbing",
+          "observation": "Observed floor drain under cook line is not maintained in good repair or is not repaired by law. Observed floor drain found in disrepair by missing protective grate or strainer basket."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Condition",
+          "observation": "Observed nonfood contact surface that was absorbent. The surface was located on board used to mount knife magnet in fryer room. The surface was made out of raw unsealed wood. The condition of the surface needs to be smooth, easily cleanable and non-absorbent."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Construction and Repair",
+          "observation": "Observed the following areas of the facility in disrepair. Observed cook line floor tiles in disrepair by having severely worn grout that needs to be repaired. PRESBYTERIAN HEALTH CARE SYSTS - 1100 CENTRAL AVE SE Food Establishment Class C Date: 02/09/2026 - #: RT-FOODEST-061663-2025 - Inspection Result: Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine Location: Rear kitchen Condition of the Location: Debris buildup inside machine by chute"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Poisonous and Toxic/Chemical Substances",
+          "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Clear tray Alleged Material: Cleaning solution for espresso machine and steam wand PRESBYTERIAN HEALTH CARE SYSTS - 1100 CENTRAL AVE SE Food Establishment Class C Date: 02/09/2026 - #: RT-FOODEST-061776-2025 - Inspection Result: Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Not Clean",
+          "observation": ""
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Records",
+        "Hot Holding & Reheating",
+        "Maintenance and Operation"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:presbyterian-health-care-systs:2026-02-09",
+    "source": "ABQ",
+    "establishment": {
+      "name": "PRESBYTERIAN HEALTH CARE SYSTS",
+      "address": "1100 CENTRAL AVE SE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-09",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:sonic-drive-in-5479:2026-02-12",
+    "source": "ABQ",
+    "establishment": {
+      "name": "SONIC DRIVE IN 5479",
+      "address": "2119 VISTA OESTE NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-12",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment Maintenance and Design",
+          "observation": "Observed equipment that is accumulating and pooling moisture, in equipment that is not sloped to drain. Location: Walk in cooler Type of equipment: Condenser unit in walk in cooler SONIC DRIVE IN 5479 - 2119 VISTA OESTE NW - Unsatisfactory Re-Inspection required SONIC DRIVE IN 5479 - 2119 VISTA OESTE NW Food Establishment Class C Date: 02/12/2026 - #: RT-FOODEST-014428-2026 - Inspection Result: Unsatisfactory Re-Inspection required"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine, ready to eat tater tots and fry hot holding bin Location: Storage area and cook line. Condition of the Location: Ice machine interior ceiling with a black li soil residue. hot holding Tater tot and fry unit with substantial soil buildup."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Date Marking and Disposition",
+          "observation": "Observed ready-to-eat time and temperature controlled for safety food held within the establishment inappropriately marked. Location: Hot steam table. Food Items: Red chili dated 1/12/26, red chili, meat dated 1/12/2026, long hot dogs dated 2/11/26 was date marked in January 2026 and needed to be date market February 2026"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Plumbing",
+          "observation": "Observed floor drain near front three-compartment sinks is not maintained in good repair or is not repaired by law. Observed floor drain near Three-compartment sink found in disrepair by missing strainer. Observed Three-compartment sinks Scrapper sprayer and Hot and cold valves is not maintained in good repair or is not repaired. Observed Scrapper prayed leaking, Damaged and in need of replacement, hot and Cold-water valves do not shut off fully at the time of inspection."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Ventilation and Hood Systems",
+          "observation": "Observed hood ventilation system inadequately collecting grease and condensation allowing for accumulation and drips to occur to where it built up to about"
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:spring-rollin-cottonwood-llc:2026-02-11",
+    "source": "ABQ",
+    "establishment": {
+      "name": "SPRING ROLLIN COTTONWOOD LLC",
+      "address": "10131 COORS BLVD NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-11",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Cold Holding",
+          "observation": "Observed food items in cold holding unit measuring above 41\u00b0F. Location: Prep top cooler. Food Items: Sliced tomatoes- 44 degrees, Sliced tomatoes 2, 45 degrees, chopped onions 46 degrees."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Cleaning",
+          "observation": "Observed buildup and debris on the Floors total cook and prep areas storage areas and under shelving and equipment sinks,"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Not Clean",
+          "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located Food prep and cooking area. all drain with excessive Black soil builds up and debris at the time of inspection."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Construction and Repair",
+          "observation": "Observed Corner walls are not easily cleanable. The surface was made out of RPC corner wall by drive thru. SPRING ROLLIN COTTONWOOD LLC - 10131 COORS BLVD NW - Conditional Approved SPRING ROLLIN COTTONWOOD LLC - 10131 COORS BLVD NW Food Establishment Class C Date: 02/11/2026 - #: RT-FOODEST-018797-2025 - Inspection Result: Conditional Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Meat Slicer, stainless steel cook pans. Location: Kitchen prep areas. Condition of the Location: meat slicer blade and guard with a yellow dry food buildup. pans on a shelf inverted with dry white rice debris at the time of inspection."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Poisonous and Toxic/Chemical Substances",
+          "observation": "Observed poisonous or toxic materials other than those required for the operation and maintenance of a food establishment located in the establishment. Material: Raid ant and roach. Location: Stored with other cleaning supplies. Intended Use: for pest control food service areas."
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:takumi-restaurant:2026-02-09",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Takumi Restaurant",
+      "address": "2100 LOUISIANA BLVD NE, 800",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-09",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Designated Areas",
+          "observation": "Observed facility did not provide a designated area for employees to eat, drink, or use tobacco products. Observed facility did not provide lockers or other suitable facilities for storage of employees clothing or other personal belongings. Takumi Restaurant - 2100 LOUISIANA BLVD NE, 800 - Approved Takumi Restaurant - 2100 LOUISIANA BLVD NE, 800\u00b0Food Establishment Class C Date: 02/09/2026 - #: RT-FOODEST-013082-2026 - Inspection Result: Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Plumbing",
+          "observation": "Observed plumbing at three-compartment sink from faucet leaking is not maintained in good repair or is not repaired by law. Observed faucet leaking from plumbing at faucet found in disrepair by unable to completely shut off and leaking"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Training Records",
+          "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Records",
+          "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Raw meats, prepared vegetables, dairy products Activity of the Food: Stored, cooled, received Food Establishments shall calibrate measuring equipment in accordance with the manufacturer recommendations and shall maintain adequate and contemporaneous calibration logs for calibration of equipment. Observed the food establishment does not have calibration logs for temperature measuring devices. Takumi Restaurant - 2100 LOUISIANA BLVD NE, 800\u00b0Food Establishment Class C Date: 02/09/2026 - #: PT0152146 - Inspection Result: Unsatisfactory Re-Inspection required"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": ""
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Designated Areas",
+        "Plumbing",
+        "Training Records"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:takumi-restaurant:2026-02-09",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Takumi Restaurant",
+      "address": "2100 LOUISIANA BLVD NE, 800",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-09",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
       ]
     },
     "links": {

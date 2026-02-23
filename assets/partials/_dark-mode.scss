@@ -28,6 +28,24 @@
     border-bottom-color: #333333;
   }
 
+  .header__nav-link {
+    color: #b8b8b8;
+
+    &:hover {
+      color: #f5f5f5;
+    }
+  }
+
+  // Scoring page
+  .scoring-table th,
+  .scoring-table td {
+    border-bottom-color: #333333;
+  }
+
+  .scoring-definitions dd {
+    color: #b8b8b8;
+  }
+
   // Cards and surfaces
   .filter-bar,
   .restaurant-card,
@@ -246,6 +264,30 @@
       background: #d32f2f;
       color: #ffffff;
     }
+  }
+
+  // Accordion
+  .inspection-accordion__trigger {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: #333333;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.06);
+    }
+  }
+
+  .inspection-accordion__summary {
+    color: #f5f5f5;
+  }
+
+  .inspection-accordion__icon {
+    color: #b8b8b8;
+  }
+
+  .inspection-accordion__writeup {
+    background: rgba(255, 255, 255, 0.03);
+    border-left-color: $color--warning;
+    color: #e0e0e0;
   }
 
   // Severity pills in mobile drawer need better text contrast

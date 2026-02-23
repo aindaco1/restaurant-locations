@@ -81,38 +81,28 @@ title: ABQ Health Code Violations
         </span>
       </div>
       
-      <!-- Inspections List -->
+      <!-- Per-Inspection Accordions -->
       <div class="inspections-list">
         <template x-for="(inspection, index) in restaurant.inspections" :key="`${restaurant.name}-${inspection.date}-${inspection.outcome}-${index}`">
-          <div class="inspection-item">
-            <div class="inspection-item__header">
-              <div class="inspection-item__meta">
-                <span class="inspection-item__date" x-text="inspection.date"></span>
-                <span class="inspection-item__outcome">
-                  <template x-if="inspection.outcome === 'conditional'">
-                    <span>Conditional Approved</span>
-                  </template>
-                  <template x-if="inspection.outcome === 'failed'">
-                    <span>Unsatisfactory Re-Inspection Required</span>
-                  </template>
-                  <template x-if="inspection.outcome === 'closed'">
-                    <span>Closure Re-Inspection Required</span>
-                  </template>
-                  <template x-if="inspection.outcome === 'approved'">
-                    <span>Approved</span>
-                  </template>
-                </span>
+          <div x-data="{ open: false, get hasContent() { return (inspection.violations && inspection.violations.length > 0) || inspection.writeup } }">
+            <template x-if="hasContent">
+              <div class="inspection-accordion">
+                <button 
+                  class="inspection-accordion__trigger"
+                  @click="open = !open"
+                  :aria-expanded="open.toString()">
+                  <span class="inspection-accordion__summary" x-text="formatInspectionHeading(inspection, restaurant.inspections)"></span>
+                  <span class="inspection-accordion__icon" :class="{ 'inspection-accordion__icon--open': open }">▾</span>
+                </button>
+                
+                <div class="inspection-accordion__panel" x-show="open" x-transition.opacity>
+                  <p class="inspection-accordion__writeup" x-text="generateInspectionWriteup(inspection)"></p>
+                </div>
               </div>
-            </div>
-            
-            <template x-if="inspection.violations && Array.isArray(inspection.violations) && inspection.violations.length > 0">
-              <div class="inspection-item__violations">
-                <strong>Violations:</strong>
-                <ul>
-                  <template x-for="(v, vIndex) in inspection.violations" :key="`${inspection.date}-${vIndex}`">
-                    <li x-text="v.desc || v"></li>
-                  </template>
-                </ul>
+            </template>
+            <template x-if="!hasContent">
+              <div class="inspection-item">
+                <span class="inspection-accordion__summary" x-text="formatInspectionHeading(inspection, restaurant.inspections)"></span>
               </div>
             </template>
           </div>

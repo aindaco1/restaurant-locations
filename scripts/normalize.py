@@ -34,6 +34,7 @@ class Violation(BaseModel):
     code: str
     critical: bool
     desc: str
+    observation: str = ''
 
 
 class Inspection(BaseModel):
@@ -41,6 +42,7 @@ class Inspection(BaseModel):
     type: str  # routine|complaint|followup|closure|reopen
     outcome: str  # approved|conditional|failed|closed|reopened
     violations: List[Violation] = Field(default_factory=list)
+    writeup: str = ''
 
 
 class Score(BaseModel):
@@ -111,6 +113,17 @@ class SeverityCalculator:
                 reasons.append('multiple adverse inspections within 365d')
         
         return Score(severity=round(score, 1), reasons=reasons)
+
+
+def generate_writeup(violations: List[Violation]) -> str:
+    """Generate a narrative writeup from violation categories.
+    
+    Observation text from PDFs is stored on each violation but is too
+    verbose for display. The frontend generates writeups from categories
+    with its own dedup/substring logic, so we leave writeup empty here
+    to let the client handle it.
+    """
+    return ''
 
 
 # ===== Normalizers =====
@@ -211,14 +224,16 @@ class ABQNormalizer:
                     violations_list.append(Violation(
                         code=v.get('code', ''),
                         critical=v.get('critical', False),
-                        desc=v.get('desc', '')
+                        desc=v.get('desc', v.get('category', '')),
+                        observation=v.get('observation', '')
                     ))
             
             inspection = Inspection(
                 date=raw_record['date'],
                 type='routine',
                 outcome=outcome_map.get(raw_record['outcome'], 'approved'),
-                violations=violations_list
+                violations=violations_list,
+                writeup=generate_writeup(violations_list)
             )
             
             score = SeverityCalculator.calculate(inspection)

@@ -123,6 +123,93 @@ a {
       max-height: $size--unit * 3;
     }
   }
+
+  &__nav-link {
+    font-size: $body-small--size;
+    font-weight: $weight--semibold;
+    color: $text--muted;
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: color $transition--fast;
+
+    &:hover {
+      color: $text--default;
+      text-decoration: underline;
+    }
+
+    @include sm {
+      display: none;
+    }
+  }
+}
+
+// ===== Scoring Page =====
+
+.scoring-page {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.scoring-section {
+  margin-bottom: $space--xl;
+
+  h2 {
+    @include heading-3;
+    margin-bottom: $space--md;
+  }
+
+  p {
+    line-height: $line-height--relaxed;
+  }
+}
+
+.scoring-badges {
+  display: flex;
+  flex-direction: column;
+  gap: $space--md;
+}
+
+.scoring-badge-row {
+  display: flex;
+  align-items: center;
+  gap: $space--md;
+  font-size: $body-small--size;
+}
+
+.scoring-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: $space--md;
+  font-size: $body-small--size;
+
+  th, td {
+    padding: $space--sm $space--md;
+    text-align: left;
+    border-bottom: 1px solid $color--light;
+  }
+
+  th {
+    font-weight: $weight--semibold;
+    color: $text--muted;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: $caption--size;
+  }
+}
+
+.scoring-definitions {
+  dt {
+    font-weight: $weight--semibold;
+    margin-top: $space--md;
+  }
+
+  dd {
+    margin-left: 0;
+    margin-top: $space--xs;
+    color: $text--muted;
+    line-height: $line-height--relaxed;
+  }
 }
 
 // ===== Main Layout =====
@@ -638,6 +725,67 @@ a {
         line-height: 1.4;
       }
     }
+  }
+}
+
+// ===== Inspection Accordion =====
+
+.inspection-accordion {
+  &__trigger {
+    @include btn-reset;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: $space--md;
+    background: rgba(0, 0, 0, 0.02);
+    border: 1px solid $color--light;
+    border-radius: $radius--sm;
+    cursor: pointer;
+    transition: background $transition--fast;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.04);
+    }
+
+    &:focus-visible {
+      @include focus-ring;
+    }
+  }
+
+  &__summary {
+    font-size: $body-small--size;
+    font-weight: $weight--semibold;
+    color: $text--default;
+    text-align: left;
+    line-height: $line-height--normal;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    font-size: $body--size;
+    color: $text--muted;
+    transition: transform $transition--fast;
+    margin-left: $space--md;
+
+    &--open {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__panel {
+    padding-top: $space--md;
+  }
+
+  &__writeup {
+    padding: $space--md;
+    margin: 0 0 $space--md 0;
+    background: rgba(0, 0, 0, 0.02);
+    border-left: 3px solid $color--warning;
+    border-radius: $radius--sm;
+    font-size: $body-small--size;
+    line-height: $line-height--relaxed;
+    color: $text--default;
   }
 }
 

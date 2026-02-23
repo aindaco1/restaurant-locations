@@ -1,20 +1,27 @@
 # NM Health Code Violations Finder
 
-A lightweight, fast Jekyll site that highlights recent restaurant health-code violators in New Mexico's 10 biggest cities. Built to help identify venues with recent closures or conditional approvals for filming location scouting.
+A lightweight, fast Jekyll site that highlights recent restaurant health-code violators in Albuquerque, NM. Built to help identify venues with recent closures or conditional approvals for filming location scouting.
 
-🔗 **Live Site**: `https://aindaco1.github.io/restaurant-locations` (after deployment)
+🔗 **Live Site**: https://healthcode.dustwave.xyz
 
 ## Target Cities
 
-Albuquerque, Las Cruces, Rio Rancho, Santa Fe, Roswell, Farmington, Hobbs, Clovis, Carlsbad, Alamogordo
+**Active**: Albuquerque (Bernalillo County)
+
+**Planned**: Las Cruces, Rio Rancho, Santa Fe, Roswell, Farmington, Hobbs, Clovis, Carlsbad, Alamogordo — pending NMED bulk data access.
 
 ## Features
 
-- 🔍 **Smart Filtering**: City, date range, severity level, outcome type
-- 📊 **Severity Scoring**: Rule-based scoring (closures > conditional > criticals)
+- 🔍 **Smart Filtering**: Date range, severity level, outcome type, text search
+- 📊 **Severity Scoring**: Rule-based scoring (closures > conditional > criticals) with [methodology page](/scoring)
+- 📋 **Accordion UI**: Expandable per-inspection panels with violation details
+- 🏷️ **Smart Name Formatting**: Title case, possessive apostrophes, roman numerals, stripped ID codes
+- 📝 **Human-Readable Writeups**: Regulatory violation categories mapped to plain English descriptions
+- 🌙 **Dark Mode**: System-aware theme toggle with persistent preference
+- 🚫 **Zero-Score Filtering**: Restaurants with 0.0 severity are automatically hidden
 - 📥 **Export**: Download filtered results as CSV/JSON
 - ♿ **Accessible**: Keyboard navigation, semantic HTML, WCAG compliant
-- ⚡ **Performant**: Static site, <20KB JS, Lighthouse score ≥95
+- ⚡ **Performant**: Static site, <20KB JS
 
 ## Tech Stack
 
@@ -117,17 +124,20 @@ Frontend (Jekyll)         Data Pipeline (Actions)
 │   ├── head.html
 │   ├── header.html
 │   ├── footer.html
-│   ├── filter-controls.html
-│   └── violation-card.html
+│   └── filter-controls.html
 ├── assets/
 │   ├── main.scss            # SCSS entry point
 │   ├── partials/
 │   │   ├── _variables.scss  # Design tokens (8px unit system)
 │   │   ├── _mixins.scss     # Utilities & breakpoints
-│   │   └── _components.scss # Component styles (BEM)
+│   │   ├── _components.scss # Component styles (BEM)
+│   │   ├── _dark-mode.scss  # Dark mode overrides
+│   │   ├── _theme-toggle.scss # Theme toggle component
+│   │   └── _status-key.scss # Status key legend
 │   └── js/
 │       ├── app.js           # Alpine.js app (filters, sort, export)
-│       └── score.js         # Severity scoring logic
+│       ├── score.js         # Severity scoring logic
+│       └── theme.js         # Dark mode theme toggle
 ├── data/
 │   ├── violations_latest.json  # Current dataset
 │   ├── manifest.json           # Dataset metadata
@@ -142,7 +152,8 @@ Frontend (Jekyll)         Data Pipeline (Actions)
 ├── .github/workflows/
 │   ├── pipeline.yml         # Data refresh workflow
 │   └── pages.yml            # GitHub Pages deploy
-└── index.html               # Main UI
+├── index.html               # Main UI
+└── scoring.html             # Scoring methodology page
 ```
 
 ## Data Model
@@ -151,6 +162,7 @@ Frontend (Jekyll)         Data Pipeline (Actions)
 {
   "id": "state:city:establishment:inspectionDate",
   "source": "NMED|ABQ",
+  "operational_status": "Open|Closed",
   "establishment": {
     "name": "Restaurant Name",
     "address": "123 Main St",
@@ -162,8 +174,9 @@ Frontend (Jekyll)         Data Pipeline (Actions)
     "date": "2025-11-01",
     "type": "routine|complaint|followup|closure|reopen",
     "outcome": "approved|conditional|failed|closed|reopened",
+    "writeup": "Human-readable summary of inspection findings",
     "violations": [
-      {"code": "21-101", "critical": true, "desc": "..."}
+      {"code": "21-101", "critical": true, "desc": "...", "observation": "Specific observed issue"}
     ]
   },
   "score": {
@@ -242,13 +255,13 @@ python scripts/build_dataset.py --validate
 
 - **Coverage**: Albuquerque & Bernalillo County
 - **Format**: Weekly PDF inspection reports
-- **Current Data**: 88+ inspections (growing weekly)
-- **Update Frequency**: Weekly automated scraping (Mondays 2 AM UTC)
+- **Current Data**: 237+ inspection records (Sept 2025 – Feb 2026)
+- **Update Frequency**: Daily automated scraping (2 AM UTC)
 - **Archive Mode**: Accumulates all inspections over time
 - **Source URL**: https://www.cabq.gov/environmentalhealth/documents/
 
-**Active PDFs Monitored:**
-- `chpd_main_inspection_report.pdf` (current week)
+**Primary PDF Source:**
+- `chpd_main_inspection_report.pdf` — scraped daily to capture data before it's overwritten weekly
 - `media-report-[dates].pdf` (historical weeks)
 
 **Data Includes:**

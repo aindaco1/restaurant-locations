@@ -1,0 +1,108 @@
+---
+layout: page
+title: How Scoring Works
+subtitle: Understanding the severity scoring system
+---
+
+<div class="scoring-page">
+  <section class="scoring-section">
+    <h2>Overview</h2>
+    <p>
+      Each restaurant receives a severity score based on its recent inspection history.
+      The score determines the badge color displayed on the main page. Higher scores
+      indicate more serious or more frequent health code issues.
+    </p>
+  </section>
+
+  <section class="scoring-section">
+    <h2>Severity Badges</h2>
+    <div class="scoring-badges">
+      <div class="scoring-badge-row">
+        <span class="badge badge--high">HIGH</span>
+        <span>Score ≥ 3.0 — Closure or multiple serious violations</span>
+      </div>
+      <div class="scoring-badge-row">
+        <span class="badge badge--medium">MEDIUM</span>
+        <span>Score 1.5 – 2.9 — Conditional approval or failed inspection</span>
+      </div>
+      <div class="scoring-badge-row">
+        <span class="badge badge--low">LOW</span>
+        <span>Score &lt; 1.5 — Minor issues noted</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="scoring-section">
+    <h2>Scoring Rules</h2>
+    <p>Scores start at 0 and points are added based on inspection outcomes:</p>
+
+    <table class="scoring-table">
+      <thead>
+        <tr>
+          <th>Condition</th>
+          <th>Points</th>
+          <th>Time Window</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Closure</td>
+          <td>+3.0</td>
+          <td>Within 180 days</td>
+        </tr>
+        <tr>
+          <td>Conditional approval or failed inspection</td>
+          <td>+2.0</td>
+          <td>Within 180 days</td>
+        </tr>
+        <tr>
+          <td>Each critical violation (capped at +2.0)</td>
+          <td>+0.5</td>
+          <td>Within 365 days</td>
+        </tr>
+        <tr>
+          <td>Two or more adverse inspections</td>
+          <td>+0.5</td>
+          <td>Within 365 days</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="scoring-section">
+    <h2>Restaurant-Level Score</h2>
+    <p>
+      When a restaurant has multiple inspections, the scores from each inspection are
+      combined. A restaurant that is currently operationally closed receives an
+      additional +5.0 points, pushing it to the top of severity-sorted results.
+    </p>
+  </section>
+
+  <section class="scoring-section">
+    <h2>Inspection Outcomes</h2>
+    <dl class="scoring-definitions">
+      <dt>Approved</dt>
+      <dd>The restaurant passed inspection with no significant issues.</dd>
+
+      <dt>Conditional Approved</dt>
+      <dd>The restaurant is allowed to continue operating but has violations that must be corrected.</dd>
+
+      <dt>Unsatisfactory / Re-Inspection Required</dt>
+      <dd>The restaurant failed inspection and must be re-inspected before receiving approval.</dd>
+
+      <dt>Closure / Re-Inspection Required</dt>
+      <dd>The restaurant was ordered to close due to serious health code violations. It must correct all issues and pass a re-inspection before reopening.</dd>
+    </dl>
+  </section>
+
+  <section class="scoring-section">
+    <h2>Data Source</h2>
+    <p>
+      Inspection data is scraped from the
+      <a href="https://www.cabq.gov/environmentalhealth" target="_blank" rel="noopener">
+        City of Albuquerque Environmental Health Department</a>
+      weekly inspection reports. The data pipeline runs automatically and accumulates
+      historical records over time.
+    </p>
+  </section>
+</div>

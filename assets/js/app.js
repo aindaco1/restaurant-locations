@@ -57,6 +57,7 @@ document.addEventListener('alpine:init', () => {
           date: v.inspection.date,
           outcome: v.inspection.outcome,
           violations: v.inspection.violations,
+          writeup: v.inspection.writeup || '',
           individualScore: v.score.severity,
           reasons: v.score.reasons,
           links: v.links,
@@ -97,7 +98,8 @@ document.addEventListener('alpine:init', () => {
         restaurant.score = totalScore;
       });
       
-      return Object.values(grouped);
+      // Remove restaurants with 0.0 score
+      return Object.values(grouped).filter(r => r.score > 0);
     },
 
     filterViolations(filters) {
@@ -143,19 +145,52 @@ document.addEventListener('alpine:init', () => {
     },
 
     toTitleCase(str) {
-      return str.toLowerCase().split(' ').map(word => {
-        // Keep abbreviations and special cases uppercase
-        if (word.match(/^(llc|inc|dba|nw|ne|sw|se)$/i)) {
+      // Strip trailing ID codes (e.g., "-Pt0160304", "-24051", " #102460")
+      str = str.replace(/[-\s](?:pt|id)?\d{4,}$/i, '');
+      // Normalize "/DBA" or "/dba" to " DBA "
+      str = str.replace(/[/]DBA\b/gi, ' DBA ');
+      // Strip trailing store numbers (e.g., " 10386")
+      str = str.replace(/\s+\d{4,}$/, '');
+
+      let result = str.toLowerCase().split(' ').map((word, i) => {
+        // Known uppercase abbreviations
+        if (word.match(/^(llc|inc|dba|nw|ne|sw|se|abq|kfc)$/i)) {
           return word.toUpperCase();
         }
-        // Handle hyphenated words
-        if (word.includes('-')) {
-          return word.split('-').map(part => 
-            part.charAt(0).toUpperCase() + part.slice(1)
-          ).join('-');
+        // Roman numerals (i–xv)
+        if (word.match(/^(i{1,3}|iv|vi{0,3}|ix|xi{0,3}|xiv|xv)$/i)) {
+          return word.toUpperCase();
         }
-        return word.charAt(0).toUpperCase() + word.slice(1);
+        // Lowercase articles/prepositions/conjunctions (not first word)
+        // But not single letters next to "&" (initials like "A & V")
+        if (i > 0 && word.match(/^(a|an|and|at|by|for|in|of|on|or|the|to|with)$/)) {
+          const words = str.toLowerCase().split(' ');
+          const prevIsAmp = words[i - 1] === '&';
+          const nextIsAmp = words[i + 1] === '&';
+          if (word === 'a' && (prevIsAmp || nextIsAmp)) {
+            return 'A';
+          }
+          return word;
+        }
+        // Handle hyphenated or slash-separated words (e.g., "taco bell/kfc")
+        if (word.includes('-') || word.includes('/')) {
+          const sep = word.includes('/') ? '/' : '-';
+          return word.split(sep).map(part => {
+            if (part.match(/^(llc|inc|dba|nw|ne|sw|se|abq|kfc)$/i)) return part.toUpperCase();
+            return part.charAt(0).toUpperCase() + part.slice(1);
+          }).join(sep);
+        }
+        // Capitalize first letter, skipping leading punctuation like (
+        return word.replace(/([({["']?)(\w)/, (m, p, c) => p + c.toUpperCase());
       }).join(' ');
+
+      // Restore missing apostrophes for known possessive brand names
+      result = result.replace(/\b(Applebee|Blake|Cheddar|Church|Denny|Filiberto|Freddy|Lindy|Anita|Ruben|Santiago|Sergio|Spinn|Stacker|Stripe|Wendy|Yasmine|Allsup|Chili|Howie|Sprout|Farmer)s\b/g, "$1's");
+      result = result.replace(/\bJimmy Johns\b/g, "Jimmy John's");
+      result = result.replace(/\bMoka Joes\b/g, "Moka Joe's");
+      result = result.replace(/\bDutch Bros\b/g, "Dutch Bros.");
+
+      return result;
     },
 
     sortViolations() {
@@ -334,6 +369,111 @@ document.addEventListener('alpine:init', () => {
     },
     getSeverityLevel(score) {
       return Alpine.store('violations')?.getSeverityLevel(score) || 'low';
+    },
+
+    formatInspectionHeading(inspection, inspections) {
+      const date = inspection.date;
+      switch (inspection.outcome) {
+        case 'closed':
+          return `${date} — Closure Re-Inspection Required`;
+        case 'failed':
+          return `${date} — Unsatisfactory Re-Inspection Required`;
+        case 'conditional':
+          return `${date} — Conditional Approved`;
+        case 'approved': {
+          const thisDate = new Date(inspection.date);
+          const hasAdversePrior = inspections.some(i => {
+            const iDate = new Date(i.date);
+            return iDate < thisDate && ['closed', 'failed', 'conditional'].includes(i.outcome);
+          });
+          return hasAdversePrior 
+            ? `${date} — Passed Follow-Up Inspection`
+            : `${date} — Approved`;
+        }
+        default:
+          return `${date} — ${inspection.outcome}`;
+      }
+    },
+
+    plainCategory(raw) {
+      const map = {
+        'equipment, food contact surfaces, and utensils clean': 'unclean equipment and food contact surfaces',
+        'plumbing': 'plumbing issues',
+        'training records': 'missing training records',
+        'date marking and disposition': 'improper date marking',
+        'surface not clean': 'unclean surfaces',
+        'poisonous and toxic/chemical substances': 'improper chemical storage',
+        'physical facilities, construction and repair': 'facility repair needed',
+        'physical facilities, cleaning': 'unclean facilities',
+        'physical facilities': 'facility maintenance issues',
+        'ventilation and hood systems': 'ventilation problems',
+        'storage': 'improper storage',
+        'cold holding': 'improper cold holding temperatures',
+        'personal cleanliness': 'personal cleanliness issues',
+        'designated areas': 'improper designated areas',
+        'pest control': 'pest control issues',
+        'use limitations': 'equipment use violations',
+        'use limitation': 'equipment use violations',
+        'testing devices': 'missing or faulty testing devices',
+        'food identification, safe, unadulterated and honestly presented': 'food labeling and safety issues',
+        'operation and maintenance': 'operational maintenance issues',
+        'maintenance and operation': 'operational maintenance issues',
+        'food separation': 'improper food separation',
+        'hands clean & properly washed': 'handwashing violations',
+        'consumer advisories': 'missing consumer advisories',
+        'warewashing temperature and concentration': 'warewashing temperature issues',
+        'knowledgeable': 'lack of food safety knowledge',
+        'hot holding & reheating': 'improper hot holding or reheating',
+        'operations': 'operational violations',
+        'cooling': 'improper cooling procedures',
+        'surface condition': 'damaged surfaces',
+        'lighting': 'inadequate lighting',
+        'toilet facilities': 'toilet facility issues',
+        'thawing': 'improper thawing procedures',
+        'functionality and accuracy': 'equipment accuracy issues',
+        'medications and first aid kits': 'medication storage issues',
+        'records': 'missing records',
+        'installation': 'improper equipment installation',
+        'maintenance': 'maintenance issues',
+        'preventing contamination from hands': 'bare hand contact with food',
+        'hot & cold-water availability & pressure': 'water supply issues',
+        'miscellaneous': 'miscellaneous violations',
+        'preparation': 'food preparation issues',
+        'equipment design': 'equipment design issues',
+        'equipment maintenance and design': 'equipment maintenance issues',
+      };
+      const lower = raw.toLowerCase().trim();
+      return map[lower] || lower;
+    },
+
+    generateInspectionWriteup(inspection) {
+      if (inspection.writeup) return inspection.writeup;
+      
+      if (!inspection.violations || !Array.isArray(inspection.violations) || inspection.violations.length === 0) {
+        return '';
+      }
+      
+      const categories = [];
+      inspection.violations.forEach(v => {
+        const raw = (v.desc || v || '').toString().trim();
+        if (!raw) return;
+        const plain = this.plainCategory(raw);
+        // Skip if this is a substring of an existing category or vice versa
+        const dominated = categories.some(c => c.includes(plain));
+        if (dominated) return;
+        for (let i = categories.length - 1; i >= 0; i--) {
+          if (plain.includes(categories[i])) {
+            categories.splice(i, 1);
+          }
+        }
+        categories.push(plain);
+      });
+      
+      if (categories.length === 0) return '';
+      if (categories.length === 1) return `Inspectors identified ${categories[0]}.`;
+      const last = categories[categories.length - 1];
+      const rest = categories.slice(0, -1);
+      return `Inspectors identified ${rest.join(', ')}, and ${last}.`;
     }
   }));
 });

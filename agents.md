@@ -8,7 +8,7 @@ Target cities (top 10 by population): Albuquerque, Las Cruces, Rio Rancho, Santa
 
 Approach in One Glance
 	•	Static site: Jekyll on GitHub Pages (HTML/SCSS/JS), performance‑first “Amp coding” style (see principles below).
-	•	Data pipeline: GitHub Actions runs weekly (Mondays 2 AM UTC); scrapes ABQ PDFs, merges with existing data, writes normalized JSON into /data/ and commits.
+	•	Data pipeline: GitHub Actions runs daily (2 AM UTC); scrapes ABQ PDFs, merges with existing data, writes normalized JSON into /data/ and commits.
 	•	Data source:
 	•	City of Albuquerque — publishes weekly Restaurant Inspection Report PDFs; scrape and normalize. Includes violations, operational status, dates.
 	•	Archive mode: Accumulates inspection data over time (merges weekly, deduplicates by ID)
@@ -38,7 +38,7 @@ Architecture
 	2.	Scrape ABQ PDFs: parse weekly PDF tables -> abq_YYYY‑WW.json.
 	3.	Normalize + Merge: map fields to a shared schema and compute scores -> violations_latest.json and violations_YYYY‑MM.json.
 	4.	Publish: commit JSON to /data/, update /data/manifest.json with dataset hashes and dates.
-	•	Schedule: nightly (UTC) and on‑demand manual dispatch.
+	•	Schedule: daily (2 AM UTC) and on‑demand manual dispatch.
 	•	Secrets: API keys (if needed) stored in GitHub Secrets; Actions export to env at runtime.
 	•	Reliability: small unit tests for parsers; fail the job if schema drifts.
 
@@ -52,6 +52,7 @@ Architecture
 {
   "id": "state:city:establishment:inspectionDate",
   "source": "NMED|ABQ",
+  "operational_status": "open|closed|conditional",
   "establishment": {
     "name": "string",
     "address": "string",
@@ -63,7 +64,8 @@ Architecture
     "date": "YYYY-MM-DD",
     "type": "routine|complaint|followup|closure|reopen",
     "outcome": "approved|conditional|failed|closed|reopened",
-    "violations": [{"code": "string", "critical": true, "desc": "string"}]
+    "writeup": "string (plain-English summary of inspection findings)",
+    "violations": [{"code": "string", "critical": true, "desc": "string", "observation": "string"}]
   },
   "score": {
     "severity": 0.0,
@@ -147,7 +149,8 @@ Repo Layout
 ├─ workers/
 │  ├─ api-proxy.js
 │  └─ dataset-cache.js
-└─ index.html
+├─ index.html
+└─ scoring.html
 
 
 ⸻
@@ -164,11 +167,15 @@ GitHub Actions (pipeline.yml, sketch)
 
 ⸻
 
-Frontend UI (MVP)
-	•	Filters: city (multi‑select), date range (last 30/90/365), severity (LOW/MED/HIGH), outcome type.
-	•	List: cards with name, city, last inspection date, outcome, severity badge, and “why” tooltip.
+Frontend UI
+	•	Filters: city (multi‑select), date range (last 30/90/365), severity (LOW/MED/HIGH), outcome type. Restaurants with 0.0 score filtered out.
+	•	List: cards with smart-formatted name, city, severity badge; per-inspection accordion (heading = date + outcome, body = plain-English writeup + violation details).
+	•	Name formatting: title case with possessive restoration, roman numeral preservation, ID code stripping.
+	•	Violation categories: regulatory jargon mapped to human-readable plain English.
 	•	Sort: by severity (desc), most recent, alphabetically.
 	•	Export: Download CSV/JSON of current filtered set.
+	•	Dark mode: persistent theme toggle (light/dark), respects system preference.
+	•	Scoring page: /scoring with full methodology explanation.
 	•	(Optional) Map view with Leaflet if geocodes available.
 
 ⸻
@@ -267,10 +274,17 @@ Implementation Status
 	•	Responsive design (mobile-first breakpoints)
 	•	Accessibility: keyboard nav, semantic HTML, ARIA labels, focus states
 	•	Sample data for testing (data/violations_latest.json)
+	•	Per-inspection accordion UI with expandable violation details
+	•	Smart restaurant name formatting (title case, apostrophes, roman numerals)
+	•	Plain-English violation category mapping
+	•	Dark mode with persistent theme toggle
 
-✅ Milestone 3 — Polish (PARTIAL)
+✅ Milestone 3 — Polish (COMPLETED)
 	•	sitemap.xml and robots.txt
 	•	Complete documentation (README.md, agents.md)
+	•	Scoring methodology page (/scoring)
+	•	Daily pipeline schedule (catches main report before weekly overwrite)
+	•	237+ accumulated inspection records
 
 ⏸️ Deferred (Lower Priority)
 	•	Cloudflare Workers for edge caching
@@ -294,3 +308,6 @@ Key Design Decisions
 	3.	Graceful API failures: Return empty datasets, don't block builds
 	4.	Sample data included: Site works immediately without API access
 	5.	Progressive enhancement: Core content works without JavaScript
+	6.	Writeup generation delegated to frontend: PDF observation text too verbose for raw display
+	7.	Per-inspection accordions over single accordion per restaurant: better scanability for multi-inspection venues
+	8.	Daily pipeline to prevent data loss from weekly PDF overwrite
