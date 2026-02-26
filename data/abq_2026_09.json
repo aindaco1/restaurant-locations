@@ -1,222 +1,31 @@
 [
   {
-    "name": "12TH STREET TAVERN",
-    "address": "2500 12TH ST NW, D",
-    "date": "2026-02-12",
+    "name": "DENNYS 6214",
+    "address": "11261 MENAUL BLVD NE",
+    "date": "2026-02-20",
     "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
       {
-        "category": "Preventing Contamination From Hands",
-        "observation": "Observed a food employee touching ready-to-eat food with bare hands. Location: Prep top cooler Activity: Handling dinner rolls Food Contacted: King Hawaiian Dinner Rolls"
-      },
-      {
-        "category": "Cold Holding",
-        "observation": "Observed food items in cold holding unit measuring above 41\u00b0F. Location: Prep top cooler Food Items: Pre-packaged raw bacon, Chopped green chile, and sliced pickles Temperature:48\u00b0F, 52\u00b0F, and 57\u00b0F"
-      },
-      {
-        "category": "Operations",
-        "observation": "Observed that the facility was operating with an expired permit."
-      },
-      {
-        "category": "Hands Clean & Properly Washed",
-        "observation": "Observed food employee not wash hands when required. Condition: Donning new gloves and switching tasks ALLSUPS CONVENIENCE STORES - 1605 INDIAN SCHOOL RD NW - Approved ALLSUPS CONVENIENCE STORES - 1605 INDIAN SCHOOL RD NW Retail Food Establishment Class 3 Date: 02/13/2026 - #: PT0043390 - Inspection Result: Approved"
-      },
-      {
-        "category": "Food Identification, Safe, Unadulterated and Honestly Presented",
-        "observation": ""
-      }
-    ]
-  },
-  {
-    "name": "12TH STREET TAVERN",
-    "address": "2500 12TH ST NW, D",
-    "date": "2026-02-12",
-    "outcome": "conditional",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "CHILDCARE SUNFLOWER LEARNING CENTER",
-    "address": "2912 CORONA DR NW",
-    "date": "2026-02-09",
-    "outcome": "conditional",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "CHOWS 88 LLC",
-    "address": "3523 CENTRAL AVE NE",
-    "date": "2026-02-10",
-    "outcome": "approved",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": [
-      {
-        "category": "Storage",
-        "observation": "Observed cleaned utensils stored improperly. Utensils were not stored in a clean, dry location. Utensil Type: Plastic spoons and forks. Location: Storage racks in containers. Condition of the Location: spoons and forks stored with the handles down. CHOWS 88 LLC - 3523 CENTRAL AVE NE - Approved CHOWS 88 LLC - 3523 CENTRAL AVE NE Food Establishment Class C Date: 02/10/2026 - #: RT-FOODEST-013580-2026 - Inspection Result: Approved"
-      },
-      {
-        "category": "Plumbing",
-        "observation": "Observed faucet of ware wash rinse sink is not maintained in good repair or is not repaired by law. Observed faucet of ware wash rinse sink found in disrepair by leaking."
-      },
-      {
-        "category": "Lighting",
-        "observation": "Observed inadequate amount of lighting. Location: Hood vent Manner: Burned bulb"
-      },
-      {
-        "category": "Personal Cleanliness",
-        "observation": "Observed a food employee without proper hair restraints. Location: Cook line Activity: Working cook line"
-      },
-      {
-        "category": "Surface Not Clean",
-        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located throughout facility The surface was made out of stainless steel and plastic The condition of the surface had extreme grease and food debris buildup CHOWS 88 LLC - 3523 CENTRAL AVE NE Food Establishment Class C Date: 02/10/2026 - #: PT0110512 - Inspection Result: Closure Re-Inspection Required"
-      },
-      {
-        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": ""
-      }
-    ]
-  },
-  {
-    "name": "CHOWS 88 LLC",
-    "address": "3523 CENTRAL AVE NE",
-    "date": "2026-02-10",
-    "outcome": "closed",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "Fun Noodle Bar ABQ LLC DBA Fun Noodle Bar",
-    "address": "5317 MENAUL BLVD NE",
-    "date": "2026-02-09",
-    "outcome": "closed",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "HOLIDAY INN EXPRESS ALBUQUERQUE EAST",
-    "address": "10501 COPPER POINTE WAY NE",
-    "date": "2026-02-10",
-    "outcome": "approved",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": [
-      {
-        "category": "Food Identification, Safe, Unadulterated and Honestly Presented",
-        "observation": "Observed food packaging not in good condition and failing to protect the integrity of the contents of the food from adulteration or potential contaminants. Packaged Food: Sausage Gravy and Grape Jelly Location: dry storage rack Condition: dented cans"
-      },
-      {
-        "category": "Operations",
-        "observation": "Observed that the facility was operating with an expired permit."
-      },
-      {
-        "category": "Records",
-        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: All TCS food items in facility Activity of the Food: stored HOLIDAY INN EXPRESS ALBUQUERQUE EAST - 10501 COPPER POINTE WAY NE Retail Food Establishment Class 3 Date: 02/10/2026 - #: PT0157174 - Inspection Result: Approved Honeybunch LLC - 700 1ST ST NW - Approved Honeybunch LLC - 700 1ST ST NW Food Establishment Class C Date: 02/12/2026 - #: RT-FOODEST-114710-2025 - Inspection Result: Approved"
-      },
-      {
-        "category": "Warewashing Temperature and Concentration",
-        "observation": "Observed chemical sanitizer concentration exceeding the maximum level permitted. Type of Sanitizer: Chlorine Location: Three-compartment Concentration: Above 200 PPM"
-      },
-      {
-        "category": "Personal Cleanliness",
-        "observation": "Observed a food employee without proper hair restraints. Location: Working cook line Activity: Preparing sandwiches on cook line LA PETITE ACADEMY INC. \u2013 6000 FORTUNA RD NW - Approved LA PETITE ACADEMY INC. \u2013 6000 FORTUNA RD NW Food Establishment Class C Date: 02/12/2026 - #: CAC-Food-014372-2026 - Inspection Result: Approved When toxic or poisonous substances are purchased in bulk, it is common practice to divide the contents into working containers for use around"
-      }
-    ]
-  },
-  {
-    "name": "HOLIDAY INN EXPRESS ALBUQUERQUE EAST",
-    "address": "10501 COPPER POINTE WAY NE",
-    "date": "2026-02-10",
-    "outcome": "conditional",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "Honeybunch LLC",
-    "address": "700 1ST ST NW",
-    "date": "2026-02-12",
-    "outcome": "approved",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "Honeybunch LLC",
-    "address": "700 1ST ST NW",
-    "date": "2026-02-12",
-    "outcome": "conditional",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "PRESBYTERIAN HEALTH CARE SYSTS",
-    "address": "1100 CENTRAL AVE SE",
-    "date": "2026-02-09",
-    "outcome": "approved",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": [
-      {
-        "category": "Records",
-        "observation": "Observed the food establishment does not have calibration logs for temperature measuring devices. Premier Gas and Food Mart Inc - 1734 JUAN TABO BLVD NE - Approved Premier Gas and Food Mart Inc - 1734 JUAN TABO BLVD NE Retail Food Establishment Class 3 Date: 02/09/2026 - #: PT0134729 - Inspection Result: Approved PRESBYTERIAN HEALTH CARE SYSTS - 1100 CENTRAL AVE SE \u2013 Approved PRESBYTERIAN HEALTH CARE SYSTS - 1100 CENTRAL AVE SE Food Establishment Class C Date: 02/09/2026 - #: RT-FOODEST-061757-2025 - Inspection Result: Approved"
-      },
-      {
-        "category": "Hot Holding & Reheating",
-        "observation": "Observed time/temperature control for safety food not hot held at 135\u00b0F or above. Food Item: Chicken tenders Food Temperature: 120\u00b0F"
-      },
-      {
-        "category": "Maintenance and Operation",
-        "observation": "Observed equipment not maintained in good repair. Location: Clean dish storage (Utensil dish pit) Type of Equipment: Spatulas, whisks and ladles Condition of the equipment: Equipment handles had burns and deep scoring beyond repair Observed cutting surface with deep scratches and scoring which limit the ability to be effectively cleaned and sanitized. Location: Make line Type: Prep cooler cutting board"
-      },
-      {
-        "category": "Plumbing",
-        "observation": "Observed floor drain under cook line is not maintained in good repair or is not repaired by law. Observed floor drain found in disrepair by missing protective grate or strainer basket."
-      },
-      {
-        "category": "Surface Condition",
-        "observation": "Observed nonfood contact surface that was absorbent. The surface was located on board used to mount knife magnet in fryer room. The surface was made out of raw unsealed wood. The condition of the surface needs to be smooth, easily cleanable and non-absorbent."
+        "category": "Physical Facilities, Cleaning",
+        "observation": "Observed a soiled mop not in use, stored with handle in direct contact with service sink basin. Observed buildup and debris in the following areas at the time of inspection: 1. observed debris and standing liquid on the floor areas in between ice cream display freezer and counter tops. 2. observed standing liquid and debris in grout areas on the floor 3. observed trash behind upright freezers"
       },
       {
         "category": "Physical Facilities, Construction and Repair",
-        "observation": "Observed the following areas of the facility in disrepair. Observed cook line floor tiles in disrepair by having severely worn grout that needs to be repaired. PRESBYTERIAN HEALTH CARE SYSTS - 1100 CENTRAL AVE SE Food Establishment Class C Date: 02/09/2026 - #: RT-FOODEST-061663-2025 - Inspection Result: Approved"
+        "observation": "Observed floor areas not smooth and easily cleanable. Condition: Observed floor tiles broken or missing. Location: floor near ice cream prep areas. Observed floor and wall juncture covering coming off the walls and not sealed at the time of inspection. DENNY\u2019S 6214 - 11261 MENAUL BLVD NE - Approved DENNY\u2019S 6214 - 11261 MENAUL BLVD NE Food Establishment Class C Date: 02/20/2026 - #: CAC-Food-017072-2026 - Inspection Result: Approved Manual and Mechanical Warewashing Equipment, Chemical Sanitization Temperature, pH, Concentration and Hardness- PIC corrected violation by remaking sanitizer solution. Sanitizer was retested at 200ppm Nonfood Contact Surfaces - Cleaning Frequency- PIC had all areas of concern cleaned and sanitized. Backflow Prevention, Air Gap- PIC propped up drain pipe to provide adequate air gap Due to Corrections made by pic facility will be back into the Approved green status DENNYS 6214 - 11261 MENAUL BLVD NE Food Establishment Class C Date: 02/20/2026 - #: RT-FOODEST-037589-2025 - Inspection Result: Conditional Approved"
       },
       {
         "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine Location: Rear kitchen Condition of the Location: Debris buildup inside machine by chute"
-      },
-      {
-        "category": "Poisonous and Toxic/Chemical Substances",
-        "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Clear tray Alleged Material: Cleaning solution for espresso machine and steam wand PRESBYTERIAN HEALTH CARE SYSTS - 1100 CENTRAL AVE SE Food Establishment Class C Date: 02/09/2026 - #: RT-FOODEST-061776-2025 - Inspection Result: Approved"
-      },
-      {
-        "category": "Surface Not Clean",
-        "observation": ""
+        "observation": "Observed quaternary ammonium compound solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Wiping cloth bucket kitchen and servers station Concentration: 0ppm"
       }
     ]
   },
   {
-    "name": "PRESBYTERIAN HEALTH CARE SYSTS",
-    "address": "1100 CENTRAL AVE SE",
-    "date": "2026-02-09",
+    "name": "DENNYS 6214",
+    "address": "11261 MENAUL BLVD NE",
+    "date": "2026-02-20",
     "outcome": "conditional",
     "operational_status": "Open",
     "city": "Albuquerque",
@@ -224,108 +33,176 @@
     "violations": []
   },
   {
-    "name": "SONIC DRIVE IN 5479",
-    "address": "2119 VISTA OESTE NW",
-    "date": "2026-02-12",
-    "outcome": "failed",
-    "operational_status": "Open",
+    "name": "DON SUSHI LLC",
+    "address": "205 SILVER AVE SW, H",
+    "date": "2026-02-19",
+    "outcome": "closed",
+    "operational_status": "Closed",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
       {
-        "category": "Equipment Maintenance and Design",
-        "observation": "Observed equipment that is accumulating and pooling moisture, in equipment that is not sloped to drain. Location: Walk in cooler Type of equipment: Condenser unit in walk in cooler SONIC DRIVE IN 5479 - 2119 VISTA OESTE NW - Unsatisfactory Re-Inspection required SONIC DRIVE IN 5479 - 2119 VISTA OESTE NW Food Establishment Class C Date: 02/12/2026 - #: RT-FOODEST-014428-2026 - Inspection Result: Unsatisfactory Re-Inspection required"
+        "category": "Surface Not Clean",
+        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located inside undercounter cooler and cabinets in servers\u2019 station The condition of the surface was debris buildup DON SUSHI LLC - 205 SILVER AVE SW, H - Closure Re-Inspection Required DON SUSHI LLC - 205 SILVER AVE SW, H Food Establishment Class C Date: 02/19/2026 - #: PT0154921 - Inspection Result: Closure Re-Inspection Required"
       },
       {
         "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine, ready to eat tater tots and fry hot holding bin Location: Storage area and cook line. Condition of the Location: Ice machine interior ceiling with a black li soil residue. hot holding Tater tot and fry unit with substantial soil buildup."
+        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: ice machine Location: Kitchen area Condition of the Location: debris buildup and dead cockroaches in the interior and where the filter is located inside the ice machine"
+      },
+      {
+        "category": "Pest Control",
+        "observation": "Observed pests in the facility with no control methods in place. Location: dining area and single service items (cups) shelf area Pest Type: cockroach Pest Condition: living Observed pests allowed to accumulate in traps. Location: dining area dry good single service items area and in the interior of ice machine Pest Type: cockroach Pest Condition: dead Number of Pests Present: 20 cockroaches"
       },
       {
         "category": "Date Marking and Disposition",
-        "observation": "Observed ready-to-eat time and temperature controlled for safety food held within the establishment inappropriately marked. Location: Hot steam table. Food Items: Red chili dated 1/12/26, red chili, meat dated 1/12/2026, long hot dogs dated 2/11/26 was date marked in January 2026 and needed to be date market February 2026"
+        "observation": "Observed ready-to-eat time and temperature controlled for safety food prepared and held within the establishment with no date marking indicators. Location: sushi cooler Food Items: no date marking observed on any items"
       },
       {
-        "category": "Plumbing",
-        "observation": "Observed floor drain near front three-compartment sinks is not maintained in good repair or is not repaired by law. Observed floor drain near Three-compartment sink found in disrepair by missing strainer. Observed Three-compartment sinks Scrapper sprayer and Hot and cold valves is not maintained in good repair or is not repaired. Observed Scrapper prayed leaking, Damaged and in need of replacement, hot and Cold-water valves do not shut off fully at the time of inspection."
-      },
-      {
-        "category": "Ventilation and Hood Systems",
-        "observation": "Observed hood ventilation system inadequately collecting grease and condensation allowing for accumulation and drips to occur to where it built up to about"
+        "category": "Knowledgeable",
+        "observation": "Observed that the person in charge was unable to demonstrate knowledge of foodborne disease prevention and other requirements of the Food Code and local ordinances. Knowledge Tested: did not know the difference between time as a public health control and temperature as a public health control"
       }
     ]
   },
   {
-    "name": "SPRING ROLLIN COTTONWOOD LLC",
-    "address": "10131 COORS BLVD NW",
-    "date": "2026-02-11",
+    "name": "FILIBERTOS MEXICAN FOOD LLC",
+    "address": "1450 EUBANK BLVD NE",
+    "date": "2026-02-18",
     "outcome": "conditional",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
       {
-        "category": "Cold Holding",
-        "observation": "Observed food items in cold holding unit measuring above 41\u00b0F. Location: Prep top cooler. Food Items: Sliced tomatoes- 44 degrees, Sliced tomatoes 2, 45 degrees, chopped onions 46 degrees."
-      },
-      {
-        "category": "Physical Facilities, Cleaning",
-        "observation": "Observed buildup and debris on the Floors total cook and prep areas storage areas and under shelving and equipment sinks,"
-      },
-      {
-        "category": "Surface Not Clean",
-        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located Food prep and cooking area. all drain with excessive Black soil builds up and debris at the time of inspection."
-      },
-      {
-        "category": "Physical Facilities, Construction and Repair",
-        "observation": "Observed Corner walls are not easily cleanable. The surface was made out of RPC corner wall by drive thru. SPRING ROLLIN COTTONWOOD LLC - 10131 COORS BLVD NW - Conditional Approved SPRING ROLLIN COTTONWOOD LLC - 10131 COORS BLVD NW Food Establishment Class C Date: 02/11/2026 - #: RT-FOODEST-018797-2025 - Inspection Result: Conditional Approved"
-      },
-      {
         "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Meat Slicer, stainless steel cook pans. Location: Kitchen prep areas. Condition of the Location: meat slicer blade and guard with a yellow dry food buildup. pans on a shelf inverted with dry white rice debris at the time of inspection."
+        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine, food dicer. Location: kitchen prep area Condition of the Location: black, yellow, and brown organic substance inside ice machine and dried food debris on blade of food dicer"
       },
       {
-        "category": "Poisonous and Toxic/Chemical Substances",
-        "observation": "Observed poisonous or toxic materials other than those required for the operation and maintenance of a food establishment located in the establishment. Material: Raid ant and roach. Location: Stored with other cleaning supplies. Intended Use: for pest control food service areas."
-      }
-    ]
-  },
-  {
-    "name": "Takumi Restaurant",
-    "address": "2100 LOUISIANA BLVD NE, 800",
-    "date": "2026-02-09",
-    "outcome": "approved",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": [
-      {
-        "category": "Designated Areas",
-        "observation": "Observed facility did not provide a designated area for employees to eat, drink, or use tobacco products. Observed facility did not provide lockers or other suitable facilities for storage of employees clothing or other personal belongings. Takumi Restaurant - 2100 LOUISIANA BLVD NE, 800 - Approved Takumi Restaurant - 2100 LOUISIANA BLVD NE, 800\u00b0Food Establishment Class C Date: 02/09/2026 - #: RT-FOODEST-013082-2026 - Inspection Result: Approved"
-      },
-      {
-        "category": "Plumbing",
-        "observation": "Observed plumbing at three-compartment sink from faucet leaking is not maintained in good repair or is not repaired by law. Observed faucet leaking from plumbing at faucet found in disrepair by unable to completely shut off and leaking"
+        "category": "Use Limitations",
+        "observation": "Observed wiping cloths improperly used. Observed soiled wiping cloths stored on prep tables and on food containers"
       },
       {
         "category": "Training Records",
         "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
       },
       {
+        "category": "Ventilation and Hood Systems",
+        "observation": "Observed interior intake and exhaust air ducts with debris buildup. Location: Kitchen area"
+      },
+      {
+        "category": "Food Identification, Safe, Unadulterated and Honestly Presented",
+        "observation": "Observed food that is not readily and unmistakably recognized removed from original packaging without proper labeling or identification. Working Container of Food: bin of sugar or salt and Container or pepper Location: Dry storage area"
+      },
+      {
+        "category": "Toilet Facilities",
+        "observation": "Observed in a toilet room used by females, no covered receptacle."
+      },
+      {
+        "category": "Physical Facilities",
+        "observation": ""
+      },
+      {
+        "category": "Storage",
+        "observation": "Observed utensils during a pause in use stored incorrectly. Utensil was stored in food with their handle not above the top of the food and the container. Utensil Type: bowls Location: walk in cooler Condition of the Location: no handle on bowl and bowl covered in food Observed equipment was not air dried and was wet stacked. Location: warewashing area Equipment Type: food service pans 3rd and 6th pans Manner: Was not air dried and was stacked wet"
+      },
+      {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": "Observed the following areas of the facility in disrepair. Observed Ceiling in disrepair by multiple ceiling tiles with water damaged and warped"
+      },
+      {
         "category": "Records",
-        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Raw meats, prepared vegetables, dairy products Activity of the Food: Stored, cooled, received Food Establishments shall calibrate measuring equipment in accordance with the manufacturer recommendations and shall maintain adequate and contemporaneous calibration logs for calibration of equipment. Observed the food establishment does not have calibration logs for temperature measuring devices. Takumi Restaurant - 2100 LOUISIANA BLVD NE, 800\u00b0Food Establishment Class C Date: 02/09/2026 - #: PT0152146 - Inspection Result: Unsatisfactory Re-Inspection required"
+        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: all TCS food items Activity of the Food: stored FILIBERTOS MEXICAN FOOD LLC - 1450 EUBANK BLVD NE Food Establishment Class C Date: 02/18/2026 - #: PT0145229 - Inspection Result: Unsatisfactory Re-Inspection required"
       },
       {
         "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine, food dicer. Location: kitchen prep area Condition of the Location: black, yellow, and brown organic substance inside ice machine and dried food debris on blade of food dicer"
+      },
+      {
+        "category": "Use Limitations",
+        "observation": "Observed wiping cloths improperly used. Observed soiled wiping cloths stored on prep tables and on food containers"
+      },
+      {
+        "category": "Date Marking and Disposition",
         "observation": ""
       }
     ]
   },
   {
-    "name": "Takumi Restaurant",
-    "address": "2100 LOUISIANA BLVD NE, 800",
-    "date": "2026-02-09",
+    "name": "FILIBERTOS MEXICAN FOOD LLC",
+    "address": "1450 EUBANK BLVD NE",
+    "date": "2026-02-18",
     "outcome": "failed",
     "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Kulantro Park Square",
+    "address": "6511 Americas Parkway NE",
+    "date": "2026-02-19",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Kulantro Park Square",
+    "address": "6511 Americas Parkway NE",
+    "date": "2026-02-19",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Rio Grande Pres Church",
+    "address": "600 COORS BLVD NW",
+    "date": "2026-02-20",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Food Identification, Safe, Unadulterated and Honestly Presented",
+        "observation": "Observed food that is not readily and unmistakably recognized removed from original packaging without proper labeling or identification. Working Container of Food: Unknown food in a clear and red quart container. Location: Storage backroom."
+      },
+      {
+        "category": "Physical Facilities, Cleaning",
+        "observation": "Observed buildup and debris on the cooler floors under shelving. prep area floors under shelving as well."
+      },
+      {
+        "category": "Records",
+        "observation": "Observed the food establishment does not have calibration logs for temperature measuring devices. Rio Grande Pres Church - 600 COORS BLVD NW - Unsatisfactory Re-Inspection required Rio Grande Pres Church - 600 COORS BLVD NW Charitable Food Provider Date: 02/20/2026 - #: CAC-Food-017247-2026 - Inspection Result: Unsatisfactory Re-Inspection required During the corrective action compliance inspection, the facility was evaluated for progress on previously identified violations. The facility is permitted to open and operate in a limited capacity at this time. Rodent droppings were still observed in portions of the facility. Conditions contributing to pest activity remain present, including identified entry points, potential harborage areas, and physical facility deficiencies. These conditions continue to pose a risk for ongoing pest intrusion if not fully addressed. Facility operators have demonstrated ongoing efforts toward compliance and are actively working with the CHPD to remedy the remaining concerns. Corrective actions are in progress, including physical/structural repairs and pest mitigation measures. Rio Grande Pres Church - 600 COORS BLVD NW Charitable Food Provider Date: 02/19/2026 - #: PT0054656 - Inspection Result: Closure Re-Inspection Required"
+      },
+      {
+        "category": "Poisonous and Toxic/Chemical Substances",
+        "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Spray bottle Alleged Material: Bleach water"
+      },
+      {
+        "category": "Pest Control",
+        "observation": "Observed the facility has inadequate procedures to effectively control pests in the outdoor compost area that has resulted in an imminent health hazard. This is due to the compost station acting as a harborage / breeding ground for insects and rodents. Inspector observed the compost area is set up and directly aligned with the facility where food storage and production occur. The compost area must be dismantled and thoroughly cleaned to prevent further pest activity."
+      }
+    ]
+  },
+  {
+    "name": "Rio Grande Pres Church",
+    "address": "600 COORS BLVD NW",
+    "date": "2026-02-19",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "SUBWAY @ PRESBYTERIAN",
+    "address": "1100 CENTRAL AVE SE",
+    "date": "2026-02-20",
+    "outcome": "closed",
+    "operational_status": "Closed",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": []

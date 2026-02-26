@@ -11670,5 +11670,485 @@
       "document": null
     },
     "operational_status": "Open"
+  },
+  {
+    "id": "abq:dennys-6214:2026-02-20",
+    "source": "ABQ",
+    "establishment": {
+      "name": "DENNYS 6214",
+      "address": "11261 MENAUL BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-20",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Cleaning",
+          "observation": "Observed a soiled mop not in use, stored with handle in direct contact with service sink basin. Observed buildup and debris in the following areas at the time of inspection: 1. observed debris and standing liquid on the floor areas in between ice cream display freezer and counter tops. 2. observed standing liquid and debris in grout areas on the floor 3. observed trash behind upright freezers"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Construction and Repair",
+          "observation": "Observed floor areas not smooth and easily cleanable. Condition: Observed floor tiles broken or missing. Location: floor near ice cream prep areas. Observed floor and wall juncture covering coming off the walls and not sealed at the time of inspection. DENNY\u2019S 6214 - 11261 MENAUL BLVD NE - Approved DENNY\u2019S 6214 - 11261 MENAUL BLVD NE Food Establishment Class C Date: 02/20/2026 - #: CAC-Food-017072-2026 - Inspection Result: Approved Manual and Mechanical Warewashing Equipment, Chemical Sanitization Temperature, pH, Concentration and Hardness- PIC corrected violation by remaking sanitizer solution. Sanitizer was retested at 200ppm Nonfood Contact Surfaces - Cleaning Frequency- PIC had all areas of concern cleaned and sanitized. Backflow Prevention, Air Gap- PIC propped up drain pipe to provide adequate air gap Due to Corrections made by pic facility will be back into the Approved green status DENNYS 6214 - 11261 MENAUL BLVD NE Food Establishment Class C Date: 02/20/2026 - #: RT-FOODEST-037589-2025 - Inspection Result: Conditional Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed quaternary ammonium compound solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Wiping cloth bucket kitchen and servers station Concentration: 0ppm"
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Physical Facilities, Cleaning",
+        "Physical Facilities, Construction and Repair",
+        "Equipment, Food Contact Surfaces, and Utensils Clean"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:dennys-6214:2026-02-20",
+    "source": "ABQ",
+    "establishment": {
+      "name": "DENNYS 6214",
+      "address": "11261 MENAUL BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-20",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:don-sushi-llc:2026-02-19",
+    "source": "ABQ",
+    "establishment": {
+      "name": "DON SUSHI LLC",
+      "address": "205 SILVER AVE SW, H",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-19",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Not Clean",
+          "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located inside undercounter cooler and cabinets in servers\u2019 station The condition of the surface was debris buildup DON SUSHI LLC - 205 SILVER AVE SW, H - Closure Re-Inspection Required DON SUSHI LLC - 205 SILVER AVE SW, H Food Establishment Class C Date: 02/19/2026 - #: PT0154921 - Inspection Result: Closure Re-Inspection Required"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: ice machine Location: Kitchen area Condition of the Location: debris buildup and dead cockroaches in the interior and where the filter is located inside the ice machine"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Pest Control",
+          "observation": "Observed pests in the facility with no control methods in place. Location: dining area and single service items (cups) shelf area Pest Type: cockroach Pest Condition: living Observed pests allowed to accumulate in traps. Location: dining area dry good single service items area and in the interior of ice machine Pest Type: cockroach Pest Condition: dead Number of Pests Present: 20 cockroaches"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Date Marking and Disposition",
+          "observation": "Observed ready-to-eat time and temperature controlled for safety food prepared and held within the establishment with no date marking indicators. Location: sushi cooler Food Items: no date marking observed on any items"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Knowledgeable",
+          "observation": "Observed that the person in charge was unable to demonstrate knowledge of foodborne disease prevention and other requirements of the Food Code and local ordinances. Knowledge Tested: did not know the difference between time as a public health control and temperature as a public health control"
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Closed"
+  },
+  {
+    "id": "abq:filibertos-mexican-food-llc:2026-02-18",
+    "source": "ABQ",
+    "establishment": {
+      "name": "FILIBERTOS MEXICAN FOOD LLC",
+      "address": "1450 EUBANK BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-18",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine, food dicer. Location: kitchen prep area Condition of the Location: black, yellow, and brown organic substance inside ice machine and dried food debris on blade of food dicer"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Use Limitations",
+          "observation": "Observed wiping cloths improperly used. Observed soiled wiping cloths stored on prep tables and on food containers"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Training Records",
+          "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Ventilation and Hood Systems",
+          "observation": "Observed interior intake and exhaust air ducts with debris buildup. Location: Kitchen area"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Food Identification, Safe, Unadulterated and Honestly Presented",
+          "observation": "Observed food that is not readily and unmistakably recognized removed from original packaging without proper labeling or identification. Working Container of Food: bin of sugar or salt and Container or pepper Location: Dry storage area"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Toilet Facilities",
+          "observation": "Observed in a toilet room used by females, no covered receptacle."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities",
+          "observation": ""
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Storage",
+          "observation": "Observed utensils during a pause in use stored incorrectly. Utensil was stored in food with their handle not above the top of the food and the container. Utensil Type: bowls Location: walk in cooler Condition of the Location: no handle on bowl and bowl covered in food Observed equipment was not air dried and was wet stacked. Location: warewashing area Equipment Type: food service pans 3rd and 6th pans Manner: Was not air dried and was stacked wet"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Construction and Repair",
+          "observation": "Observed the following areas of the facility in disrepair. Observed Ceiling in disrepair by multiple ceiling tiles with water damaged and warped"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Records",
+          "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: all TCS food items Activity of the Food: stored FILIBERTOS MEXICAN FOOD LLC - 1450 EUBANK BLVD NE Food Establishment Class C Date: 02/18/2026 - #: PT0145229 - Inspection Result: Unsatisfactory Re-Inspection required"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine, food dicer. Location: kitchen prep area Condition of the Location: black, yellow, and brown organic substance inside ice machine and dried food debris on blade of food dicer"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Use Limitations",
+          "observation": "Observed wiping cloths improperly used. Observed soiled wiping cloths stored on prep tables and on food containers"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Date Marking and Disposition",
+          "observation": ""
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:filibertos-mexican-food-llc:2026-02-18",
+    "source": "ABQ",
+    "establishment": {
+      "name": "FILIBERTOS MEXICAN FOOD LLC",
+      "address": "1450 EUBANK BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-18",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:kulantro-park-square:2026-02-19",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Kulantro Park Square",
+      "address": "6511 Americas Parkway NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-19",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:kulantro-park-square:2026-02-19",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Kulantro Park Square",
+      "address": "6511 Americas Parkway NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-19",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:rio-grande-pres-church:2026-02-20",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Rio Grande Pres Church",
+      "address": "600 COORS BLVD NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-20",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Food Identification, Safe, Unadulterated and Honestly Presented",
+          "observation": "Observed food that is not readily and unmistakably recognized removed from original packaging without proper labeling or identification. Working Container of Food: Unknown food in a clear and red quart container. Location: Storage backroom."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Cleaning",
+          "observation": "Observed buildup and debris on the cooler floors under shelving. prep area floors under shelving as well."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Records",
+          "observation": "Observed the food establishment does not have calibration logs for temperature measuring devices. Rio Grande Pres Church - 600 COORS BLVD NW - Unsatisfactory Re-Inspection required Rio Grande Pres Church - 600 COORS BLVD NW Charitable Food Provider Date: 02/20/2026 - #: CAC-Food-017247-2026 - Inspection Result: Unsatisfactory Re-Inspection required During the corrective action compliance inspection, the facility was evaluated for progress on previously identified violations. The facility is permitted to open and operate in a limited capacity at this time. Rodent droppings were still observed in portions of the facility. Conditions contributing to pest activity remain present, including identified entry points, potential harborage areas, and physical facility deficiencies. These conditions continue to pose a risk for ongoing pest intrusion if not fully addressed. Facility operators have demonstrated ongoing efforts toward compliance and are actively working with the CHPD to remedy the remaining concerns. Corrective actions are in progress, including physical/structural repairs and pest mitigation measures. Rio Grande Pres Church - 600 COORS BLVD NW Charitable Food Provider Date: 02/19/2026 - #: PT0054656 - Inspection Result: Closure Re-Inspection Required"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Poisonous and Toxic/Chemical Substances",
+          "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Spray bottle Alleged Material: Bleach water"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Pest Control",
+          "observation": "Observed the facility has inadequate procedures to effectively control pests in the outdoor compost area that has resulted in an imminent health hazard. This is due to the compost station acting as a harborage / breeding ground for insects and rodents. Inspector observed the compost area is set up and directly aligned with the facility where food storage and production occur. The compost area must be dismantled and thoroughly cleaned to prevent further pest activity."
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:rio-grande-pres-church:2026-02-19",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Rio Grande Pres Church",
+      "address": "600 COORS BLVD NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-19",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:subway-@-presbyterian:2026-02-20",
+    "source": "ABQ",
+    "establishment": {
+      "name": "SUBWAY @ PRESBYTERIAN",
+      "address": "1100 CENTRAL AVE SE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-02-20",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Closed"
   }
 ]
