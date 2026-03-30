@@ -1,0 +1,276 @@
+[
+  {
+    "name": "ANNAPURNAS WORLD VEGETARIAN CAFE",
+    "address": "5200 EUBANK BLVD NE, E7",
+    "date": "2026-03-19",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Storage",
+        "observation": "Observed utensils during a pause in use stored incorrectly. Utensil was stored in food with their handle not above the top of the food and the container. Utensil Type: Bowl Location: prep top cooler stored in pan of vegetables Condition of the Location: Bowl stored in food container with food will all sides directly touching the food"
+      },
+      {
+        "category": "Records",
+        "observation": "Observed the food establishment does not have calibration logs for temperature measuring devices. ANNAPURNAS WORLD VEGETARIAN CAFE - 5200 EUBANK BLVD NE, E7 Food Establishment Class C Date: 03/16/2026 - #: CAC-Food-024773-2026 - Inspection Result: Unsatisfactory Re-Inspection required Time/Temperature Control for Safety Food, Cold Holding-- PIC corrected Violation by adjusting thermostat on cooler. All food items were below 41\u00b0F Manual and Mechanical Warewashing Equipment, Chemical Sanitization Temperature, pH, Concentration and Hardness- PIC corrected this violation by having Ecolab service the machine - Machine was tested at 100ppm Common Name-Working Containers-- PIC corrected this violation by labeling all chemicals Hand Drying Provision-- PIC corrected this violation by making sure handwashing station has paper towels Backflow Prevention, Air Gap- Pic corrected this violation by making sure there is an air gap at all drains System Maintained in Good Repair-- PIC corrected this violation by fixing all leaks Food Temperature Measuring Devices-- PIC corrected this violation by making sure kitchen has a working thermometer Sanitizing Solutions, Testing Devices-- PIC corrected violation by getting sanitizer test strips Sanitizers, Criteria-Chemicals- PIC corrected this violation by making and testing sanitizer When to Wash-- PIC corrected violation by retraining staff on Handwashing procedures Facility will be reopened under a Red Unsatisfactory sticker and will have an unannounced reinspection within 5 business days Arturo Alonso LLC - 325 LOUISIANA BLVD SE - Approved Arturo Alonso LLC - 325 LOUISIANA BLVD SE Food Establishment Class C Date: 03/18/2026 - #: CAC-Food-025744-2026 - Inspection Result: Approved - Ready-To-Eat Time/Temperature Control for Safety Food, Date Marking and Disposition Voluntarily discarded food items with no date marking. - Handwashing Cleanser, Availability PIC added hand soap to restroom Athenaoula LLC - 5021 Pan American Frwy NE - Approved Athenaoula LLC - 5021 Pan American Frwy NE Food Establishment Class C Date: 03/18/2026 - #: RT-FOODEST-051940-2025 - Inspection Result: Approved"
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": ""
+      }
+    ]
+  },
+  {
+    "name": "ANNAPURNAS WORLD VEGETARIAN CAFE",
+    "address": "5200 EUBANK BLVD NE, E7",
+    "date": "2026-03-16",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "BEDROCK KITCHEN",
+    "address": "5333 4TH ST NW",
+    "date": "2026-03-18",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Physical Facilities",
+        "observation": "Observed doors to the outside that are not tight fitting, light can be seen at the edges."
+      },
+      {
+        "category": "Surface Not Clean",
+        "observation": "Observed nonfood contact surface with the buildup of soil residues. Location: Walk in cooler. Type of equipment: condenser unit fan guard. BEDROCK KITCHEN - 5333 4TH ST NW - Conditional Approved BEDROCK KITCHEN - 5333 4TH ST NW Food Establishment Class C Date: 03/18/2026 - #: RT-FOODEST-080507-2025 - Inspection Result: Conditional Approved"
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed chlorine solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Dishwasher, Concentration: 0 ppm. Temperature:120 \u00b0F. Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Bulk food container. Location: Cooking back-room area. Condition of the Location: interior of the bulk food container with substantial debris and soil buildup."
+      },
+      {
+        "category": "Cooling",
+        "observation": "Observed cooling TCS food items fail to reach seventy (70) \u00b0F within two (2) hour period. Location: walk in cooler. Food Items: what food items were improperly cooling vegetable broth. Temperature: 1st container- 103, 2nd container -100 degrees third container 73 \u00b0F. no time stamp chef stated they were placed in the cooler at 11:30 AM"
+      },
+      {
+        "category": "Ventilation and Hood Systems",
+        "observation": "Observed heating and air conditioning system were dirty. Location: Kitchen cooking and prepping areas. observed Air conditioning vents with soil residue."
+      },
+      {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": ""
+      }
+    ]
+  },
+  {
+    "name": "DRAGON WOK II LLC",
+    "address": "8060 ACADEMY RD NE, C",
+    "date": "2026-03-17",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Knowledgeable",
+        "observation": "Observed that the person in charge was unable to demonstrate knowledge of foodborne disease prevention and other requirements of the Food Code and local ordinances. Knowledge Tested: Observed PIC was not knowledgeable or responsible due to multiple priority violations such as no sanitizer available while in operations, improper cold holding, improper thawing, improper cooling, lack of hand washing, not aware of six reportable food borne illnesses, not aware of proper wash rinse and sanitize of food contact surfaces, was not aware of proper parts per million of chlorine sanitizer to properly clean and sanitize resulting in a closure of the facility. Instructed the PIC that all violations are the responsibility of the PIC and that they should review their responsibilities as outlined in Chapter 2 of the FDA food code and ensure that employees are trained in food safety. Send Sick Employees Home Now= Salmonella Typhi, Shigella, E. coli, Hepatitis A, Norovirus, Nontyphoidal Salmonella"
+      },
+      {
+        "category": "Ventilation and Hood Systems",
+        "observation": "Observed heating and air conditioning system vents not properly designed and located to be easily cleanable. Location: Inside kitchen in prep area where three-compartment sink is located. Manner: Substantial debris buildup."
+      },
+      {
+        "category": "Food Identification, Safe, Unadulterated and Honestly Presented",
+        "observation": "Observed food that is not readily and unmistakably recognized removed from original packaging without proper labeling or identification. Working Container of Food: Sugar, flour and salt possibly MSG Location: In back of facility under prep table in three-compartment sinks area."
+      },
+      {
+        "category": "Surface Condition",
+        "observation": "Observed nonfood contact surface that was not smooth. The surface was located inside kitchen foil and carboard being used to cover shelving and cold holding unit The surface was made out of cardboard and foil the condition of the surface was absorbent and not smooth and easily cleanable."
+      },
+      {
+        "category": "Physical Facilities",
+        "observation": "Observed doors to the outside that are not tight fitting, light can be seen at the edges. Main door was open screen door attached but missing weather stripping to prevent pests or rodents from entering facility."
+      },
+      {
+        "category": "Storage",
+        "observation": "Observed food stored improperly less than six (6) inches off the floor. Location: Walk in freezer and main kitchen Food Item: Raw meats. Facility received a truck order today and was allowing the food to sit at room temperature prior to placing inside walk in coolers and freezers for a substantial amount of time. Food temperatures were in compliance."
+      },
+      {
+        "category": "Designated Areas",
+        "observation": ""
+      },
+      {
+        "category": "Physical Facilities, Cleaning",
+        "observation": "Observed buildup and debris buildup underneath cold holding units, prep tables, fryer, stove top, and shelving."
+      },
+      {
+        "category": "Surface Not Clean",
+        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located inside main kitchen The surface was made out of stainless steel and plastic The condition of the surface was food debris buildup on food containers, stainless steel shelving, under prep tables, underneath soda machine that is non-operational, shelving on main line."
+      },
+      {
+        "category": "Single-Service",
+        "observation": "Observed single-use containers being re-used. Location: Stored inside food containers such as flour, sugar, rice Use: Plastic single use food containers and previously used tin can food containers utilized to scoop food items. DRAGON WOK II LLC - 8060 ACADEMY RD NE, C Food Establishment Class C Date: 03/17/2026 - #: PT0159204 - Inspection Result: Closure Re-Inspection Required"
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed no chlorine solution utilized to adequately achieve sanitization. Location: Inside kitchen and prep area while in operations preparing entrees and preparing produce. Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Grinder, meat tenderizer marinade, and commercial vegetable slicer Location: Condition of the Location: Stored with food debris buildup inside and outside of commercial equipment."
+      },
+      {
+        "category": "Poisonous and Toxic/Chemical Substances",
+        "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Spray bottles Alleged Material: Window cleaner, degreaser and soap"
+      },
+      {
+        "category": "Thawing",
+        "observation": ""
+      }
+    ]
+  },
+  {
+    "name": "DRAGON WOK II LLC",
+    "address": "8060 ACADEMY RD NE, C",
+    "date": "2026-03-17",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Hyenas ABQ LLC",
+    "address": "2100 Louisiana Blvd NE Suite 434",
+    "date": "2026-03-20",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Ventilation and Hood Systems",
+        "observation": "Observed hood ventilation system inadequately collecting grease and condensation allowing for accumulation and drips to occur, observed grease and condensation drip on to and contaminating equipment surface. Location: hood filters above deep fryer area Equipment: deep fryers"
+      },
+      {
+        "category": "Operation and Maintenance",
+        "observation": "Observed handwashing sink(s) without a handwashing sign. Location: Kitchen Area Observed handwashing sink(s) was observed blocked or inaccessible. Location: kitchen area Manner: tools parts on shelf holding hand washing sink"
+      },
+      {
+        "category": "Physical Facilities, Cleaning",
+        "observation": "Observed buildup and debris on the floors behind cooking equipment, cold and hot holding cases, on walls in the cooking area in the kitchens prep areas, on ceiling throughout the whole facility (dining, cooking, kitchen back prep area and pit area) and on cords wiring and gas piping throughout the facility instructed pic to clean all areas and send a picture of the cleaning by 03/24/26 to come into compliance"
+      },
+      {
+        "category": "Surface Not Clean",
+        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located kitchen and prep areas The surface was made out of metal and glass The condition of the surface had debris buildup on top of salamander, shelfing where single service items are stored, top of hot holding cases and microwave"
+      },
+      {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": "Observed the following areas of the facility in disrepair. Observed kitchen, prep front drive thru area and back door area where the pit is located in disrepair by having a gap under door in pit area and holes and missing ceiling tiles throughout the facility Hyenas ABQ LLC - 2100 Louisiana Blvd NE Suite 434 - Closure Re-Inspection Required Hyenas ABQ LLC - 2100 Louisiana Blvd NE Suite 434 Food Establishment Class B Date: 03/20/2026 - #: RT-FOODEST-007777-2025 - Inspection Result: Closure Re-Inspection Required"
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": ""
+      }
+    ]
+  },
+  {
+    "name": "KEVA JUICE SW LLC",
+    "address": "11201 MENAUL BLVD NE",
+    "date": "2026-03-17",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Designated Areas",
+        "observation": "Observed facility did not provide a designated area for employees to eat, drink, or use tobacco products."
+      },
+      {
+        "category": "Lighting",
+        "observation": "Observed light bulbs with no protective shielding, coating or by other means shatter-resistant. Location back kitchen by walk in coolers Manner: missing cover"
+      },
+      {
+        "category": "Personal Cleanliness",
+        "observation": "Observed employee wearing unapproved jewelry while preparing food. Food Preparation Activity: Actively working with open food items Inappropriate Jewelry Observed: Bracelet"
+      },
+      {
+        "category": "Storage",
+        "observation": "Observed equipment was not air dried and was wet stacked. Location: ware washing area Equipment Type: Food service pans Manner: Not air dried and stacked wet"
+      },
+      {
+        "category": "Surface Not Clean",
+        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located in the walk-in freezer The condition of the surface was ice and frost buildup KEVA JUICE SW LLC \u2013 8050 Academy Rd NE - Approved KEVA JUICE SW LLC - 8050 ACADEMY RD NE Food Establishment Class C Date: 03/16/2026 - #: RT-FOODEST-018810-2025 - Inspection Result: Approved"
+      },
+      {
+        "category": "Poisonous and Toxic/Chemical Substances",
+        "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Spray bottle Alleged Material: Unknown"
+      },
+      {
+        "category": "Operations",
+        "observation": "Observed that no grade sticker was posted on the facility. PIC was provided with green sticker."
+      }
+    ]
+  },
+  {
+    "name": "KEVA JUICE SW LLC",
+    "address": "11201 MENAUL BLVD NE",
+    "date": "2026-03-17",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "KEVA JUICE SW LLC",
+    "address": "11201 MENAUL BLVD NE",
+    "date": "2026-03-16",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Rosie\u2019s Elotes 505",
+    "address": "5701 GIBSON BLVD SE",
+    "date": "2026-03-20",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Training Records",
+        "observation": "Observed that food employees were not in possession of a food handler card or had been trained in another approved food safety course."
+      },
+      {
+        "category": "Ventilation and Hood Systems",
+        "observation": "Observed interior intake and exhaust air ducts with debris buildup. Location: Kitchen stove hood vents."
+      },
+      {
+        "category": "Surface Condition",
+        "observation": "Observed nonfood contact surface that was not smooth. The surface was located in the Kitchen. The surface was made out of wood. the floor of the cabinets is damaged and not smooth and easily cleanable."
+      },
+      {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": "Observed Base coving constructed of Synthetic, either missing on one side of the walls, and back side wall no secure to the wall at the time of inspection."
+      },
+      {
+        "category": "Records",
+        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Beef, chicken, ground beef, milks, yogurts, No logs for cold holding, Hot holding, cooking TCS food items. Rosie\u2019s Elotes 505 - 5701 GIBSON BLVD SE - Conditional Approved Rosie\u2019s Elotes 505 - 5701 GIBSON BLVD SE Mobile Food Unit Class C Date: 03/20/2026 - #: RT-MBFOOD-024681-2026 - Inspection Result: Conditional Approved"
+      },
+      {
+        "category": "Physical Facilities",
+        "observation": "Observed doors to the outside that are not tight fitting, light can be seen at the edges. Mobile food unit has large door to the rear of mobile completely open no barrier protecting from elements and from pest entering mobile food unit."
+      },
+      {
+        "category": "Operation and Maintenance",
+        "observation": ""
+      }
+    ]
+  }
+]
