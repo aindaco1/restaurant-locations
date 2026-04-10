@@ -16794,5 +16794,403 @@
       "document": null
     },
     "operational_status": "Open"
+  },
+  {
+    "id": "abq:black-angus:2026-03-31",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Black Angus",
+      "address": "2290 WYOMING BLVD",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-03-31",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Operation and Maintenance",
+          "observation": "Observed handwashing sink(s) was observed blocked or inaccessible. Location: handwashing sink behind bar Manner: Blocked with sanitizer bucket stored in basin on sink at time of the inspection Black Angus - 2290 WYOMING BLVD - Closure Re-Inspection Required Black Angus - 2290 WYOMING BLVD Food Establishment Class C Date: 03/31/2026 - #: RT-FOODEST-119550-2025 - Inspection Result: Closure Re-Inspection Required"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed quaternary ammonium compound solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Multiple blue sanitizer buckets and quaternary ammonium dispensing area Concentration: Zero parts per million Temperature: 121 \u00b0F to 124 \u00b0F Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Slicer, vegetable dicer, and robot coupe attachments, Ice machine, and ice scoop holders in server stations. Location: In equipment storage area Condition of the Location: Slicer stored away with food debris also dead roach on pan with food debris, vegetable dicer stored with food debris buildup, Robot coupe equipment stored away in standing water in clean equipment storage room in the middle of kitchen storage room between kitchen and dish washing area."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Chemicals",
+          "observation": "Observed improper cleaning solution use during warewashing. Detergent being used: None PIC stated was out of dish soap but had some on the way."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Poisonous and Toxic/Chemical Substances",
+          "observation": "Observed poisonous or toxic materials stored in a manner that has the potential to contaminate food. Poisonous/Toxic Substance: Ice melt stored next to ice cream salt in back storage room. Hand sanitizer stored next to Togo boxes and napkins in server station."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Pest Control",
+          "observation": ""
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Hands Clean & Properly Washed",
+          "observation": "Observed food employee does not wash hands when required. Condition: Employee exiting kitchen to the outside with gloves then returning to work with same gloves and not washing hands prior to donning new gloves. Also, employee smoking cigarette right outside of back kitchen door then entering kitchen without washing hands."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Cleaning",
+          "observation": "Observed buildup and debris underneath cold holding units, inside walk in refrigerators underneath shelving, under shelving in dry storage area, and dish storage racks, inside storage rooms, walls on kitchen line and server's station."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Storage",
+          "observation": "Observed single-service or single-use articles stored outside of the original packaging and not stored in a manner to prevent contamination."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Not Clean",
+          "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located inside kitchen area behind stove tops, in-between ice scream storage bins and stove tops inside kitchen substantial debris buildup. Also, underneath booths and behind booths in dining room area. The surface was made out of metal, carpet, and upholstery and plumbing behind main kitchen cooking line The condition of the surface was substantial debris buildup."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Construction and Repair",
+          "observation": "Observed ceiling is not smooth and easily cleanable. The surface was located inside kitchen main kitchen line The surface was made out of ceiling material Observed floor and wall juncture covering damaged and missing tiles. Black Angus - 2290 WYOMING BLVD Food Establishment Class B Date: 03/31/2026 - #: RT-FOODEST-119544-2025 - Inspection Result: Closure Re-Inspection Required"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed quaternary ammonium compound solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Sanitizer bucket Concentration: 0 Temperature: 99 The effectiveness of chemical sanitizers can be directly affected various factors including by the temperature, and concentration of the sanitizer solution used. Sanitizers shall be used in accordance with the EPA-registered label use instructions, and shall be used within designated parameters. Instructed PIC that for chlorine sanitizer at a concentration range of 50-99ppm must also be at a minimum temperature of 75F with a contact time of 7 seconds. PIC corrected"
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:church's-chicken-#5341:2026-03-30",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Church's Chicken #5341",
+      "address": "401 Louisiana BLVD SE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-03-30",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Personal Cleanliness",
+          "observation": "Observed a food employee without proper hair restraints. Activity: Prepping food"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Cleaning",
+          "observation": "Observed buildup and debris on the floors throughout and the ceiling vent cover in the kitchen area."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Not Clean",
+          "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located kitchen area The surface was made out of Metal and Plastic The condition of the surface had debris buildup on all of cooking equipment, reach in coolers, hot warmers, cold holding tables. Church's Chicken #5341 - 401 Louisiana BLVD SE - Conditional Approved Church's Chicken #5341 - 401 Louisiana BLVD SE Food Establishment Class C Date: 03/30/2026 - #: PT0161678 - Inspection Result: Conditional Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Can opener blade and mount Location: Food prep table Condition of the Location: Soiled with debris accumulation and residue"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Plumbing",
+          "observation": "Observed water filters for beverage machine is not maintained in good repair or is not repaired by law. Observed a substantial leak on the bottom of the fresh water filters to be in disrepair. Also observed the damaged filters to be sitting inside a full bucket of sitting water used to collect the run off coming from the leak."
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:dutch-bros-coffee:2026-03-30",
+    "source": "ABQ",
+    "establishment": {
+      "name": "DUTCH BROS COFFEE",
+      "address": "10001 CENTRAL AVE NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-03-30",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Plumbing",
+          "observation": "Observed Handwashing sink by drive through window is not maintained in good repair or is not repaired by law. Observed Handwashing sink found in disrepair by Leaking waste water directly on the floor below Observed an inadequate air gap at Floor Drain next to drive through window"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Ventilation and Hood Systems",
+          "observation": "Observed interior intake and exhaust air ducts with debris buildup. Location: Employee Bathroom"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Toilet Facilities",
+          "observation": "Observed in a toilet room used by females, no covered receptacle."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Cold Holding",
+          "observation": "Observed food items in cold holding unit measuring above 41\u00b0F. Location: Production area on front counter Food Items: Milk 53\u00b0F Milk 58\u00b0F"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Storage",
+          "observation": "Observed food stored improperly less than six (6) inches off the floor. Location: Walk in cooler Food Item: Gallons of milk in crates stored directly on floor on walk in cooler"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Personal Cleanliness",
+          "observation": ""
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Plumbing",
+        "Ventilation and Hood Systems",
+        "Toilet Facilities"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:dutch-bros-coffee:2026-03-30",
+    "source": "ABQ",
+    "establishment": {
+      "name": "DUTCH BROS COFFEE",
+      "address": "10001 CENTRAL AVE NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-03-30",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:sushi-freak-alb-westside:2026-04-03",
+    "source": "ABQ",
+    "establishment": {
+      "name": "SUSHI FREAK ALB WESTSIDE",
+      "address": "5600 COORS BLVD NW, E2",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-04-03",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Poisonous and Toxic/Chemical Substances",
+          "observation": "is an internal system where the contents are known and the containers can be labeled properly. Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Clear spray bottle. faded labeling information Alleged Material: Discussed with employee what was in the bucket, who claimed it was a cleaning solution, asking PIC what type it was, who identified it as degreaser"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Date Marking and Disposition",
+          "observation": "Observed ready-to-eat time and temperature controlled for safety food commercially prepared opened in the facility with no date marking indicators. Location: Reach in Coolers Food / prep top cooler food Items: 6 Unknown Squeeze Bottles at prep stations. and 3 unknow containers in walk in cooler, and container of jalapenos. Correct By Date: 4/3/2026 - Ready-To-Eat Time/Temperature Control for Safety Food, Date Marking and Disposition"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Conformance with Approved Procedures, Records",
+          "observation": "Observed that the facility has a HACCP granted by EHD, but is operating outside the constraints of the variance. Approved Variance: Sushi Unapproved Action: observed cooked rice at room temperature without the time stamp."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Time as Public Health Control",
+          "observation": "Observed cold food using time as a public health control exceeding the initial temperature of forty-one (41) \u00b0F. Location: cooked Rice Holder Type of Food: ready to eat Rice. Temperature: 67 degrees and no required time stamp at the time of inspection."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Plumbing",
+          "observation": "Observed 2 sink faucets is not maintained in good repair or is not repaired by law. Observed Hand sink, prep sink found in disrepair by both Faucets with constant dripping. hand valves won't shut off water properly"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Cold Holding",
+          "observation": ""
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:taco-mania:2026-04-03",
+    "source": "ABQ",
+    "establishment": {
+      "name": "TACO MANIA",
+      "address": "806 OLD COORS DR SW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-04-03",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:taco-mania:2026-04-01",
+    "source": "ABQ",
+    "establishment": {
+      "name": "TACO MANIA",
+      "address": "806 OLD COORS DR SW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-04-01",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
   }
 ]
