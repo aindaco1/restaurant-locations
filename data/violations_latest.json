@@ -17192,5 +17192,756 @@
       "document": null
     },
     "operational_status": "Open"
+  },
+  {
+    "id": "abq:black-angus:2026-04-10",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Black Angus",
+      "address": "2290 WYOMING BLVD",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-04-10",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Condition",
+          "observation": "Observed nonfood contact surface that was absorbent. The surface was located chemical storage room The surface was made out of synthetic wood The condition of the surface was absorbent"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities",
+          "observation": "Observed holes or other gaps in the structure of the facility. Location: Employee restrooms under compartment sinks, in storage rooms, along walls in storage rooms. Size: Multiple sizes from cracks to small holes, and missing tiles."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Cold Holding",
+          "observation": "Observed food items in cold holding unit measuring above 41\u00b0F. Location: Salad station in back of facility behind main kitchen line Food Items: Sliced carrots 54 \u00b0F sliced red onion 53 \u00b0F, Sliced cabbage 53 \u00b0F, Sliced cucumber 50 \u00b0F, dressing 50 \u00b0F"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Not Clean",
+          "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located inside kitchen area behind stove tops, in-between ice scream storage bins and stove tops inside kitchen substantial debris buildup. Also, underneath booths and behind booths in dining room area. The surface was made out of metal, carpet, and upholstery and plumbing behind main kitchen cooking line The condition of the surface was substantial debris buildup."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Construction and Repair",
+          "observation": "Observed ceiling is not smooth and easily cleanable. The surface was located inside kitchen main kitchen line The surface was made out of ceiling material Observed floor and wall juncture covering damaged and missing tiles."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Records",
+          "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Cooked shrimp, cooked meat Activity of the Food: Cooling Food Establishments shall calibrate measuring equipment in accordance with the manufacturer recommendations and shall maintain adequate and contemporaneous calibration logs for calibration of equipment. Observed the food establishment does not have calibration logs for temperature measuring devices. Black Angus - 2290 WYOMING BLVD Food Establishment Class C Date: 04/07/2026 - #: CAC-Food-033190-2026 - Inspection Result: Unsatisfactory Re-Inspection required FSE has completed in person walk through of violation corrections by the environmental health department to be upgraded into unsatisfactory status. The facility"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Plumbing",
+          "observation": "Observed an inadequate air gap at multiple piping systems into floor drains throughout bar."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Food Identification, Safe, Unadulterated and Honestly Presented",
+          "observation": "Observed food that is not readily and unmistakably recognized removed from original packaging without proper labeling or identification. Working Container of Food: Salt, sugar, and spice mix Location: Above bar top in plastic containers. Black Angus - 2290 WYOMING BLVD Food Establishment Class B Date: 04/07/2026 - #: CAC-Food-033193-2026 - Inspection Result: Unsatisfactory Re-Inspection required Bar has completed in person walk through of violation corrections by the environmental health department to be upgraded into unsatisfactory status. The facility has Corrected the following: Manual and Mechanical Warewashing Equipment, Chemical Sanitization Temperature, pH, Concentration and Hardness (quat sanitizer is in concentration) Handwashing Sinks, Installation, Water 85F (handwashing sink water temperature reaches 105\u00b0F) Common Name-Working Containers (quat sanitizer bucket is labeled) System Maintained in Good Repair, Repaired According to Law (drain has protective cover and is free flowing) Backflow Prevention, Air Gap (air gap repaired) Miscellaneous Sources of Contamination (drip cup installed) Unsatisfactory sticker was placed on front door Facility will be permitted to re-open under a Grade of Unsatisfactory and will be subject to a follow-up inspection within five (5) business days of reopening and operating. Previous inspection report with highlights of violations that still need to be followed up on was printed and provided to person in charge. BURGER KING #11232 - 2501 MULBERRY ST SE - Approved BURGER KING #11232 - 2501 MULBERRY ST SE Food Establishment Class C Date: 04/10/2026 - #: PT0151355 - Inspection Result: Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Construction and Repair",
+          "observation": ""
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Surface Condition",
+        "Physical Facilities",
+        "Cold Holding"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:black-angus:2026-04-07",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Black Angus",
+      "address": "2290 WYOMING BLVD",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-04-07",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:econo-lodge-old-town:2026-04-08",
+    "source": "ABQ",
+    "establishment": {
+      "name": "ECONO LODGE OLD TOWN",
+      "address": "2321 CENTRAL AVE NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-04-08",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Storage",
+          "observation": "Observed utensils during a pause in use stored incorrectly. Utensil was stored in food with their handle not above the top of the food and the container. Utensil Type: Single use paper coffee cups Location: flour and sugar bins Condition of the Location: all sides of cup touching food product inside"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Not Clean",
+          "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located on the fan shrouds in walk in cooler The condition of the surface was dust and soil debris buildup Observed nonfood contact surface with the buildup of soil residues. The surface was located on the inside of the ovens with substantial Food, soil, and grease buildup ECONO LODGE OLD TOWN - 2321 CENTRAL AVE NW - Unsatisfactory Re-Inspection Required ECONO LODGE OLD TOWN - 2321 CENTRAL AVE NW Food Establishment Class B Date: 04/08/2026 - #: CAC-Food-033438-2026 - Inspection Result: Unsatisfactory Re-Inspection required Facility was in closure state but resolved handwashing sink and air gap issues ECONO LODGE OLD TOWN - 2321 CENTRAL AVE NW Food Establishment Class B Date: 04/08/2026 - #: RT-FOODEST-081347-2025 - Inspection Result: Closure Re-Inspection Required"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Knowledgeable",
+          "observation": "Observed that the person in charge was unable to demonstrate knowledge of foodborne disease prevention and other requirements of the Food Code and local ordinances. Knowledge Tested: pic did not know reportable foodborne illnesses or the difference from time as a public health control and temperature as a public health control"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Plumbing",
+          "observation": "Observed an inadequate air gap under three-compartment sink."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Training Records",
+          "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:econo-lodge-old-town:2026-04-08",
+    "source": "ABQ",
+    "establishment": {
+      "name": "ECONO LODGE OLD TOWN",
+      "address": "2321 CENTRAL AVE NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-04-08",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:ladera-nursing-and-rehab:2026-04-09",
+    "source": "ABQ",
+    "establishment": {
+      "name": "LADERA NURSING AND REHAB",
+      "address": "5901 OURAY NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-04-09",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:ladera-nursing-and-rehab:2026-04-09",
+    "source": "ABQ",
+    "establishment": {
+      "name": "LADERA NURSING AND REHAB",
+      "address": "5901 OURAY NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-04-09",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:new-mexico-pinon-coffee:2026-04-09",
+    "source": "ABQ",
+    "establishment": {
+      "name": "NEW MEXICO PINON COFFEE",
+      "address": "2420 COMANCHE RD NE, D2",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-04-09",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:new-mexico-pinon-coffee:2026-04-09",
+    "source": "ABQ",
+    "establishment": {
+      "name": "NEW MEXICO PINON COFFEE",
+      "address": "2420 COMANCHE RD NE, D2",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-04-09",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:peter-piper-pizza:2026-04-09",
+    "source": "ABQ",
+    "establishment": {
+      "name": "PETER PIPER PIZZA",
+      "address": "3109 SAN MATEO BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-04-09",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Training Records",
+          "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Ventilation and Hood Systems",
+          "observation": "Observed hood ventilation system inadequately collecting grease and condensation allowing for accumulation and drips to occur, observed grease and condensation drip on to and contaminating equipment surface. Location: frying area and above pizza oven Equipment: Pizza oven hood and fryer hood suppression system"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Testing Devices",
+          "observation": "Observed no testing kit or other device to measure the concentration of chemical sanitizing solution."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Designated Areas",
+          "observation": "Observed facility did provide lockers or other suitable facilities for storage of employees clothing or other personal belongings. However, lockers were not being utilized drinks, hats, and watches stored in kitchen preparation areas."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Lighting",
+          "observation": "Observed inadequate amount of lighting. Location: Walk in refrigerator Manner: Inadequate lighting."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Personal Cleanliness",
+          "observation": "Observed a food employee without proper hair restraints. Location: Dough preparation room Activity: Preparing dough with large beard and no hair restraint."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Hands Clean & Properly Washed",
+          "observation": "Observed food employee does not wash hands when required. Condition: Donning new gloves, switching job duties from cashier to handling food, and entering and exiting kitchen to dining room to deliver food items"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Cleaning",
+          "observation": ""
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Not Clean",
+          "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located shelving inside main kitchen line ovens, fryer, and prep table areas. Also, inside cold holding units such as reach in refrigerator on main kitchen line where dough is stored substantial debris buildup inside, dippin dots storage unit, walk in refrigerator shelving. The surface was made out of stainless steel The condition of the surface was substantial debris buildup in all areas."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Records",
+          "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Cooked meats, prepared vegetables and dairy products Activity of the Food: Stored and received Food Establishments shall calibrate measuring equipment in accordance with the manufacturer recommendations and shall maintain adequate and contemporaneous calibration logs for calibration of equipment. Observed the food establishment does not have calibration logs for temperature measuring devices. PETER PIPER PIZZA - 3109 SAN MATEO BLVD NE Food Establishment Class C Date: 04/09/2026 - #: RT-FOODEST-065216-2025 - Inspection Result: Unsatisfactory Re-Inspection required"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice buckets, Vegetable dicer, Shredding robocoupe Location: In back prep table underneath next to ice machine. Condition of the Location: Equipment stored away without being washed, rinsed, and sanitized"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Time as Public Health Control",
+          "observation": "Observed written procedures were not prepared in advance, or not available, when using time in place of temperature as a control for TCS foods. Time as a public health control during buffet set up as display area is not heated to hold pizza at temperature of 135 \u00b0F or above."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Training Records",
+          "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Ventilation and Hood Systems",
+          "observation": "Observed hood ventilation system inadequately collecting grease and condensation allowing for accumulation and drips to occur, observed grease and condensation drip on to and contaminating equipment surface. Location: frying area and above pizza oven Equipment: Pizza oven hood and fryer hood suppression system"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Cold Holding",
+          "observation": ""
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Training Records",
+        "Ventilation and Hood Systems",
+        "Testing Devices"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:peter-piper-pizza:2026-04-09",
+    "source": "ABQ",
+    "establishment": {
+      "name": "PETER PIPER PIZZA",
+      "address": "3109 SAN MATEO BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-04-09",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:ramada-by-wyndham-midtown:2026-04-06",
+    "source": "ABQ",
+    "establishment": {
+      "name": "RAMADA BY WYNDHAM MIDTOWN",
+      "address": "2020 MENAUL BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-04-06",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine Location: Kitchen Condition of the Location: Slimy organic matter buildup"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Plumbing",
+          "observation": "Observed an inadequate air gap at floor drain located under three-compartment sink."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Operation and Maintenance",
+          "observation": "Observed no handwashing cleanser available at handwashing sink(s). Location: Kitchen Observed no approved method of hand drying at handwashing sink(s). Location: Kitchen"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Hot & Cold-Water Availability & Pressure",
+          "observation": "Observed facility with insufficient hot water. Location: Kitchen Manner: No hot water available at hand wash station due to water valve be shut off RAMADA BY WYNDHAM MIDTOWN - 2020 MENAUL BLVD NE Food Establishment Class B Date: 04/06/2026 - #: RT-FOODEST-029984-2025 - Inspection Result: Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Plumbing",
+          "observation": "Observed an inadequate air gap at floor drain in bar area. RED ROCK DELI - 2414 SAN MATEO BLVD NE - Approved RED ROCK DELI - 2414 SAN MATEO BLVD NE Food Establishment Class C Date: 04/10/2026 - #: PT0155693 - Inspection Result: Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed chlorine solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Three-compartment sink and wiping cloth container Concentration: Sanitizer was not prepped while facility was in operation Temperature: N/A"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Date Marking and Disposition",
+          "observation": "Observed ready-to-eat time and temperature controlled for safety food prepared and held within the establishment with no date marking indicators. Location: Walk in cooler and prep top cooler Food Items: Red beet soup and Sauerkraut Expiration Dates: No dates available"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Operation and Maintenance",
+          "observation": "Observed automatic handwashing facility not used in accordance with manufacturer's instructions. Location: Back of house hand wash station"
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "Plumbing",
+        "Operation and Maintenance"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:ramada-by-wyndham-midtown:2026-04-06",
+    "source": "ABQ",
+    "establishment": {
+      "name": "RAMADA BY WYNDHAM MIDTOWN",
+      "address": "2020 MENAUL BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-04-06",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:curious-toast-cafe:2026-04-06",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Curious Toast Cafe",
+      "address": "6565 AMERICAS PKWY NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-04-06",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:curious-toast-cafe:2026-04-06",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Curious Toast Cafe",
+      "address": "6565 AMERICAS PKWY NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-04-06",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:wildflowers-day-nursery-llc:2026-04-08",
+    "source": "ABQ",
+    "establishment": {
+      "name": "WILDFLOWERS DAY NURSERY LLC",
+      "address": "613 AMHERST DR NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-04-08",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Single-Service",
+          "observation": "Observed single-use containers being re-used. Location: Inside cold holding drawers Use: Single use black ramekins being used to scoop food items such as chopped green chile and parmesan cheese."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Records",
+          "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Meats, dairy products, prepared vegetables, frozen food items Activity of the Food: Stored and received WILDFLOWERS DAY NURSERY LLC - 613 AMHERST DR NE - Conditional Approved WILDFLOWERS DAY NURSERY LLC - 613 AMHERST DR NE Food Establishment Class C Date: 04/08/2026 - #: RT-FOODEST-019319-2025 - Inspection Result: Conditional Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Training Records",
+          "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Food Separation",
+          "observation": "Observed non-ready-to-eat raw animal food stored with ready-to-eat raw animal food without protection from contamination. Location: Inside cold holding reach- in refrigerator Food Item: Raw eggs Condition: Raw eggs stored above bottles and produce items."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Testing Devices",
+          "observation": "Observed food temperature measuring devices were not provided or readily accessible."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Personal Cleanliness",
+          "observation": "Observed a food employee with an improper drink. Location: Designated storage area inside kitchen Type of Drink: Beverage cups with lid no straw"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Operations",
+          "observation": ""
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
   }
 ]
