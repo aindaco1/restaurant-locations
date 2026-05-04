@@ -1,0 +1,258 @@
+[
+  {
+    "name": "Bravo Cucina Italiana",
+    "address": "2220 LOUISIANA BLVD NE",
+    "date": "2026-04-20",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed utensil food-contact surface with the buildup of soil residues. Utensil Type: Knives Location: Stored away on magnetic knife rack on each side of main kitchen line Condition of the Location: Stored away with food debris buildup. Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Slicer and vegetable dicer Location: On prep table and shelving behind main kitchen line prep area Condition of the Location: Equipment was stored away with food debris buildup."
+      },
+      {
+        "category": "Thawing",
+        "observation": "Observed frozen time/temperature control for safety food improperly thawing. Food: Raw chicken Location: Thawing in standing water inside plastic food container at room temperature Condition: Temperature in compliance Method: Thawing at room temperature in standing water."
+      },
+      {
+        "category": "Plumbing",
+        "observation": "Observed leak from plumbing upstairs in front of employee restroom water being caught with stainless steel container also substantial standing water underneath main dish machine at entrance to kitchen is not maintained in good repair or is not repaired by law. Observed plumbing upstairs and under automatic dish machine found in disrepair by leaking causing standing water."
+      },
+      {
+        "category": "Training Records",
+        "observation": "Observed that food employees were not in possession of a food handler card or had been trained in another approved food safety course."
+      },
+      {
+        "category": "Physical Facilities",
+        "observation": ""
+      },
+      {
+        "category": "Designated Areas",
+        "observation": "Observed facility did not provide a designated area for employees to eat, drink, or use tobacco products."
+      },
+      {
+        "category": "Personal Cleanliness",
+        "observation": "Observed employee wearing unapproved jewelry while preparing food. Food Preparation Activity: Preparing breading raw chicken Inappropriate Jewelry Observed: Watch and bracelet Observed a food employee with an improper drink. Location: Inside cold holding unit on main kitchen line Type of Drink: Twist top water bottle Bravo Cucina Italiana - 2220 LOUISIANA BLVD NE Food Establishment Class B Date: 04/20/2026 - #: PT0082267 - Inspection Result: Approved"
+      },
+      {
+        "category": "Use Limitations",
+        "observation": "Observed wiping cloths improperly used. Observed wiping cloths used for cleaning"
+      },
+      {
+        "category": "Operation and Maintenance",
+        "observation": "Observed no handwashing cleanser available at handwashing sink(s). Location: Hand washing sink in bar area Observed handwashing sink(s) was observed blocked or inaccessible. Location: Hand washing sink in bar area Manner: Bar ware stored in sink basin"
+      },
+      {
+        "category": "Surface Not Clean",
+        "observation": ""
+      }
+    ]
+  },
+  {
+    "name": "Bravo Cucina Italiana",
+    "address": "2220 LOUISIANA BLVD NE",
+    "date": "2026-04-20",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "CANTEEN BREWHOUSE",
+    "address": "2381 AZTEC ST NE",
+    "date": "2026-04-23",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": "Observed the following areas of the facility in disrepair. Observed walls in bar area damaged in disrepair by substantial gaps in wall in cabinet at entrance to bar area. CANTEEN BREWHOUSE - 2381 AZTEC ST NE - Unsatisfactory Re-Inspection required CANTEEN BREWHOUSE - 2381 AZTEC ST NE Food Establishment Class C Date: 04/23/2026 - #: PT0138410 - Inspection Result: Unsatisfactory Re-Inspection required"
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed quaternary ammonium compound solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: sanitation bucket Concentration: 0 ppm facility was using floor cleaner as sanitizer Temperature: 78 \u00b0F instructed pic to not use floor cleaner as sanitation and to use quaternary sanitizer that's at the dispensing machine and to always test sanitation with test strips to verify the chemical that's being dispensed and used to wipe down food and non-food contact surfaces Pic remade sanitation bucket in front of inspector and tested properly) Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Can Opener Location: Kitchen/prep area Condition of the Location: debris buildup on blade where can opener opens cans."
+      },
+      {
+        "category": "Pest Control",
+        "observation": "- Observed pests in the facility with no control methods in place. Location: wall near ice machine and wall near electrical panel in back area Pest Type: Beetles Pest Condition: dead Insects and other pests are capable of transmitting disease to humans by contaminating food and food-contact surfaces. Effective measures must be taken to eliminate their presence in food establishments. The premises shall be maintained free of insects, rodents, and other pests. The presence of insects, rodents, and other pests shall be controlled to eliminate their presence on the premises by using methods such as trapping devices or other means of pest control. Instructed PIC to remove any dead pests or pest fecal material and to have a professional pest control company set traps and perform treatment as needed. Facility is to provide EHD with appropriate pest control records."
+      },
+      {
+        "category": "Date Marking and Disposition",
+        "observation": "Observed ready-to-eat time and temperature controlled for safety food prepared and held within the establishment with no date marking indicators. Location: cooking area Food Items: All Cold Holding food in cold holding unit Expiration Dates: no dates observed."
+      },
+      {
+        "category": "Training Records",
+        "observation": ""
+      }
+    ]
+  },
+  {
+    "name": "Coda Bakery LLC",
+    "address": "201 San Pedro DR SE, B-1",
+    "date": "2026-04-23",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Personal Cleanliness",
+        "observation": "Observed employee wearing unapproved jewelry while preparing food. Food Preparation Activity: actively working with open food items Inappropriate Jewelry Observed: Bracelet and rings"
+      },
+      {
+        "category": "Physical Facilities, Cleaning",
+        "observation": "Observed buildup and debris on the floors under and behind kitchen equipment"
+      },
+      {
+        "category": "Storage",
+        "observation": "Observed utensils during a pause in use stored incorrectly. Utensil was stored in food with their handle not above the top of the food and the container. Utensil Type: Scoop Location: scoop stored in flour bin in back of kitchen Condition of the Location: Scoop stored Scoop in flour with handle making contact with the food product inside"
+      },
+      {
+        "category": "Surface Not Clean",
+        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located on sides of Equipment and inside reach in coolers. Observed nonfood contact surface with the buildup of soil residues. The surface was located on sides of Equipment and inside reach in coolers, The condition of the surface was food and soil debris buildup Observed nonfood contact surface with the buildup of soil residues. The surface was located under the soda machine in dining room, The condition of the surface was food and soil debris buildup Coda Bakery LLC - 201 San Pedro DR SE, B-1 - Approved Coda Bakery LLC - 201 San Pedro DR SE, B-1 Food Establishment Class C Date: 04/23/2026 - #: RT-FOODEST-037283-2026 - Inspection Result: Approved Coda Bakery LLC - 201 San Pedro DR SE, B-1 Food Establishment Class C Date: 04/20/2026 - #: CAC-Food-037488-2026 - Inspection Result: Unsatisfactory Re-Inspection required Facility is being upgraded to an Unsatisfactory status from a Closure. PIC has corrected all noted and observed violations. PIC has started maintaining temp logs and calibration logs. All food employees have obtained Food Handler Cards. PIC is schedule to take Food Protection Manager Certification. PIC has provided all photo documentation of corrections and repairs. CHPD inspector has no more cause for concern. Violations corrected: 1. Cold Holding: Time/Temperature Control for Safety Food, Cold Holding. 2. Food Contact Surfaces Cleaned & Sanitized: Sanitizers, Criteria-Chemicals 3. Equipment, Food Contact Surfaces, and Utensils Clean: Manual and Mechanical Warewashing Equipment, Chemical Sanitization-Temperature, pH, Concentration and Hardness 4. Equipment, Food Contact Surfaces, and Utensils Clean: Equipment, Food-Contact Surfaces and Utensils - Clean to Sight and Touch 5. Date Marking and Disposition: Ready-To-Eat Time/Temperature Control for Safety Food, Date Marking and Disposition 6. Food Identification, Safe, Unadulterated and Honestly Presented: Package Integrity 7. Hands Clean & Properly Washed: When to Wash"
+      }
+    ]
+  },
+  {
+    "name": "Coda Bakery LLC",
+    "address": "201 San Pedro DR SE, B-1",
+    "date": "2026-04-20",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "JUANI\u2019S KITCHEN HOME OF THE TAMALES",
+    "address": "5010 CUTLER AVE NE, STE D",
+    "date": "2026-04-21",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "ROYAL HYDERABAD",
+    "address": "3305 JUAN TABO BLVD NE",
+    "date": "2026-04-22",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Physical Facilities, Cleaning",
+        "observation": "Observed buildup and debris underneath three-compartment sink and hand-washing sink inside cabinets. ROYAL HYDERABAD - 3305 JUAN TABO BLVD NE - Unsatisfactory Re-Inspection required ROYAL HYDERABAD - 3305 JUAN TABO BLVD NE Food Establishment Class C Date: 04/22/2026 - #: CAC-Food-038916-2026 - Inspection Result: Unsatisfactory Re-Inspection required Facility has completed in person walk through of violation corrections by the environmental health department to be upgraded into unsatisfactory status. The facility has Corrected the following: - Controlling Pests, If Present: Treatment - Pest control has treated the facility and sealed problem areas. - Removing Dead or Trapped Birds, Insects, Rodents and other Pest Dead rodents have been removed. Found minimal droppings under dish washer. Unsatisfactory sticker was placed on front door Facility will be permitted to re-open under a Grade of Unsatisfactory and will be subject to a follow-up inspection within five (5) business days of reopening and operating. Previous inspection report with highlights of violations that still need to be followed up on was printed and provided to person in charge. Sawmill Market - 1909 BELLAMAH AVE NW - Approved Sawmill Market Flora- 1909 BELLAMAH AVE NW Food Establishment Class C Date: 04/23/2026 - #: RT-FOODEST-020360-2025 - Inspection Result: Approved"
+      },
+      {
+        "category": "Training Records",
+        "observation": "Observed that food employees were not in possession of a food handler card or had been trained in another approved food safety course."
+      },
+      {
+        "category": "Designated Areas",
+        "observation": "Observed facility did not provide a designated area for employees to eat, drink, or use tobacco products. Sawmill Market Paxton\u2019s- 1909 BELLAMAH AVE NW Food Establishment Class C Date: 04/23/2026 - #: PT0160189 - Inspection Result: Approved"
+      },
+      {
+        "category": "Plumbing",
+        "observation": "Observed an inadequate air gap below service sink on the southside of bar area."
+      },
+      {
+        "category": "Operation and Maintenance",
+        "observation": "Observed handwashing sink(s) without a handwashing sign. Location: Behind Bar Area"
+      }
+    ]
+  },
+  {
+    "name": "Slate at the Museum",
+    "address": "2000 MOUNTAIN RD NW",
+    "date": "2026-04-23",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice Machine Location: Kitchen area Condition of the Location: inside of ice machine had black debris buildup on guard and when wiped debris fell into the ice. Inspector had pic dump all ice and clean the machine before next use"
+      },
+      {
+        "category": "Plumbing",
+        "observation": "Observed an inadequate air gap under ice machine in kitchen area."
+      },
+      {
+        "category": "Food Separation",
+        "observation": "Observed food not protected from contamination during storage by not being covered in a container, by being in a package, or wrapping. Location: behind front counter area and on top of counter where water and cups are located Food Item: ice and lemons"
+      },
+      {
+        "category": "Testing Devices",
+        "observation": "Observed expired testing kit or other device to measure the concentration of chemical sanitizing solution. (Quaternary test strips)"
+      },
+      {
+        "category": "Personal Cleanliness",
+        "observation": ""
+      }
+    ]
+  },
+  {
+    "name": "Slate at the Museum",
+    "address": "2000 MOUNTAIN RD NW",
+    "date": "2026-04-23",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Yoshi Mame LLC",
+    "address": "4410 WYOMING BLVD NE, N",
+    "date": "2026-04-23",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Knives Location: Back area next to prep sink on magnetic storage rack Condition of the Location: Knives stored away with food debris still on equipment."
+      },
+      {
+        "category": "Use Limitations",
+        "observation": "Observed wiping cloths improperly used. Observed wiping cloths used for wiping."
+      },
+      {
+        "category": "Date Marking and Disposition",
+        "observation": "Observed ready-to-eat time and temperature controlled for safety food prepared and held within the establishment with no date marking indicators. Location: Reach in refrigerators in middle storage room area. Food Items: Prepared vegetables such as sliced carrots, chopped onion, chopped zucchini, cooked meat Expiration Dates: None observed"
+      },
+      {
+        "category": "Time as Public Health Control",
+        "observation": "Observed written procedures were not prepared in advance, or not available, when using time in place of temperature as a control for TCS foods. PIC stated using time as a public health control for sliced cucumber, wasabi, avocado and ginger."
+      },
+      {
+        "category": "Food Identification, Safe, Unadulterated and Honestly Presented",
+        "observation": "Observed food that is not readily and unmistakably recognized removed from original packaging without proper labeling or identification. Working Container of Food: Spices Location: Stored above cold holding unit in plastic container."
+      },
+      {
+        "category": "Designated Areas",
+        "observation": ""
+      }
+    ]
+  },
+  {
+    "name": "Yoshi Mame LLC",
+    "address": "4410 WYOMING BLVD NE, N",
+    "date": "2026-04-23",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  }
+]
