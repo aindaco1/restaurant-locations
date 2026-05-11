@@ -1,0 +1,108 @@
+[
+  {
+    "name": "Arrive Hotels",
+    "address": "717 Central Ave NW AVE NW",
+    "date": "2026-04-30",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Arrive Hotels",
+    "address": "717 Central Ave NW AVE NW",
+    "date": "2026-04-27",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Arrive Hotels",
+    "address": "717 Central Ave NW AVE NW",
+    "date": "2026-04-27",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "ROYAL HYDERABAD",
+    "address": "3305 JUAN TABO BLVD NE",
+    "date": "2026-04-30",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Storage",
+        "observation": "Observed utensils during a pause in use stored incorrectly. Utensil was stored in food with their handle not above the top of the food and the container. Utensil Type: bowls Location: walk in cooler prep top coolers and dry storage areas Condition of the Location: Bowls used as scoops stored in food container with the food product with all sides of bowls contacting the food product Observed equipment was not air dried and was wet stacked. Location: ware washing area Equipment Type: food service pans Manner: stacked wet with water in between pans"
+      },
+      {
+        "category": "Surface Not Clean",
+        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located on the fan shrouds in the walk-in coolers The condition of the surface was dust and soil debris buildup. Observed nonfood contact surface with the buildup of soil residues. The surface was located on the hood vent filters The condition of the surface was grease and soil debris"
+      },
+      {
+        "category": "Single-Service",
+        "observation": "Observed single-use containers being re-used. Location: Walk in cooler and dry storage areas Use: Old yogurt and other containers being reused to store other food items ROYAL HYDERABAD - 3305 JUAN TABO BLVD NE Food Establishment Class C Date: 04/30/2026 - #: RT-FOODEST-037129-2026 - Inspection Result: Closure Re-Inspection Required"
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine and Stock pot Location: back of kitchen by walk in cooler Condition of the Location: Brown and yellow buildup in Ice machine and Rodent Droppings in stock pot"
+      },
+      {
+        "category": "Poisonous and Toxic/Chemical Substances",
+        "observation": "Observed poisonous or toxic materials stored in a manner that has the potential to contaminate utensils. Poisonous/Toxic Substance: Sealant and expanding foam Location: stored rack next to and above clean food service pans and utensils"
+      }
+    ]
+  },
+  {
+    "name": "ROYAL HYDERABAD",
+    "address": "3305 JUAN TABO BLVD NE",
+    "date": "2026-04-30",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Rudy's BBQ",
+    "address": "10136 COORS BLVD NW",
+    "date": "2026-04-27",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed quaternary ammonium compound solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Three-compartment sink and sanitizer buckets. Concentration: 0 PPM Temperature: 60 \u00b0F."
+      },
+      {
+        "category": "Hot Holding & Reheating",
+        "observation": "Observed time/temperature control for safety food not hot held at 135\u00b0F or above. Food Item: Cream corn, Cooked red Potatoes,"
+      },
+      {
+        "category": "Plumbing",
+        "observation": "Observed Three-compartment Sink Faucet is not maintained in good repair or is not repaired by law. Observed Three-compartment sinks faucet leaking at the time of inspection."
+      },
+      {
+        "category": "Storage",
+        "observation": "Observed food stored improperly under a miscellaneous source of contamination. Location: walk in cooler. Food Item: Ready to eat beef brisket, Ribs, on rack not covered at the time of inspection."
+      },
+      {
+        "category": "Lighting",
+        "observation": "Observed light bulbs with no protective shielding, coating or by other means shatter resistant. Location: Back of smoker. Manner: vents with lighting missing the required light covers. SPEEDWAY 8690 - 6100 SAN MATEO BLVD NE - Approved SPEEDWAY 8690 - 6100 SAN MATEO BLVD NE Retail Food Establishment Class 5 Date: 04/27/2026 - #: PT0141454 - Inspection Result: Approved"
+      },
+      {
+        "category": "Training Records",
+        "observation": ""
+      }
+    ]
+  }
+]
