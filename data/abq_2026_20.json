@@ -1,69 +1,63 @@
 [
   {
-    "name": "Arrive Hotels",
-    "address": "717 Central Ave NW AVE NW",
-    "date": "2026-04-30",
-    "outcome": "approved",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "Arrive Hotels",
-    "address": "717 Central Ave NW AVE NW",
-    "date": "2026-04-27",
-    "outcome": "approved",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "Arrive Hotels",
-    "address": "717 Central Ave NW AVE NW",
-    "date": "2026-04-27",
-    "outcome": "closed",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "ROYAL HYDERABAD",
-    "address": "3305 JUAN TABO BLVD NE",
-    "date": "2026-04-30",
+    "name": "Famesco 2 Inc DBA Filiberto\u2019s",
+    "address": "12525 MONTGOMERY BLVD NE",
+    "date": "2026-05-06",
     "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
       {
-        "category": "Storage",
-        "observation": "Observed utensils during a pause in use stored incorrectly. Utensil was stored in food with their handle not above the top of the food and the container. Utensil Type: bowls Location: walk in cooler prep top coolers and dry storage areas Condition of the Location: Bowls used as scoops stored in food container with the food product with all sides of bowls contacting the food product Observed equipment was not air dried and was wet stacked. Location: ware washing area Equipment Type: food service pans Manner: stacked wet with water in between pans"
+        "category": "Physical Facilities, Cleaning",
+        "observation": "Observed buildup and debris on the on walls behind cold holding prep table, wall behind ice machine and dry storage area, underneath automatic dish machine, three compartment sink, and cold holding units. Famesco 2 Inc DBA Filiberto\u2019s - 12525 MONTGOMERY BLVD NE - Approved Famesco 2 Inc DBA Filiberto\u2019s - 12525 MONTGOMERY BLVD NE Food Establishment Class C Date: 05/06/2026 - #: RT-FOODEST-043532-2026 - Inspection Result: Approved"
       },
       {
-        "category": "Surface Not Clean",
-        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located on the fan shrouds in the walk-in coolers The condition of the surface was dust and soil debris buildup. Observed nonfood contact surface with the buildup of soil residues. The surface was located on the hood vent filters The condition of the surface was grease and soil debris"
+        "category": "Plumbing",
+        "observation": "Observed an inadequate air gap at floor drain under soda machine in dining room and a floor drain under three compartment sink"
       },
       {
-        "category": "Single-Service",
-        "observation": "Observed single-use containers being re-used. Location: Walk in cooler and dry storage areas Use: Old yogurt and other containers being reused to store other food items ROYAL HYDERABAD - 3305 JUAN TABO BLVD NE Food Establishment Class C Date: 04/30/2026 - #: RT-FOODEST-037129-2026 - Inspection Result: Closure Re-Inspection Required"
+        "category": "Toilet Facilities",
+        "observation": "Observed in a toilet room used by females, no covered receptacle."
+      },
+      {
+        "category": "Physical Facilities",
+        "observation": "Observed doors to the outside that are not tight fitting, light can be seen at the edges."
+      },
+      {
+        "category": "Testing Devices",
+        "observation": "Observed food temperature measuring devices were not provided or readily accessible."
+      },
+      {
+        "category": "Designated Areas",
+        "observation": "Observed facility did not provide a designated area for employees to eat, drink, or use tobacco products. Observed facility did not provide lockers or other suitable facilities for storage of employees clothing or other personal belongings."
+      },
+      {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": "Observed the following areas of the facility in disrepair. Observed three compartment sink in disrepair by gap between sink and wall with no sealant connecting it to wall causing water to splash behind"
+      },
+      {
+        "category": "Records",
+        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: All TCS food items Activity of the Food: stored Observed the food establishment does not have calibration logs for temperature measuring devices. Famesco 2 Inc DBA Filiberto\u2019s - 12525 MONTGOMERY BLVD NE Food Establishment Class C Date: 05/06/2026 - #: RT-FOODEST-016946-2025 - Inspection Result: Closure Re-Inspection Required"
       },
       {
         "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine and Stock pot Location: back of kitchen by walk in cooler Condition of the Location: Brown and yellow buildup in Ice machine and Rodent Droppings in stock pot"
+        "observation": "Observed chlorine solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: wiping cloth bucket Concentration: 0ppm Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Can opener, Chef Knife, Slicer, Immersion Blender, and food dicer Location: Though out kitchen area Condition of the Location: dried food and soil debris buildup"
       },
       {
         "category": "Poisonous and Toxic/Chemical Substances",
-        "observation": "Observed poisonous or toxic materials stored in a manner that has the potential to contaminate utensils. Poisonous/Toxic Substance: Sealant and expanding foam Location: stored rack next to and above clean food service pans and utensils"
+        "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Spray bottles and sanitizer buckets Alleged Material Glass cleaner and Sanitizer"
+      },
+      {
+        "category": "Thawing",
+        "observation": ""
       }
     ]
   },
   {
-    "name": "ROYAL HYDERABAD",
-    "address": "3305 JUAN TABO BLVD NE",
-    "date": "2026-04-30",
+    "name": "Famesco 2 Inc DBA Filiberto\u2019s",
+    "address": "12525 MONTGOMERY BLVD NE",
+    "date": "2026-05-06",
     "outcome": "closed",
     "operational_status": "Open",
     "city": "Albuquerque",
@@ -71,38 +65,282 @@
     "violations": []
   },
   {
-    "name": "Rudy's BBQ",
-    "address": "10136 COORS BLVD NW",
-    "date": "2026-04-27",
+    "name": "FILIBERTOS MEXICAN FOOD",
+    "address": "4011 CENTRAL AVE NW",
+    "date": "2026-05-06",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": "Observed the following areas of the facility in disrepair. Observed three compartment sink in disrepair by gap between sink and wall with no sealant connecting it to wall causing water to splash behind"
+      },
+      {
+        "category": "Records",
+        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: All TCS food items Activity of the Food: stored Observed the food establishment does not have calibration logs for temperature measuring devices. FILIBERTOS MEXICAN FOOD - 4011 CENTRAL AVE NW - Approved FILIBERTOS MEXICAN FOOD - 4011 CENTRAL AVE NW Food Establishment Class C Date: 05/06/2026 - #: CAC-Food-043344-2026 - Inspection Result: Approved Ready-to-eat, time/temperature control for safety food prepared in a food establishment and held longer than a 24-hour period shall be marked to indicate the date or day by which the food is to be consumed on the premises, sold, or discarded when held at a temperature of 41\u00b0F or less for a maximum of 7 days. Instructed PIC to retrain food employees on the proper date marking of food items held longer than 24-hour period inside the facility. PIC voluntarily discarded food items bearing no date markings. Observed ready-to-eat time and temperature controlled for safety food prepared and held within the establishment with no date marking indicators. Location: walk in cooler prep cooler and reach in cooler Expiration Dates: no dates observed facility date marked all product inside facility and resolved violation seen at the inspection with pictures of such actions TCS Foods must be kept at safe temperatures at all times and Food Establishments shall maintain adequate temperature logs of TCS Foods while being stored, thawed, cooled, prepared, displayed, dispensed, or transported Observed that the food establishment does not have temperature logs available for TCS foods items. Activity of the Food: Hot Holding, Cold Holding, Cooling and Equipment Logs Food Establishments shall calibrate measuring equipment in accordance with the manufacturer recommendations and shall maintain adequate and contemporaneous calibration logs for calibration of equipment Observed the food establishment does not have calibration logs for temperature measuring devices. facility started using logs to resolve the violation Food must be protected from contamination by storing the food in packages, covered containers, or wrappings. Instructed PIC to ensure that all food is covered during storage and to train employees on proper food storage procedures. Observed food not protected from contamination during storage by not being covered in a container, by being in a package, or wrapping. Location: walk in cooler pre reach in cooler and front drive thru reach in cooler Food Item: beef, pork, shrimp, salsa, cheese, taquitos resolved by covering containers of food and sharing photos of what was done facility now is in the green approved state and can take off the conditional yellow sticker from door at the facility"
+      },
+      {
+        "category": "Date Marking and Disposition",
+        "observation": "Observed ready-to-eat time and temperature controlled for safety food prepared and held within the establishment with no date marking indicators. Location: walk in cooler prep cooler and reach in cooler Expiration Dates: no dates observed"
+      },
+      {
+        "category": "Maintenance and Operation",
+        "observation": "Observed equipment not maintained in good repair. Location: kitchen area Type of Equipment: reach in freezer gasket, handle on walk in cooler, missing vent hood filters all referenced torn broken or missing"
+      },
+      {
+        "category": "Training Records",
+        "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
+      },
+      {
+        "category": "Food Separation",
+        "observation": "Observed food not protected from contamination during storage by not being covered in a container, by being in a package, or wrapping. Location: walk in cooler pre reach in cooler and front drive thru reach in cooler Food Item: beef, pork, shrimp, salsa, cheese, taquitos"
+      },
+      {
+        "category": "Surface Not Clean",
+        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located Kitchen Area The surface was made out of Plastic The condition of the surface was debris buildup on the five-gallon containers where spices are stored"
+      },
+      {
+        "category": "Records",
+        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Activity of the Food: Hot Holding, Cold Holding, Cooling and Equipment Logs Observed the food establishment does not have calibration logs for temperature measuring devices. Golden Pride Legacy LLC - 3720 JUAN TABO BLVD NE - Approved Golden Pride Legacy LLC - 3720 JUAN TABO BLVD NE Food Establishment Class C Date: 05/06/2026 - #: CAC-Food-043743-2026 - Inspection Result: Approved Water Capacity-Quantity and Availability-- Pic corrected violation on site by turning back up hot water to sink. Time/Temperature Control for Safety Food, Hot Holding-- Pic corrected violation by discarding out of temp food Due to correction made onsite at time of inspection facility is back in the green approved status Golden Pride Legacy LLC - 3720 JUAN TABO BLVD NE"
+      }
+    ]
+  },
+  {
+    "name": "FILIBERTOS MEXICAN FOOD",
+    "address": "4011 CENTRAL AVE NW",
+    "date": "2026-05-05",
     "outcome": "conditional",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Golden Pride Legacy LLC",
+    "address": "3720 JUAN TABO BLVD NE",
+    "date": "2026-05-06",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Golden Pride Legacy LLC",
+    "address": "3720 JUAN TABO BLVD NE",
+    "date": "2026-05-06",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "NEXUS BREWERY",
+    "address": "4730 PAN AMERICAN FWY NE, D",
+    "date": "2026-05-07",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
     "violations": [
       {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": "Observed walls is not smooth and easily cleanable. The surface was located multiple location in multiple rooms and in three compartment sink area. The surface was made out of sheet rock. Multiple holes in the walls inside facility."
+      },
+      {
+        "category": "Records",
+        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Cooked meats, raw meats, prepared vegetables, salsa, soups Activity of the Food: Stored received cooled Food Establishments shall calibrate measuring equipment in accordance with the manufacturer recommendations and shall maintain adequate and contemporaneous calibration logs for calibration of equipment Observed the food establishment does not have calibration logs for temperature measuring devices. NEXUS BREWERY - 4730 PAN AMERICAN FWY NE, D Food Establishment Class B Date: 05/07/2026 - #: RT-FOODEST-102804-2025 - Inspection Result: Conditional Approved"
+      },
+      {
         "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": "Observed quaternary ammonium compound solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Three-compartment sink and sanitizer buckets. Concentration: 0 PPM Temperature: 60 \u00b0F."
+        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine in bar area Location: Bar area Condition of the Location: Debris buildup"
       },
       {
-        "category": "Hot Holding & Reheating",
-        "observation": "Observed time/temperature control for safety food not hot held at 135\u00b0F or above. Food Item: Cream corn, Cooked red Potatoes,"
+        "category": "Poisonous and Toxic/Chemical Substances",
+        "observation": "Observed containers of toxic substances that did not have a legible manufacturer's label. Chemical: Acid sanitizer Condition of the Label: Missing information unable to properly identify and read warning and manufactures information along with proper parts per million to properly and safely sanitize."
       },
       {
-        "category": "Plumbing",
-        "observation": "Observed Three-compartment Sink Faucet is not maintained in good repair or is not repaired by law. Observed Three-compartment sinks faucet leaking at the time of inspection."
+        "category": "Testing Devices",
+        "observation": "Observed no testing kit or other device to measure the concentration of chemical sanitizing solution. Facility was using acid sanitizer"
       },
       {
-        "category": "Storage",
-        "observation": "Observed food stored improperly under a miscellaneous source of contamination. Location: walk in cooler. Food Item: Ready to eat beef brisket, Ribs, on rack not covered at the time of inspection."
-      },
-      {
-        "category": "Lighting",
-        "observation": "Observed light bulbs with no protective shielding, coating or by other means shatter resistant. Location: Back of smoker. Manner: vents with lighting missing the required light covers. SPEEDWAY 8690 - 6100 SAN MATEO BLVD NE - Approved SPEEDWAY 8690 - 6100 SAN MATEO BLVD NE Retail Food Establishment Class 5 Date: 04/27/2026 - #: PT0141454 - Inspection Result: Approved"
-      },
-      {
-        "category": "Training Records",
+        "category": "Operation and Maintenance",
         "observation": ""
       }
     ]
+  },
+  {
+    "name": "NEXUS BREWERY",
+    "address": "4730 PAN AMERICAN FWY NE, D",
+    "date": "2026-05-07",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "NOISY WATER ARTWEAR INC",
+    "address": "301 ROMERO ST NW",
+    "date": "2026-05-04",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Warewashing Temperature and Concentration",
+        "observation": "Observed chemical sanitizer concentration with unknown concentration. Type of Sanitizer: Acid Location: Bar area Concentration: Unknown"
+      },
+      {
+        "category": "Physical Facilities, Cleaning",
+        "observation": "Observed buildup and debris underneath cold holding units, ice machine and under three compartment sink and hand-washing sink along with standing water."
+      },
+      {
+        "category": "Storage",
+        "observation": "Observed clean equipment stored in a position that did not allow for self-draining or air drying. Drink cups stacked on top of each other in beverage area wet. NOISY WATER ARTWEAR INC - 301 ROMERO ST NW \u2013 Approved NOISY WATER ARTWEAR INC - 301 ROMERO ST NW Food Establishment Class B Date: 05/04/2026 - #: PT0156850 - Inspection Result: Approved"
+      },
+      {
+        "category": "Operations",
+        "observation": "Observed that the facility was operating with an expired permit. NOISY WATER ARTWEAR INC - 301 ROMERO ST NW Food Establishment Class C Date: 05/05/2026 - #: CAC-Food-042910-2026 - Inspection Result: Approved Facility has been upgraded to Approved status following submission of photographic evidence of corrected violations to the Environmental Health Department. The facility has Corrected the following: - Equipment, Food-Contact Surfaces and Utensils - Clean to Sight and Touch (Food contact surfaces have been cleaned and sanitized in mechanical ware washing machine - Ready-To-Eat Time/Temperature Control for Safety Food, Date Marking and Disposition (Expired cheeses have been removed and discarded - Food Temperature Measuring Devices (Ambient thermometers for cold hold units have been ordered - Temperature Logs (Temp logs have been put to use for refrigerators holding TCS food items Also noted the following correction from the retail permit: Storage (Food containers near toxic materials, separated with food items above toxic materials) Storage, Prohibited Areas (Pre-Packaged chips off the floor) NOISY WATER ARTWEAR INC - 301 ROMERO ST NW Food Establishment Class C Date: 05/04/2026 - #: PT0156851 - Inspection Result: Conditional Approved"
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": ""
+      }
+    ]
+  },
+  {
+    "name": "NOISY WATER ARTWEAR INC",
+    "address": "301 ROMERO ST NW",
+    "date": "2026-05-05",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "NOISY WATER ARTWEAR INC",
+    "address": "301 ROMERO ST NW",
+    "date": "2026-05-04",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "TWIN DRAGONS",
+    "address": "2129 CENTRAL AVE NW",
+    "date": "2026-05-08",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Date Marking and Disposition",
+        "observation": "Observed ready-to-eat time and temperature controlled for safety food prepared and held within the establishment with no date marking indicators. Location: front cash register area Food Items: Teriyaki sauce and sweet and sour individual containers Expiration Dates: no dates observed"
+      },
+      {
+        "category": "Plumbing",
+        "observation": "Observed an inadequate air gap at three compartment sink."
+      },
+      {
+        "category": "Training Records",
+        "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
+      },
+      {
+        "category": "Food Separation",
+        "observation": "Observed food not protected from contamination during storage by not being covered in a container, by being in a package, or wrapping. Location: reach in cooler Food Item: box of egg rolls"
+      },
+      {
+        "category": "Testing Devices",
+        "observation": "Observed no testing kit or other device to measure the concentration of chemical sanitizing solution. chlorine test strips have no expiration date"
+      },
+      {
+        "category": "Hot & Cold-Water Availability & Pressure",
+        "observation": "Observed facility with insufficient hot water. Location: Three Compartment sink and handwashing sink Manner: hot water at both hand washing sink and three compartment sink temping at 71 \u00b0F handwashing sink need to temp at 85 \u00b0F or above and three compartment sink temping at 110 degrees or above."
+      }
+    ]
+  },
+  {
+    "name": "TWIN DRAGONS",
+    "address": "2129 CENTRAL AVE NW",
+    "date": "2026-05-08",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "VIET TASTE",
+    "address": "5721 MENAUL BLVD NE",
+    "date": "2026-05-07",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Records",
+        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Hot holding logs for rice, chicken and carrots Cabbage and broccoli also no equipment logs Observed the food establishment does not have calibration logs for temperature measuring devices. VIET TASTE - 5721 MENAUL BLVD NE - Approved VIET TASTE - 5721 MENAUL BLVD NE Food Establishment Class C Date: 05/07/2026 - #: RT-FOODEST-044385-2026 - Inspection Result: Approved"
+      },
+      {
+        "category": "Training Records",
+        "observation": "Observed that the food establishment does not have a certified food protection manager on staff. Observed that food employees were not in possession of a food handler card or had been trained in another approved food safety course."
+      },
+      {
+        "category": "Ventilation and Hood Systems",
+        "observation": "Observed heating and air conditioning system vents not properly designed and located to be easily cleanable. Location: Above main kitchen line Manner: Debris buildup on vent and surrounding tile."
+      },
+      {
+        "category": "Testing Devices",
+        "observation": "Observed food temperature measuring devices were not provided or readily accessible."
+      },
+      {
+        "category": "Functionality and Accuracy",
+        "observation": "Observed in a mechanically refrigerated food storage unit the temperature measuring device was not placed in the warmest part of the unit. Equipment Location: Cold holding Thermometer Location: Cold holding units"
+      },
+      {
+        "category": "Personal Cleanliness",
+        "observation": ""
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Slicer and ice machine Location: Slicer on prep table, Ice machine in servers' area, and ice machine in back of facility. Condition of the Location: Substantial debris buildup on ice machine deflectors. Food debris buildup, left on slicer in storage Observed utensil food-contact surface with the buildup of soil residues. Utensil Type: Knives stored under prep table Location: Main kitchen Condition of the Location: Knives stored away with food debris inside a plastic container with substantial debris buildup."
+      },
+      {
+        "category": "Poisonous and Toxic/Chemical Substances",
+        "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Spray bottle Alleged Material: Degreaser"
+      },
+      {
+        "category": "Thawing",
+        "observation": "Observed frozen time/temperature control for safety food improperly thawing. Food: Frozen peppers Location: Above cold holding unit Condition: Method: Thawing at room temperature."
+      },
+      {
+        "category": "Use Limitations",
+        "observation": "Observed wiping cloths improperly used. Observed wiping cloths used for cleaning and sanitizing."
+      },
+      {
+        "category": "Date Marking and Disposition",
+        "observation": ""
+      }
+    ]
+  },
+  {
+    "name": "VIET TASTE",
+    "address": "5721 MENAUL BLVD NE",
+    "date": "2026-05-07",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
   }
 ]
