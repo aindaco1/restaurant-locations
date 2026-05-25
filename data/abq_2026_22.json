@@ -1,0 +1,117 @@
+[
+  {
+    "name": "DAMACIOS BAR AND TAPAS",
+    "address": "722 CENTRAL AVE SW",
+    "date": "2026-05-14",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Testing Devices",
+        "observation": "Observed no testing kit or other device to measure the concentration of chemical sanitizing solution. No chlorine test strips for dishwashing machine"
+      },
+      {
+        "category": "Operations",
+        "observation": "Observed that the facility was operating with an expired permit."
+      },
+      {
+        "category": "Physical Facilities, Cleaning",
+        "observation": "Observed a soiled mop not in use, stored with mop head stored on wall and handle inside mop sink. Observed buildup and debris on the floors, ceilings, gas pipes and walls throughout kitchen areas and dishwashing area."
+      },
+      {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": "Observed the following areas of the facility in disrepair. Observed Kitchen and dishwashing areas in disrepair by missing vent covers and ceiling tiles and holes in ceiling DAMACIOS BAR AND TAPAS - 722 CENTRAL AVE SW Food Establishment Class B Date: 05/14/2026 - #: RT-FOODEST-046763-2026 - Inspection Result: Approved"
+      },
+      {
+        "category": "Maintenance and Operation",
+        "observation": "Observed equipment not maintained in good repair. Location: Bar area Type of Equipment: ice bin Condition of the equipment: no lid for ice bin"
+      },
+      {
+        "category": "Training Records",
+        "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
+      },
+      {
+        "category": "Food Separation",
+        "observation": "Observed food not protected from contamination during storage by not being covered in a container, by being in a package, or wrapping. Location: Bar area Food Item: ice and Chamoy not covered"
+      }
+    ]
+  },
+  {
+    "name": "DAMACIOS BAR AND TAPAS",
+    "address": "722 CENTRAL AVE SW",
+    "date": "2026-05-14",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "GOLDEN CROWN PANADERIA",
+    "address": "1103 MOUNTAIN RD NW",
+    "date": "2026-05-14",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Time as Public Health Control",
+        "observation": "Observed written procedures were not prepared in advance, or not available, when using time in place of temperature as a control for TCS foods."
+      },
+      {
+        "category": "Ventilation and Hood Systems",
+        "observation": "Observed heating and air conditioning system vents not properly designed and located to be easily cleanable. Location: Inside back kitchen area and above clean dish storage rack Manner: Debris buildup Observed interior intake and exhaust air ducts with debris buildup. Location: Above clean dish storage shelving"
+      },
+      {
+        "category": "Designated Areas",
+        "observation": "Observed facility did provide a designated area for employees to eat, drink, or use tobacco products but was not utilized. Observed facility did not provide lockers or other suitable facilities for storage of employees clothing or other personal belongings."
+      },
+      {
+        "category": "Operations",
+        "observation": "Observed that the facility was operating with an expired permit."
+      },
+      {
+        "category": "Physical Facilities, Cleaning",
+        "observation": "Observed buildup and debris underneath three compartment sink, automatic dish machine, kitchen equipment such as prep tables, cold holding units and shelving. GOLDEN CROWN PANADERIA - 1103 MOUNTAIN RD NW - Conditional Approved GOLDEN CROWN PANADERIA - 1103 MOUNTAIN RD NW Food Establishment Class C Date: 05/14/2026 - #: RT-FOODEST-054681-2025 - Inspection Result: Conditional Approved"
+      },
+      {
+        "category": "Plumbing",
+        "observation": ""
+      }
+    ]
+  },
+  {
+    "name": "RED CHILLI HOUSE",
+    "address": "8201 GOLF COURSE RD NW, B-2",
+    "date": "2026-05-13",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed chlorine solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Sanitizer Bucket. Concentration:0 ppm Temperature: 85"
+      },
+      {
+        "category": "Training Records",
+        "observation": "Observed that the food establishment does not have a certified food protection manager on staff. Observed that food employees were not in possession of a food handler card or had been trained in another approved food safety course."
+      },
+      {
+        "category": "Ventilation and Hood Systems",
+        "observation": "Observed interior intake and exhaust air ducts with debris buildup. Location: Cooking exhaust hoods interior."
+      },
+      {
+        "category": "Operation and Maintenance",
+        "observation": "Observed no handwashing cleanser available at handwashing sink(s). Location: Kitchen hand wash station. Observed no approved method of hand drying at handwashing sink(s). Location: Kitchen hand wash sink. Rio Grande Pres Church - 600 COORS BLVD NW - Approved Rio Grande Pres Church - 600 COORS BLVD NW Charitable Food Provider Date: 05/14/2026 - #: RT-FOODEST-016795-2026 - Inspection Result: Approved"
+      },
+      {
+        "category": "Maintenance and Operation",
+        "observation": "Observed equipment components not maintained. Location: Walk in freezer Type of equipment: Bottom door seal"
+      }
+    ]
+  }
+]
