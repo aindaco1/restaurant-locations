@@ -3,6 +3,11 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.3"
 gem "webrick", "~> 1.8"
 
+# Keep CI off newer sass-embedded releases that currently fail native builds on
+# GitHub Actions' Ruby 3.1 image.
+gem "jekyll-sass-converter", "~> 3.0.0"
+gem "sass-embedded", "~> 1.69.5"
+
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.17"
   gem "jekyll-seo-tag", "~> 2.8"

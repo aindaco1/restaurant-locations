@@ -7,7 +7,7 @@ _site/
 vendor/
 
 # Bundler
-Gemfile.lock
+# Commit Gemfile.lock so GitHub Pages builds use the tested Jekyll/Sass stack.
 
 # macOS
 .DS_Store
