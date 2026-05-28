@@ -1,47 +1,67 @@
 [
   {
-    "name": "DAMACIOS BAR AND TAPAS",
-    "address": "722 CENTRAL AVE SW",
-    "date": "2026-05-14",
-    "outcome": "conditional",
+    "name": "DASHMART",
+    "address": "1431 MERCANTILE AVE NE",
+    "date": "2026-05-19",
+    "outcome": "closed",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
       {
-        "category": "Testing Devices",
-        "observation": "Observed no testing kit or other device to measure the concentration of chemical sanitizing solution. No chlorine test strips for dishwashing machine"
-      },
-      {
-        "category": "Operations",
-        "observation": "Observed that the facility was operating with an expired permit."
+        "category": "Plumbing",
+        "observation": "Observed Three compartment sink PVC drain line. is not maintained in good repair or is not repaired by law. Observed Drain line found in disrepair by leaking."
       },
       {
         "category": "Physical Facilities, Cleaning",
-        "observation": "Observed a soiled mop not in use, stored with mop head stored on wall and handle inside mop sink. Observed buildup and debris on the floors, ceilings, gas pipes and walls throughout kitchen areas and dishwashing area."
+        "observation": "Observed build up and debris on the laundry area behind coffin freezer at the time of inspection"
       },
       {
         "category": "Physical Facilities, Construction and Repair",
-        "observation": "Observed the following areas of the facility in disrepair. Observed Kitchen and dishwashing areas in disrepair by missing vent covers and ceiling tiles and holes in ceiling DAMACIOS BAR AND TAPAS - 722 CENTRAL AVE SW Food Establishment Class B Date: 05/14/2026 - #: RT-FOODEST-046763-2026 - Inspection Result: Approved"
+        "observation": "Observed Base coving located in Kitchen missing in two areas of the kitchen. DASHMART - 1431 MERCANTILE AVE NE - Closure Re-Inspection Required DASHMART - 1431 MERCANTILE AVE NE Food Establishment Class C Date: 05/19/2026 - #: RT-FOODEST-035329-2026 - Inspection Result: Closure Re-Inspection Required"
       },
       {
-        "category": "Maintenance and Operation",
-        "observation": "Observed equipment not maintained in good repair. Location: Bar area Type of Equipment: ice bin Condition of the equipment: no lid for ice bin"
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Additionally, insects from trash were flying landing on surfaces throughout kitchen. Facility has no ability to clean and sanitize surfaces throughout kitchen due to lack of water. Facility will need to clean and sanitize kitchen prior to re-opening."
       },
       {
-        "category": "Training Records",
-        "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
+        "category": "Pest Control",
+        "observation": "Observed the facility has inadequate procedures to effectively control pests. Observed numerous flying insects around uncovered, filled trash can, observing them flying from inside the trash throughout the kitchen area."
+      },
+      {
+        "category": "Knowledgeable",
+        "observation": ""
+      },
+      {
+        "category": "Surface Not Clean",
+        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located throughout the kitchen area inside, some with significant debris accumulation, on the exterior, doors and handles of the reach in coolers, and cooking equipment."
+      },
+      {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": "Observed the following areas of the facility in disrepair. Observed gaps and holes in the walls DASHMART - 1431 MERCANTILE AVE NE Warehouse Date: 05/19/2026 - #: PT0157263 - Inspection Result: Approved"
+      },
+      {
+        "category": "Hot & Cold-Water Availability & Pressure",
+        "observation": "Observed facility with insufficient water capacity. Location: restrooms Manner: no water at faucet or toilets"
       },
       {
         "category": "Food Separation",
-        "observation": "Observed food not protected from contamination during storage by not being covered in a container, by being in a package, or wrapping. Location: Bar area Food Item: ice and Chamoy not covered"
+        "observation": "Observed raw animal foods of different types stored improperly. Location: multiple reach in coolers Food Item: raw shell eggs above ready to eat French onion dip, raw beef package with packages of ready to eat deli meat and above ready to eat sausages, raw pork chorizo stored above carrot cake and ready to eat salami, raw pork product above ready to eat deli meat, raw ground turkey above ready to eat lunch kits"
+      },
+      {
+        "category": "Physical Facilities, Cleaning",
+        "observation": "and when food is not being served or prepared. Instructed person in charge to remove build up and debris on floors and to clean and sanitize Observed build up and debris on the floors behind and under reach in coolers/freezers ELOISAS NEW MEXICAN CUISINE - 7850 ZUNI RD SE - Approved ELOISAS NEW MEXICAN CUISINE - 7850 ZUNI RD SE Mobile Food Unit Class C Date: 05/22/2026 - #: PT0160805 - Inspection Result: Approved"
+      },
+      {
+        "category": "Training Records",
+        "observation": ""
       }
     ]
   },
   {
-    "name": "DAMACIOS BAR AND TAPAS",
-    "address": "722 CENTRAL AVE SW",
-    "date": "2026-05-14",
+    "name": "DASHMART",
+    "address": "1431 MERCANTILE AVE NE",
+    "date": "2026-05-19",
     "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
@@ -49,69 +69,79 @@
     "violations": []
   },
   {
-    "name": "GOLDEN CROWN PANADERIA",
-    "address": "1103 MOUNTAIN RD NW",
-    "date": "2026-05-14",
-    "outcome": "conditional",
+    "name": "FAMILY MARKET & GROCERY",
+    "address": "110 WYOMING BLVD SE",
+    "date": "2026-05-19",
+    "outcome": "closed",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
       {
-        "category": "Time as Public Health Control",
-        "observation": "Observed written procedures were not prepared in advance, or not available, when using time in place of temperature as a control for TCS foods."
+        "category": "Testing Devices",
+        "observation": "Observed food temperature measuring devices was provided but not acceptable as infrared thermometer only reads surface temperature and not internal as required. Also observed missing thermometer inside freezer."
       },
       {
-        "category": "Ventilation and Hood Systems",
-        "observation": "Observed heating and air conditioning system vents not properly designed and located to be easily cleanable. Location: Inside back kitchen area and above clean dish storage rack Manner: Debris buildup Observed interior intake and exhaust air ducts with debris buildup. Location: Above clean dish storage shelving"
+        "category": "Records",
+        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: All TCS cold help items Activity of the Food: Stored, thawed, cooled\u25a1 Observed the food establishment does not have calibration logs for temperature measuring devices. FAMILY MARKET & GROCERY - 110 WYOMING BLVD SE - Closure Re-Inspection Required FAMILY MARKET & GROCERY - 110 WYOMING BLVD SE Retail Food Establishment Class 4 Date: 05/19/2026 - #: PT0160895 - Inspection Result: Closure Re-Inspection Required"
       },
       {
-        "category": "Designated Areas",
-        "observation": "Observed facility did provide a designated area for employees to eat, drink, or use tobacco products but was not utilized. Observed facility did not provide lockers or other suitable facilities for storage of employees clothing or other personal belongings."
+        "category": "Functionality and Accuracy",
+        "observation": "Observed in a mechanically refrigerated food storage unit the temperature measuring device was not placed in the warmest part of the unit. Equipment Location: Walk in refrigerator and walk in freezer Thermometer Location: None available"
       },
       {
-        "category": "Operations",
-        "observation": "Observed that the facility was operating with an expired permit."
-      },
-      {
-        "category": "Physical Facilities, Cleaning",
-        "observation": "Observed buildup and debris underneath three compartment sink, automatic dish machine, kitchen equipment such as prep tables, cold holding units and shelving. GOLDEN CROWN PANADERIA - 1103 MOUNTAIN RD NW - Conditional Approved GOLDEN CROWN PANADERIA - 1103 MOUNTAIN RD NW Food Establishment Class C Date: 05/14/2026 - #: RT-FOODEST-054681-2025 - Inspection Result: Conditional Approved"
+        "category": "Maintenance",
+        "observation": "Observed items on the premises of the food establishment that is no longer used or is non-functional. Location: Facility storage room to the left, back and right of facility Items list: Nonfunctional ice machines, cold holding units, decor, damaged products, butane, cookware, tea pots, coffee urns, leftover food items such as bread, automotive parts, substantial amount of shelving in back entire room full, synthetic wood, sheetrock, wire shelving, tire, peg board, baby carrier, TV's, produce display shelving, hot plates, Condition of the items: Unorganized, dirty and cluttered."
       },
       {
         "category": "Plumbing",
+        "observation": "Observed plumbing behind ice machine is not maintained in good repair or is not repaired by law. Observed ice machine in back of facility to the left found in disrepair by leaking causing standing water."
+      }
+    ]
+  },
+  {
+    "name": "LOYAL ORDER OF MOOSE 1517",
+    "address": "2121 EDITH BLVD NE",
+    "date": "2026-05-20",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Operation and Maintenance",
+        "observation": "Observed handwashing sink(s) was observed blocked or inaccessible. Location: Only hand-washing sink available inside kitchen Manner: Chlorine sanitizer stored in hand washing sink basin also large black trash bag stored on the floor in front of hand-washing sink."
+      },
+      {
+        "category": "Warewashing Temperature and Concentration",
+        "observation": "Observed chemical sanitizer concentration exceeding the maximum level permitted. Type of Sanitizer: 2 Chlorine sanitizer spray bottles Location: Inside kitchen Concentration: 1000 parts per million"
+      },
+      {
+        "category": "Functionality and Accuracy",
+        "observation": "Observed in a mechanically refrigerated food storage unit the temperature measuring device was not placed in the warmest part of the unit. Equipment Location: Two standing cold holding units Thermometer Location: Placed in far back of cold holding units."
+      },
+      {
+        "category": "Operations",
+        "observation": "Observed that no grade sticker was posted on the facility. LOYAL ORDER OF MOOSE 1517 - 2121 EDITH BLVD NE - Approved LOYAL ORDER OF MOOSE 1517 - 2121 EDITH BLVD NE Food Establishment Class B Date: 05/20/2026 - #: CAC-Food-048549-2026 - Inspection Result: Approved Routine Food Establishment Inspection. Inspection resulted in an Unsatisfactory status due to a low score. No red sticker was placed on facility due to PIC correcting two (2) Priority violations and two (2) Priority Foundation violations on site bringing score back up to an Approved status. Facility was issued a Corrective Action Compliance report on site. Violations corrected: 1. Cold Holding: Time/Temperature Control for Safety Food, Cold Holding 2. Physical Facilities: Backflow Prevention, Air Gap 3. Temperature & Sanitizer Measuring Devices: Temperature Measuring Devices, Ambient Air and Water-Accuracy Testing Devices: Sanitizing Solutions, Testing Devices LOYAL ORDER OF MOOSE 1517 - 2121 EDITH BLVD NE Food Establishment Class B Date: 05/20/2026 - #: PT0051550 - Inspection Result: Unsatisfactory Re-Inspection required"
+      },
+      {
+        "category": "Plumbing",
+        "observation": "Violation corrected on site by PIC cutting drain pipes two inches above flood rim. Observed an inadequate air gap at two floor drains in bar area."
+      },
+      {
+        "category": "Training Records",
         "observation": ""
       }
     ]
   },
   {
-    "name": "RED CHILLI HOUSE",
-    "address": "8201 GOLF COURSE RD NW, B-2",
-    "date": "2026-05-13",
-    "outcome": "conditional",
+    "name": "LOYAL ORDER OF MOOSE 1517",
+    "address": "2121 EDITH BLVD NE",
+    "date": "2026-05-20",
+    "outcome": "failed",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
-    "violations": [
-      {
-        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": "Observed chlorine solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Sanitizer Bucket. Concentration:0 ppm Temperature: 85"
-      },
-      {
-        "category": "Training Records",
-        "observation": "Observed that the food establishment does not have a certified food protection manager on staff. Observed that food employees were not in possession of a food handler card or had been trained in another approved food safety course."
-      },
-      {
-        "category": "Ventilation and Hood Systems",
-        "observation": "Observed interior intake and exhaust air ducts with debris buildup. Location: Cooking exhaust hoods interior."
-      },
-      {
-        "category": "Operation and Maintenance",
-        "observation": "Observed no handwashing cleanser available at handwashing sink(s). Location: Kitchen hand wash station. Observed no approved method of hand drying at handwashing sink(s). Location: Kitchen hand wash sink. Rio Grande Pres Church - 600 COORS BLVD NW - Approved Rio Grande Pres Church - 600 COORS BLVD NW Charitable Food Provider Date: 05/14/2026 - #: RT-FOODEST-016795-2026 - Inspection Result: Approved"
-      },
-      {
-        "category": "Maintenance and Operation",
-        "observation": "Observed equipment components not maintained. Location: Walk in freezer Type of equipment: Bottom door seal"
-      }
-    ]
+    "violations": []
   }
 ]
