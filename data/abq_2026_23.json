@@ -1,0 +1,147 @@
+[
+  {
+    "name": "DASHMART",
+    "address": "1431 MERCANTILE AVE NE",
+    "date": "2026-05-19",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Plumbing",
+        "observation": "Observed Three compartment sink PVC drain line. is not maintained in good repair or is not repaired by law. Observed Drain line found in disrepair by leaking."
+      },
+      {
+        "category": "Physical Facilities, Cleaning",
+        "observation": "Observed build up and debris on the laundry area behind coffin freezer at the time of inspection"
+      },
+      {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": "Observed Base coving located in Kitchen missing in two areas of the kitchen. DASHMART - 1431 MERCANTILE AVE NE - Closure Re-Inspection Required DASHMART - 1431 MERCANTILE AVE NE Food Establishment Class C Date: 05/19/2026 - #: RT-FOODEST-035329-2026 - Inspection Result: Closure Re-Inspection Required"
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Additionally, insects from trash were flying landing on surfaces throughout kitchen. Facility has no ability to clean and sanitize surfaces throughout kitchen due to lack of water. Facility will need to clean and sanitize kitchen prior to re-opening."
+      },
+      {
+        "category": "Pest Control",
+        "observation": "Observed the facility has inadequate procedures to effectively control pests. Observed numerous flying insects around uncovered, filled trash can, observing them flying from inside the trash throughout the kitchen area."
+      },
+      {
+        "category": "Knowledgeable",
+        "observation": ""
+      },
+      {
+        "category": "Surface Not Clean",
+        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located throughout the kitchen area inside, some with significant debris accumulation, on the exterior, doors and handles of the reach in coolers, and cooking equipment."
+      },
+      {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": "Observed the following areas of the facility in disrepair. Observed gaps and holes in the walls DASHMART - 1431 MERCANTILE AVE NE Warehouse Date: 05/19/2026 - #: PT0157263 - Inspection Result: Approved"
+      },
+      {
+        "category": "Hot & Cold-Water Availability & Pressure",
+        "observation": "Observed facility with insufficient water capacity. Location: restrooms Manner: no water at faucet or toilets"
+      },
+      {
+        "category": "Food Separation",
+        "observation": "Observed raw animal foods of different types stored improperly. Location: multiple reach in coolers Food Item: raw shell eggs above ready to eat French onion dip, raw beef package with packages of ready to eat deli meat and above ready to eat sausages, raw pork chorizo stored above carrot cake and ready to eat salami, raw pork product above ready to eat deli meat, raw ground turkey above ready to eat lunch kits"
+      },
+      {
+        "category": "Physical Facilities, Cleaning",
+        "observation": "and when food is not being served or prepared. Instructed person in charge to remove build up and debris on floors and to clean and sanitize Observed build up and debris on the floors behind and under reach in coolers/freezers ELOISAS NEW MEXICAN CUISINE - 7850 ZUNI RD SE - Approved ELOISAS NEW MEXICAN CUISINE - 7850 ZUNI RD SE Mobile Food Unit Class C Date: 05/22/2026 - #: PT0160805 - Inspection Result: Approved"
+      },
+      {
+        "category": "Training Records",
+        "observation": ""
+      }
+    ]
+  },
+  {
+    "name": "DASHMART",
+    "address": "1431 MERCANTILE AVE NE",
+    "date": "2026-05-19",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "FAMILY MARKET & GROCERY",
+    "address": "110 WYOMING BLVD SE",
+    "date": "2026-05-19",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Testing Devices",
+        "observation": "Observed food temperature measuring devices was provided but not acceptable as infrared thermometer only reads surface temperature and not internal as required. Also observed missing thermometer inside freezer."
+      },
+      {
+        "category": "Records",
+        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: All TCS cold help items Activity of the Food: Stored, thawed, cooled\u25a1 Observed the food establishment does not have calibration logs for temperature measuring devices. FAMILY MARKET & GROCERY - 110 WYOMING BLVD SE - Closure Re-Inspection Required FAMILY MARKET & GROCERY - 110 WYOMING BLVD SE Retail Food Establishment Class 4 Date: 05/19/2026 - #: PT0160895 - Inspection Result: Closure Re-Inspection Required"
+      },
+      {
+        "category": "Functionality and Accuracy",
+        "observation": "Observed in a mechanically refrigerated food storage unit the temperature measuring device was not placed in the warmest part of the unit. Equipment Location: Walk in refrigerator and walk in freezer Thermometer Location: None available"
+      },
+      {
+        "category": "Maintenance",
+        "observation": "Observed items on the premises of the food establishment that is no longer used or is non-functional. Location: Facility storage room to the left, back and right of facility Items list: Nonfunctional ice machines, cold holding units, decor, damaged products, butane, cookware, tea pots, coffee urns, leftover food items such as bread, automotive parts, substantial amount of shelving in back entire room full, synthetic wood, sheetrock, wire shelving, tire, peg board, baby carrier, TV's, produce display shelving, hot plates, Condition of the items: Unorganized, dirty and cluttered."
+      },
+      {
+        "category": "Plumbing",
+        "observation": "Observed plumbing behind ice machine is not maintained in good repair or is not repaired by law. Observed ice machine in back of facility to the left found in disrepair by leaking causing standing water."
+      }
+    ]
+  },
+  {
+    "name": "LOYAL ORDER OF MOOSE 1517",
+    "address": "2121 EDITH BLVD NE",
+    "date": "2026-05-20",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Operation and Maintenance",
+        "observation": "Observed handwashing sink(s) was observed blocked or inaccessible. Location: Only hand-washing sink available inside kitchen Manner: Chlorine sanitizer stored in hand washing sink basin also large black trash bag stored on the floor in front of hand-washing sink."
+      },
+      {
+        "category": "Warewashing Temperature and Concentration",
+        "observation": "Observed chemical sanitizer concentration exceeding the maximum level permitted. Type of Sanitizer: 2 Chlorine sanitizer spray bottles Location: Inside kitchen Concentration: 1000 parts per million"
+      },
+      {
+        "category": "Functionality and Accuracy",
+        "observation": "Observed in a mechanically refrigerated food storage unit the temperature measuring device was not placed in the warmest part of the unit. Equipment Location: Two standing cold holding units Thermometer Location: Placed in far back of cold holding units."
+      },
+      {
+        "category": "Operations",
+        "observation": "Observed that no grade sticker was posted on the facility. LOYAL ORDER OF MOOSE 1517 - 2121 EDITH BLVD NE - Approved LOYAL ORDER OF MOOSE 1517 - 2121 EDITH BLVD NE Food Establishment Class B Date: 05/20/2026 - #: CAC-Food-048549-2026 - Inspection Result: Approved Routine Food Establishment Inspection. Inspection resulted in an Unsatisfactory status due to a low score. No red sticker was placed on facility due to PIC correcting two (2) Priority violations and two (2) Priority Foundation violations on site bringing score back up to an Approved status. Facility was issued a Corrective Action Compliance report on site. Violations corrected: 1. Cold Holding: Time/Temperature Control for Safety Food, Cold Holding 2. Physical Facilities: Backflow Prevention, Air Gap 3. Temperature & Sanitizer Measuring Devices: Temperature Measuring Devices, Ambient Air and Water-Accuracy Testing Devices: Sanitizing Solutions, Testing Devices LOYAL ORDER OF MOOSE 1517 - 2121 EDITH BLVD NE Food Establishment Class B Date: 05/20/2026 - #: PT0051550 - Inspection Result: Unsatisfactory Re-Inspection required"
+      },
+      {
+        "category": "Plumbing",
+        "observation": "Violation corrected on site by PIC cutting drain pipes two inches above flood rim. Observed an inadequate air gap at two floor drains in bar area."
+      },
+      {
+        "category": "Training Records",
+        "observation": ""
+      }
+    ]
+  },
+  {
+    "name": "LOYAL ORDER OF MOOSE 1517",
+    "address": "2121 EDITH BLVD NE",
+    "date": "2026-05-20",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  }
+]
