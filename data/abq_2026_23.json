@@ -1,144 +1,105 @@
 [
   {
-    "name": "DASHMART",
-    "address": "1431 MERCANTILE AVE NE",
-    "date": "2026-05-19",
-    "outcome": "closed",
+    "name": "BOBA TEA COMPANY 4",
+    "address": "3339 CENTRAL AVE NE, #A",
+    "date": "2026-05-27",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
       {
-        "category": "Plumbing",
-        "observation": "Observed Three compartment sink PVC drain line. is not maintained in good repair or is not repaired by law. Observed Drain line found in disrepair by leaking."
-      },
-      {
         "category": "Physical Facilities, Cleaning",
-        "observation": "Observed build up and debris on the laundry area behind coffin freezer at the time of inspection"
+        "observation": "Observed a soiled mop not in use, not hung to dry. Observed buildup and debris on the floor in the kitchen under soda machine Observed buildup and debris on the floors, table legs and windows in dining room"
       },
       {
-        "category": "Physical Facilities, Construction and Repair",
-        "observation": "Observed Base coving located in Kitchen missing in two areas of the kitchen. DASHMART - 1431 MERCANTILE AVE NE - Closure Re-Inspection Required DASHMART - 1431 MERCANTILE AVE NE Food Establishment Class C Date: 05/19/2026 - #: RT-FOODEST-035329-2026 - Inspection Result: Closure Re-Inspection Required"
+        "category": "Consumer Advisories",
+        "observation": "Observed no written notification of the presence of major food allergens for unpackaged food served or sold to consumers."
       },
       {
-        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Additionally, insects from trash were flying landing on surfaces throughout kitchen. Facility has no ability to clean and sanitize surfaces throughout kitchen due to lack of water. Facility will need to clean and sanitize kitchen prior to re-opening."
+        "category": "Disposition of Returned, Previously Served Or Reconditioned",
+        "observation": "Observed food that is unsafe for consumption present inside the facility. Food: containers of raspberry topping Location: Reach in Cooler Condition: Food had quantities of organic growth inside the containers and on top of the food Ready-to-eat, time/temperature control for safety food commercially prepared and opened, held longer than a 24-hour period shall be marked to indicate the date or day by which the food is to be consumed on the premises, sold, or discarded when held at a temperature of 41\u00b0F or less for a maximum of 7 days. Observed ready-to-eat time and temperature controlled for safety food commercially prepared opened in the facility with no date marking indicators. Location: Kitchen coolers Food Items: raspberry toppings"
       },
       {
-        "category": "Pest Control",
-        "observation": "Observed the facility has inadequate procedures to effectively control pests. Observed numerous flying insects around uncovered, filled trash can, observing them flying from inside the trash throughout the kitchen area."
-      },
-      {
-        "category": "Knowledgeable",
-        "observation": ""
+        "category": "Storage",
+        "observation": "Observed equipment was not air dried and was wet stacked. Location: Ware washing area Equipment Type: Food service pans Manner: not air dried and stacked wet"
       },
       {
         "category": "Surface Not Clean",
-        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located throughout the kitchen area inside, some with significant debris accumulation, on the exterior, doors and handles of the reach in coolers, and cooking equipment."
+        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located in the walk-in freezer below fan unit The condition of the surface was Ice and frost build up BOBA TEA COMPANY 4 - 3339 CENTRAL AVE NE, #A - Approved BOBA TEA COMPANY 4 - 3339 CENTRAL AVE NE, #A Food Establishment Class C Date: 05/27/2026 - #: CAC-Food-050464-2026 - Inspection Result: Approved Routine Food Establishment Inspection. Inspection resulted in a Conditional Approved status. No yellow sticker was placed on facility due to PIC correcting one Priority violation on site bringing score back up to an Approved status."
       },
       {
-        "category": "Physical Facilities, Construction and Repair",
-        "observation": "Observed the following areas of the facility in disrepair. Observed gaps and holes in the walls DASHMART - 1431 MERCANTILE AVE NE Warehouse Date: 05/19/2026 - #: PT0157263 - Inspection Result: Approved"
+        "category": "Poisonous and Toxic/Chemical Substances",
+        "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Spray bottle Alleged Material: PIC stated it is a sanitizer spray bottle"
       },
       {
-        "category": "Hot & Cold-Water Availability & Pressure",
-        "observation": "Observed facility with insufficient water capacity. Location: restrooms Manner: no water at faucet or toilets"
+        "category": "Plumbing",
+        "observation": "Observed an inadequate air gap at two floor drains."
       },
       {
-        "category": "Food Separation",
-        "observation": "Observed raw animal foods of different types stored improperly. Location: multiple reach in coolers Food Item: raw shell eggs above ready to eat French onion dip, raw beef package with packages of ready to eat deli meat and above ready to eat sausages, raw pork chorizo stored above carrot cake and ready to eat salami, raw pork product above ready to eat deli meat, raw ground turkey above ready to eat lunch kits"
+        "category": "Cold Holding",
+        "observation": "Violation corrected on site by PIC discarding out of temperature Gobi poppers. Observed food items in cold holding unit measuring above 41\u00b0F. Location: Beverage make station Food Items: Gobi poopers multiple flavors Temperature: 58\u00b0F, 60\u00b0F"
       },
       {
-        "category": "Physical Facilities, Cleaning",
-        "observation": "and when food is not being served or prepared. Instructed person in charge to remove build up and debris on floors and to clean and sanitize Observed build up and debris on the floors behind and under reach in coolers/freezers ELOISAS NEW MEXICAN CUISINE - 7850 ZUNI RD SE - Approved ELOISAS NEW MEXICAN CUISINE - 7850 ZUNI RD SE Mobile Food Unit Class C Date: 05/22/2026 - #: PT0160805 - Inspection Result: Approved"
+        "category": "Operation and Maintenance",
+        "observation": "Observed handwashing sink used for purpose other than handwashing. Location: Hand wash station Manner: Storing a soiled wiping cloth"
       },
       {
-        "category": "Training Records",
-        "observation": ""
+        "category": "Records",
+        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Gobi poppers Activity of the Food: Stored. BURGER KING #5156 - 101 LOMAS BLVD NE - Approved BURGER KING #5156 - 101 LOMAS BLVD NE Food Establishment Class C Date: 05/26/2026 - #: PT0044009 - Inspection Result: Approved"
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine unit Location: Back of house Condition of the Location: Ice machine had orange slimy organic matter buildup near ice chute"
       }
     ]
   },
   {
-    "name": "DASHMART",
-    "address": "1431 MERCANTILE AVE NE",
-    "date": "2026-05-19",
-    "outcome": "approved",
+    "name": "BOBA TEA COMPANY 4",
+    "address": "3339 CENTRAL AVE NE, #A",
+    "date": "2026-05-27",
+    "outcome": "conditional",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": []
   },
   {
-    "name": "FAMILY MARKET & GROCERY",
-    "address": "110 WYOMING BLVD SE",
-    "date": "2026-05-19",
-    "outcome": "closed",
+    "name": "DASHMART",
+    "address": "1431 MERCANTILE AVE NE",
+    "date": "2026-05-26",
+    "outcome": "failed",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
       {
-        "category": "Testing Devices",
-        "observation": "Observed food temperature measuring devices was provided but not acceptable as infrared thermometer only reads surface temperature and not internal as required. Also observed missing thermometer inside freezer."
+        "category": "Training Records",
+        "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
+      },
+      {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": "Observed the following areas of the facility in disrepair by having holes in walls where sheetrock was repaired on the east wall of the facility. DASHMART - 1431 MERCANTILE AVE NE - Unsatisfactory Re-Inspection required DASHMART - 1431 MERCANTILE AVE NE Food Establishment Class C Date: 05/26/2026 - #: CAC-Food-049721-2026 - Inspection Result: Unsatisfactory Re-Inspection required Facility is being re-opened under a grade of Unsatisfactory. Facility has taken steps and necessary actions to correct the following violations: -Discarding or Reconditioning Unsafe, Adulterated, or Contaminated Food -Water Capacity-Quantity and Availability -Controlling Pests, If Present: Treatment -Backflow Prevention, Air Gap Facility has had plumbing system repaired to provide water supply to the facility. However, observed that the water does not get to appropriate heat level in the south bathroom. PIC stated he was aware when the water came back on and that he has already placed a work order to have below sink booster repaired. All other sinks had running water meeting required temperatures. Facility did not have method of drying hands at handwashing sink in the kitchen area. Instructed PIC to replace paper towels during inspection. Observed debris still accumulated though less inside the reach in coolers. No product was remaining inside the prep coolers in the kitchen area. Instructed PIC to continue cleaning the coolers. FAMILY MARKET & GROCERY - 110 WYOMING BLVD SE - Approved FAMILY MARKET & GROCERY - 110 WYOMING BLVD SE Retail Food Establishment Class 4 Date: 05/26/2026 - #: RT-RET-048189-2026 - Inspection Result: Approved"
+      },
+      {
+        "category": "Functionality and Accuracy",
+        "observation": "Observed in a mechanically refrigerated food storage unit the temperature measuring device was not placed in the warmest part of the unit. Equipment Location: Walk in refrigerator, walk in freezer, display cold holding units Thermometer Location: Thermometers were available but were oven thermometers recordable temperature starts at 100 \u00b0F."
       },
       {
         "category": "Records",
-        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: All TCS cold help items Activity of the Food: Stored, thawed, cooled\u25a1 Observed the food establishment does not have calibration logs for temperature measuring devices. FAMILY MARKET & GROCERY - 110 WYOMING BLVD SE - Closure Re-Inspection Required FAMILY MARKET & GROCERY - 110 WYOMING BLVD SE Retail Food Establishment Class 4 Date: 05/19/2026 - #: PT0160895 - Inspection Result: Closure Re-Inspection Required"
+        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Dairy products, frozen TCS food items Activity of the Food: Received and stored"
       },
       {
-        "category": "Functionality and Accuracy",
-        "observation": "Observed in a mechanically refrigerated food storage unit the temperature measuring device was not placed in the warmest part of the unit. Equipment Location: Walk in refrigerator and walk in freezer Thermometer Location: None available"
-      },
-      {
-        "category": "Maintenance",
-        "observation": "Observed items on the premises of the food establishment that is no longer used or is non-functional. Location: Facility storage room to the left, back and right of facility Items list: Nonfunctional ice machines, cold holding units, decor, damaged products, butane, cookware, tea pots, coffee urns, leftover food items such as bread, automotive parts, substantial amount of shelving in back entire room full, synthetic wood, sheetrock, wire shelving, tire, peg board, baby carrier, TV's, produce display shelving, hot plates, Condition of the items: Unorganized, dirty and cluttered."
-      },
-      {
-        "category": "Plumbing",
-        "observation": "Observed plumbing behind ice machine is not maintained in good repair or is not repaired by law. Observed ice machine in back of facility to the left found in disrepair by leaking causing standing water."
-      }
-    ]
-  },
-  {
-    "name": "LOYAL ORDER OF MOOSE 1517",
-    "address": "2121 EDITH BLVD NE",
-    "date": "2026-05-20",
-    "outcome": "approved",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": [
-      {
-        "category": "Operation and Maintenance",
-        "observation": "Observed handwashing sink(s) was observed blocked or inaccessible. Location: Only hand-washing sink available inside kitchen Manner: Chlorine sanitizer stored in hand washing sink basin also large black trash bag stored on the floor in front of hand-washing sink."
-      },
-      {
-        "category": "Warewashing Temperature and Concentration",
-        "observation": "Observed chemical sanitizer concentration exceeding the maximum level permitted. Type of Sanitizer: 2 Chlorine sanitizer spray bottles Location: Inside kitchen Concentration: 1000 parts per million"
-      },
-      {
-        "category": "Functionality and Accuracy",
-        "observation": "Observed in a mechanically refrigerated food storage unit the temperature measuring device was not placed in the warmest part of the unit. Equipment Location: Two standing cold holding units Thermometer Location: Placed in far back of cold holding units."
-      },
-      {
-        "category": "Operations",
-        "observation": "Observed that no grade sticker was posted on the facility. LOYAL ORDER OF MOOSE 1517 - 2121 EDITH BLVD NE - Approved LOYAL ORDER OF MOOSE 1517 - 2121 EDITH BLVD NE Food Establishment Class B Date: 05/20/2026 - #: CAC-Food-048549-2026 - Inspection Result: Approved Routine Food Establishment Inspection. Inspection resulted in an Unsatisfactory status due to a low score. No red sticker was placed on facility due to PIC correcting two (2) Priority violations and two (2) Priority Foundation violations on site bringing score back up to an Approved status. Facility was issued a Corrective Action Compliance report on site. Violations corrected: 1. Cold Holding: Time/Temperature Control for Safety Food, Cold Holding 2. Physical Facilities: Backflow Prevention, Air Gap 3. Temperature & Sanitizer Measuring Devices: Temperature Measuring Devices, Ambient Air and Water-Accuracy Testing Devices: Sanitizing Solutions, Testing Devices LOYAL ORDER OF MOOSE 1517 - 2121 EDITH BLVD NE Food Establishment Class B Date: 05/20/2026 - #: PT0051550 - Inspection Result: Unsatisfactory Re-Inspection required"
-      },
-      {
-        "category": "Plumbing",
-        "observation": "Violation corrected on site by PIC cutting drain pipes two inches above flood rim. Observed an inadequate air gap at two floor drains in bar area."
-      },
-      {
-        "category": "Training Records",
+        "category": "Pest Control",
         "observation": ""
       }
     ]
   },
   {
-    "name": "LOYAL ORDER OF MOOSE 1517",
-    "address": "2121 EDITH BLVD NE",
-    "date": "2026-05-20",
-    "outcome": "failed",
+    "name": "Kung Fu Tea",
+    "address": "4410 WYOMING BLVD NE, H",
+    "date": "2026-05-28",
+    "outcome": "closed",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
