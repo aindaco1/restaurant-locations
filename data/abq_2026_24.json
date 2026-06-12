@@ -1,63 +1,184 @@
 [
   {
-    "name": "BOBA TEA COMPANY 4",
-    "address": "3339 CENTRAL AVE NE, #A",
-    "date": "2026-05-27",
+    "name": "999 SEAFOOD SUPERMARKET INC",
+    "address": "5315 GIBSON BLVD SE",
+    "date": "2026-06-04",
+    "outcome": "closed",
+    "operational_status": "Closed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Knowledgeable",
+        "observation": "Observed that the person in charge was unable to demonstrate knowledge of food safety in facility. PIC had no knowledge on TCS cut food items regarding used by dates. Basic demonstration of knowledge also failed in the prevention of an infestation."
+      },
+      {
+        "category": "Maintenance",
+        "observation": "Observed the waste storage area to be unclean. Location: Outside garbage compactor. Condition of the storage area: substantial trash debris and cigarette butts around the garbage compactor."
+      },
+      {
+        "category": "Cold Holding",
+        "observation": "Observed food items in cold holding unit measuring above 41\u00b0F. Location: [grocery sales floor reach in cooler. produce sales floor cold rack. Food Items: Tofu- 47 degrees, Unknown egg item- 47 degrees, Produce: Balogh eggs-70 degrees, Bean Sprouts- 50 Degrees peeled garlic, 48 degrees."
+      },
+      {
+        "category": "Hot & Cold-Water Availability & Pressure",
+        "observation": "Observed facility with insufficient hot water. Location: produce hand wash station, Manner: no hot water to hand wash station,"
+      },
+      {
+        "category": "Surface Not Clean",
+        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located Produce sales floor. The surface was made out of metal. The condition of the surface produces interior wet rack food debris and soil buildup."
+      },
+      {
+        "category": "Records",
+        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items Duck and Pork. Activity of the Food: Cooked and hot held."
+      },
+      {
+        "category": "Physical Facilities",
+        "observation": "Observed doors to the outside that are not tight fitting, light can be seen at the edges. side produce door sales floor, warehouse double door middle of the warehouse side door east side behind the walk-in cooler receiving area. Observed holes or other gaps in the structure of the facility. Location: Warehouse ceiling tiles broken throughout the warehouse. holes on dry walls behind shelving in warehouse. Size: 3 to 6-inch holes. Size: Dry walls with 2 to 4 in holes in dry wall"
+      },
+      {
+        "category": "Pest Control",
+        "observation": ""
+      },
+      {
+        "category": "Lighting",
+        "observation": "Observed light bulbs with no protective shielding, coating or by other means shatter resistant. Location: Produce walk in coolers all lighting missing the light safety covers."
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed chlorine solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: produce and grocery Concentration: No sanitizer made up for both departments. for cleaning food contact surfaces."
+      },
+      {
+        "category": "Designated Areas",
+        "observation": "Observed facility did not provide lockers or other suitable facilities for storage of employees clothing or other personal belongings."
+      },
+      {
+        "category": "Maintenance and Operation",
+        "observation": "Observed equipment not maintained in good repair. Location: Sales floor freezer Vaults. Type of Equipment: Freezer mechanical units. Condition of the equipment: Missing the required vent guards."
+      },
+      {
+        "category": "Operation and Maintenance",
+        "observation": "Observed handwashing sink(s) without a handwashing sign. Location: Produce hand wash station."
+      },
+      {
+        "category": "Date Marking and Disposition",
+        "observation": "Observed ready-to-eat time and temperature controlled for safety food held within the establishment inappropriately marked. Location: produce sales floor shelving Food Items: had a packing date but no used by date and some with no dates. 999 SEAFOOD SUPERMARKET INC - 5315 GIBSON BLVD SE Retail Food Establishment Class 4 Date: 06/04/2026 - #: RT-RET-003972-2025 - Inspection Result: Closure Re-Inspection Required"
+      },
+      {
+        "category": "Knowledgeable",
+        "observation": "Observed that the person in charge was unable to demonstrate knowledge of foodborne disease prevention and other requirements of the Food Code and local ordinances. Knowledge Tested: Person in charge failed to demonstrate basic knowledge on safe food handling such as handwashing, glove usage, temperature safety, preventing cross contamination and carrying out safe operations."
+      },
+      {
+        "category": "Training Records",
+        "observation": ""
+      },
+      {
+        "category": "Operation and Maintenance",
+        "observation": "Observed handwashing fixtures with the buildup of soil residues. The plumbing fixture was located in the raw meat service area. The condition of the surface was severely soiled and in need of cleaning."
+      },
+      {
+        "category": "Ventilation and Hood Systems",
+        "observation": "Observed interior intake and exhaust air ducts with debris buildup. Location: In the ambient coolers, walk in coolers and vent covers over food production area in raw meat/seafood."
+      },
+      {
+        "category": "Poisonous and Toxic/Chemical Substances",
+        "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Wiping cloth buckets, spray bottles Alleged Material: Chlorine, degreaser and other unknown chemical solutions 999 SEAFOOD SUPERMARKET INC - 5315 GIBSON BLVD SE Food Establishment Class C Date: 06/04/2026 - #: RT-FOODEST-097712-2025 - Inspection Result: Closure Re-Inspection Required"
+      },
+      {
+        "category": "Pest Control",
+        "observation": "Observed pests in the facility with no control methods in place. Location: rodent droppings under service counter storage racks and wood shelving and in storage area shelving. Pest Type: Mice. Pest Condition: uncertain."
+      },
+      {
+        "category": "Date Marking and Disposition",
+        "observation": "Observed ready-to-eat time and temperature controlled for safety food held within the establishment inappropriately marked. Location: walk in cooler Food Items: what food items were inappropriately date marked: Duck Marinade. Manner: no date mark indicators or labeled as to what the food item was"
+      },
+      {
+        "category": "Maintenance and Operation",
+        "observation": "Observed equipment not maintained in good repair. Location: Food storage area Type of Equipment: Bulk food containers. Condition of the equipment: corn starch is in a non-NSF container. other food containers with crusted soil buildup."
+      },
+      {
+        "category": "Knowledgeable",
+        "observation": ""
+      }
+    ]
+  },
+  {
+    "name": "Birria Estilo Zacatecas (DBA LOS TACOS DEL REY)",
+    "address": "600 LOUISIANA BLVD SE, A",
+    "date": "2026-06-03",
     "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Birria Estilo Zacatecas (DBA LOS TACOS DEL REY)",
+    "address": "600 LOUISIANA BLVD SE, A",
+    "date": "2026-06-03",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "BURGER KING",
+    "address": "5608 4TH ST NW",
+    "date": "2026-06-03",
+    "outcome": "conditional",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
       {
-        "category": "Physical Facilities, Cleaning",
-        "observation": "Observed a soiled mop not in use, not hung to dry. Observed buildup and debris on the floor in the kitchen under soda machine Observed buildup and debris on the floors, table legs and windows in dining room"
+        "category": "Testing Devices",
+        "observation": "Observed food temperature measuring devices were not provided or readily accessible. Also observed multiple cold holding units missing ambient thermometers as required."
       },
       {
-        "category": "Consumer Advisories",
-        "observation": "Observed no written notification of the presence of major food allergens for unpackaged food served or sold to consumers."
-      },
-      {
-        "category": "Disposition of Returned, Previously Served Or Reconditioned",
-        "observation": "Observed food that is unsafe for consumption present inside the facility. Food: containers of raspberry topping Location: Reach in Cooler Condition: Food had quantities of organic growth inside the containers and on top of the food Ready-to-eat, time/temperature control for safety food commercially prepared and opened, held longer than a 24-hour period shall be marked to indicate the date or day by which the food is to be consumed on the premises, sold, or discarded when held at a temperature of 41\u00b0F or less for a maximum of 7 days. Observed ready-to-eat time and temperature controlled for safety food commercially prepared opened in the facility with no date marking indicators. Location: Kitchen coolers Food Items: raspberry toppings"
-      },
-      {
-        "category": "Storage",
-        "observation": "Observed equipment was not air dried and was wet stacked. Location: Ware washing area Equipment Type: Food service pans Manner: not air dried and stacked wet"
-      },
-      {
-        "category": "Surface Not Clean",
-        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located in the walk-in freezer below fan unit The condition of the surface was Ice and frost build up BOBA TEA COMPANY 4 - 3339 CENTRAL AVE NE, #A - Approved BOBA TEA COMPANY 4 - 3339 CENTRAL AVE NE, #A Food Establishment Class C Date: 05/27/2026 - #: CAC-Food-050464-2026 - Inspection Result: Approved Routine Food Establishment Inspection. Inspection resulted in a Conditional Approved status. No yellow sticker was placed on facility due to PIC correcting one Priority violation on site bringing score back up to an Approved status."
-      },
-      {
-        "category": "Poisonous and Toxic/Chemical Substances",
-        "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Spray bottle Alleged Material: PIC stated it is a sanitizer spray bottle"
-      },
-      {
-        "category": "Plumbing",
-        "observation": "Observed an inadequate air gap at two floor drains."
-      },
-      {
-        "category": "Cold Holding",
-        "observation": "Violation corrected on site by PIC discarding out of temperature Gobi poppers. Observed food items in cold holding unit measuring above 41\u00b0F. Location: Beverage make station Food Items: Gobi poopers multiple flavors Temperature: 58\u00b0F, 60\u00b0F"
+        "category": "Designated Areas",
+        "observation": "Observed facility did not provide lockers or other suitable facilities for storage of employees clothing or other personal belongings."
       },
       {
         "category": "Operation and Maintenance",
-        "observation": "Observed handwashing sink used for purpose other than handwashing. Location: Hand wash station Manner: Storing a soiled wiping cloth"
+        "observation": "Observed handwashing sink(s) without a handwashing sign. Location: Restrooms and kitchen make line handwashing station."
+      },
+      {
+        "category": "Surface Not Clean",
+        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located in and around the deep fryer on make line. The surface was made out of stainless steel. The condition of the surface was soiled in heavy grease and debris accumulation."
       },
       {
         "category": "Records",
-        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Gobi poppers Activity of the Food: Stored. BURGER KING #5156 - 101 LOMAS BLVD NE - Approved BURGER KING #5156 - 101 LOMAS BLVD NE Food Establishment Class C Date: 05/26/2026 - #: PT0044009 - Inspection Result: Approved"
+        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Multiple trays of cooked meats, salsa's, chopped veggies, beans, rice and aguas. Activity of the Food: Stored, thawed, cooled BURGER KING - 5608 4TH ST NW - Conditional Approved BURGER KING - 5608 4TH ST NW Food Establishment Class C Date: 06/03/2026 - #: PT0154336 - Inspection Result: Conditional Approved"
       },
       {
         "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine unit Location: Back of house Condition of the Location: Ice machine had orange slimy organic matter buildup near ice chute"
+        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine . Location: Kitchen service areas. Condition of the Location: Interior ceiling by Ice Chute with a black like soil residue"
+      },
+      {
+        "category": "Poisonous and Toxic/Chemical Substances",
+        "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Spray Bottles. Alleged Material: food vegetable cleaner in a brown floor cleaner spray bottle."
+      },
+      {
+        "category": "Time as Public Health Control",
+        "observation": ""
       }
     ]
   },
   {
-    "name": "BOBA TEA COMPANY 4",
-    "address": "3339 CENTRAL AVE NE, #A",
-    "date": "2026-05-27",
+    "name": "BURGER KING",
+    "address": "5608 4TH ST NW",
+    "date": "2026-06-04",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "BURGER KING",
+    "address": "5608 4TH ST NW",
+    "date": "2026-06-04",
     "outcome": "conditional",
     "operational_status": "Open",
     "city": "Albuquerque",
@@ -65,44 +186,101 @@
     "violations": []
   },
   {
-    "name": "DASHMART",
-    "address": "1431 MERCANTILE AVE NE",
-    "date": "2026-05-26",
-    "outcome": "failed",
+    "name": "DUKE CITY BBQ",
+    "address": "5500 SAN MATEO BLVD NE, 101",
+    "date": "2026-06-02",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "DUKE CITY BBQ",
+    "address": "5500 SAN MATEO BLVD NE, 101",
+    "date": "2026-06-02",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Limra DBA Royal Hyderabad",
+    "address": "5760 McMahon NW BLVD, Ste B-E",
+    "date": "2026-06-05",
+    "outcome": "closed",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
       {
-        "category": "Training Records",
-        "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
+        "category": "Operation and Maintenance",
+        "observation": "Observed handwashing sink(s) without a handwashing sign. Location: Kitchen handwashing sink"
       },
       {
-        "category": "Physical Facilities, Construction and Repair",
-        "observation": "Observed the following areas of the facility in disrepair by having holes in walls where sheetrock was repaired on the east wall of the facility. DASHMART - 1431 MERCANTILE AVE NE - Unsatisfactory Re-Inspection required DASHMART - 1431 MERCANTILE AVE NE Food Establishment Class C Date: 05/26/2026 - #: CAC-Food-049721-2026 - Inspection Result: Unsatisfactory Re-Inspection required Facility is being re-opened under a grade of Unsatisfactory. Facility has taken steps and necessary actions to correct the following violations: -Discarding or Reconditioning Unsafe, Adulterated, or Contaminated Food -Water Capacity-Quantity and Availability -Controlling Pests, If Present: Treatment -Backflow Prevention, Air Gap Facility has had plumbing system repaired to provide water supply to the facility. However, observed that the water does not get to appropriate heat level in the south bathroom. PIC stated he was aware when the water came back on and that he has already placed a work order to have below sink booster repaired. All other sinks had running water meeting required temperatures. Facility did not have method of drying hands at handwashing sink in the kitchen area. Instructed PIC to replace paper towels during inspection. Observed debris still accumulated though less inside the reach in coolers. No product was remaining inside the prep coolers in the kitchen area. Instructed PIC to continue cleaning the coolers. FAMILY MARKET & GROCERY - 110 WYOMING BLVD SE - Approved FAMILY MARKET & GROCERY - 110 WYOMING BLVD SE Retail Food Establishment Class 4 Date: 05/26/2026 - #: RT-RET-048189-2026 - Inspection Result: Approved"
-      },
-      {
-        "category": "Functionality and Accuracy",
-        "observation": "Observed in a mechanically refrigerated food storage unit the temperature measuring device was not placed in the warmest part of the unit. Equipment Location: Walk in refrigerator, walk in freezer, display cold holding units Thermometer Location: Thermometers were available but were oven thermometers recordable temperature starts at 100 \u00b0F."
+        "category": "Surface Not Clean",
+        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located inside the juice dispenser. The condition of the surface was soiled with syrup residue."
       },
       {
         "category": "Records",
-        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Dairy products, frozen TCS food items Activity of the Food: Received and stored"
+        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: All temperature-controlled foods Activity of the Food: Stored, thawed, cooled Limra DBA Royal Hyderabad - 5760 McMahon NW BLVD, Ste B-E - Closure Re-Inspection Required Limra DBA Royal Hyderabad - 5760 McMahon NW BLVD, Ste B-E Food Establishment Class C Date: 06/05/2026 - #: RT-FOODEST-032855-2026 - Inspection Result: Closure Re-Inspection Required"
       },
       {
-        "category": "Pest Control",
+        "category": "Maintenance and Operation",
+        "observation": "Observed soiled or dirty ware washing machine. Location: Kitchen washing area. Condition: interior and exterior with substantial buildup of food debris."
+      },
+      {
+        "category": "Thawing",
+        "observation": "Observed frozen time/temperature control for safety food improperly thawing. Food: Frozen chicken. Location: kitchen prep areas. Condition: Chicken Method: chicken left out on a Milk crate thawing at room temperature."
+      },
+      {
+        "category": "Use Limitations",
+        "observation": "Observed wiping cloths improperly used. Observed wiping cloths stored on top a food contact surface."
+      },
+      {
+        "category": "Date Marking and Disposition",
         "observation": ""
       }
     ]
   },
   {
-    "name": "Kung Fu Tea",
-    "address": "4410 WYOMING BLVD NE, H",
-    "date": "2026-05-28",
-    "outcome": "closed",
+    "name": "LITTLE ANITAS EXPRESS",
+    "address": "6131 4TH ST NW",
+    "date": "2026-06-03",
+    "outcome": "conditional",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
-    "violations": []
+    "violations": [
+      {
+        "category": "Pooled Eggs",
+        "observation": "Observed pooled eggs in the food establishment that were not being combined for a customer's order or for a batter. Location: Bottom of the prep top cooler Number of eggs combined: approximately 12-15 shelled eggs pooled."
+      },
+      {
+        "category": "Date Marking and Disposition",
+        "observation": "Observed ready-to-eat time and temperature controlled for safety food prepared and held within the establishment with no date marking indicators. Location: walk in cooler. Food Items: Chili rellenos, red chili, green chili, cooked ground beef, No Expiration Dates observed."
+      },
+      {
+        "category": "Training Records",
+        "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
+      },
+      {
+        "category": "Toilet Facilities",
+        "observation": "Observed toilet room is not equipped with a tight-fitting self-closing door; or the door is propped open."
+      },
+      {
+        "category": "Personal Cleanliness",
+        "observation": "Observed a food employee with an improper drink. Location: Kitchen prep table Type of Drink: Thermos."
+      },
+      {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": "Observed the following areas of the facility in disrepair. Observed base coving. in disrepair. by base coving missing and wall not smooth and cleanable. POLLOS AKI-TOY LLC - 2801 BROADWAY BLVD SE - Approved POLLOS AKI-TOY LLC - 2801 BROADWAY BLVD SE Food Establishment Class C Date: 06/01/2026 - #: RT-MBFOOD-051923-2026 - Inspection Result: Approved"
+      },
+      {
+        "category": "Physical Facilities",
+        "observation": ""
+      }
+    ]
   }
 ]
