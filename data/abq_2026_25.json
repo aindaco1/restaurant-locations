@@ -1,121 +1,147 @@
 [
   {
-    "name": "999 SEAFOOD SUPERMARKET INC",
-    "address": "5315 GIBSON BLVD SE",
-    "date": "2026-06-04",
-    "outcome": "closed",
-    "operational_status": "Closed",
+    "name": "American Golf Corp DBA Tanoan Country Club",
+    "address": "10801 ACADEMY RD NE",
+    "date": "2026-06-12",
+    "outcome": "approved",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
       {
-        "category": "Knowledgeable",
-        "observation": "Observed that the person in charge was unable to demonstrate knowledge of food safety in facility. PIC had no knowledge on TCS cut food items regarding used by dates. Basic demonstration of knowledge also failed in the prevention of an infestation."
+        "category": "Pest Control",
+        "observation": "Observed pests in the facility with no control methods in place. Location: through the facility, and underneath plastic ramp to the door Pest Type: rodent Pest Condition: Observed numerous, significant number of droppings throughout the facility including on top of chest freezer, in beverage storage closet, on soda BIB shelving, inside and behind the soda beverage dispensing station, behind refrigeration, behind ice machine, on shelving, inside the swamp cooler, and underneath plastic movable ramp to the door. Additionally observed rodent nest with dead mouse inside the nesting material."
       },
       {
-        "category": "Maintenance",
-        "observation": "Observed the waste storage area to be unclean. Location: Outside garbage compactor. Condition of the storage area: substantial trash debris and cigarette butts around the garbage compactor."
+        "category": "Maintenance and Operation",
+        "observation": "Observed equipment not maintained in good repair. Type of Equipment: Ice machine Condition of the equipment: Leaking profusely from the top area pooling onto the flooring providing water source for rodents and pests. Additionally, observing organic growth on the side panels and piping off of the ice machine at water leakage location. Observed cutting surface with deep scratches and scoring which limit the ability to be effectively cleaned and sanitized. Location: 3-compartment sink area Type: Plastic"
       },
       {
-        "category": "Cold Holding",
-        "observation": "Observed food items in cold holding unit measuring above 41\u00b0F. Location: [grocery sales floor reach in cooler. produce sales floor cold rack. Food Items: Tofu- 47 degrees, Unknown egg item- 47 degrees, Produce: Balogh eggs-70 degrees, Bean Sprouts- 50 Degrees peeled garlic, 48 degrees."
+        "category": "Equipment Maintenance and Design",
+        "observation": "Observed wood shelving at service counter with multiple rungs improperly installed, failing to minimize the need for cleaning due to closely abutted surfaces or making it impossible to clean. Area had gaps along seams all the way around and was raised off flooring, which was not sealed closed, observing rodent droppings on top of and underneath the shelving."
       },
       {
-        "category": "Hot & Cold-Water Availability & Pressure",
-        "observation": "Observed facility with insufficient hot water. Location: produce hand wash station, Manner: no hot water to hand wash station,"
+        "category": "Plumbing",
+        "observation": "Observed an inadequate air gap at floor drain with 3-compartment sink piping, ice machine, refrigeration etc."
       },
       {
-        "category": "Surface Not Clean",
-        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located Produce sales floor. The surface was made out of metal. The condition of the surface produces interior wet rack food debris and soil buildup."
-      },
-      {
-        "category": "Records",
-        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items Duck and Pork. Activity of the Food: Cooked and hot held."
+        "category": "Surface Condition",
+        "observation": "Observed nonfood contact surface that was non corrosion-resistant. The surface was located inside the service area The surface was made out of untreated wood or wood composites with spillage and droppings present."
       },
       {
         "category": "Physical Facilities",
-        "observation": "Observed doors to the outside that are not tight fitting, light can be seen at the edges. side produce door sales floor, warehouse double door middle of the warehouse side door east side behind the walk-in cooler receiving area. Observed holes or other gaps in the structure of the facility. Location: Warehouse ceiling tiles broken throughout the warehouse. holes on dry walls behind shelving in warehouse. Size: 3 to 6-inch holes. Size: Dry walls with 2 to 4 in holes in dry wall"
-      },
-      {
-        "category": "Pest Control",
-        "observation": ""
-      },
-      {
-        "category": "Lighting",
-        "observation": "Observed light bulbs with no protective shielding, coating or by other means shatter resistant. Location: Produce walk in coolers all lighting missing the light safety covers."
-      },
-      {
-        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": "Observed chlorine solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: produce and grocery Concentration: No sanitizer made up for both departments. for cleaning food contact surfaces."
-      },
-      {
-        "category": "Designated Areas",
-        "observation": "Observed facility did not provide lockers or other suitable facilities for storage of employees clothing or other personal belongings."
-      },
-      {
-        "category": "Maintenance and Operation",
-        "observation": "Observed equipment not maintained in good repair. Location: Sales floor freezer Vaults. Type of Equipment: Freezer mechanical units. Condition of the equipment: Missing the required vent guards."
-      },
-      {
-        "category": "Operation and Maintenance",
-        "observation": "Observed handwashing sink(s) without a handwashing sign. Location: Produce hand wash station."
-      },
-      {
-        "category": "Date Marking and Disposition",
-        "observation": "Observed ready-to-eat time and temperature controlled for safety food held within the establishment inappropriately marked. Location: produce sales floor shelving Food Items: had a packing date but no used by date and some with no dates. 999 SEAFOOD SUPERMARKET INC - 5315 GIBSON BLVD SE Retail Food Establishment Class 4 Date: 06/04/2026 - #: RT-RET-003972-2025 - Inspection Result: Closure Re-Inspection Required"
-      },
-      {
-        "category": "Knowledgeable",
-        "observation": "Observed that the person in charge was unable to demonstrate knowledge of foodborne disease prevention and other requirements of the Food Code and local ordinances. Knowledge Tested: Person in charge failed to demonstrate basic knowledge on safe food handling such as handwashing, glove usage, temperature safety, preventing cross contamination and carrying out safe operations."
-      },
-      {
-        "category": "Training Records",
-        "observation": ""
-      },
-      {
-        "category": "Operation and Maintenance",
-        "observation": "Observed handwashing fixtures with the buildup of soil residues. The plumbing fixture was located in the raw meat service area. The condition of the surface was severely soiled and in need of cleaning."
-      },
-      {
-        "category": "Ventilation and Hood Systems",
-        "observation": "Observed interior intake and exhaust air ducts with debris buildup. Location: In the ambient coolers, walk in coolers and vent covers over food production area in raw meat/seafood."
-      },
-      {
-        "category": "Poisonous and Toxic/Chemical Substances",
-        "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Wiping cloth buckets, spray bottles Alleged Material: Chlorine, degreaser and other unknown chemical solutions 999 SEAFOOD SUPERMARKET INC - 5315 GIBSON BLVD SE Food Establishment Class C Date: 06/04/2026 - #: RT-FOODEST-097712-2025 - Inspection Result: Closure Re-Inspection Required"
-      },
-      {
-        "category": "Pest Control",
-        "observation": "Observed pests in the facility with no control methods in place. Location: rodent droppings under service counter storage racks and wood shelving and in storage area shelving. Pest Type: Mice. Pest Condition: uncertain."
-      },
-      {
-        "category": "Date Marking and Disposition",
-        "observation": "Observed ready-to-eat time and temperature controlled for safety food held within the establishment inappropriately marked. Location: walk in cooler Food Items: what food items were inappropriately date marked: Duck Marinade. Manner: no date mark indicators or labeled as to what the food item was"
-      },
-      {
-        "category": "Maintenance and Operation",
-        "observation": "Observed equipment not maintained in good repair. Location: Food storage area Type of Equipment: Bulk food containers. Condition of the equipment: corn starch is in a non-NSF container. other food containers with crusted soil buildup."
-      },
-      {
-        "category": "Knowledgeable",
         "observation": ""
       }
     ]
   },
   {
-    "name": "Birria Estilo Zacatecas (DBA LOS TACOS DEL REY)",
-    "address": "600 LOUISIANA BLVD SE, A",
-    "date": "2026-06-03",
-    "outcome": "approved",
+    "name": "American Golf Corp DBA Tanoan Country Club",
+    "address": "10801 ACADEMY RD NE",
+    "date": "2026-06-09",
+    "outcome": "closed",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": []
   },
   {
-    "name": "Birria Estilo Zacatecas (DBA LOS TACOS DEL REY)",
-    "address": "600 LOUISIANA BLVD SE, A",
-    "date": "2026-06-03",
+    "name": "BAMBOO",
+    "address": "7202 MENAUL BLVD NE",
+    "date": "2026-06-08",
+    "outcome": "closed",
+    "operational_status": "Closed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Physical Facilities, Cleaning",
+        "observation": "Observed buildup and debris on the floors and walls particularly behind and below equipment."
+      },
+      {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": "Observed the following areas of the facility in disrepair. Observed numerous holes, gaps and crevices in the walls, and the wall/floor junctures. BAMBOO - 7202 MENAUL BLVD NE - Closure Re-Inspection Required BAMBOO - 7202 MENAUL BLVD NE Food Establishment Class C Date: 06/08/2026 - #: PT0157444 - Inspection Result: Closure Re-Inspection Required"
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed chlorine solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Warewashing machine Concentration: 0ppm Observed equipment food-contact surface with the buildup of soil residues. Equipment and utensil Type: throughout the facility, containers such as those for spices, prepared sauces, bulk raw onions, utensils such spoons, ladles, tea pots, tea cups, brushes, equipment such as deli style slicer, chopper Condition of the Location: Significant heavy debris buildup, caked on, or dried, grease not removed, and congealed on containers inside and out, others such as tea pots, and tea cups with pooled brown liquid dried on top put back for service. Containers with utensils contained significant debris buildup coming into contact with the food contact surfaces."
+      },
+      {
+        "category": "Poisonous and Toxic/Chemical Substances",
+        "observation": "Observed pesticides used in the facility that is not state it is approved for use in food establishments on the manufacturer's label. Pesticide: Raid Ant and Roach aerosol spray cans"
+      },
+      {
+        "category": "Thawing",
+        "observation": ""
+      }
+    ]
+  },
+  {
+    "name": "Catanahllc DBA Dragonhorn Tavern",
+    "address": "2906 JUAN TABO BLVD NE",
+    "date": "2026-06-10",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Cold Holding",
+        "observation": "Observed food items in cold holding unit measuring above 41\u00b0F. Location prep top cooler mobile unit. Food Items: Guacamole- 50 degrees, Pico de Gallo- 58 degrees"
+      },
+      {
+        "category": "Operation and Maintenance",
+        "observation": "Observed no handwashing cleanser available at handwashing sink(s). Location: Mobile hand wash station."
+      },
+      {
+        "category": "Personal Cleanliness",
+        "observation": "Observed a food employee without proper hair restraints. Location: Mobile food unit activity: two employees with back of hair not fully restrained. Observed a food employee with an improper drink. Location: by hand wash sink, and prep table. Type of Drink: Bottled water and an open can of Dr Pepper. Catanahllc DBA Dragonhorn Tavern - 2906 JUAN TABO BLVD NE - Conditional Approved Catanahllc DBA Dragonhorn Tavern - 2906 JUAN TABO BLVD NE Food Establishment Class C Date: 06/10/2026 - #: RT-FOODEST-055547-2026 - Inspection Result: Conditional Approved"
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine Location: back area behind kitchen area Condition of the Location: Brown and Yellow buildup on inside bin of ice machine"
+      },
+      {
+        "category": "Poisonous and Toxic/Chemical Substances",
+        "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Spray bottles Alleged Material: Unknown"
+      },
+      {
+        "category": "Plumbing",
+        "observation": ""
+      },
+      {
+        "category": "Training Records",
+        "observation": "Observed that food employees were not in possession of a food handler card or had been trained in another approved food safety course."
+      },
+      {
+        "category": "Physical Facilities",
+        "observation": "Observed doors to the outside that are not tight fitting, light can be seen at the edges. Back door"
+      },
+      {
+        "category": "Storage",
+        "observation": "Observed food stored improperly less than six (6) inches off the floor. Location: Walk in cooler Food Item: Ribbon cut fries stored directly on the floor"
+      },
+      {
+        "category": "Operation and Maintenance",
+        "observation": "Observed handwashing sink(s) without a handwashing sign. Location: Handwashing sink in bar area"
+      },
+      {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": "Observed the following areas of the facility in disrepair. Observed ceiling in disrepair by multiple ceiling tiles missing though out facility"
+      },
+      {
+        "category": "Records",
+        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: All tcs food items Activity of the Food: stored Catanahllc DBA Dragonhorn Tavern - 2906 JUAN TABO BLVD NE Food Establishment Class C Date: 06/10/2026 - #: RT-FOODEST-012400-2026 - Inspection Result: Unsatisfactory Re-Inspection required"
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine Location: back area behind kitchen area Condition of"
+      }
+    ]
+  },
+  {
+    "name": "Catanahllc DBA Dragonhorn Tavern",
+    "address": "2906 JUAN TABO BLVD NE",
+    "date": "2026-06-10",
     "outcome": "failed",
     "operational_status": "Open",
     "city": "Albuquerque",
@@ -123,52 +149,9 @@
     "violations": []
   },
   {
-    "name": "BURGER KING",
-    "address": "5608 4TH ST NW",
-    "date": "2026-06-03",
-    "outcome": "conditional",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": [
-      {
-        "category": "Testing Devices",
-        "observation": "Observed food temperature measuring devices were not provided or readily accessible. Also observed multiple cold holding units missing ambient thermometers as required."
-      },
-      {
-        "category": "Designated Areas",
-        "observation": "Observed facility did not provide lockers or other suitable facilities for storage of employees clothing or other personal belongings."
-      },
-      {
-        "category": "Operation and Maintenance",
-        "observation": "Observed handwashing sink(s) without a handwashing sign. Location: Restrooms and kitchen make line handwashing station."
-      },
-      {
-        "category": "Surface Not Clean",
-        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located in and around the deep fryer on make line. The surface was made out of stainless steel. The condition of the surface was soiled in heavy grease and debris accumulation."
-      },
-      {
-        "category": "Records",
-        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Multiple trays of cooked meats, salsa's, chopped veggies, beans, rice and aguas. Activity of the Food: Stored, thawed, cooled BURGER KING - 5608 4TH ST NW - Conditional Approved BURGER KING - 5608 4TH ST NW Food Establishment Class C Date: 06/03/2026 - #: PT0154336 - Inspection Result: Conditional Approved"
-      },
-      {
-        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine . Location: Kitchen service areas. Condition of the Location: Interior ceiling by Ice Chute with a black like soil residue"
-      },
-      {
-        "category": "Poisonous and Toxic/Chemical Substances",
-        "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Spray Bottles. Alleged Material: food vegetable cleaner in a brown floor cleaner spray bottle."
-      },
-      {
-        "category": "Time as Public Health Control",
-        "observation": ""
-      }
-    ]
-  },
-  {
-    "name": "BURGER KING",
-    "address": "5608 4TH ST NW",
-    "date": "2026-06-04",
+    "name": "Vic's Daily Cafe",
+    "address": "3600 OSUNA RD NE",
+    "date": "2026-06-12",
     "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
@@ -176,111 +159,13 @@
     "violations": []
   },
   {
-    "name": "BURGER KING",
-    "address": "5608 4TH ST NW",
-    "date": "2026-06-04",
-    "outcome": "conditional",
+    "name": "Vic's Daily Cafe",
+    "address": "3600 OSUNA RD NE",
+    "date": "2026-06-12",
+    "outcome": "failed",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": []
-  },
-  {
-    "name": "DUKE CITY BBQ",
-    "address": "5500 SAN MATEO BLVD NE, 101",
-    "date": "2026-06-02",
-    "outcome": "approved",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "DUKE CITY BBQ",
-    "address": "5500 SAN MATEO BLVD NE, 101",
-    "date": "2026-06-02",
-    "outcome": "conditional",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "Limra DBA Royal Hyderabad",
-    "address": "5760 McMahon NW BLVD, Ste B-E",
-    "date": "2026-06-05",
-    "outcome": "closed",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": [
-      {
-        "category": "Operation and Maintenance",
-        "observation": "Observed handwashing sink(s) without a handwashing sign. Location: Kitchen handwashing sink"
-      },
-      {
-        "category": "Surface Not Clean",
-        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located inside the juice dispenser. The condition of the surface was soiled with syrup residue."
-      },
-      {
-        "category": "Records",
-        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: All temperature-controlled foods Activity of the Food: Stored, thawed, cooled Limra DBA Royal Hyderabad - 5760 McMahon NW BLVD, Ste B-E - Closure Re-Inspection Required Limra DBA Royal Hyderabad - 5760 McMahon NW BLVD, Ste B-E Food Establishment Class C Date: 06/05/2026 - #: RT-FOODEST-032855-2026 - Inspection Result: Closure Re-Inspection Required"
-      },
-      {
-        "category": "Maintenance and Operation",
-        "observation": "Observed soiled or dirty ware washing machine. Location: Kitchen washing area. Condition: interior and exterior with substantial buildup of food debris."
-      },
-      {
-        "category": "Thawing",
-        "observation": "Observed frozen time/temperature control for safety food improperly thawing. Food: Frozen chicken. Location: kitchen prep areas. Condition: Chicken Method: chicken left out on a Milk crate thawing at room temperature."
-      },
-      {
-        "category": "Use Limitations",
-        "observation": "Observed wiping cloths improperly used. Observed wiping cloths stored on top a food contact surface."
-      },
-      {
-        "category": "Date Marking and Disposition",
-        "observation": ""
-      }
-    ]
-  },
-  {
-    "name": "LITTLE ANITAS EXPRESS",
-    "address": "6131 4TH ST NW",
-    "date": "2026-06-03",
-    "outcome": "conditional",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": [
-      {
-        "category": "Pooled Eggs",
-        "observation": "Observed pooled eggs in the food establishment that were not being combined for a customer's order or for a batter. Location: Bottom of the prep top cooler Number of eggs combined: approximately 12-15 shelled eggs pooled."
-      },
-      {
-        "category": "Date Marking and Disposition",
-        "observation": "Observed ready-to-eat time and temperature controlled for safety food prepared and held within the establishment with no date marking indicators. Location: walk in cooler. Food Items: Chili rellenos, red chili, green chili, cooked ground beef, No Expiration Dates observed."
-      },
-      {
-        "category": "Training Records",
-        "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
-      },
-      {
-        "category": "Toilet Facilities",
-        "observation": "Observed toilet room is not equipped with a tight-fitting self-closing door; or the door is propped open."
-      },
-      {
-        "category": "Personal Cleanliness",
-        "observation": "Observed a food employee with an improper drink. Location: Kitchen prep table Type of Drink: Thermos."
-      },
-      {
-        "category": "Physical Facilities, Construction and Repair",
-        "observation": "Observed the following areas of the facility in disrepair. Observed base coving. in disrepair. by base coving missing and wall not smooth and cleanable. POLLOS AKI-TOY LLC - 2801 BROADWAY BLVD SE - Approved POLLOS AKI-TOY LLC - 2801 BROADWAY BLVD SE Food Establishment Class C Date: 06/01/2026 - #: RT-MBFOOD-051923-2026 - Inspection Result: Approved"
-      },
-      {
-        "category": "Physical Facilities",
-        "observation": ""
-      }
-    ]
   }
 ]
