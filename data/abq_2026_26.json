@@ -1,0 +1,171 @@
+[
+  {
+    "name": "American Golf Corp DBA Tanoan Country Club",
+    "address": "10801 ACADEMY RD NE",
+    "date": "2026-06-12",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Pest Control",
+        "observation": "Observed pests in the facility with no control methods in place. Location: through the facility, and underneath plastic ramp to the door Pest Type: rodent Pest Condition: Observed numerous, significant number of droppings throughout the facility including on top of chest freezer, in beverage storage closet, on soda BIB shelving, inside and behind the soda beverage dispensing station, behind refrigeration, behind ice machine, on shelving, inside the swamp cooler, and underneath plastic movable ramp to the door. Additionally observed rodent nest with dead mouse inside the nesting material."
+      },
+      {
+        "category": "Maintenance and Operation",
+        "observation": "Observed equipment not maintained in good repair. Type of Equipment: Ice machine Condition of the equipment: Leaking profusely from the top area pooling onto the flooring providing water source for rodents and pests. Additionally, observing organic growth on the side panels and piping off of the ice machine at water leakage location. Observed cutting surface with deep scratches and scoring which limit the ability to be effectively cleaned and sanitized. Location: 3-compartment sink area Type: Plastic"
+      },
+      {
+        "category": "Equipment Maintenance and Design",
+        "observation": "Observed wood shelving at service counter with multiple rungs improperly installed, failing to minimize the need for cleaning due to closely abutted surfaces or making it impossible to clean. Area had gaps along seams all the way around and was raised off flooring, which was not sealed closed, observing rodent droppings on top of and underneath the shelving."
+      },
+      {
+        "category": "Plumbing",
+        "observation": "Observed an inadequate air gap at floor drain with 3-compartment sink piping, ice machine, refrigeration etc."
+      },
+      {
+        "category": "Surface Condition",
+        "observation": "Observed nonfood contact surface that was non corrosion-resistant. The surface was located inside the service area The surface was made out of untreated wood or wood composites with spillage and droppings present."
+      },
+      {
+        "category": "Physical Facilities",
+        "observation": ""
+      }
+    ]
+  },
+  {
+    "name": "American Golf Corp DBA Tanoan Country Club",
+    "address": "10801 ACADEMY RD NE",
+    "date": "2026-06-09",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "BAMBOO",
+    "address": "7202 MENAUL BLVD NE",
+    "date": "2026-06-08",
+    "outcome": "closed",
+    "operational_status": "Closed",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Physical Facilities, Cleaning",
+        "observation": "Observed buildup and debris on the floors and walls particularly behind and below equipment."
+      },
+      {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": "Observed the following areas of the facility in disrepair. Observed numerous holes, gaps and crevices in the walls, and the wall/floor junctures. BAMBOO - 7202 MENAUL BLVD NE - Closure Re-Inspection Required BAMBOO - 7202 MENAUL BLVD NE Food Establishment Class C Date: 06/08/2026 - #: PT0157444 - Inspection Result: Closure Re-Inspection Required"
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed chlorine solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Warewashing machine Concentration: 0ppm Observed equipment food-contact surface with the buildup of soil residues. Equipment and utensil Type: throughout the facility, containers such as those for spices, prepared sauces, bulk raw onions, utensils such spoons, ladles, tea pots, tea cups, brushes, equipment such as deli style slicer, chopper Condition of the Location: Significant heavy debris buildup, caked on, or dried, grease not removed, and congealed on containers inside and out, others such as tea pots, and tea cups with pooled brown liquid dried on top put back for service. Containers with utensils contained significant debris buildup coming into contact with the food contact surfaces."
+      },
+      {
+        "category": "Poisonous and Toxic/Chemical Substances",
+        "observation": "Observed pesticides used in the facility that is not state it is approved for use in food establishments on the manufacturer's label. Pesticide: Raid Ant and Roach aerosol spray cans"
+      },
+      {
+        "category": "Thawing",
+        "observation": ""
+      }
+    ]
+  },
+  {
+    "name": "Catanahllc DBA Dragonhorn Tavern",
+    "address": "2906 JUAN TABO BLVD NE",
+    "date": "2026-06-10",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Cold Holding",
+        "observation": "Observed food items in cold holding unit measuring above 41\u00b0F. Location prep top cooler mobile unit. Food Items: Guacamole- 50 degrees, Pico de Gallo- 58 degrees"
+      },
+      {
+        "category": "Operation and Maintenance",
+        "observation": "Observed no handwashing cleanser available at handwashing sink(s). Location: Mobile hand wash station."
+      },
+      {
+        "category": "Personal Cleanliness",
+        "observation": "Observed a food employee without proper hair restraints. Location: Mobile food unit activity: two employees with back of hair not fully restrained. Observed a food employee with an improper drink. Location: by hand wash sink, and prep table. Type of Drink: Bottled water and an open can of Dr Pepper. Catanahllc DBA Dragonhorn Tavern - 2906 JUAN TABO BLVD NE - Conditional Approved Catanahllc DBA Dragonhorn Tavern - 2906 JUAN TABO BLVD NE Food Establishment Class C Date: 06/10/2026 - #: RT-FOODEST-055547-2026 - Inspection Result: Conditional Approved"
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine Location: back area behind kitchen area Condition of the Location: Brown and Yellow buildup on inside bin of ice machine"
+      },
+      {
+        "category": "Poisonous and Toxic/Chemical Substances",
+        "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Spray bottles Alleged Material: Unknown"
+      },
+      {
+        "category": "Plumbing",
+        "observation": ""
+      },
+      {
+        "category": "Training Records",
+        "observation": "Observed that food employees were not in possession of a food handler card or had been trained in another approved food safety course."
+      },
+      {
+        "category": "Physical Facilities",
+        "observation": "Observed doors to the outside that are not tight fitting, light can be seen at the edges. Back door"
+      },
+      {
+        "category": "Storage",
+        "observation": "Observed food stored improperly less than six (6) inches off the floor. Location: Walk in cooler Food Item: Ribbon cut fries stored directly on the floor"
+      },
+      {
+        "category": "Operation and Maintenance",
+        "observation": "Observed handwashing sink(s) without a handwashing sign. Location: Handwashing sink in bar area"
+      },
+      {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": "Observed the following areas of the facility in disrepair. Observed ceiling in disrepair by multiple ceiling tiles missing though out facility"
+      },
+      {
+        "category": "Records",
+        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: All tcs food items Activity of the Food: stored Catanahllc DBA Dragonhorn Tavern - 2906 JUAN TABO BLVD NE Food Establishment Class C Date: 06/10/2026 - #: RT-FOODEST-012400-2026 - Inspection Result: Unsatisfactory Re-Inspection required"
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine Location: back area behind kitchen area Condition of"
+      }
+    ]
+  },
+  {
+    "name": "Catanahllc DBA Dragonhorn Tavern",
+    "address": "2906 JUAN TABO BLVD NE",
+    "date": "2026-06-10",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Vic's Daily Cafe",
+    "address": "3600 OSUNA RD NE",
+    "date": "2026-06-12",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Vic's Daily Cafe",
+    "address": "3600 OSUNA RD NE",
+    "date": "2026-06-12",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  }
+]
