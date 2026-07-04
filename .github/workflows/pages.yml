@@ -19,8 +19,50 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    outputs:
+      skip_push_deploy: ${{ steps.pipeline_trigger.outputs.skip_push_deploy }}
+    steps:
+      - name: Checkout for changed-file detection
+        if: github.event_name == 'push'
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Detect pushes that are handled by Data Pipeline
+        id: pipeline_trigger
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" != "push" ]]; then
+            echo "skip_push_deploy=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          before="${{ github.event.before }}"
+          after="${{ github.sha }}"
+
+          if [[ "$before" =~ ^0+$ ]]; then
+            changed_files="$(git diff-tree --no-commit-id --name-only -r "$after")"
+          else
+            changed_files="$(git diff --name-only "$before" "$after")"
+          fi
+
+          echo "Changed files:"
+          printf '%s\n' "$changed_files"
+
+          if printf '%s\n' "$changed_files" | grep -Eq '^(scripts/|\.github/workflows/pipeline\.yml$)'; then
+            echo "Data Pipeline will run for this push; workflow_run will deploy the final state."
+            echo "skip_push_deploy=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip_push_deploy=false" >> "$GITHUB_OUTPUT"
+          fi
+
   build:
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    needs: preflight
+    if: |
+      (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success') &&
+      needs.preflight.outputs.skip_push_deploy != 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
