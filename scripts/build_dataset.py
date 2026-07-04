@@ -115,7 +115,7 @@ class DatasetBuilder:
         
         # Generate manifest
         logger.info("\nGenerating manifest...")
-        manifest = self.generate_manifest(normalized)
+        manifest = self.generate_manifest(merged_data)
         
         manifest_file = self.output_dir / 'manifest.json'
         with open(manifest_file, 'w') as f:

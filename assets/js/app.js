@@ -17,7 +17,28 @@ document.addEventListener('alpine:init', () => {
     async loadViolations() {
       try {
         const baseurl = document.querySelector('meta[name="baseurl"]')?.content || '';
-        const response = await fetch(`${baseurl}/data/violations_latest.json`);
+        let datasetVersion = Date.now().toString();
+
+        try {
+          const manifestResponse = await fetch(`${baseurl}/data/manifest.json?ts=${Date.now()}`, {
+            cache: 'no-store'
+          });
+
+          if (manifestResponse.ok) {
+            const manifest = await manifestResponse.json();
+            datasetVersion = manifest.datasets?.latest?.hash ||
+              manifest.dataset_version ||
+              manifest.generated_at ||
+              datasetVersion;
+          }
+        } catch (manifestError) {
+          console.warn('Failed to load data manifest:', manifestError);
+        }
+
+        const response = await fetch(
+          `${baseurl}/data/violations_latest.json?v=${encodeURIComponent(datasetVersion)}`,
+          { cache: 'no-store' }
+        );
         
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);

@@ -4,6 +4,10 @@ on:
   push:
     branches: ["main"]
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Data Pipeline"]
+    types: [completed]
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -16,10 +20,16 @@ concurrency:
 
 jobs:
   build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Data Pipeline commits are made by GITHUB_TOKEN, so they do not
+          # trigger this workflow's push event. On workflow_run, deploy the
+          # latest main branch after the pipeline has pushed updated data.
+          ref: main
       
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
