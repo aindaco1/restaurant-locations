@@ -1,0 +1,302 @@
+[
+  {
+    "name": "AMADEOS PIZZA & SUBS",
+    "address": "809 98TH ST SW",
+    "date": "2026-07-01",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "BAHAMA BUCKS",
+    "address": "10131 COORS RD NW, L-3",
+    "date": "2026-07-02",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed quaternary ammonium compound solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Three-compartment sink. Concentration: 100 ppm. Temperature: 74 Observed utensil food-contact surface with the buildup of soil residues. Utensil Type: Prep table, soda dispenser holder, interior ice machine. Location: Front serving area. Condition of the Location: substantial soil and sticky buildup. ice machine with a brown like soil residue on the interior ceiling of the ice machine."
+      },
+      {
+        "category": "Air Drying",
+        "observation": "Observed wiping cloths improperly air drying in food service establishment. Location: Food contact surfaces. Manner: Wiping cloths stored on food contact surfaces prep tables and not stored in sanitizer buckets."
+      },
+      {
+        "category": "Miscellaneous",
+        "observation": ""
+      },
+      {
+        "category": "Plumbing",
+        "observation": "Observed Prep sink Hot and Cold faucet is not maintained in good repair or is not repaired by law. Observed Hot and cold valve front prep sink leaking."
+      },
+      {
+        "category": "Surface Condition",
+        "observation": "Observed nonfood contact surface that was non corrosion resistant. The surface was located Backroom area . The surface was made out of a corrosion metal The condition of the surface was ice making units exterior with substantial rust buildup."
+      },
+      {
+        "category": "Maintenance",
+        "observation": "Observed the waste storage area to be unclean. Location: outside receptacle of the waste storage area Condition of the storage area: Substantial debris and soil buildup."
+      }
+    ]
+  },
+  {
+    "name": "FREDDYS FROZEN CUSTARD & STEAKBURGERS",
+    "address": "10201 CENTRAL AVE NE",
+    "date": "2026-06-30",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "FREDDYS FROZEN CUSTARD & STEAKBURGERS",
+    "address": "10201 CENTRAL AVE NE",
+    "date": "2026-06-30",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "HOMEWOOD SUITES ALBUQUERQUE UPTOWN",
+    "address": "7101 ARVADA AVE NE",
+    "date": "2026-07-02",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Training Records",
+        "observation": "Observed that food employees were not in possession of a food handler card or had been trained in another approved food safety course."
+      },
+      {
+        "category": "Testing Devices",
+        "observation": "Observed no testing kit or other device to measure the concentration of chemical sanitizing solution."
+      },
+      {
+        "category": "Operations",
+        "observation": "Observed that the facility was operating with an expired permit."
+      },
+      {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": "Observed wall behind door in food preparation area is not easily cleanable. Observed a large hole in the wall and a section of the wall cut out and removed exposing the interior area of wall and piping underneath the three-compartment sink at the time of inspection. HOMEWOOD SUITES ALBUQUERQUE UPTOWN - 7101 ARVADA AVE NE \u2013 Conditional Approved HOMEWOOD SUITES ALBUQUERQUE UPTOWN - 7101 ARVADA AVE NE Food Establishment Class C Date: 07/02/2026 - #: CAC-Food-062758-2026 - Inspection Result: Conditional Approved Facility was not Closed due to PIC correcting one Priority violation and three Priority Foundation on site bringing score back up to a yellow sticker Conditional Approved status. CHPD inspector instructed PIC to send photo documentation of corrections and repairs to contact information provided on business card. CHPD inspector advised PIC to obtain one Food Protection Manager Certification for the facility and all food employees must obtain food handlers cards within thirty days. Facility will remain under and yellow sticker Conditional Approved status until all violations have been corrected and repaired and photo documentation has provided and reviewed. PIC was issued a Corrective Action Compliance Report on site. CHPD inspector provided PIC with temp logs, calibration logs, educational flyers for food safety and employee health. Violations corrected: 1. Food Contact Surfaces Cleaned & Sanitized: Equipment, Food-Contact Surfaces and Utensils - Clean to Sight and Touch 2. Food Identification and Honestly Presented: Package Integrity 3. Handwashing Facilities: Using a Handwashing Sink-Operation and Maintenance 4. Handwashing Facilities: Hand Drying Provision HOMEWOOD SUITES ALBUQUERQUE UPTOWN - 7101 ARVADA AVE NE Food Establishment Class C Date: 07/02/2026 - #: RT-FOODEST-055442-2025 - Inspection Result: Closure Re-Inspection Required"
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": ""
+      },
+      {
+        "category": "Records",
+        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Hot and cold food Activity of the Food: Stored Observed the food establishment does not have calibration logs for temperature measuring devices. HOMEWOOD SUITES ALBUQUERQUE UPTOWN - 7101 ARVADA AVE NE Retail Food Establishment Class 3 Date: 07/02/2026 - #: RT-RET-055443-2025 - Inspection Result: Approved HOT DOG MAN - 314 IRON ST SW, C - Approved HOT DOG MAN - 314 IRON ST SW, C Mobile Food Unit Class C Date: 07/01/2026 - #: CAC-Food-062682-2026 - Inspection Result: Approved Facility has been upgraded to Approved status following the correction of the following violations during inspection by the Environmental Health Department. The facility has corrected: - Time/Temperature Control for Safety Food, Cold Holding (All foods in ice baths that was out of temperature was voluntarily discarded) HOT DOG MAN - 314 IRON ST SW, C Mobile Food Unit Class C Date: 07/01/2026 - #: RT-MBFOOD-059155-2026 - Inspection Result: Conditional Approved"
+      },
+      {
+        "category": "Training Records",
+        "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
+      },
+      {
+        "category": "Designated Areas",
+        "observation": "Observed facility did not provide lockers or other suitable facilities for storage of employees clothing or other personal belongings."
+      },
+      {
+        "category": "Testing Devices",
+        "observation": "Observed no testing kit or other device to measure the concentration of chemical sanitizing solution."
+      },
+      {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": "Observed mobile unit floor panel constructed of wood that is porous, absorbent and non-easily cleanable."
+      },
+      {
+        "category": "Cold Holding",
+        "observation": "Observed food items in cold holding unit measuring above 41\u00b0F."
+      }
+    ]
+  },
+  {
+    "name": "HOMEWOOD SUITES ALBUQUERQUE UPTOWN",
+    "address": "7101 ARVADA AVE NE",
+    "date": "2026-07-02",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "HOMEWOOD SUITES ALBUQUERQUE UPTOWN",
+    "address": "7101 ARVADA AVE NE",
+    "date": "2026-07-02",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "HOT DOG MAN",
+    "address": "314 IRON ST SW, C",
+    "date": "2026-07-01",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "HOT DOG MAN",
+    "address": "314 IRON ST SW, C",
+    "date": "2026-07-01",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "ICON CINEMA SAN MATEO",
+    "address": "4591 SAN MATEO BLVD NE",
+    "date": "2026-06-30",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Operation and Maintenance",
+        "observation": "Observed handwashing sink(s) without a handwashing sign. Location: Hand wash station near three-compartment sink"
+      },
+      {
+        "category": "Records",
+        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: All cold and hot held temperature-controlled food items Activity of the Food: Stored, thawed, cooled\u25a1 ICON CINEMA SAN MATEO - 4591 SAN MATEO BLVD NE - Approved ICON CINEMA SAN MATEO - 4591 SAN MATEO BLVD NE Food Establishment Class B Date: 06/30/2026 - #: RT-FOODEST-061887-2026 - Inspection Result: Approved"
+      },
+      {
+        "category": "Plumbing",
+        "observation": "Observed an inadequate air gap at the ice cream well/ sink drain pipe end at the time of inspection."
+      },
+      {
+        "category": "Training Records",
+        "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
+      },
+      {
+        "category": "Surface Condition",
+        "observation": "Observed nonfood contact surface that was absorbent and porous. Location: undercounter shelving in front register and popcorn area. Type of surface: unsealed wood shelf organizers."
+      },
+      {
+        "category": "Cold Holding",
+        "observation": "Observed repair personnel arrive during inspection. Instructed PIC to provide copy of completed work order noting repairs made to upright cooler as well as confirming that it is able to maintain approved cold holding temperatures of 41\u00b0F or below to CHPD inspector for verification. Observed insufficient cold holding equipment to properly hold food cold. Location: upright cooler in warewashing area. Condition: observed exterior thermometer reading at 57\u00b0F as well as TCS food items stored inside unit temping between 48\u00b0F and 57\u00b0F at the time of inspection."
+      },
+      {
+        "category": "Storage",
+        "observation": ""
+      },
+      {
+        "category": "Plumbing",
+        "observation": "Observed an inadequate air gap at the ice cream well/ sink drain pipe end at the time of inspection."
+      },
+      {
+        "category": "Training Records",
+        "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
+      },
+      {
+        "category": "Surface Condition",
+        "observation": "Observed nonfood contact surface that was absorbent and porous. Location: undercounter shelving in front register and popcorn area. Type of surface: unsealed wood shelf organizers."
+      },
+      {
+        "category": "Cold Holding",
+        "observation": "the food and may help prevent foodborne illness. Instructed PIC to dispose of TCS food items found above 41\u00b0F. Observed PIC dispose of TCS foods stored in upright cooler during inspection. Observed food items in cold holding unit measuring above 41\u00b0F. Location: upright cooler in warewashing area. Food Items: hot dogs and containers of drained sliced jalapenos. Temperature: 48\u00b0F and 59\u00b0F Observed repair personnel arrive during inspection. Instructed PIC to provide copy of completed work order noting repairs made to upright cooler as well as confirming that it is able to maintain approved cold holding temperatures of 41\u00b0F or below to CHPD inspector for verification. Observed insufficient cold holding equipment to properly hold food cold. Location: upright cooler in warewashing area. Condition: observed exterior thermometer reading at 57\u00b0F as well as TCS food items stored inside unit temping between 48\u00b0F and 57\u00b0F at the time of inspection."
+      },
+      {
+        "category": "Disposition of Returned, Previously Served Or Reconditioned",
+        "observation": ""
+      }
+    ]
+  },
+  {
+    "name": "ICON CINEMA SAN MATEO",
+    "address": "4591 SAN MATEO BLVD NE",
+    "date": "2026-06-30",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "NOAHS ARK CHILDRENS ACADEMY",
+    "address": "12500 CANDELARIA RD NE",
+    "date": "2026-07-02",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "NOAHS ARK CHILDRENS ACADEMY",
+    "address": "12500 CANDELARIA RD NE",
+    "date": "2026-07-02",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Your Move LLC DBA Empire Board Game Library",
+    "address": "3503 CENTRAL AVE NE",
+    "date": "2026-07-01",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": "Observed the following areas of the facility in disrepair. Observed Three-compartment sink. in disrepair by not attached to the wall. in the mobile unit."
+      },
+      {
+        "category": "Ventilation and Hood Systems",
+        "observation": "Observed hood ventilation system inadequately collecting grease and condensation allowing for accumulation and drips to occur, observed grease and condensation drip on to and contaminating equipment surface. Location: Mobile exhaust hood. Equipment. Behind Filter vents. Your Move LLC DBA Empire Board Game Library - 3503 CENTRAL AVE NE - Approved Your Move LLC DBA Empire Board Game Library - 3503 CENTRAL AVE NE Food Establishment Class C Date: 07/01/2026 - #: RT-FOODEST-062152-2026 - Inspection Result: Approved"
+      },
+      {
+        "category": "Training Records",
+        "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
+      },
+      {
+        "category": "Personal Cleanliness",
+        "observation": "Observed employee wearing unapproved jewelry while preparing food. Food Preparation Activity: Food employee working sandwich make station Inappropriate Jewelry Observed: Wrist watch"
+      },
+      {
+        "category": "Physical Facilities, Cleaning",
+        "observation": "Observed a soiled mop not in use, stored directly inn the mop bucket not hung dried. Your Move LLC DBA Empire Board Game Library - 3503 CENTRAL AVE NE Food Establishment Class C Date: 06/30/2026 - #: CAC-Food-062153-2026 - Inspection Result: Unsatisfactory Re-Inspection required Facility will remain closed while PIC works on correcting and repairing observed violations. PIC must pay overdue invoices and or set up a payment plan with the consumer health division before facility is re-inspected. CHPD inspector instructed PIC to send photo documentation of corrections and repairs to contact information provided on business card. PIC must call for re-inspection. Facility will be reopened under an Unsatisfactory status as per city ordinance. Facility was not closed at time of inspection due to PIC correcting two Priority and two Priority Foundation violations on site bringing score back into an Unsatisfactory status. PIC was issued a Corrective Action Compliance Report allowing facility to remain open for operation. Violations corrected: 1. Cold Holding: Time/Temperature Control for Safety Food, Cold Holding 2. Equipment, Food Contact Surfaces, and Utensils Clean: Equipment, Food-Contact Surfaces and Utensils - Clean to Sight and Touch 3. Functionality and Accuracy: Temperature Measuring Devices, Food-Accuracy 4. Testing Devices: Sanitizing Solutions, Testing Devices Your Move LLC DBA Empire Board Game Library - 3503 CENTRAL AVE NE Food Establishment Class C Date: 06/30/2026 - #: RT-FOODEST-046963-2025 - Inspection Result: Closure Re-Inspection Required"
+      }
+    ]
+  },
+  {
+    "name": "Your Move LLC DBA Empire Board Game Library",
+    "address": "3503 CENTRAL AVE NE",
+    "date": "2026-06-30",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "Your Move LLC DBA Empire Board Game Library",
+    "address": "3503 CENTRAL AVE NE",
+    "date": "2026-06-30",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  }
+]
