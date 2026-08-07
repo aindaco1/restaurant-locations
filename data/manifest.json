@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-06T05:17:59.649764",
-  "dataset_version": "22cd5122",
-  "total_records": 556,
+  "generated_at": "2026-08-07T04:26:11.110054",
+  "dataset_version": "ff6b2f74",
+  "total_records": 583,
   "cities": {
-    "Albuquerque": 556
+    "Albuquerque": 583
   },
   "severity_breakdown": {
-    "high": 103,
-    "medium": 261,
-    "low": 192
+    "high": 108,
+    "medium": 273,
+    "low": 202
   },
   "datasets": {
     "latest": {
       "url": "/data/violations_latest.json",
-      "hash": "22cd5122",
-      "records": 556
+      "hash": "ff6b2f74",
+      "records": 583
     }
   }
 }
