@@ -3,6 +3,8 @@ name: Deploy Jekyll to GitHub Pages
 on:
   push:
     branches: ["main"]
+  pull_request:
+    branches: ["main"]
   workflow_dispatch:
   workflow_run:
     workflows: ["Data Pipeline"]
@@ -11,22 +13,27 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: pages-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 
 jobs:
   preflight:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     outputs:
       skip_push_deploy: ${{ steps.pipeline_trigger.outputs.skip_push_deploy }}
     steps:
+      - name: Require a successful Data Pipeline
+        if: github.event_name == 'workflow_run' && github.event.workflow_run.conclusion != 'success'
+        run: |
+          echo "Data Pipeline concluded with ${{ github.event.workflow_run.conclusion }}; refusing to deploy."
+          exit 1
+
       - name: Checkout for changed-file detection
         if: github.event_name == 'push'
-        uses: actions/checkout@v5
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
 
@@ -51,7 +58,7 @@ jobs:
           echo "Changed files:"
           printf '%s\n' "$changed_files"
 
-          if printf '%s\n' "$changed_files" | grep -Eq '^(scripts/|\.github/workflows/pipeline\.yml$)'; then
+          if printf '%s\n' "$changed_files" | grep -Eq '^(scripts/|requirements\.txt$|\.github/workflows/pipeline\.yml$)'; then
             echo "Data Pipeline will run for this push; workflow_run will deploy the final state."
             echo "skip_push_deploy=true" >> "$GITHUB_OUTPUT"
           else
@@ -60,44 +67,81 @@ jobs:
 
   build:
     needs: preflight
-    if: |
-      (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success') &&
-      needs.preflight.outputs.skip_push_deploy != 'true'
+    if: needs.preflight.outputs.skip_push_deploy != 'true'
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      deployed_sha: ${{ steps.deployment_metadata.outputs.deployed_sha }}
+      dataset_hash: ${{ steps.deployment_metadata.outputs.dataset_hash }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           # Data Pipeline commits are made by GITHUB_TOKEN, so they do not
           # trigger this workflow's push event. On workflow_run, deploy the
           # latest main branch after the pipeline has pushed updated data.
-          ref: main
+          ref: ${{ github.event_name == 'workflow_run' && 'main' || github.sha }}
       
       - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b # v1.321.0
         with:
           ruby-version: '3.1'
           bundler-cache: true
       
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v6
-      
       - name: Build with Jekyll
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
+
+      - name: Optimize production output
+        run: python3 scripts/optimize_site.py
+
+      - name: Validate performance contract
+        run: python3 scripts/validate_site.py
+
+      - name: Record deployment metadata
+        id: deployment_metadata
+        shell: bash
+        run: |
+          echo "deployed_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "dataset_hash=$(python3 -c 'import json; print(json.load(open("data/manifest.json"))["datasets"]["latest"]["hash"])')" >> "$GITHUB_OUTPUT"
       
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v5
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
 
   deploy:
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     needs: build
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5
+
+      - name: Checkout deployment verifier
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ needs.build.outputs.deployed_sha }}
+
+      - name: Reconcile Cloudflare performance and cache rules
+        if: vars.CLOUDFLARE_CONFIG_SYNC == 'true'
+        run: node scripts/sync_cloudflare_config.mjs
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+
+      - name: Verify production deployment
+        run: |
+          python3 scripts/verify_production.py \
+            --base-url "https://healthcode.dustwave.xyz/" \
+            --expected-hash "${{ needs.build.outputs.dataset_hash }}" \
+            --deployment-id "${{ needs.build.outputs.deployed_sha }}"

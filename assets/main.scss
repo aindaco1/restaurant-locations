@@ -2,10 +2,6 @@
 ---
 @charset "utf-8";
 
-// Import fonts (matching dust-wave-shop)
-@import url("https://fonts.googleapis.com/css?family=Inter:400,700&display=swap");
-@import url("https://use.typekit.net/hoj2yet.css");
-
 // Import partials in order
 @import "variables";
 @import "mixins";
