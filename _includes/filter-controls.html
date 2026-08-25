@@ -4,6 +4,8 @@
   <div class="mobile-search" x-data="filterControls()">
     <input 
       type="text" 
+      id="mobile-search-input"
+      name="mobile-restaurant-search"
       class="input" 
       placeholder="🔍 Search restaurants..." 
       x-model="searchQuery"
@@ -42,8 +44,11 @@
       <div class="mobile-filter-drawer__body" x-data="filterControls()">
         <!-- All filter controls in mobile drawer -->
         <div class="mobile-filter-group">
-          <label class="mobile-filter-label">Severity</label>
-          <div class="severity-pills severity-pills--mobile-container">
+          <span id="mobile-severity-label" class="mobile-filter-label">Severity</span>
+          <div
+            class="severity-pills severity-pills--mobile-container"
+            role="group"
+            aria-labelledby="mobile-severity-label">
             <button 
               @click="toggleSeverity('high')" 
               :class="{ 'active': selectedSeverity.includes('high') }"
@@ -66,8 +71,13 @@
         </div>
 
         <div class="mobile-filter-group">
-          <label class="mobile-filter-label">Sort By</label>
-          <select x-model="sortBy" @change="changeSortOrder" class="select">
+          <label for="mobile-sort-select" class="mobile-filter-label">Sort By</label>
+          <select
+            id="mobile-sort-select"
+            name="mobile-sort-order"
+            x-model="sortBy"
+            @change="changeSortOrder"
+            class="select">
             <option value="severity">Severity (High to Low)</option>
             <option value="date">Most Recent</option>
             <option value="name">Name (A-Z)</option>
@@ -75,8 +85,13 @@
         </div>
 
         <div class="mobile-filter-group">
-          <label class="mobile-filter-label">Date Range</label>
-          <select x-model="dateRange" @change="applyFilters" class="select">
+          <label for="mobile-date-range-select" class="mobile-filter-label">Date Range</label>
+          <select
+            id="mobile-date-range-select"
+            name="mobile-date-range"
+            x-model="dateRange"
+            @change="applyFilters"
+            class="select">
             <option value="all">All time</option>
             <option value="30">Last 30 days</option>
             <option value="90">Last 90 days</option>
@@ -109,6 +124,7 @@
       <input 
         type="text" 
         id="search-input"
+        name="desktop-restaurant-search"
         class="input" 
         placeholder="🔍 Search restaurants..." 
         x-model="searchQuery"
@@ -149,6 +165,8 @@
     <!-- Sort dropdown (compact) -->
     <div class="filter-bar__item">
       <select 
+        id="desktop-sort-select"
+        name="desktop-sort-order"
         x-model="sortBy" 
         @change="changeSortOrder" 
         class="select select--compact"
@@ -165,6 +183,8 @@
     <!-- Date dropdown -->
     <div class="filter-bar__item">
       <select 
+        id="desktop-date-range-select"
+        name="desktop-date-range"
         x-model="dateRange" 
         @change="applyFilters" 
         class="select select--compact"
