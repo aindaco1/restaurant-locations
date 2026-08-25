@@ -2,11 +2,11 @@
 """
 Dataset Builder
 Orchestrates the full data pipeline:
-1. Fetch NMED data
-2. Scrape ABQ PDFs
-3. Normalize to unified schema
-4. Generate manifest
-5. Save to data/ directory
+1. Scrape ABQ PDFs
+2. Normalize to the shared schema
+3. Merge with the archive
+4. Generate the manifest
+5. Save datasets to data/
 """
 
 import os

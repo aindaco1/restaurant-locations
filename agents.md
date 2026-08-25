@@ -27,7 +27,7 @@ Architecture
 	•	/_layouts/ — base, page
 	•	/_includes/ — header, footer, filter controls, card components
 	•	/assets/scss/ — modular SCSS (tokens, layout, components)
-	•	/assets/js/ — app.js (filtering/sorting), score.js (shared scoring), store.js (local cache)
+	•	/assets/js/ — app.js (filtering/sorting and local cache), theme.js (theme state)
 	•	/data/ — versioned JSON datasets produced by the pipeline
 	•	Hosting: GitHub Pages (project site). Custom domain optional. Automatic builds on push to main.
 	•	Performance: ship as a single HTML document, deferred JS, pre‑compressed assets via Actions, immutable cache headers via Worker (optional).
@@ -259,12 +259,12 @@ Implementation Status
 	•	GitHub Pages workflow (.github/workflows/pages.yml)
 
 ✅ Milestone 1 — Data Pipeline (COMPLETED)
-	•	scripts/fetch_nmed.py - NMED API fetcher (ArcGIS + Apigee support)
 	•	scripts/scrape_abq.py - ABQ PDF scraper with pdfplumber
 	•	scripts/normalize.py - Schema normalization + Pydantic models
 	•	scripts/build_dataset.py - Full pipeline orchestrator
 	•	Unit tests (scripts/tests/test_scoring.py)
 	•	GitHub Actions pipeline workflow (nightly + manual)
+	•	NMED normalizer retained for future expansion; statewide fetching deferred pending bulk access
 
 ✅ Milestone 2 — UI MVP (COMPLETED)
 	•	index.html with Alpine.js-powered UI
@@ -284,17 +284,18 @@ Implementation Status
 	•	Complete documentation (README.md, agents.md)
 	•	Scoring methodology page (/scoring)
 	•	Daily pipeline schedule (catches main report before weekly overwrite)
-	•	237+ accumulated inspection records
+	•	Accumulated ABQ inspection archive with live totals in data/manifest.json
+	•	Pinned browser/Actions dependencies, generated-output compaction, performance budgets, and production hash verification
 
 ⏸️ Deferred (Lower Priority)
-	•	Cloudflare Workers for edge caching
-	•	Lighthouse performance tuning beyond baseline
+	•	Cloudflare Workers (not needed for static asset caching; reconsider only for an API proxy)
+	•	Zone-wide WebMCP decision and further Lighthouse tuning beyond the repository baseline
 	•	Map view with clustering
 
 ⸻
 
 Tech Stack (Final)
-	•	Frontend: Jekyll 4.3, SCSS, Alpine.js 3.x
+	•	Frontend: Jekyll 4.x, SCSS, Alpine.js 3.16.3
 	•	Backend: Python 3.11, pdfplumber, requests, pydantic, pytest
 	•	CI/CD: GitHub Actions (2 workflows)
 	•	Hosting: GitHub Pages
@@ -305,9 +306,12 @@ Tech Stack (Final)
 Key Design Decisions
 	1.	Alpine.js over HTMX: Better fit for complex filtering/sorting logic
 	2.	Pydantic for validation: Type-safe schema enforcement
-	3.	Graceful API failures: Return empty datasets, don't block builds
+	3.	Graceful scrape failures: Preserve the accumulated archive when a daily fetch returns no new data
 	4.	Sample data included: Site works immediately without API access
 	5.	Progressive enhancement: Core content works without JavaScript
 	6.	Writeup generation delegated to frontend: PDF observation text too verbose for raw display
 	7.	Per-inspection accordions over single accordion per restaurant: better scanability for multi-inspection venues
 	8.	Daily pipeline to prevent data loss from weekly PDF overwrite
+	9.	Content-addressed dataset loading: Refresh the manifest, then cache the versioned dataset URL
+	10.	Production-only compaction: Keep source JSON readable while minimizing the deployed artifact
+	11.	Content-addressed assets: Fingerprint generated CSS, JS, and images so Cloudflare can cache them immutably

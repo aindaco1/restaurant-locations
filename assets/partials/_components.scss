@@ -116,11 +116,12 @@ a {
   }
 
   &__logo {
-    max-height: $size--unit * 4;
+    width: auto;
+    height: $size--unit * 4;
     flex-shrink: 0;
     
     @include sm {
-      max-height: $size--unit * 3;
+      height: $size--unit * 3;
     }
   }
 
@@ -930,7 +931,8 @@ a {
   }
 
   &__logo {
-    max-height: $size--unit * 4;
+    width: auto;
+    height: $size--unit * 4;
     vertical-align: middle;
   }
 }

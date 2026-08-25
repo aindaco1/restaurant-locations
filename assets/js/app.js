@@ -9,8 +9,13 @@ document.addEventListener('alpine:init', () => {
     sortBy: 'severity',
     loading: true,
     error: null,
+    initialized: false,
 
     init() {
+      // Alpine automatically calls store init() methods. Keep this idempotent
+      // so a future explicit caller cannot fetch and render the dataset twice.
+      if (this.initialized) return;
+      this.initialized = true;
       this.loadViolations();
     },
 
@@ -18,6 +23,7 @@ document.addEventListener('alpine:init', () => {
       try {
         const baseurl = document.querySelector('meta[name="baseurl"]')?.content || '';
         let datasetVersion = Date.now().toString();
+        let datasetPath = `${baseurl}/data/violations_latest.json`;
 
         try {
           const manifestResponse = await fetch(`${baseurl}/data/manifest.json?ts=${Date.now()}`, {
@@ -26,18 +32,28 @@ document.addEventListener('alpine:init', () => {
 
           if (manifestResponse.ok) {
             const manifest = await manifestResponse.json();
-            datasetVersion = manifest.datasets?.latest?.hash ||
+            const latestDataset = manifest.datasets?.latest;
+            datasetVersion = latestDataset?.hash ||
               manifest.dataset_version ||
               manifest.generated_at ||
               datasetVersion;
+
+            if (latestDataset?.url) {
+              const manifestPath = latestDataset.url.startsWith('/')
+                ? latestDataset.url
+                : `/${latestDataset.url}`;
+              datasetPath = `${baseurl}${manifestPath}`;
+            }
           }
         } catch (manifestError) {
           console.warn('Failed to load data manifest:', manifestError);
         }
 
         const response = await fetch(
-          `${baseurl}/data/violations_latest.json?v=${encodeURIComponent(datasetVersion)}`,
-          { cache: 'no-store' }
+          `${datasetPath}?v=${encodeURIComponent(datasetVersion)}`,
+          // The manifest hash changes the URL whenever the dataset changes, so
+          // this response is safe to reuse without risking stale data.
+          { cache: 'force-cache' }
         );
         
         if (!response.ok) {

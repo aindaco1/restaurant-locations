@@ -21,13 +21,14 @@ A lightweight, fast Jekyll site that highlights recent restaurant health-code vi
 - 🚫 **Zero-Score Filtering**: Restaurants with 0.0 severity are automatically hidden
 - 📥 **Export**: Download filtered results as CSV/JSON
 - ♿ **Accessible**: Keyboard navigation, semantic HTML, WCAG compliant
-- ⚡ **Performant**: Static site, <20KB JS
+- ⚡ **Performant**: Static site, <8KB first-party JS gzip, cacheable versioned data
 
 ## Tech Stack
 
-- **Frontend**: Jekyll 4.3, SCSS (8px unit system), Alpine.js 3.x
+- **Frontend**: Jekyll 4.x, SCSS (8px unit system), Alpine.js 3.16.3
 - **Data Pipeline**: Python 3.11+ (GitHub Actions scheduled)
-- **Data Sources**: NMED API + Albuquerque PDF scraping
+- **Active Data Source**: City of Albuquerque inspection-report PDFs
+- **Planned Expansion**: NMED bulk data for the other nine target cities
 - **Hosting**: GitHub Pages
 - **CI/CD**: GitHub Actions
 
@@ -56,6 +57,11 @@ python scripts/build_dataset.py
 
 # Run tests
 pytest scripts/tests/
+
+# Validate the same production performance contract used in CI
+bundle exec jekyll build
+python3 scripts/optimize_site.py
+python3 scripts/validate_site.py
 ```
 
 ## Deployment
@@ -69,11 +75,7 @@ pytest scripts/tests/
 
 2. **Configure Secrets** (Optional - for data pipeline)
    - Go to Settings → Secrets and variables → Actions
-   - Add these secrets if you have API access:
-     - `NMED_API_KEY` - API key for NMED endpoints
-     - `NMED_APIGEE_URL` - Custom Apigee endpoint URL
-     - `NMED_ARCGIS_URL` - Custom ArcGIS FeatureServer URL
-     - `ABQ_PDF_BASE_URL` - Base URL for ABQ PDF reports
+   - Add `ABQ_PDF_BASE_URL` only if the City changes the default documents URL
 
 3. **Deploy**
    ```bash
@@ -85,12 +87,55 @@ pytest scripts/tests/
 ### Workflows
 
 **Jekyll Deploy** (`.github/workflows/pages.yml`)
-- Triggers: Push to `main`
-- Builds and deploys site to GitHub Pages
+- Triggers: pull requests, pushes to `main`, completed data pipelines, or manual runs
+- Builds and validates every change; deploys non-PR runs to GitHub Pages
+- Compacts the generated dataset and fingerprints first-party assets without rewriting source files
+- Optionally reconciles the hostname-scoped Cloudflare configuration after deployment
+- Verifies the deployed shell and dataset hash through the production domain
 
 **Data Pipeline** (`.github/workflows/pipeline.yml`)
-- Triggers: Nightly at 2 AM UTC, manual, or push to scripts/
-- Fetches data, normalizes, and commits to `/data/`
+- Triggers: relevant pull requests, nightly at 2 AM UTC, manual, or data-code pushes
+- Runs unit tests on every trigger; non-PR runs fetch, normalize, and commit `/data/`
+- Serializes refreshes so scheduled and manual runs cannot push concurrently
+
+### Frontend Performance Contract
+
+The browser runtime keeps Alpine.js because the filtering and export UI uses it
+substantially. The CDN URL and integrity hash are pinned, and Alpine store
+initialization must remain idempotent so the dataset is fetched and rendered
+once. The unversioned manifest bypasses browser caching; the dataset URL includes
+the manifest's content hash and is intentionally cacheable.
+
+`scripts/validate_site.py` protects the current first-party JavaScript, CSS, and
+compressed dataset budgets. `scripts/optimize_site.py` compacts only the generated
+Pages artifact and gives CSS, JS, and images content-hashed filenames, preserving
+readable source data and useful Git diffs.
+
+### Cloudflare Configuration
+
+The live `Healthcode performance safeguards` Configuration Rule matches only
+`healthcode.dustwave.xyz` and disables Rocket Loader and Real User Monitoring
+injection. `scripts/sync_cloudflare_config.mjs` is the idempotent source of truth
+for that rule plus immutable caching for fingerprinted assets and the
+content-versioned dataset. The unversioned manifest is deliberately excluded.
+
+Run a read-only drift check with a token scoped to the `dustwave.xyz` zone:
+
+```bash
+CLOUDFLARE_ZONE_ID=ddfc222a15b5afa8a71ae72f633159af \
+  CLOUDFLARE_API_TOKEN="$CLOUDFLARE_API_TOKEN" \
+  node scripts/sync_cloudflare_config.mjs --check
+```
+
+For automatic post-deploy reconciliation, set repository secrets
+`CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ZONE_ID`, then set the repository variable
+`CLOUDFLARE_CONFIG_SYNC=true`. The token needs zone-scoped Configuration Rules
+edit and Cache Rules edit access, plus the Rulesets permissions Cloudflare lists
+for Cache Rules. Never commit the token or put it in `.dev.vars` for this site.
+
+WebMCP remains a separate zone-wide beta setting. It is intentionally not
+managed by the hostname-scoped script because changing it affects every
+`dustwave.xyz` subdomain.
 
 ## Architecture
 
@@ -98,19 +143,19 @@ pytest scripts/tests/
 Frontend (Jekyll)         Data Pipeline (Actions)
 ┌──────────────┐         ┌─────────────────────┐
 │ Static HTML  │────────▶│ Python Scrapers     │
-│ SCSS (8px)   │         │ - fetch_nmed.py     │
-│ Alpine.js    │◀────────│ - scrape_abq.py     │
-│              │         │ - normalize.py      │
+│ SCSS (8px)   │         │ - scrape_abq.py     │
+│ Alpine.js    │◀────────│ - normalize.py      │
+│              │         │ - build_dataset.py  │
 │ /data/*.json │         │ → violations.json   │
 └──────────────┘         └─────────────────────┘
 ```
 
 ### Data Pipeline Flow
 
-1. **Fetch NMED**: Query statewide inspections (9 cities via API)
-2. **Scrape ABQ**: Parse weekly PDF reports (Albuquerque/Bernalillo)
-3. **Normalize**: Map to shared schema, compute severity scores
-4. **Publish**: Commit JSON to `/data/`, update manifest
+1. **Scrape ABQ**: Parse the current and archived PDF reports
+2. **Normalize + Merge**: Map to the shared schema, score, and deduplicate
+3. **Publish**: Commit readable JSON to `/data/` and update the manifest hash
+4. **Deploy**: Compact only the generated Pages copy and verify it in production
 
 ## Project Structure
 
@@ -136,17 +181,18 @@ Frontend (Jekyll)         Data Pipeline (Actions)
 │   │   └── _status-key.scss # Status key legend
 │   └── js/
 │       ├── app.js           # Alpine.js app (filters, sort, export)
-│       ├── score.js         # Severity scoring logic
 │       └── theme.js         # Dark mode theme toggle
 ├── data/
 │   ├── violations_latest.json  # Current dataset
 │   ├── manifest.json           # Dataset metadata
 │   └── snapshots/              # Historical snapshots
 ├── scripts/
-│   ├── fetch_nmed.py        # NMED API fetcher
 │   ├── scrape_abq.py        # ABQ PDF scraper
 │   ├── normalize.py         # Schema normalization + scoring
 │   ├── build_dataset.py     # Pipeline orchestrator
+│   ├── optimize_site.py     # Compact data and fingerprint production assets
+│   ├── validate_site.py     # Static performance contract
+│   ├── verify_production.py # Deployed shell/data verification
 │   └── tests/
 │       └── test_scoring.py  # Unit tests
 ├── .github/workflows/
@@ -161,7 +207,7 @@ Frontend (Jekyll)         Data Pipeline (Actions)
 ```json
 {
   "id": "state:city:establishment:inspectionDate",
-  "source": "NMED|ABQ",
+  "source": "ABQ",
   "operational_status": "Open|Closed",
   "establishment": {
     "name": "Restaurant Name",
@@ -215,7 +261,7 @@ Scores are calculated based on inspection outcomes and violations:
 - **Mobile-first** responsive design with breakpoint mixins
 
 ### JavaScript
-- Keep bundle **< 20KB gzipped**
+- Keep first-party browser JavaScript **≤ 8KB gzipped**
 - **Progressive enhancement** (works without JS)
 - Use **Alpine.js** for reactivity, avoid heavy frameworks
 - No client-side build steps
@@ -255,7 +301,8 @@ python scripts/build_dataset.py --validate
 
 - **Coverage**: Albuquerque & Bernalillo County
 - **Format**: Weekly PDF inspection reports
-- **Current Data**: 237+ inspection records (Sept 2025 – Feb 2026)
+- **Current Data**: Archive begins in September 2025; see
+  [`data/manifest.json`](data/manifest.json) for the live record count and version
 - **Update Frequency**: Daily automated scraping (2 AM UTC)
 - **Archive Mode**: Accumulates all inspections over time
 - **Source URL**: https://www.cabq.gov/environmentalhealth/documents/
@@ -277,11 +324,13 @@ To add other NM cities, contact **NMED Food Safety Program**:
 - Email: NMED.Food.Program@env.nm.gov  
 - Phone: (505) 827-2821
 - Request: Bulk data export for Las Cruces, Rio Rancho, Santa Fe, etc.
-- See [NMED_REQUEST.md](NMED_REQUEST.md) for email template
 
 ### Optional Enhancements
-- [ ] Cloudflare Workers for edge caching
-- [ ] Lighthouse optimization (target: Perf ≥95, A11y ≥95)
+- [x] Static performance budgets, one-fetch dataset loading, and generated JSON compaction
+- [x] Host-scoped Cloudflare rule disables Rocket Loader and Web Analytics injection
+- [x] Content-addressed production assets support immutable Cloudflare caching
+- [x] Keep the beta WebMCP bridge enabled and outside this hostname-scoped automation
+- [ ] Continue toward Lighthouse Perf ≥95 and A11y ≥95 after provider tuning
 - [ ] Map view with Leaflet (if geocoding available)
 - [ ] Historical trends charts
 - [ ] Email alerts for new closures

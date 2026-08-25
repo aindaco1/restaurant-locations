@@ -27,6 +27,4 @@ document.addEventListener('alpine:init', () => {
     }
   });
 
-  // Initialize theme immediately
-  Alpine.store('theme').init();
 });
