@@ -1,134 +1,66 @@
 [
   {
-    "name": "AMERICAN LEGION POST 13",
-    "address": "1201 MOUNTAIN RD NE",
-    "date": "2026-08-04",
+    "name": "1629 LLC DBA Mission Winery",
+    "address": "3423 CENTRAL AVE NE",
+    "date": "2026-08-12",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed quaternary ammonium compound solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Oyster bar area Concentration: Zero ppm"
+      },
+      {
+        "category": "Date Marking and Disposition",
+        "observation": "Observed ready-to-eat time and temperature controlled for safety food prepared and held within the establishment with no date marking indicators. Location: Walk in cooler Food Items: Red chile sauce, Kimchi, unknown cream, duck confit Expiration Dates: 7/8, 7/8, 5/16, 7/10"
+      },
+      {
+        "category": "Plumbing",
+        "observation": "Observed an inadequate air gap at floor drain in ware wash area."
+      },
+      {
+        "category": "Operation and Maintenance",
+        "observation": "Observed no approved method of hand drying at handwashing sink(s). Location: Hand wash station in three location in facility. Observed handwashing sink used for purpose other than handwashing. Location: Oyster bar area Manner: Storing utensils 1629 LLC DBA Mission Winery - 3423 CENTRAL AVE NE Food Establishment Class B Date: 08/12/2026 - #: RT-FOODEST-076882-2026 - Inspection Result: Approved"
+      }
+    ]
+  },
+  {
+    "name": "1629 LLC DBA Mission Winery",
+    "address": "3423 CENTRAL AVE NE",
+    "date": "2026-08-12",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "1629 LLC DBA Mission Winery",
+    "address": "3423 CENTRAL AVE NE",
+    "date": "2026-08-11",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "1629 LLC DBA Mission Winery",
+    "address": "3423 CENTRAL AVE NE",
+    "date": "2026-08-14",
     "outcome": "failed",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
-    "violations": [
-      {
-        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": "Observed quaternary ammonium compound solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Bar area three-compartment sink Concentration: Zero ppm Temperature: Unavailable"
-      },
-      {
-        "category": "Cold Holding",
-        "observation": "Observed food items in cold holding unit measuring above 41\u00b0F. Location: Upright cooler Food Items: Jar of pickle juice. Temperature: 48\u00b0F Observed insufficient cold holding equipment to properly hold food cold. Location: Upright cooler bar area Condition: Failing to maintain temperature of 41\u00b0F and below"
-      },
-      {
-        "category": "Testing Devices",
-        "observation": "Observed no/expired testing kit or other device to measure the concentration of chemical sanitizing solution."
-      },
-      {
-        "category": "Operation and Maintenance",
-        "observation": "Observed handwashing sink used for purpose other than handwashing. Location: Hand wash station in bar area Manner: Discarding drinks"
-      },
-      {
-        "category": "Operations",
-        "observation": "Observed that the facility was operating with an expired permit."
-      },
-      {
-        "category": "Disposition of Returned, Previously Served Or Reconditioned",
-        "observation": "Observed food that is unsafe for consumption present inside the facility. Food: Cranberry Juice Location: Upright cooler bar area Condition: Visible mold in juice container AMERICAN LEGION POST 13 - 1201 MOUNTAIN RD NE Food Establishment Class C Date: 08/04/2026 - #: PT0051560 - Inspection Result: Conditional Approved"
-      }
-    ]
-  },
-  {
-    "name": "AMERICAN LEGION POST 13",
-    "address": "1201 MOUNTAIN RD NE",
-    "date": "2026-08-04",
-    "outcome": "conditional",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
     "violations": []
   },
   {
-    "name": "BEE HIVE HOMES OF TAYLOR RANCH",
-    "address": "6004 WHITEMAN DR NW",
-    "date": "2026-08-07",
+    "name": "1629 LLC DBA Mission Winery",
+    "address": "3423 CENTRAL AVE NE",
+    "date": "2026-08-14",
     "outcome": "approved",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": [
-      {
-        "category": "Plumbing",
-        "observation": "Observed an inadequate air gap at floor drain located under three-compartment sink."
-      },
-      {
-        "category": "Testing Devices",
-        "observation": "Observed no/expired testing kit or other device to measure the concentration of chemical sanitizing solution."
-      },
-      {
-        "category": "Operations",
-        "observation": "Observed that the facility was operating with an expired permit. BEE HIVE HOMES OF TAYLOR RANCH - 6004 WHITEMAN DR NW - Approved BEE HIVE HOMES OF TAYLOR RANCH - 6004 WHITEMAN DR NW Food Establishment Class C Date: 08/07/2026 - #: RT-FOODEST-073216-2026 - Inspection Result: Approved"
-      },
-      {
-        "category": "Physical Facilities",
-        "observation": "Observed holes or other gaps in the structure of the facility. Location: Kitchen cupboards. Size: Holes in the 4 inches to 12-inch square side of cupboards and bottom shelving. BEE HIVE HOMES OF TAYLOR RANCH - 6004 WHITEMAN DR NW Food Establishment Class C Date: 08/03/2026 - #: PT0093706 - Inspection Result: Closure Re-Inspection Required"
-      },
-      {
-        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": "Observed quaternary ammonium compound solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Kitchen prep table wiping cloth container. Concentration: tested at 0 ppm at 75 degrees f."
-      },
-      {
-        "category": "Pest Control",
-        "observation": ""
-      }
-    ]
-  },
-  {
-    "name": "BEE HIVE HOMES OF TAYLOR RANCH",
-    "address": "6004 WHITEMAN DR NW",
-    "date": "2026-08-03",
-    "outcome": "closed",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "CHILDRENS PROMISE CENTERS",
-    "address": "12855 EASTRIDGE DR NE",
-    "date": "2026-08-07",
-    "outcome": "approved",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": [
-      {
-        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Can opener Location: Kitchen Condition of the Location: Dried food debris buildup"
-      },
-      {
-        "category": "Poisonous and Toxic/Chemical Substances",
-        "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Spray bottle Alleged Material: Bottle labeled Bleach water but had Pine- sol"
-      },
-      {
-        "category": "Plumbing",
-        "observation": "Observed an inadequate air gap at floor drain next to three-compartment sink"
-      },
-      {
-        "category": "Training Records",
-        "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
-      },
-      {
-        "category": "Surface Not Clean",
-        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located Lazy Susan Cabinet and the inside of oven The condition of the surface was debris buildup"
-      },
-      {
-        "category": "Physical Facilities, Construction and Repair",
-        "observation": "- Observation: 1. Observed floor and wall juncture covering in disrepair and unsealed coming off the wall behind the three-compartment sink and dish machine at the time of inspection. 2. Observed floor is not smooth and easily cleanable. The surface was located near and under three comp sink. The surface is in disrepair by flooring being uneven, with exposed concrete subfloor and cracked/missing floor tile near floor drain at the time of inspection. Floors, walls, and ceilings that are constructed of smooth and durable surface materials are more easily cleaned. Floor surfaces that are graded to drain and consist of effectively treated materials will prevent contamination of foods from dust and organisms from pooled moisture. The special requirements for carpeting materials and nonabsorbent materials in areas subject to moisture are intended to ensure that the cleanability of these surfaces is retained. Instructed person in charge to repair flooring with nonabsorbent, smooth and easily cleanable material."
-      }
-    ]
-  },
-  {
-    "name": "CHILDRENS PROMISE CENTERS",
-    "address": "12855 EASTRIDGE DR NE",
-    "date": "2026-08-07",
-    "outcome": "conditional",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -137,160 +69,34 @@
   {
     "name": "CHURCHS CHICKEN #2020",
     "address": "10230 CENTRAL AVE NE",
-    "date": "2026-08-07",
-    "outcome": "closed",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": [
-      {
-        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": "Observed quaternary ammonium compound solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Wiping cloth bucket in back kitchen Concentration: 0 ppm Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine and can opener Location: Back of kitchen and walk in cooler Condition of the Location: brown buildup on inside of ice machine and dried food debris on blade of can opener"
-      },
-      {
-        "category": "Pest Control",
-        "observation": "Observed pests in the facility with no control methods in place. Location: Kitchen area and dining room Pest Type: cockroach, fly and gnats Pest Condition: living and dead Observed pests allowed to accumulate in traps. Location: Back dry storage, ware washing area, kitchen and dining room Pest Type: cockroach fly Pest Condition: living and dead Number of Pests Present: approx. 15 Cockroaches 5-7 flies, 10-15 gnats"
-      },
-      {
-        "category": "Plumbing",
-        "observation": "Observed Handwashing sink and plumbing behind ice machine is not maintained in good repair or is not repaired by law. Observed Handwashing sink found in disrepair by leaking grey water onto the floor. Observed Piping behind ice machine found in disrepair by not aligned to floor drain and leaking grey water onto the floor"
-      },
-      {
-        "category": "Physical Facilities",
-        "observation": "Observed doors to the outside that are not tight fitting, light can be seen at the edges. Front double doors"
-      },
-      {
-        "category": "Cold Holding",
-        "observation": ""
-      }
-    ]
-  },
-  {
-    "name": "EAT MY THAI CUISINE",
-    "address": "5303 GIBSON BLVD SE",
-    "date": "2026-08-05",
+    "date": "2026-08-12",
     "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
-      {
-        "category": "Poisonous and Toxic/Chemical Substances",
-        "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Bowl and spray bottle Alleged Material: Bleach water"
-      },
-      {
-        "category": "Pest Control",
-        "observation": "Observed pests allowed to accumulate in traps Location: Dry storage area and kitchen Pest Type: Cockroach Pest Condition: Dead Number of Pests Present: 6"
-      },
-      {
-        "category": "Date Marking and Disposition",
-        "observation": "Observed ready-to-eat time and temperature controlled for safety food prepared and held within the establishment with no date marking indicators. Location: All cold holding units in the facility Food Items: Various containers of sauces, prepared meats, cut cucumbers, soups, thawed shrimp in container Expiration Dates: Not available"
-      },
-      {
-        "category": "Food Identification, Safe, Unadulterated and Honestly Presented",
-        "observation": "Observed food that is not readily and unmistakably recognized removed from original packaging without proper labeling or identification. Working Container of Food: Bulk food storage containers Location: Dry storage and make line"
-      },
-      {
-        "category": "Food Separation",
-        "observation": "Observed non-ready-to-eat raw animal food stored with ready-to-eat food without protection from contamination. Location: Reach in coolers Food Item: Raw shelled eggs and raw meat Condition: Stored directly over ready to eat food items"
-      },
-      {
-        "category": "Designated Areas",
-        "observation": "Observed facility did not provide a designated area for employees to eat, drink, or use tobacco products."
-      }
-    ]
-  },
-  {
-    "name": "EAT MY THAI CUISINE",
-    "address": "5303 GIBSON BLVD SE",
-    "date": "2026-08-05",
-    "outcome": "conditional",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "FREDDYS FROZEN CUSTARD & STEAKBURGERS",
-    "address": "10701 CORRALES RD, A-1",
-    "date": "2026-08-07",
-    "outcome": "conditional",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "FRESQUEZ CONCESSIONS",
-    "address": "2200 SUNPORT BLVD SE",
-    "date": "2026-08-03",
-    "outcome": "approved",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": [
-      {
-        "category": "Physical Facilities, Cleaning",
-        "observation": "Observed buildup and debris on the Floors under shelving, food equipment, refrigerators and prep tables. Observes walls with grease and soil build storage and food prep and cooking, clean utensil storage racks, behind dish washer."
-      },
       {
         "category": "Surface Not Clean",
-        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located Food prep and cooking areas. The surface was made out of Stainless steel. The condition of the food surfaces equipment and shelfing with substantial grease, soil and debris buildup exterior and interiors. FRESQUEZ CONCESSIONS - 2200 SUNPORT BLVD SE \u2013 Approved FRESQUEZ CONCESSIONS - 2200 SUNPORT BLVD SE Food Establishment Class C Date: 08/03/2026 - #: CAC-Food-073373-2026 - Inspection Result: Approved Facility has been upgraded to Approved status following the correction of the following violations during inspection by the Environmental Health Department. The facility has corrected: - Backflow Prevention, Air Gap (Air gap corrected on site) - Equipment, Utensils, Linens and Single-Service and Single-Use Articles Storing (Coffee filters placed back in original packaging) - Equipment, Food-Contact Surfaces and Utensils - Clean to Sight and Touch (Food contact surfaces cleaned and sanitized) FRESQUEZ CONCESSIONS - 2200 SUNPORT BLVD SE Food Establishment Class C Date: 08/03/2026 - #: RT-FOODEST-010713-2025 - Inspection Result: Conditional Approved"
+        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located front serving station hand wash sink, serving counter, Kinfe rack. the surface was made out of Metal. The condition of the surfaces was with soil buildup and debris CHURCHS CHICKEN #2020 - 10230 CENTRAL AVE NE - Approved CHURCHS CHICKEN #2020 - 10230 CENTRAL AVE NE Food Establishment Class C Date: 08/12/2026 - #: CAC-Food-076528-2026 - Inspection Result: Approved Complaint This inspection was a follow-up to a previous citizen complaint that was substantiated. Facility has kept up with Pest control and sending me pest control records. Pest control (Ecolab) Has been out 4 Times since closure and will continue to be out every other week moving forward for the next month or 2 stated District managers CHURCHS CHICKEN #2020 - 10230 CENTRAL AVE NE Food Establishment Class C Date: 08/10/2026 - #: RT-FOODEST-075324-2026 - Inspection Result: Conditional Approved Complaint This inspection was a follow-up to a previous citizen complaint that was substantiated."
       },
       {
         "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Can opener and measuring scoops Location: Clean dish storage and prep table Condition of the Location: Soiled with dried food debris and residue"
+        "observation": "Observed quaternary ammonium compound solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization due wiping cloth container with required sanitizer was not set up for use during operations at the time of inspection. PIC stated that had been in the process of setting up sanitizer container. Location: Facility. Concentration: 0 ppm."
       },
       {
-        "category": "Plumbing",
-        "observation": "Observed drain pipe under 3-compartment sink is not maintained in good repair or is not repaired by law. Observed drain pipe found in disrepair by having a continuous leak that needs to be repaired. Observed an inadequate air gap at the floor drain in the front service area. Observed a drain hose being stored directly inside of the floor drain."
+        "category": "Approved Source",
+        "observation": "Observed food obtained from a source that does not comply with law. Location: Upright cooler. Food items: packaged breakfast burritos: Bacon/Green, Adovada/Red. Manner: facility providing premade packaged burritos do not have required food permit for food processing."
       },
       {
-        "category": "Storage",
-        "observation": ""
-      },
-      {
-        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": "Observed quaternary ammonium compound solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Kitchen and front service area Concentration: 0 PPM"
-      },
-      {
-        "category": "Date Marking and Disposition",
-        "observation": "Observed ready-to-eat time and temperature controlled for safety food prepared and held within the establishment with no date marking indicators. Location: Front display cooler Food Items: Multiple cheese sandwiches Expiration Dates: Not available"
-      },
-      {
-        "category": "Cold Holding",
-        "observation": "Observed food items in cold holding unit measuring above 41\u00b0F. Location: Refrigerated make table Food Items: Chopped tomatoes (52\u00b0F), Chopped onions (50\u00b0F) Sliced tomatoes (51\u00b0F) Chopped cauliflower (52\u00b0F) Observed insufficient cold holding equipment to properly hold food cold. Location: Rear refrigerated make table Condition: Observed cooler to be at an ambient temperature of 59\u00b0F and was also heavily overstocked"
-      },
-      {
-        "category": "Personal Cleanliness",
-        "observation": "Observed a food employee without proper hair restraints. Location: Kitchen Activity: Active food handling of unprotected foods with hair net partially on."
-      },
-      {
-        "category": "Storage",
-        "observation": "Observed equipment was not air dried and was wet stacked. Location: Clean dish rack Equipment Type: Clear trays Manner: Observed containers not air dried and stored wet stacked dripping onto items below"
-      },
-      {
-        "category": "Pest Control",
-        "observation": "Observed pests in the facility with no control methods in place. Location: Rear kitchen by mop sink Pest Type: Fruit flies Pest Condition: Living"
-      },
-      {
-        "category": "Plumbing",
-        "observation": "Observed 3-compartment sink is not maintained in good repair or is not repaired by law. Observed drain pipe on under side of the 3-compartment found in disrepair by having a leak that needs to be repaired. Fresquez Concessions, Inc. - 2200 SUNPORT BLVD SE - Conditional Approved Fresquez Concessions, Inc. - 2200 SUNPORT BLVD SE Food Establishment Class C Date: 08/03/2026 - #: CAC-Food-073352-2026 - Inspection Result: Approved Facility has been upgraded to Approved status following the correction of the following violations during inspection by the Environmental Health Department. The facility has corrected: - Time/Temperature Control for Safety Food, Cold Holding (Person in charge voluntarily discarded food in ice bath) - Identifying Information, Prominence-Original Containers (identifying label placed on chemical sanitizer) - Prohibition-Jewelry (jewelry removed) Fresquez Concessions, Inc. - 2200 SUNPORT BLVD SE Food Establishment Class C Date: 08/03/2026 - #: RT-FOODEST-101372-2025 - Inspection Result: Conditional Approved"
-      },
-      {
-        "category": "Poisonous and Toxic/Chemical Substances",
-        "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Wiping cloth bucket under espresso machine Alleged Material: Quat sanitizer"
-      },
-      {
-        "category": "Cold Holding",
+        "category": "Knowledgeable",
         "observation": ""
       }
     ]
   },
   {
-    "name": "FRESQUEZ CONCESSIONS",
-    "address": "2200 SUNPORT BLVD SE",
-    "date": "2026-08-03",
+    "name": "CHURCHS CHICKEN #2020",
+    "address": "10230 CENTRAL AVE NE",
+    "date": "2026-08-10",
     "outcome": "conditional",
     "operational_status": "Open",
     "city": "Albuquerque",
@@ -298,9 +104,9 @@
     "violations": []
   },
   {
-    "name": "Fresquez Concessions, Inc.",
-    "address": "2200 SUNPORT BLVD SE",
-    "date": "2026-08-03",
+    "name": "CITIZEN CHURCH",
+    "address": "7518 OAKLAND AVE NE",
+    "date": "2026-08-13",
     "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
@@ -308,9 +114,9 @@
     "violations": []
   },
   {
-    "name": "Fresquez Concessions, Inc.",
-    "address": "2200 SUNPORT BLVD SE",
-    "date": "2026-08-03",
+    "name": "CITIZEN CHURCH",
+    "address": "7518 OAKLAND AVE NE",
+    "date": "2026-08-13",
     "outcome": "conditional",
     "operational_status": "Open",
     "city": "Albuquerque",
@@ -318,36 +124,39 @@
     "violations": []
   },
   {
-    "name": "HOTEL PARQ CENTRAL",
-    "address": "806 CENTRAL AVE SE",
-    "date": "2026-08-05",
+    "name": "DOMINOS PIZZA",
+    "address": "2115 VISTA OESTE NW",
+    "date": "2026-08-11",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "EINSTEIN AND NOAH CORP DBA Einstein Bros Bagels",
+    "address": "2510 CENTRAL AVE SE",
+    "date": "2026-08-10",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "KAPS",
+    "address": "5801 CENTRAL AVE NE",
+    "date": "2026-08-13",
     "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
-    "violations": [
-      {
-        "category": "Personal Cleanliness",
-        "observation": "Observed employee wearing unapproved jewelry while preparing food. Food Preparation Activity: Active food handling of uncovered food items Inappropriate Jewelry Observed: Wrist watch HOTEL PARQ CENTRAL - 806 CENTRAL AVE SE - Approved HOTEL PARQ CENTRAL - 806 CENTRAL AVE SE Food Establishment Class C Date: 08/05/2026 - #: RT-FOODEST-073494-2026 - Inspection Result: Approved Follow up inspection resulted in facility being upgraded from an Unsatisfactory status to and Approved status. PIC has corrected all observed violations and provided photo documentation of corrections. CHPD inspector has no cause for concern. HOTEL PARQ CENTRAL - 806 CENTRAL AVE SE Food Establishment Class C Date: 08/04/2026 - #: CAC-Food-073481-2026 - Inspection Result: Unsatisfactory Re-Inspection required Routine Food Establishment Inspection. Inspection resulted in a Closure. Facility was not closed due to PIC correction three (3) Priority violation on site bringing score back up to an Unsatisfactory status. CHPD inspector instructed PIC to send photo documentation of corrections and repairs to contact information provided on business. PIC must call for re-inspection after photo documentation has been provided and reviewed. CHPD inspector is requiring all food staff and any staff associated with kitchen take a food safety course with the Environmental Health Department. Food safety course can be scheduled by contacting EHD. Violations corrected: 1. Equipment, Food Contact Surfaces, and Utensils Clean: Equipment, Food-Contact Surfaces and Utensils - Clean to Sight and Touch 2. Hot Holding & Reheating: Time/Temperature Control for Safety Food, Hot Holding 3. Plumbing: Backflow Prevention, Air Gap HOTEL PARQ CENTRAL - 806 CENTRAL AVE SE Food Establishment Class C Date: 08/04/2026 - #: PT0111688 - Inspection Result: Closure Re-Inspection Required"
-      },
-      {
-        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": "Observed quaternary ammonium compound solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Three-compartment sink Concentration: Zero ppm Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine and cutting blade on can opener Location: Back of house Condition of the Location: Ice machine has extreme buildup of black organic matter"
-      },
-      {
-        "category": "Hot Holding & Reheating",
-        "observation": "Observed time/temperature control for safety food not hot held at 135\u00b0F or above. Food Item: Egg frittatas Food Temperature: 102\u00b0F"
-      },
-      {
-        "category": "Date Marking and Disposition",
-        "observation": ""
-      }
-    ]
+    "violations": []
   },
   {
-    "name": "HOTEL PARQ CENTRAL",
-    "address": "806 CENTRAL AVE SE",
-    "date": "2026-08-04",
+    "name": "KAPS",
+    "address": "5801 CENTRAL AVE NE",
+    "date": "2026-08-10",
     "outcome": "failed",
     "operational_status": "Open",
     "city": "Albuquerque",
@@ -355,196 +164,83 @@
     "violations": []
   },
   {
-    "name": "HOTEL PARQ CENTRAL",
-    "address": "806 CENTRAL AVE SE",
-    "date": "2026-08-04",
+    "name": "LOVE AND CARE CHILD DEVELOPMENT",
+    "address": "5407 4TH ST NW",
+    "date": "2026-08-14",
     "outcome": "closed",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "Indian Cuisine LLC DBA Taaj Palace",
-    "address": "1435 EUBANK BLVD NE",
-    "date": "2026-08-06",
-    "outcome": "conditional",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "Indian Cuisine LLC DBA Taaj Palace",
-    "address": "1435 EUBANK BLVD NE",
-    "date": "2026-08-06",
-    "outcome": "closed",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "MICHOA K ANA LLC",
-    "address": "301 San Pedro DR SE, SUITE #1",
-    "date": "2026-08-04",
-    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
       {
         "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice cream scoops, ice machine, can opener Location: Kitchen and make line Condition of the Location: Soiled with food debris and residue"
+        "observation": "Observed chlorine solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: No chlorine sanitizer made up at the time of inspection."
+      },
+      {
+        "category": "Pest Control",
+        "observation": "Observed pests in the facility with no control methods in place. Location: Bottom of the kitchen Cabinets, bottom of the oven, behind the refrigerator Pest Type: cockroach, rodent droppings. Pest Condition: several dead roaches thorough out the kitchen areas such as bottom of the oven, Cabinets, sinks, refrigerators. Mice droppings also throughout the kitchen Cabinets. and sinks. Observed an improper insect control device. Location: Under sink and behind refrigerator. Type of Device: sticky, a spring mouse trap. Condition: sticky trap loaded with roaches and never replaced; spring loaded trap not set for trapping rodents."
       },
       {
         "category": "Date Marking and Disposition",
-        "observation": "Observed ready-to-eat time and temperature controlled for safety food prepared and held within the establishment with no date marking indicators. Location: Reach in cooler Food Items: Watermelon, cut banana Expiration Dates: Not available"
-      },
-      {
-        "category": "Toilet Facilities",
-        "observation": "Observed toilet room is not equipped with a tight-fitting self-closing door; or the door is propped open."
-      },
-      {
-        "category": "Cold Holding",
-        "observation": "Observed food items in cold holding unit measuring above 41\u00b0F. Location: Make line fruit case Food Items: Watermelon (46\u00b0F), Mango (46\u00b0F), Pineapple (49\u00b0F)"
-      },
-      {
-        "category": "Surface Not Clean",
-        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located inside ice cream dipper well and reach in coolers. The condition of the surface was soiled with debris accumulation, ice frost and residue. Morningstar Memory Care at North Ridge - 8101 PALOMAS AVE NE - Approved Morningstar Memory Care at North Ridge - 8101 PALOMAS AVE NE Food Establishment Class C Date: 08/06/2026 - #: RT-FOODEST-116387-2025 - Inspection Result: Approved"
-      },
-      {
-        "category": "Training Records",
-        "observation": ""
-      }
-    ]
-  },
-  {
-    "name": "MICHOA K ANA LLC",
-    "address": "301 San Pedro DR SE, SUITE #1",
-    "date": "2026-08-04",
-    "outcome": "conditional",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "PALETERIA MICHOACANA EL PARAISO",
-    "address": "9001 CENTRAL AVE NE, C",
-    "date": "2026-08-07",
-    "outcome": "conditional",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": [
-      {
-        "category": "Functionality and Accuracy",
-        "observation": "Observed in a mechanically refrigerated food storage unit the temperature measuring device was not placed in the warmest part of the unit. Equipment Location: Inside display areas Thermometer Location: None available"
-      },
-      {
-        "category": "Operations",
-        "observation": "Observed that no food permit was posted at the facility. PALETERIA MICHOACANA EL PARAISO - 9001 CENTRAL AVE NE, C Food Establishment Class C Date: 08/07/2026 - #: PT0150163 - Inspection Result: Closure Re-Inspection Required"
-      },
-      {
-        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine Location: Condition of the Location: Debris buildup."
-      },
-      {
-        "category": "Date Marking and Disposition",
-        "observation": "Observed ready-to-eat time and temperature controlled for safety food prepared and held within the establishment with no date marking indicators. Location: Inside standing cold holding unit Food Items: Prepared watermelon, cantaloupe and mango Expiration Dates: None available."
-      },
-      {
-        "category": "Knowledgeable",
-        "observation": "Observed that the person in charge was unable to demonstrate knowledge of foodborne disease prevention and other requirements of the Food Code and local ordinances. Knowledge Tested: Asked about chlorine sanitizer did not know. Hot temperatures and cold temperatures unknown, named two food borne illnesses. Also, multiple priority violations."
-      },
-      {
-        "category": "Training Records",
-        "observation": "Observed that the food establishment does not have a certified food protection manager on staff. Observed that food employees were not in possession of a food handler card or had been trained in another approved food safety course."
-      },
-      {
-        "category": "Toilet Facilities",
-        "observation": "Observed in a toilet room used by females, no covered receptacle."
-      }
-    ]
-  },
-  {
-    "name": "PALETERIA MICHOACANA EL PARAISO",
-    "address": "9001 CENTRAL AVE NE, C",
-    "date": "2026-08-07",
-    "outcome": "closed",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": []
-  },
-  {
-    "name": "PALOMA LANDING",
-    "address": "8301 PALOMAS AVE NE",
-    "date": "2026-08-03",
-    "outcome": "approved",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": [
-      {
-        "category": "Cold Holding",
-        "observation": "Observed food items in cold holding unit measuring above 41\u00b0F. Location: Two standing cold holding units to the right of facility and also one display unit and cold holding make table. Food Items and Temperatures: Prepared watermelon 48 degrees f, prepared mango 49 degrees f, sliced ham 49 degrees f, shredded cheese 50 degrees f, corn on the cob 55 degrees f, corn 55 degrees f, blackberry mix 49 degrees f, watermelon 69 degrees f, cantaloupe 67 degrees f, chopped tomato 56 degrees f, chopped lettuce 49 degrees f, chopped cucumbers 47 degrees f, pork skin 47 degrees f."
-      },
-      {
-        "category": "Testing Devices",
-        "observation": "Observed food temperature measuring devices were not provided or readily accessible. Observed no testing kit or other device to measure the concentration of chemical sanitizing solution."
-      },
-      {
-        "category": "Operation and Maintenance",
-        "observation": "Observed no approved method of hand drying at handwashing sink(s). Location: Hand washing sink inside kitchen"
-      },
-      {
-        "category": "Warewashing Temperature and Concentration",
-        "observation": "Observed no chemical sanitizer set up while in operations."
-      },
-      {
-        "category": "Functionality and Accuracy",
-        "observation": "Observed in a mechanically refrigerated food storage unit the temperature measuring device was not placed in the warmest part of the unit. Equipment Location: Inside display areas Thermometer Location: None available"
-      },
-      {
-        "category": "Operations",
-        "observation": "Observed that the facility was operating with an expired permit. Observed that no food permit was posted at the facility."
-      },
-      {
-        "category": "Records",
-        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Dairy products, sliced deli meat, prepared fruit and vegetables. Activity of the Food: Stored, received, cooled PALOMA LANDING - 8301 PALOMAS AVE NE - Approved PALOMA LANDING - 8301 PALOMAS AVE NE Food Establishment Class C Date: 08/03/2026 - #: CAC-Food-073163-2026 - Inspection Result: Approved Corrective action taken during the routine inspection resulted in the facility being upgraded from a Conditional Approved Status to Approved Status. The person in"
-      },
-      {
-        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Can opener blade. Location: attached to prep top ledge. Condition of the Location: observed debris and buildup on the can opener blade."
+        "observation": "Observed ready-to-eat time and temperature controlled for safety food prepared and held within the establishment with no date marking indicators. Location: Refrigerator. Food Items: Mac and cheese, Pinto beans and steamed broccoli."
       },
       {
         "category": "Miscellaneous",
         "observation": ""
       },
       {
-        "category": "Plumbing",
-        "observation": "Observed an inadequate air gap at the drain pipe for the ice machine. Observed drain pipe was below flood level rim of floor drain."
-      },
-      {
         "category": "Training Records",
-        "observation": "Observed that food employees were not in possession of a food handler card or had been trained in another approved food safety course."
+        "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
       },
       {
-        "category": "Food Identification, Safe, Unadulterated and Honestly Presented",
-        "observation": "Observed food packaging not in good condition and failing to protect the integrity of the contents of the food from adulteration or potential contaminants. Packaged Food: two cans of prunes. Location: rack. Condition: dented cans."
+        "category": "Ventilation and Hood Systems",
+        "observation": "Observed hood ventilation system inadequately collecting grease and condensation allowing for accumulation and drips to occur, observed grease and condensation drip on to and contaminating food. Location: stove unit with soil buildup."
       },
       {
-        "category": "Precleaning and Rinsing",
-        "observation": "Observed a three (3) compartment sink being used for warewashing without use of a water rinse step."
+        "category": "Food Separation",
+        "observation": ""
       }
     ]
   },
   {
-    "name": "PALOMA LANDING",
-    "address": "8301 PALOMAS AVE NE",
-    "date": "2026-08-03",
+    "name": "PACIFICA ITALIA INC.",
+    "address": "5500 ACADEMY RD NE",
+    "date": "2026-08-11",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Training Records",
+        "observation": "Observed that the food establishment does not have a certified food protection manager on staff. PACIFICA ITALIA INC. - 5500 ACADEMY RD NE - Approved PACIFICA ITALIA INC. - 5500 ACADEMY RD NE Food Establishment Class C Date: 08/11/2026 - #: CAC-Food-076302-2026 - Inspection Result: Approved Time/Temperature Control for Safety Food, Cold Holding- Pic corrected violation by rapidly cooling and discarding food items PACIFICA ITALIA INC. - 5500 ACADEMY RD NE Food Establishment Class C Date: 08/11/2026 - #: PT0044765 - Inspection Result: Conditional Approved"
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Can opener, Chef Knifes and food processor location: Kitchen area Condition of the Location: Dried Food debris."
+      },
+      {
+        "category": "Maintenance and Operation",
+        "observation": "Observed soiled or dirty ware washing machine. Location: back Condition: Buildup on inside of ware washing machine"
+      },
+      {
+        "category": "Plumbing",
+        "observation": "Observed water softener is not maintained in good repair or is not repaired by law. Observed Water Softener found in disrepair by leaking fresh water onto floor below"
+      },
+      {
+        "category": "Food Identification, Safe, Unadulterated and Honestly Presented",
+        "observation": "Observed food that is not readily and unmistakably recognized removed from original packaging without proper labeling or identification. Working Container of Food: Food service container with sugar/ salt and spices Location: Back kitchen"
+      },
+      {
+        "category": "Cold Holding",
+        "observation": ""
+      }
+    ]
+  },
+  {
+    "name": "PACIFICA ITALIA INC.",
+    "address": "5500 ACADEMY RD NE",
+    "date": "2026-08-11",
     "outcome": "conditional",
     "operational_status": "Open",
     "city": "Albuquerque",
@@ -552,98 +248,59 @@
     "violations": []
   },
   {
-    "name": "PETER PIPER PIZZA",
-    "address": "3109 SAN MATEO BLVD NE",
-    "date": "2026-08-04",
-    "outcome": "approved",
+    "name": "PALETERIA LA MICHOACANA",
+    "address": "4501 4TH ST NW",
+    "date": "2026-08-14",
+    "outcome": "conditional",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
       {
+        "category": "Designated Areas",
+        "observation": "Observed facility did not provide a designated area for employees to eat, drink, or use tobacco products."
+      },
+      {
+        "category": "Operation and Maintenance",
+        "observation": "Observed handwashing sink(s) without a handwashing sign. Location: Men's Restroom"
+      },
+      {
+        "category": "Physical Facilities, Cleaning",
+        "observation": "Observed buildup and debris on the floors in the hard-to-reach areas under and behind equipment and shelfs"
+      },
+      {
+        "category": "Consumer Advisories",
+        "observation": "Observed no written notification of the presence of major food allergens for unpackaged food served or sold to consumers."
+      },
+      {
         "category": "Surface Not Clean",
-        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located Fans in kitchen, the chest freezer by back door, the sprayer for three-compartment sinks and reach in coolers The condition of the surface was food and soil debris buildup"
+        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located Kitchen fans and Sprayer for three-compartment sink The condition of the surface was debris buildup"
       },
       {
         "category": "Physical Facilities, Construction and Repair",
-        "observation": "Observed the following areas of the facility in disrepair. Observed walls by soda machine and around three-compartment sink in disrepair by missing drywall PETER PIPER PIZZA - 3109 SAN MATEO BLVD NE Food Establishment Class C Date: 08/04/2026 - #: RT-FOODEST-034195-2026 - Inspection Result: Closure Re-Inspection Required Complaint This inspection was the result of a citizen complaint that was substantiated."
+        "observation": "Observed the following areas of the facility in disrepair. Observed HVAC vent in ware washing area in disrepair by Missing vent above ware washing PALETERIA LA MICHOACANA - 4501 4TH ST NW - Conditional Approved PALETERIA LA MICHOACANA - 4501 4TH ST NW Food Establishment Class B Date: 08/14/2026 - #: RT-FOODEST-012844-2025 - Inspection Result: Conditional Approved"
       },
       {
         "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": "Observed quaternary ammonium compound solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: All buckets in kitchen Concentration: 0ppm Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine, Can opener, and Food slicer Location: Kitchen area Condition of the Location: Brown and black organic substance on inside of ice machine dripping onto the ice in bin. Dried food debris on Can opener blade, and Food slicer"
-      },
-      {
-        "category": "Poisonous and Toxic/Chemical Substances",
-        "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Spray bottle Alleged Material: Unknown"
+        "observation": ""
       }
     ]
   },
   {
-    "name": "PETER PIPER PIZZA",
-    "address": "3109 SAN MATEO BLVD NE",
-    "date": "2026-08-04",
-    "outcome": "closed",
+    "name": "PALETERIA LA MICHOACANA",
+    "address": "4501 4TH ST NW",
+    "date": "2026-08-11",
+    "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": []
   },
   {
-    "name": "QUALITY INN AND SUITES",
-    "address": "5601 ALAMEDA BLVD NE",
-    "date": "2026-08-05",
-    "outcome": "approved",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": [
-      {
-        "category": "Personal Cleanliness",
-        "observation": "Observed employee wearing unapproved jewelry while preparing food. Food Preparation Activity: Actively working with open food items Inappropriate Jewelry Observed: Wrist watches"
-      },
-      {
-        "category": "Physical Facilities, Cleaning",
-        "observation": "Observed a soiled mop not in use, stored directly on the floor. Observed buildup and debris on the floors, floor drains, walls and ceiling. With substantial buildup in ware washing area"
-      },
-      {
-        "category": "Storage",
-        "observation": "Observed utensils during a pause in use stored incorrectly. Utensil was stored in food with their handle not above the top of the food and the container. Utensil Type: Scoops and cups Location: Throughout kitchen area Condition of the Location: Scoops and cups stored in food containers with handles directly touching the food product inside Observed equipment was not air dried and was wet stacked. Location: Ware washing area Equipment Type: Food service pans Manner: not air dried and stacked wet"
-      },
-      {
-        "category": "Surface Not Clean",
-        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located Fans in kitchen, the chest freezer by back door, the sprayer for three-compartment sinks and reach in coolers The condition of the surface was food and soil debris buildup"
-      },
-      {
-        "category": "Physical Facilities, Construction and Repair",
-        "observation": "Observed the following areas of the facility in disrepair. Observed walls by soda machine and around three-compartment sink in disrepair by missing drywall QUALITY INN AND SUITES - 5601 ALAMEDA BLVD NE - Approved QUALITY INN AND SUITES - 5601 ALAMEDA BLVD NE Food Establishment Class B Date: 08/05/2026 - #: RT-FOODEST-072670-2026 - Inspection Result: Approved"
-      },
-      {
-        "category": "Training Records",
-        "observation": ""
-      },
-      {
-        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Scoops, pans, pots, re-usable containers and other kitchen equipment. Location: Kitchen and clean dish storage rack Condition of the Location: Observed a heavy amount flies landing on and contaminating food contact surfaces within the kitchen. Including those stored in the clean dish storage area. Everything must be properly cleaned and sanitized."
-      },
-      {
-        "category": "Pest Control",
-        "observation": "Observed pests in the facility with no control methods in place. Location: All throughout kitchen, dish pit, storage area and lobby Pest Type: Excessive flies Pest Condition: Living Recommended that the facility installs an appropriate flying insect pest control device to help eradicate the infestation."
-      },
-      {
-        "category": "Knowledgeable",
-        "observation": "Observed that the person in charge was unable to demonstrate knowledge of foodborne disease prevention and other requirements of the Food Code and local ordinances. Knowledge Tested: Facility had numerous priority, and priority foundation violations. Additionally, PIC failed to prevent an imminent health hazard in the form of a fly infestation and lack of refrigeration from occurring inside the kitchen. The PIC also did not know proper refrigeration temperatures needed to keep food safe and out of temperature abuse."
-      },
-      {
-        "category": "Plumbing",
-        "observation": "Observed mop sink faucet and 3 compartment sink faucet are not maintained in good repair or are not repaired by law. Observed faucets found in disrepair by having significant leaks that need to be repaired and brought into compliance. Also observed drain hose for the ice machine is draining directly on floor below"
-      }
-    ]
-  },
-  {
-    "name": "QUALITY INN AND SUITES",
-    "address": "5601 ALAMEDA BLVD NE",
-    "date": "2026-08-03",
-    "outcome": "failed",
+    "name": "PRESCHOOL IMPRESSION LLC",
+    "address": "4301 ATRISCO DR NW",
+    "date": "2026-08-13",
+    "outcome": "conditional",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
@@ -652,91 +309,103 @@
   {
     "name": "Quesadilla Way LLC",
     "address": "5305 GIBSON BLVD SE",
-    "date": "2026-08-07",
-    "outcome": "closed",
-    "operational_status": "Closed",
+    "date": "2026-08-13",
+    "outcome": "failed",
+    "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": []
   },
   {
-    "name": "SONIC DRIVE IN",
-    "address": "6420 CENTRAL AVE SW",
-    "date": "2026-08-06",
-    "outcome": "conditional",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": [
-      {
-        "category": "Plumbing",
-        "observation": "Observed an inadequate air gap at floor drain located under located three-compartment."
-      },
-      {
-        "category": "Testing Devices",
-        "observation": "Observed no testing kit or other device to measure the concentration of chemical sanitizing solution. SOM Hotels LLC DBA HAMPTON INN & SUITES - 6150 ILIFF RD NW Retail Food Establishment Class 3 Date: 08/06/2026 - #: RT-RET-106925-2025 - Inspection Result: Approved SONIC DRIVE IN - 6420 CENTRAL AVE SW - Conditional Approved SONIC DRIVE IN - 6420 CENTRAL AVE SW Food Establishment Class C Date: 08/06/2026 - #: RT-FOODEST-078385-2025 - Inspection Result: Conditional Approved Complaint This inspection was the result of a citizen complaint that was substantiated."
-      },
-      {
-        "category": "Maintenance and Operation",
-        "observation": "Observed equipment not maintained in good repair. Location: back area Type of Equipment: Walk In Cooler Condition of the equipment: step is broken."
-      },
-      {
-        "category": "Surface Not Clean",
-        "observation": ""
-      }
-    ]
-  },
-  {
-    "name": "STARRY MOON WEI CHUAN",
-    "address": "8001 WYOMING BLVD NE",
-    "date": "2026-08-05",
+    "name": "Saint Martin\u2019s Center",
+    "address": "1201 3RD ST NW",
+    "date": "2026-08-13",
     "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
       {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine Location: Back of house Condition of the Location: Observed red and orange organic matter buildup on ice chute and deflector plate."
+      },
+      {
         "category": "Plumbing",
-        "observation": "Observed toilet lever flush handle in women's restroom is not maintained in good repair or is not repaired by law. Observed toilet lever flush handle found in disrepair by not being securely connected to the tank and is loose causing it to come loose after flushing toilet."
+        "observation": "Observed an inadequate air gap at floor drain located under three-compartment sink. SANDIA CHEVRON - 1 HOTEL CIR NE - Conditional Approved SANDIA CHEVRON - 1 HOTEL CIR NE Retail Food Establishment Class 3 Date: 08/13/2026 - #: PT0123597 - Inspection Result: Conditional Approved"
+      },
+      {
+        "category": "Disposition of Returned, Previously Served Or Reconditioned",
+        "observation": "Observed food that is unsafe for consumption present inside the facility. Food: Mitragyna Speciosa (Kratom) Location: Display case by front door Condition: Kratom has been banned for sale in Albuquerque"
+      },
+      {
+        "category": "Operations",
+        "observation": "Observed that the facility was operating with an expired permit."
+      },
+      {
+        "category": "Food Separation",
+        "observation": ""
+      }
+    ]
+  },
+  {
+    "name": "Saint Martin\u2019s Center",
+    "address": "1201 3RD ST NW",
+    "date": "2026-08-13",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "SANDIA CHEVRON",
+    "address": "1 HOTEL CIR NE",
+    "date": "2026-08-13",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "TOKYO BANGKOK",
+    "address": "4959 PAN AMERICAN FWY NW, B",
+    "date": "2026-08-10",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Surface Not Clean",
+        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located on toaster oven, cookie display case and soda machine nozzles. The condition of the surface was soiled with food debris. TOKYO BANGKOK - 4959 PAN AMERICAN FWY NW, B - Approved TOKYO BANGKOK - 4959 PAN AMERICAN FWY NW, B Food Establishment Class C Date: 08/10/2026 - #: CAC-Food-075759-2026 - Inspection Result: Approved Corrective action taken during the routine inspection resulted in the facility being upgraded from a Conditional Approved Status to Approved Status. The person in charge promptly addressed and corrected one of the violations noted in the original inspection report while on site. The following priority violation was corrected on site: - Time/Temperature Control for Safety Food, Cold Holding. Observed PIC place bean sprouts on ice and inside a prep top cooler during inspection. TOKYO BANGKOK - 4959 PAN AMERICAN FWY NW, B Food Establishment Class C Date: 08/10/2026 - #: PT0154856 - Inspection Result: Conditional Approved"
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed chlorine solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Dish machine. Concentration: 0ppm"
+      },
+      {
+        "category": "Plumbing",
+        "observation": "Observed piping under three-compartment sink is not maintained in good repair or is not repaired by law. Observed piping under three-compartment sink found in disrepair by leaking water at the time of inspection."
       },
       {
         "category": "Training Records",
         "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
       },
       {
-        "category": "Food Identification, Safe, Unadulterated and Honestly Presented",
-        "observation": "Observed food offered for human consumption in a way that misleads or misinforms the consumer. Food: Dubai Chocolate Bars. Location: Upright cooler. Condition: Observed labels on chocolate bars have been partially removed. Observed labels available are ingredient and allergen information but information for the food processing company was removed."
-      },
-      {
-        "category": "Installation",
-        "observation": "Observed handwashing sink with hot water not available. Location: Men's and Women's restrooms. Condition: 80\u00b0F."
-      },
-      {
         "category": "Cold Holding",
-        "observation": "Observed food item with label stating, \"refrigerate after opening\" not stored in cold holding unit and measuring above 41\u00b0F at the time of inspection. Location: stored on top of prep top cooler. Food Items: passion fruit popping pearls. Temperature: 61\u00b0F."
-      },
-      {
-        "category": "Operations",
-        "observation": "Observed that the facility was operating with an expired permit."
+        "observation": "Observed food items being held out of cold holding unit measuring above 41\u00b0F. Location: on prep table next to prep top cooler. Food Items: bean sprouts. Temperature: 66\u00b0F"
       },
       {
         "category": "Physical Facilities, Cleaning",
-        "observation": "Observed buildup and debris on the floor underneath and behind equipment."
-      },
-      {
-        "category": "Surface Not Clean",
-        "observation": "Observed nonfood contact surface with the buildup of soil residues. Location: in stainless steel cabinets underneath equipment and on chest freezer internal surfaces. Condition: observed dark colored buildup and debris on the bottom surfaces of cabinets and ice buildup and debris on the internal surface of the chest freezer at the time of inspection."
-      },
-      {
-        "category": "Physical Facilities, Construction and Repair",
-        "observation": "Observed floor tile in front prep area is not smooth and easily cleanable. Observed broken and cracked tiles at the time of inspection."
+        "observation": "Observed buildup, debris and standing water on the floor in the following areas: 1. debris and buildup on the floor underneath shelving in dry storage area. 2. standing water on the floor in basement storage room. PIC stated that water is leaking from neighboring facility. Multiple plumbers have been contacted to attempt to remedy leak. However, the leak stops for one week and then begins again. 3. buildup and debris on the floor underneath and behind equipment in the facility's kitchen line, sushi area and warewashing area."
       }
     ]
   },
   {
-    "name": "STARRY MOON WEI CHUAN",
-    "address": "8001 WYOMING BLVD NE",
-    "date": "2026-08-05",
+    "name": "TOKYO BANGKOK",
+    "address": "4959 PAN AMERICAN FWY NW, B",
+    "date": "2026-08-10",
     "outcome": "conditional",
     "operational_status": "Open",
     "city": "Albuquerque",
@@ -744,36 +413,32 @@
     "violations": []
   },
   {
-    "name": "STONEFACE TAVERN",
-    "address": "8201 SAN PEDRO DR NE",
-    "date": "2026-08-06",
+    "name": "WECKS",
+    "address": "5115 CENTRAL AVE NE",
+    "date": "2026-08-13",
     "outcome": "approved",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
     "violations": [
       {
-        "category": "Training Records",
-        "observation": "Observed that the food establishment does not have a certified food protection manager on staff. Observed that food employees were not in possession of a food handler card or had been trained in another approved food safety course."
-      },
-      {
-        "category": "Operation and Maintenance",
-        "observation": "handwashing sinks shall be provided with a supply of hand cleanser. Instructed PIC to ensure that hand cleanser is available at all times of operation. Observed PIC instruct employee to restock handwashing cleanser. Observed handwashing cleanser restocked during inspection. Violation corrected on site. Observed no handwashing cleanser available at handwashing sink(s). Location: closest hand washing sink to walk in freezer and cooler. to train food employees that handwashing facilities can be utilized for no other purpose other than handwashing. Observed PIC reminding employees to discontinue using hand washing sink for dumping ice. Observed handwashing sink used for purpose other than handwashing. Location: near server line north wall. Manner: observed ice inside basin of hand washing sink at the time of inspection."
-      },
-      {
-        "category": "Personal Cleanliness",
-        "observation": "Observed a food employee without proper facial hair restraints. Location: kitchen area. Activity: restocking coolers with food items. STONEFACE TAVERN - 8201 SAN PEDRO DR NE Food Establishment Class B Date: 08/06/2026 - #: PT0044764 - Inspection Result: Approved"
+        "category": "Date Marking and Disposition",
+        "observation": "Observed ready-to-eat time and temperature controlled for safety food prepared and held within the establishment with no date marking indicators. Location: Walk in cooler Food Items: Red chile sauce Expiration Dates: 8/4 WECKS - 5115 CENTRAL AVE NE Food Establishment Class C Date: 08/11/2026 - #: CAC-Food-075975-2026 - Inspection Result: Conditional Approved Routine Food Establishment Inspection. Inspection resulted in a Closure. Facility was not closed at the time of inspection due to PIC correcting three (3) Priority violations and two (2) Priority Foundation violations on site bringing score back up to a Conditional Approved status (Yellow sticker). PIC was instructed to send photo documentation of corrections and repairs to contact information provided on business card. Facility will remain under a Conditional Approved (Yellow sticker) status until next routine inspection. Facility can have Yellow sticker removed by providing photo documentation of violation that were not corrected on site to CHPD inspector and CHPD inspector has reviewed and approved corrections. 311 complaint was not justified."
       },
       {
         "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
-        "observation": "foods every 4 hours. Observed employee removing drip cups and nozzles and cleaning and sanitizing them during inspection. Violation corrected on site. Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: bar soda gun nozzle and drip cup. Location: along bar top. Condition of the Location: observed debris and buildup in the drip cup and on the bar gun nozzle."
+        "observation": "Violation corrected on by PIC removing and discarding ice. PIC also cleaned and sanitized unit Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine Location: Back of house Condition of the Location: Observed orange organic matter buildup on ice deflector plate and ice chute"
+      },
+      {
+        "category": "Medications and First Aid Kits",
+        "observation": "Violation corrected on site by PIC relocating container of Aspirin to a designated area. Observed employee medication improperly stored or labeled. Location: Above prep top cooler Label Condition: Intact Medication Name: Aspirin"
       }
     ]
   },
   {
-    "name": "STONEFACE TAVERN",
-    "address": "8201 SAN PEDRO DR NE",
-    "date": "2026-08-06",
+    "name": "WECKS",
+    "address": "5115 CENTRAL AVE NE",
+    "date": "2026-08-11",
     "outcome": "conditional",
     "operational_status": "Open",
     "city": "Albuquerque",
@@ -781,41 +446,10 @@
     "violations": []
   },
   {
-    "name": "THE HUMAN BEAN",
-    "address": "7341 SAN ANTONIO DR NE",
-    "date": "2026-08-07",
-    "outcome": "approved",
-    "operational_status": "Open",
-    "city": "Albuquerque",
-    "county": "Bernalillo",
-    "violations": [
-      {
-        "category": "Physical Facilities, Cleaning",
-        "observation": "Observed buildup and debris on the floor underneath equipment in bar area at the time of inspection. THE HUMAN BEAN - 7341 SAN ANTONIO DR NE - Approved THE HUMAN BEAN - 7341 SAN ANTONIO DR NE Food Establishment Class C Date: 08/07/2026 - #: CAC-Food-075074-2026 - Inspection Result: Approved Corrective action taken during the routine inspection resulted in the facility being upgraded from a Conditional Approved Status to Approved Status. The person in charge promptly addressed and corrected a violation noted in the original inspection report while on site. The following priority foundation violation was corrected on site: -Common Name-Working Containers. Observed PIC label spray bottle of sanitizer during inspection. THE HUMAN BEAN - 7341 SAN ANTONIO DR NE Food Establishment Class C Date: 08/07/2026 - #: PT0161209 - Inspection Result: Conditional Approved"
-      },
-      {
-        "category": "Poisonous and Toxic/Chemical Substances",
-        "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Spray Bottle. Alleged Material: Quat Sanitizer."
-      },
-      {
-        "category": "Plumbing",
-        "observation": "Observed an inadequate air gap at the following locations: 1. drain pipe at three-compartment sink is too long and causing the pipe end to go into the floor drain making it below the flood level rim of the floor drain. 2. the hose at the service sink is too long and is direct contact with the bottom of the service sink basin."
-      },
-      {
-        "category": "Toilet Facilities",
-        "observation": "Observed toilet room is not equipped with a self-closing door; or the door is propped open."
-      },
-      {
-        "category": "Operations",
-        "observation": "Observed that the facility was operating with an expired permit."
-      }
-    ]
-  },
-  {
-    "name": "THE HUMAN BEAN",
-    "address": "7341 SAN ANTONIO DR NE",
-    "date": "2026-08-07",
-    "outcome": "conditional",
+    "name": "WECKS",
+    "address": "5115 CENTRAL AVE NE",
+    "date": "2026-08-11",
+    "outcome": "closed",
     "operational_status": "Open",
     "city": "Albuquerque",
     "county": "Bernalillo",
