@@ -33,7 +33,8 @@ exclude:
   - .github/
   - README.md
   - LICENSE
-  - agents.md
+  - AGENTS.md
+  - docs/
   - requirements.txt
   - "*.py"
 
