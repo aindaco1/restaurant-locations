@@ -32,6 +32,7 @@ test("cache rule matches only fingerprinted or versioned resources", () => {
   ).rule;
   assert.match(cacheRule.expression, /\/assets\/\*\.\*\.\*/);
   assert.match(cacheRule.expression, /violations_latest\.json/);
+  assert.match(cacheRule.expression, /violations_browser\.v1\.json/);
   assert.match(cacheRule.expression, /query contains "v="/);
   assert.doesNotMatch(cacheRule.expression, /manifest\.json/);
 });
