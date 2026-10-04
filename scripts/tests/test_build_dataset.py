@@ -6,6 +6,7 @@ Unit tests for dataset build orchestration
 import json
 import sys
 from pathlib import Path
+import pytest
 
 # Add scripts to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -83,3 +84,33 @@ def test_pipeline_manifest_describes_merged_latest_dataset(tmp_path, monkeypatch
     assert manifest['total_records'] == 2
     assert manifest['datasets']['latest']['records'] == 2
     assert manifest['cities']['Albuquerque'] == 2
+
+
+@pytest.mark.parametrize('failure', ['corrupt_archive', 'empty_fetch', 'fetch_error', 'normalize_error'])
+def test_failed_refresh_preserves_all_existing_files(tmp_path, monkeypatch, failure):
+    archive = [make_record('existing', '2026-01-09')]
+    files = {
+        'violations_latest.json': '{broken' if failure == 'corrupt_archive' else json.dumps(archive),
+        'manifest.json': '{"original": true}',
+        'abq_fake.json': '["original raw"]',
+        'snapshots/violations_previous.json': '["original snapshot"]',
+    }
+    for name, content in files.items():
+        path = tmp_path / name
+        path.parent.mkdir(exist_ok=True)
+        path.write_text(content)
+
+    class FailingScraper(FakeScraper):
+        def fetch_all_inspections(self):
+            if failure == 'corrupt_archive':
+                pytest.fail('Must reject corrupted archive before fetching')
+            if failure == 'fetch_error':
+                raise RuntimeError('Source unavailable')
+            return [] if failure == 'empty_fetch' else super().fetch_all_inspections()
+
+    monkeypatch.setattr(build_dataset, 'ABQPDFScraper', FailingScraper)
+    # The fake fetch is intentionally not a valid raw record, so actual
+    # normalization raises instead of silently dropping it.
+    with pytest.raises((ValueError, RuntimeError)):
+        build_dataset.DatasetBuilder(str(tmp_path)).run_pipeline()
+    assert {str(path.relative_to(tmp_path)): path.read_text() for path in tmp_path.rglob('*.json')} == files

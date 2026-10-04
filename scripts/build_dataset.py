@@ -9,11 +9,11 @@ Orchestrates the full data pipeline:
 5. Save datasets to data/
 """
 
-import os
 import sys
 import json
 import hashlib
 import logging
+import tempfile
 from datetime import datetime
 from pathlib import Path
 from typing import List, Dict
@@ -23,6 +23,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from scrape_abq import ABQPDFScraper
 from normalize import normalize_dataset
+from archive import merge_archive, validate_archive, write_json
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -57,59 +58,39 @@ class DatasetBuilder:
             'files_generated': []
         }
         
-        # Step 1: Scrape ABQ PDFs (only data source)
-        logger.info("\n[1/3] Scraping ABQ PDFs...")
-        abq_file = None
-        nmed_file = None
-        try:
-            scraper = ABQPDFScraper()
-            abq_records = scraper.fetch_all_inspections()
-            if not abq_records:
-                logger.warning("ABQ scraper returned 0 records - PDF may have changed format")
-            abq_file = scraper.save_raw_data(abq_records, str(self.output_dir))
-            metadata['abq_records'] = len(abq_records)
-        except Exception as e:
-            logger.error(f"ABQ scrape failed: {e}")
-            logger.warning("Continuing with empty ABQ dataset")
-        
-        # Step 2: Normalize data
-        logger.info("\n[2/3] Normalizing data...")
-        normalized = normalize_dataset(nmed_file, abq_file)
-        metadata['total_records'] = len(normalized)
-        
-        # Step 3: Save datasets
-        logger.info("\n[3/3] Saving datasets...")
-        
-        # Load existing data to merge (accumulate over time)
+        # Read and validate before fetching or writing anything. A damaged archive
+        # must never be treated as an empty starting point.
         latest_file = self.output_dir / 'violations_latest.json'
-        existing_data = []
-        if latest_file.exists():
-            try:
-                with open(latest_file, 'r') as f:
-                    existing_data = json.load(f)
-                logger.info(f"Loaded {len(existing_data)} existing records")
-            except Exception as e:
-                logger.warning(f"Could not load existing data: {e}")
-        
-        # Merge with new data (deduplicate by ID)
-        existing_ids = {record['id'] for record in existing_data}
-        new_records = [record for record in normalized if record['id'] not in existing_ids]
-        
-        merged_data = existing_data + new_records
-        logger.info(f"Added {len(new_records)} new records, total: {len(merged_data)}")
-        
-        # Save merged dataset
-        with open(latest_file, 'w') as f:
-            json.dump(merged_data, f, indent=2)
-        logger.info(f"Saved latest dataset: {latest_file}")
+        existing_data = json.loads(latest_file.read_text()) if latest_file.exists() else []
+        validate_archive(existing_data, require_current_ids=False)
+        logger.info(f"Loaded {len(existing_data)} existing records")
+
+        logger.info("[1/3] Scraping ABQ PDFs...")
+        scraper = ABQPDFScraper()
+        abq_records = scraper.fetch_all_inspections()
+        if not abq_records:
+            raise ValueError('ABQ scraper returned 0 eligible records; preserving files. Check the source report.')
+        metadata['abq_records'] = len(abq_records)
+
+        logger.info("[2/3] Normalizing data...")
+        # Validate the entire fetch before overwriting a weekly raw file.
+        with tempfile.TemporaryDirectory() as temporary:
+            input_file = Path(temporary) / 'abq.json'
+            input_file.write_text(json.dumps(abq_records))
+            normalized = normalize_dataset(None, str(input_file))
+        merged_data = merge_archive(existing_data, normalized)
+        logger.info(f"Added {len(merged_data) - len(existing_data)} new records, total: {len(merged_data)}")
+
+        logger.info("[3/3] Saving datasets...")
+        scraper.save_raw_data(abq_records, str(self.output_dir))
+        write_json(latest_file, merged_data)
         metadata['files_generated'].append(str(latest_file))
         metadata['total_records'] = len(merged_data)
-        
+
         # Save monthly snapshot
         now = datetime.now()
         snapshot_file = self.snapshots_dir / f'violations_{now.strftime("%Y-%m")}.json'
-        with open(snapshot_file, 'w') as f:
-            json.dump(normalized, f, indent=2)
+        write_json(snapshot_file, normalized)
         logger.info(f"Saved monthly snapshot: {snapshot_file}")
         metadata['files_generated'].append(str(snapshot_file))
         
@@ -118,8 +99,7 @@ class DatasetBuilder:
         manifest = self.generate_manifest(merged_data)
         
         manifest_file = self.output_dir / 'manifest.json'
-        with open(manifest_file, 'w') as f:
-            json.dump(manifest, f, indent=2)
+        write_json(manifest_file, manifest)
         logger.info(f"Saved manifest: {manifest_file}")
         metadata['files_generated'].append(str(manifest_file))
         
@@ -189,15 +169,12 @@ class DatasetBuilder:
         Returns:
             True if valid, False otherwise
         """
-        required_fields = ['id', 'source', 'establishment', 'inspection', 'score', 'links']
-        
-        for i, record in enumerate(dataset):
-            for field in required_fields:
-                if field not in record:
-                    logger.error(f"Record {i} missing required field: {field}")
-                    return False
-        
-        logger.info(f"Schema validation passed for {len(dataset)} records")
+        try:
+            validate_archive(dataset)
+        except (ValueError, TypeError, KeyError) as error:
+            logger.error(f"Archive validation failed: {error}")
+            return False
+        logger.info(f"Schema and identity validation passed for {len(dataset)} records")
         return True
 
 

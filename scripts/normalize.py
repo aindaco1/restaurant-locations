@@ -9,7 +9,8 @@ import json
 import logging
 from datetime import datetime
 from typing import List, Dict, Optional
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field
+from archive import record_id
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -170,10 +171,10 @@ class NMEDNormalizer:
             score = SeverityCalculator.calculate(inspection)
             
             # Generate unique ID
-            record_id = f"nm:{establishment.city.lower().replace(' ', '')}:{establishment.name.lower().replace(' ', '-')}:{inspection.date}"
+            normalized_id = record_id({'source': 'NMED', 'establishment': establishment.model_dump(), 'inspection': inspection.model_dump()})
             
             return ViolationRecord(
-                id=record_id,
+                id=normalized_id,
                 source='NMED',
                 establishment=establishment,
                 inspection=inspection,
@@ -231,7 +232,7 @@ class ABQNormalizer:
             inspection = Inspection(
                 date=raw_record['date'],
                 type='routine',
-                outcome=outcome_map.get(raw_record['outcome'], 'approved'),
+                outcome=outcome_map[raw_record['outcome']],
                 violations=violations_list,
                 writeup=generate_writeup(violations_list)
             )
@@ -242,10 +243,10 @@ class ABQNormalizer:
             if violations_list and not score.reasons:
                 score.reasons = [v.desc for v in violations_list[:3]]
             
-            record_id = f"abq:{establishment.name.lower().replace(' ', '-')}:{inspection.date}"
+            normalized_id = record_id({'source': 'ABQ', 'establishment': establishment.model_dump(), 'inspection': inspection.model_dump()})
             
             record = ViolationRecord(
-                id=record_id,
+                id=normalized_id,
                 source='ABQ',
                 establishment=establishment,
                 inspection=inspection,
@@ -281,35 +282,23 @@ def normalize_dataset(nmed_file: str = None, abq_file: str = None) -> List[Dict]
     """
     normalized = []
     
-    # Process NMED data
-    if nmed_file:
-        try:
-            with open(nmed_file, 'r') as f:
-                nmed_data = json.load(f)
-            
-            logger.info(f"Normalizing {len(nmed_data)} NMED records")
-            for record in nmed_data:
-                normalized_record = NMEDNormalizer.normalize(record)
-                if normalized_record:
-                    normalized.append(normalized_record.dict())
-        except Exception as e:
-            logger.error(f"Failed to process NMED file: {e}")
-    
-    # Process ABQ data
-    if abq_file:
-        try:
-            with open(abq_file, 'r') as f:
-                abq_data = json.load(f)
-            
-            logger.info(f"Normalizing {len(abq_data)} ABQ records")
-            for record in abq_data:
-                normalized_record = ABQNormalizer.normalize(record)
-                if normalized_record:
-                    # Already a dict now (includes operational_status)
-                    normalized.append(normalized_record)
-        except Exception as e:
-            logger.error(f"Failed to process ABQ file: {e}")
-    
+    for source, filename, normalizer in (
+        ('NMED', nmed_file, NMEDNormalizer),
+        ('ABQ', abq_file, ABQNormalizer),
+    ):
+        if not filename:
+            continue
+        with open(filename) as stream:
+            raw = json.load(stream)
+        if not isinstance(raw, list):
+            raise ValueError(f'{source} input must be an array')
+        logger.info(f"Normalizing {len(raw)} {source} records")
+        for index, record in enumerate(raw):
+            result = normalizer.normalize(record)
+            if result is None:
+                raise ValueError(f'{source} normalization failed at record {index}; refusing partial archive')
+            normalized.append(result if isinstance(result, dict) else result.model_dump())
+
     logger.info(f"Total normalized records: {len(normalized)}")
     return normalized
 

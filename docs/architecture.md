@@ -14,7 +14,8 @@ The implemented source is City of Albuquerque inspection-report PDFs. The other 
 | [assets/js/theme.js](../assets/js/theme.js) | Persistent theme preference; dark by default |
 | [scripts/scrape_abq.py](../scripts/scrape_abq.py) | PDF discovery, parsing, and raw weekly output |
 | [scripts/normalize.py](../scripts/normalize.py) | Pydantic models, normalization, and inspection scores |
-| [scripts/build_dataset.py](../scripts/build_dataset.py) | Archive merge, snapshots, and manifest |
+| [scripts/build_dataset.py](../scripts/build_dataset.py), [scripts/archive.py](../scripts/archive.py) | Stable identity, archive merge, snapshots, and manifest |
+| [scripts/validate_archive.py](../scripts/validate_archive.py), [scripts/recover_history.py](../scripts/recover_history.py) | Archive preservation gate and audited historical recovery |
 | [scripts/optimize_site.py](../scripts/optimize_site.py), [scripts/dataset_transport.py](../scripts/dataset_transport.py) | Generated JSON compaction, lossless browser transport, and asset fingerprinting |
 | [scripts/validate_site.py](../scripts/validate_site.py) | Generated-site performance contract |
 | [scripts/verify_production.py](../scripts/verify_production.py) | Remote shell and dataset verification |
@@ -25,12 +26,12 @@ The implemented source is City of Albuquerque inspection-report PDFs. The other 
 
 1. The scraper always tries `chpd_main_inspection_report.pdf` and discovers additional report PDFs from the ABQ documents page. The daily workflow is intended to capture the main report before its weekly replacement. The `--weeks` argument currently does not constrain discovery.
 2. Summary pages provide establishments, dates, outcomes, and operational status. Detail pages provide violation categories and observations. For restaurants with at least one adverse inspection in the fetched reports, the scraper retains all fetched inspections, including approved follow-ups.
-3. Raw rows are deduplicated by name, date, and outcome; a duplicate with more violation details wins. They are written to `data/abq_YYYY_WW.json`, replacing that week's raw file on another run.
-4. Normalization creates ABQ records with IDs shaped as `abq:<lowercase-name-with-spaces-replaced>:<date>`. The builder appends normalized records whose IDs are absent from `data/violations_latest.json`; existing records win and are not rescored or replaced.
+3. Raw rows are deduplicated by name, address, date, and outcome; a duplicate with more violation details wins. Adverse-inspection eligibility is evaluated per name/address. Successful, nonempty fetches are written to `data/abq_YYYY_WW.json`, replacing that week's raw file on another run.
+4. Archive identity is `(source, name, address, city, date, outcome)`, with case and repeated whitespace normalized. IDs are `abq:v2:<20 hex characters>` derived from SHA-256 of that tuple; uniqueness is validated. The builder migrates legacy IDs without changing other values and appends unseen identities. Existing records win and are not rescored or replaced. Same-day outcomes and distinct addresses remain separate; incoming repeats are deduplicated within the same fetch.
 5. `data/snapshots/violations_YYYY-MM.json` is overwritten with the current normalized fetch, not the accumulated archive. These snapshots are ignored by Git and uploaded by the data workflow as artifacts with 30-day retention.
 6. The manifest describes the merged archive. Its version is the first eight hex characters of SHA-256 over `json.dumps(dataset, sort_keys=True)`. This hashes the logical JSON serialization, not the deployed file bytes.
 
-The checked-in raw NMED file is historical input and is not read by the active builder. If a scrape fails or returns nothing, the builder preserves a readable existing archive. It may still update timestamps and write empty raw/snapshot files; a successful job alone does not demonstrate that new inspections were fetched.
+The checked-in raw NMED file is historical input and is not read by the active builder. The builder reads and validates the archive before fetching. Unreadable archives, failed downloads/parsing, empty eligible fetches, or any normalization failure stop the job before data files are written. Successful writes use atomic file replacement. CI compares inspection identities against the PR base or pre-push archive and again against the committed archive after a refresh; a larger record count does not excuse losing an older outcome. A successful fetch with zero *new* records remains valid and preserves existing values.
 
 ## Normalized record
 
@@ -38,7 +39,7 @@ The model definitions in [normalize.py](../scripts/normalize.py) and actual [dat
 
 | Field | Current ABQ behavior |
 | --- | --- |
-| `id`, `source` | Name/date ID; source is `ABQ` |
+| `id`, `source` | Versioned composite-identity ID; source is `ABQ` |
 | `operational_status` | Raw `Open`/`Closed` status, default `Open`; added after Pydantic serialization |
 | `establishment` | Name, address, city `Albuquerque`, county `Bernalillo`, and city-center coordinates |
 | `inspection` | Date, type `routine`, normalized outcome, violations, and empty `writeup` |
@@ -85,7 +86,8 @@ These items are deferred or observed implementation limitations, not completed m
 
 - Obtain NMED bulk access before statewide ingestion; adapt and validate the retained normalizer against the actual feed.
 - Align stored scoring, browser ranking, and the public scoring page. Revisit aging scores, missing critical flags, and inspection-history bonuses together.
-- Strengthen archive identity and validation: normalized IDs omit outcome/address, grouping uses name alone, and `--validate` only checks required top-level keys. Normalization errors are logged and skipped rather than always failing the pipeline.
+- Capture source inspection/permit identifiers to distinguish multiple inspections with the same address/date/outcome. Current composite identity preserves distinct outcomes but does not claim one row per permit. Browser restaurant grouping still uses name alone.
+- Expand PDF discovery beyond the first documents page and recognize `.pdf/view` links. The main weekly report remains the reliable daily source; the October 2026 recovery used Git history plus separately checked older PDFs.
 - Add a no-JavaScript results fallback and continue rendered accessibility/performance work. Lighthouse targets remain performance ≥95, accessibility ≥95, and SEO ≥90; they are not certified results.
 - Restore per-report document provenance. Review CSV score output: the exporter reads `insp.score`, while grouping currently stores `individualScore`.
 - Consider geocoding, maps/clustering, distance sorting, historical trends, scouting contact-sheet exports, closure alerts, and immediate refresh triggers after the core data contract is strengthened.

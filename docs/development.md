@@ -27,7 +27,10 @@ For changes to Python data processing, normalization, validation, or deployment 
 
 ```bash
 python -m pytest -q scripts/tests
+python scripts/validate_archive.py --base-ref origin/main
 ```
+
+The archive check validates nested record models and unique composite IDs, and rejects missing historical identities relative to the chosen Git baseline. Fetch that baseline before running it. Tests cover same-day outcomes, distinct addresses, repeated refreshes, failed-fetch preservation, atomic writes, and idempotent historical recovery.
 
 For browser dataset loading/decoding and Cloudflare rule logic:
 
