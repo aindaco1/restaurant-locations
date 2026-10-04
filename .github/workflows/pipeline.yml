@@ -22,7 +22,8 @@ on:
       - '.github/workflows/pipeline.yml'
 
 # Keep workflow alive - GitHub disables scheduled workflows after 60 days of inactivity
-# This workflow self-commits to data/ which triggers pages.yml rebuild
+# Pages deploys the data commit via workflow_run; GITHUB_TOKEN pushes do not
+# trigger a separate push workflow.
 
 permissions:
   contents: write  # Needed to commit data files
@@ -58,7 +59,7 @@ jobs:
       - name: Run unit tests
         run: |
           pytest -q scripts/tests
-          node --test scripts/tests/cloudflare_config.test.mjs
+          node --test scripts/tests/*.test.mjs
       
       - name: Run data pipeline
         if: github.event_name != 'pull_request'

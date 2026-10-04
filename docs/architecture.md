@@ -15,7 +15,7 @@ The implemented source is City of Albuquerque inspection-report PDFs. The other 
 | [scripts/scrape_abq.py](../scripts/scrape_abq.py) | PDF discovery, parsing, and raw weekly output |
 | [scripts/normalize.py](../scripts/normalize.py) | Pydantic models, normalization, and inspection scores |
 | [scripts/build_dataset.py](../scripts/build_dataset.py) | Archive merge, snapshots, and manifest |
-| [scripts/optimize_site.py](../scripts/optimize_site.py) | Generated JSON compaction and asset fingerprinting |
+| [scripts/optimize_site.py](../scripts/optimize_site.py), [scripts/dataset_transport.py](../scripts/dataset_transport.py) | Generated JSON compaction, lossless browser transport, and asset fingerprinting |
 | [scripts/validate_site.py](../scripts/validate_site.py) | Generated-site performance contract |
 | [scripts/verify_production.py](../scripts/verify_production.py) | Remote shell and dataset verification |
 | [scripts/sync_cloudflare_config.mjs](../scripts/sync_cloudflare_config.mjs) | Hostname-scoped Cloudflare rules |
@@ -73,7 +73,11 @@ The visible controls offer date presets (all time, 30, 90, 180, and 365 days), s
 
 Alpine initialization is idempotent. The browser requests the manifest with `cache: 'no-store'`, then fetches a dataset URL containing `?v=<manifest hash>` with `cache: 'force-cache'`. If the manifest cannot be loaded, a timestamp supplies the version fallback. Results and accordions require Alpine/JavaScript; there is no rendered no-JavaScript results fallback.
 
-Production optimization compacts only the generated latest dataset and fingerprints the stylesheet, app/theme scripts, logo, and favicon with 12-character content hashes. Generated HTML/XML references are updated, and the CSS source map is removed. Source JSON and asset filenames remain readable and stable. Cloudflare rule management and deployment verification are described in [operations](operations.md).
+Production optimization retains the complete JSON array at `data/violations_latest.json` and generates `data/violations_browser.v1.json`. The browser file contains `{format: "observations-v1", observations: [...], records: [...]}`: observation strings are deduplicated and sorted together so HTTP compression can reuse phrases across reports; only existing `inspection.violations[].observation` fields become integer indexes. Record order, missing fields, and all other values are preserved. The loader restores strings before the existing filtering, grouping, and export paths run. No inspection is removed or rescored.
+
+Only the generated manifest gains `datasets.latest.browser_url`. The browser prefers that URL, keeps the same manifest hash in `?v=`, and still accepts the ordinary array for local previews, older manifests, or a failed manifest request. The public array URL and logical dataset hash remain unchanged. Build validation compares the entire decoded browser file with the public array and its manifest hash, and applies the 140,000-byte gzip budget to the browser download. Change the format identifier and filename version together if the transport contract changes; immutable caches use the logical data hash rather than an encoding hash.
+
+The optimizer also fingerprints the stylesheet, app/theme scripts, logo, and favicon with 12-character content hashes. Generated HTML/XML references are updated, and the CSS source map is removed. Source JSON and asset filenames remain readable and stable. Cloudflare rule management and deployment verification are described in [operations](operations.md).
 
 ## Follow-up work
 

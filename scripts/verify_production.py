@@ -10,6 +10,8 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, urljoin
 from urllib.request import Request, urlopen
 
+from dataset_transport import BROWSER_DATASET_URL, unpack_dataset
+
 
 ALPINE_URL = "https://cdn.jsdelivr.net/npm/alpinejs@3.16.3/dist/cdn.min.js"
 FINGERPRINTED_APP_PATTERN = re.compile(
@@ -70,6 +72,15 @@ def verify(base_url: str, expected_hash: str, deployment_id: str) -> None:
             f"Production dataset hash {calculated_hash!r} != {expected_hash!r}"
         )
 
+    browser_url = manifest["datasets"]["latest"].get("browser_url")
+    if browser_url != BROWSER_DATASET_URL:
+        raise RuntimeError("Production manifest does not select the browser dataset")
+    browser_payload = json.loads(fetch(urljoin(
+        base_url, f"{browser_url.lstrip('/')}?v={expected_hash}&deploy={deployment_id}"
+    )))
+    if unpack_dataset(browser_payload) != dataset:
+        raise RuntimeError("Production browser dataset does not match the full archive")
+
     print(
         f"Verified production shell and {len(dataset):,} records "
         f"at dataset {expected_hash}"
@@ -96,6 +107,7 @@ def main() -> None:
             RuntimeError,
             TimeoutError,
             json.JSONDecodeError,
+            ValueError,
         ) as error:
             last_error = error
             if attempt == args.attempts:

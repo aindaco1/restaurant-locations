@@ -10,7 +10,7 @@ const VERSIONED_ASSET_PATH_EXPRESSION = [
   "(",
   'http.request.uri.path wildcard r"/assets/*.*.*" or ',
   'http.request.uri.path wildcard r"/favicon.*.svg" or ',
-  '(http.request.uri.path eq "/data/violations_latest.json" and ',
+  '(http.request.uri.path in {"/data/violations_latest.json" "/data/violations_browser.v1.json"} and ',
   'http.request.uri.query contains "v=")',
   ")",
 ].join("");

@@ -38,10 +38,9 @@ document.addEventListener('alpine:init', () => {
               manifest.generated_at ||
               datasetVersion;
 
-            if (latestDataset?.url) {
-              const manifestPath = latestDataset.url.startsWith('/')
-                ? latestDataset.url
-                : `/${latestDataset.url}`;
+            const url = latestDataset?.browser_url || latestDataset?.url;
+            if (url) {
+              const manifestPath = url.startsWith('/') ? url : `/${url}`;
               datasetPath = `${baseurl}${manifestPath}`;
             }
           }
@@ -60,7 +59,7 @@ document.addEventListener('alpine:init', () => {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
         
-        const data = await response.json();
+        const data = this.decodeDataset(await response.json());
         this.violations = data;
         // Group immediately after loading
         this.filteredViolations = this.groupByRestaurant(data);
@@ -73,6 +72,27 @@ document.addEventListener('alpine:init', () => {
         this.violations = [];
         this.filteredViolations = [];
       }
+    },
+
+    decodeDataset(payload) {
+      // Local previews and older manifests still serve the public JSON array.
+      if (Array.isArray(payload)) return payload;
+      if (payload?.format !== 'observations-v1' ||
+          !Array.isArray(payload.records) || !Array.isArray(payload.observations) ||
+          !payload.observations.every(text => typeof text === 'string')) {
+        throw new Error('Unsupported browser dataset format');
+      }
+      for (const record of payload.records) {
+        for (const violation of record.inspection.violations) {
+          if (!Object.hasOwn(violation, 'observation')) continue;
+          const index = violation.observation;
+          if (!Number.isInteger(index) || index < 0 || index >= payload.observations.length) {
+            throw new Error('Invalid observation reference');
+          }
+          violation.observation = payload.observations[index];
+        }
+      }
+      return payload.records;
     },
 
     groupByRestaurant(violations) {

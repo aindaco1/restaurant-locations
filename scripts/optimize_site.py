@@ -6,6 +6,8 @@ import hashlib
 import json
 from pathlib import Path
 
+from dataset_transport import BROWSER_DATASET_URL, pack_dataset, unpack_dataset
+
 
 FINGERPRINT_TARGETS = (
     Path("assets/main.css"),
@@ -26,6 +28,24 @@ def compact_json(path: Path) -> tuple[int, int]:
     temporary_path.write_text(compact, encoding="utf-8")
     temporary_path.replace(path)
     return before, path.stat().st_size
+
+
+def prepare_browser_dataset(site_dir: Path) -> Path:
+    """Keep the public JSON array and advertise a lossless browser download."""
+    data = json.loads((site_dir / "data/violations_latest.json").read_text())
+    packed = pack_dataset(data)
+    if unpack_dataset(packed) != data:
+        raise ValueError("Browser dataset does not preserve the full archive")
+    browser_path = site_dir / BROWSER_DATASET_URL.lstrip("/")
+    browser_path.write_text(
+        json.dumps(packed, ensure_ascii=False, separators=(",", ":")),
+        encoding="utf-8",
+    )
+    manifest_path = site_dir / "data/manifest.json"
+    manifest = json.loads(manifest_path.read_text())
+    manifest["datasets"]["latest"]["browser_url"] = BROWSER_DATASET_URL
+    manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    return browser_path
 
 
 def prepare_stylesheet(site_dir: Path) -> None:
@@ -82,6 +102,7 @@ def main() -> None:
         raise SystemExit(f"Generated dataset not found: {dataset_path}")
 
     before, after = compact_json(dataset_path)
+    browser_path = prepare_browser_dataset(args.site_dir)
     reduction = before - after
     prepare_stylesheet(args.site_dir)
     replacements = fingerprint_assets(args.site_dir)
@@ -90,6 +111,7 @@ def main() -> None:
         f"({reduction:,} bytes removed)"
     )
     print("Fingerprint assets: " + ", ".join(replacements.values()))
+    print(f"Prepared lossless browser dataset: {browser_path}")
 
 
 if __name__ == "__main__":

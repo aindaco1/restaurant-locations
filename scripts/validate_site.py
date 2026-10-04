@@ -3,9 +3,12 @@
 
 import argparse
 import gzip
+import hashlib
 import json
 from pathlib import Path
 import re
+
+from dataset_transport import BROWSER_DATASET_URL, unpack_dataset
 
 
 ALPINE_URL = "https://cdn.jsdelivr.net/npm/alpinejs@3.16.3/dist/cdn.min.js"
@@ -57,6 +60,21 @@ def main() -> None:
     dataset_path = site_dir / "data" / "violations_latest.json"
     dataset_bytes = dataset_path.read_bytes()
     dataset = json.loads(dataset_bytes)
+    manifest = json.loads(read(site_dir / "data/manifest.json"))
+    require(
+        manifest["datasets"]["latest"].get("browser_url") == BROWSER_DATASET_URL,
+        "Manifest must select the optimized browser dataset",
+    )
+    browser_bytes = (site_dir / BROWSER_DATASET_URL.lstrip("/")).read_bytes()
+    require(
+        unpack_dataset(json.loads(browser_bytes)) == dataset,
+        "Browser dataset does not preserve the full archive",
+    )
+    require(
+        hashlib.sha256(json.dumps(dataset, sort_keys=True).encode()).hexdigest()[:8]
+        == manifest["datasets"]["latest"]["hash"],
+        "Generated dataset does not match the manifest hash",
+    )
 
     require(ALPINE_URL in index, "Generated homepage does not pin Alpine.js")
     require(ALPINE_INTEGRITY in index, "Generated homepage lacks Alpine.js SRI")
@@ -101,14 +119,19 @@ def main() -> None:
     )
     require(isinstance(dataset, list), "Generated dataset must be a JSON array")
     require(b"\n" not in dataset_bytes, "Production dataset was not compacted")
+    require(b"\n" not in browser_bytes, "Browser dataset was not compacted")
 
     javascript_bytes = app_script.encode() + theme_script.encode()
     javascript_gzip = len(gzip.compress(javascript_bytes, compresslevel=9))
-    dataset_gzip = len(gzip.compress(dataset_bytes, compresslevel=9))
+    dataset_gzip = len(gzip.compress(browser_bytes, compresslevel=9))
 
     require(javascript_gzip <= 8_000, "First-party JavaScript exceeds 8 KB gzip")
     require(len(stylesheet.encode()) <= 26_000, "Compiled CSS exceeds 26 KB")
-    require(dataset_gzip <= 140_000, "Dataset exceeds 140 KB gzip")
+    require(
+        dataset_gzip <= 140_000,
+        f"Browser dataset is {dataset_gzip:,} B gzip across {len(dataset):,} records; "
+        "exceeds 140,000 B budget",
+    )
 
     print(
         "Validated performance contract: "

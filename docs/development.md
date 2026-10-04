@@ -29,10 +29,10 @@ For changes to Python data processing, normalization, validation, or deployment 
 python -m pytest -q scripts/tests
 ```
 
-For Cloudflare rule logic:
+For browser dataset loading/decoding and Cloudflare rule logic:
 
 ```bash
-node --test scripts/tests/cloudflare_config.test.mjs
+node --test scripts/tests/*.test.mjs
 ```
 
 For site/build changes, run the production sequence used by Pages:
@@ -43,7 +43,7 @@ python3 scripts/optimize_site.py
 python3 scripts/validate_site.py
 ```
 
-Start with a fresh Jekyll build each time: the optimizer renames generated assets and is not a standalone repeatable build command. The performance gate checks combined first-party JavaScript ≤8,000 bytes gzip, compiled CSS ≤26,000 bytes, and the latest dataset ≤140,000 bytes gzip, along with pinned Alpine/integrity, asset fingerprints, cache behavior, and other shell checks. These are build assertions, not a Lighthouse or full accessibility audit.
+Start with a fresh Jekyll build each time: the optimizer renames generated assets and is not a standalone repeatable build command. The performance gate checks combined first-party JavaScript ≤8,000 bytes gzip, compiled CSS ≤26,000 bytes, and the browser dataset ≤140,000 bytes gzip, along with pinned Alpine/integrity, asset fingerprints, cache behavior, and other shell checks. It also verifies that the browser dataset decodes to the entire public archive and matches the manifest hash. Python and Node tests exercise the same archive through both decoders, including legacy array loading and invalid references. These are build assertions, not a Lighthouse or full accessibility audit.
 
 For UI changes, inspect the rendered desktop and mobile layouts, keyboard access, light/dark themes, filters, accordions, and affected exports. For documentation changes, check relative links and confirm contributor docs do not appear in `_site/`.
 
