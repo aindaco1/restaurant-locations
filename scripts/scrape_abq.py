@@ -13,6 +13,7 @@ from typing import List, Dict, Optional
 import requests
 import pdfplumber
 from io import BytesIO
+from archive import canonical, write_json
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -132,7 +133,7 @@ class ABQPDFScraper:
                         page_records = self._parse_summary_page(text)
                         for rec in page_records:
                             # Include outcome in key to allow multiple inspections same day
-                            key = (rec['name'], rec['date'], rec['outcome'])
+                            key = (canonical(rec['name']), canonical(rec['address']), rec['date'], rec['outcome'])
                             if key not in summary_records:
                                 summary_records[key] = rec
                 
@@ -154,7 +155,7 @@ class ABQPDFScraper:
             
         except Exception as e:
             logger.error(f"Failed to parse {pdf_url}: {e}")
-            return []
+            raise
     
     def _extract_violations(self, text: str) -> List[Dict]:
         """Extract violation categories and observed findings from detail page"""
@@ -287,7 +288,7 @@ class ABQPDFScraper:
         restaurant_inspections = {}
         
         for record in all_records:
-            key = record['name'].lower().strip()
+            key = (canonical(record['name']), canonical(record['address']))
             if key not in restaurant_inspections:
                 restaurant_inspections[key] = []
             restaurant_inspections[key].append(record)
@@ -300,12 +301,12 @@ class ABQPDFScraper:
                 # Include ALL inspections for this restaurant
                 filtered_records.extend(inspections)
         
-        # Deduplicate by (name, date, outcome) - allows multiple inspections same day
+        # Deduplicate by (name, address, date, outcome) - allows multiple inspections same day
         seen = set()
         unique_records = []
         
         for record in filtered_records:
-            key = (record['name'].lower().strip(), record['date'], record['outcome'])
+            key = (canonical(record['name']), canonical(record['address']), record['date'], record['outcome'])
             
             if key not in seen:
                 seen.add(key)
@@ -313,7 +314,7 @@ class ABQPDFScraper:
             else:
                 # If exact duplicate, keep the one with more violations
                 for i, existing in enumerate(unique_records):
-                    if (existing['name'].lower().strip(), existing['date'], existing['outcome']) == key:
+                    if (canonical(existing['name']), canonical(existing['address']), existing['date'], existing['outcome']) == key:
                         if len(record['violations']) > len(existing['violations']):
                             unique_records[i] = record
                         break
@@ -329,8 +330,9 @@ class ABQPDFScraper:
         year, week, _ = now.isocalendar()
         filename = os.path.join(output_dir, f'abq_{year}_{week:02d}.json')
         
-        with open(filename, 'w') as f:
-            json.dump(records, f, indent=2)
+        if not records:
+            raise ValueError('Refusing to overwrite raw data with an empty fetch')
+        write_json(filename, records)
         
         logger.info(f"Saved {len(records)} ABQ records to {filename}")
         return filename
@@ -353,8 +355,7 @@ def main():
         scraper.save_raw_data(records, args.output)
     else:
         logger.warning("No ABQ records fetched - PDF URLs may need configuration")
-        logger.info("Creating placeholder file for demo purposes")
-        scraper.save_raw_data([], args.output)
+        raise SystemExit(1)
 
 
 if __name__ == '__main__':

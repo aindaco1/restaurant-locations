@@ -4,7 +4,7 @@ For maintainers refreshing data, deploying the site, or diagnosing stale output.
 
 ## Data refreshes
 
-[Data Pipeline](../.github/workflows/pipeline.yml) runs daily at 02:00 UTC, on manual dispatch, and on relevant pushes/pull requests to `main` (`scripts/**`, `requirements.txt`, and the pipeline workflow). It runs Python and Node tests on every trigger. Pull requests stop after tests; other runs fetch/normalize data, validate required top-level fields, commit changed `data/` files, and upload artifacts. Runs are serialized to avoid concurrent refresh pushes.
+[Data Pipeline](../.github/workflows/pipeline.yml) runs daily at 02:00 UTC, on manual dispatch, and on relevant pushes/pull requests to `main` (`scripts/**`, `data/**`, `requirements.txt`, and the pipeline workflow). It runs Python and Node tests on every trigger. Pull requests also validate the archive and compare inspection identities against their base commit. Other runs fetch/normalize data, validate nested schema and unique IDs, check preservation against the committed archive, commit changed `data/` files, and upload artifacts. Pushes additionally compare against the pre-push archive. Runs are serialized to avoid concurrent refresh pushes.
 
 After completing [Python setup](development.md), refresh locally with:
 
@@ -12,7 +12,7 @@ After completing [Python setup](development.md), refresh locally with:
 python scripts/build_dataset.py --validate
 ```
 
-This fetches remote PDFs and rewrites the local archive, raw weekly file, monthly snapshot, and manifest. Review `git diff --stat -- data` and the changed records before committing. An empty fetch should preserve the existing readable archive; inspect the logged fetched/new/total counts and report dates rather than treating exit status alone as a freshness check.
+This fetches remote PDFs and rewrites the local archive, raw weekly file, monthly snapshot, and manifest. Review `git diff --stat -- data` and the changed records before committing. An empty eligible fetch, source failure, unreadable archive, or normalization failure stops the job before any data file is written. Inspect the logged fetched/new/total counts and report dates rather than treating exit status alone as a freshness check.
 
 To investigate a fetch in a scratch directory without changing the checked-in archive:
 
@@ -80,8 +80,9 @@ The deployment ID supplies a cache-busting query; the verifier does not prove ev
 | --- | --- |
 | Jekyll dependency/build failure | Check the Ruby version and `bundle check`; use the committed lockfile and Sass constraints. Rebuild into a fresh destination such as `bundle exec jekyll build --destination /tmp/healthcode-site-review`. Pass that directory through `--site-dir` to both optimizer and validator. |
 | No results or fetch error | Inspect browser requests for the manifest/dataset, verify `_config.yml` baseurl, and distinguish loading failure from filters or zero restaurant ranking. |
-| Pipeline succeeds without new inspections | Inspect scraper logs, available PDFs, and inspection dates. Review parsed counts and skipped records. `--validate` checks top-level fields, not completeness or freshness. |
-| Archive cannot be read | Preserve the current file and inspect Git history before rerunning. The builder can continue without unreadable prior data, so do not use a rerun as archive recovery. |
+| Pipeline succeeds without new inspections | Inspect scraper logs, available PDFs, and inspection dates. Review parsed counts and report dates. Schema/identity validation cannot establish source completeness or freshness; repeated publication of the same report can legitimately add zero records. |
+| Archive cannot be read | Preserve the current file and inspect Git history before rerunning. The builder stops before fetching or writing. Restore a verified Git version, validate it against the last good archive, then retry. |
+| Archive preservation gate fails | Inspect the missing name/address/date/outcome identities, even if total rows increased. Restore accidentally removed records. For an intentional source correction, review its evidence and handle the baseline change explicitly; do not weaken the gate merely to pass CI. |
 | Production hash mismatch | Confirm the intended revision and Pages job completed, then compare the deployed manifest and dataset using the verifier. Check Cloudflare drift if the shell is altered or caching is inconsistent. |
 | Performance budget failure | Check generated output and recent asset/data growth. Optimize the generated artifact; do not compact readable source JSON to satisfy the build gate. |
 
@@ -97,3 +98,39 @@ The audit enumerated all 458 retained runs: 446 succeeded and 12 failed, all in 
 | May 26: [26433497379](https://github.com/aindaco1/restaurant-locations/actions/runs/26433497379) | Retained annotation shows Bundler exit 5 during Ruby setup; full logs expired (HTTP 410). The next commit, `90fdd91`, pinned compatible Sass dependencies and committed the lockfile, followed by a [successful build/deploy](https://github.com/aindaco1/restaurant-locations/actions/runs/26433675828). Those constraints remain. |
 | November 11, 2025: [19255894692](https://github.com/aindaco1/restaurant-locations/actions/runs/19255894692) | Retained annotations report Pages configuration HTTP 404. Pages is now configured with `build_type: workflow`, and later deployments succeeded. Full logs expired. |
 | November 11, 2025: [19259088095](https://github.com/aindaco1/restaurant-locations/actions/runs/19259088095), [19259150900](https://github.com/aindaco1/restaurant-locations/actions/runs/19259150900), [19262950762](https://github.com/aindaco1/restaurant-locations/actions/runs/19262950762) | Full logs expired; annotations retain only exit 1. Adjacent commits replaced CSS variables used in Sass functions, fixed an undefined theme variable (`1d68112`), and added the missing status-key partial (`b0f5c81`). Subsequent builds succeeded. These are history-supported explanations rather than recovered log diagnoses; the current production build exercises the corrected SCSS. |
+
+
+## Historical recovery — October 4, 2026
+
+The scheduled-run audit found all 238 expected refresh dates successful: 15 weekly runs from November 17, 2025 through February 23, 2026, followed by 223 daily runs through October 4. September had all 30 pulls and October all four due pulls. The current City report covered September 20–26 (amended September 28); all 22 selected outcomes dated September 21–25 were already archived. No October-dated inspections were published in that report yet.
+
+The archive loss occurred in [the February 13 rewrite](https://github.com/aindaco1/restaurant-locations/commit/6b125e2481f422e2c63fdccaf9d9305e68fd23b5): 307 rows with 205 name/date IDs became 221 rows with unique IDs. That removed 102 distinct historical outcomes. The same name/date-only ID also blocked five additional February outcomes from later appends. Restoring both sets brings the audited archive from 799 to 906 outcomes while retaining every pre-recovery field except migrated IDs.
+
+Recovery sources are pinned in [recover_history.py](../scripts/recover_history.py):
+
+- [The last pre-rewrite archive](https://github.com/aindaco1/restaurant-locations/blob/8942a6cd2b102b53e9a070b66f2521e87755a120/data/violations_latest.json) supplies 102 records with original details and stored scores.
+- [The corrected February raw file](https://github.com/aindaco1/restaurant-locations/blob/d822f3c786680e24f9d2431d571dfd2c65108820/data/abq_2026_08.json) supplies five previously unarchived outcomes: Dutch Bros Coffee, Icon Motion Pictures and Music, Il Vicino Nob Hill, Relish Gourmet Sandwiches, and Taco Bell/KFC 24051. These have no recorded violations; normalizing them at recovery time produces zero stored severity because they are older than 180 days. Their adverse outcomes remain intact.
+- [The January 4–10 City PDF](https://www.cabq.gov/environmentalhealth/documents/media-report-1-4-26-1-10-26-1.pdf) independently confirms distinct same-day outcomes, including approved and conditional Allsup's #102460 inspections on January 9 under different permits. Four still-public historical PDFs confirmed 24 of the recovered outcomes.
+
+| Inspection month | Recovered outcomes |
+| --- | ---: |
+| September 2025 | 9 |
+| October 2025 | 22 |
+| November 2025 | 23 |
+| December 2025 | 31 |
+| January 2026 | 17 |
+| February 2026 | 5 |
+
+Eight obsolete `failed` labels from the initial November parser were excluded because corrected raw versions classify those same events as `closed`. Sixteen initial approved-only rows remain excluded by the finder's intended scope. Recovery does not infer historical observations or replace approvals with adverse outcomes.
+
+To review or reproduce the recovery, use a full Git checkout with both pinned commits available:
+
+```bash
+python scripts/recover_history.py             # dry run
+python scripts/recover_history.py --apply     # append missing outcomes and migrate IDs
+python scripts/validate_archive.py --base-ref origin/main
+```
+
+The recovery is idempotent; subsequent runs add zero outcomes. It regenerates the manifest but does not fetch reports or replace raw files/snapshots. Run normal tests and the production build before publishing.
+
+Two coverage gaps remain unresolved: October 13–17, 2025 and January 26–30, 2026. No corresponding records were found in any committed raw-file version, and neither week's PDF was located across all 13 pages of the City's document directory. This does not prove a missed scheduled job or the absence of inspections. The [City's inspection-results page](https://www.cabq.gov/environmentalhealth/food-safety/restaurant-inspection-results) directs historical requests to its public-records service; no request was submitted during this recovery.

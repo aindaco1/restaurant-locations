@@ -11,6 +11,7 @@ on:
     branches: ["main"]
     paths:
       - 'scripts/**'
+      - 'data/**'
       - 'requirements.txt'
       - '.github/workflows/pipeline.yml'
   
@@ -18,6 +19,7 @@ on:
     branches: ["main"]
     paths:
       - 'scripts/**'
+      - 'data/**'
       - 'requirements.txt'
       - '.github/workflows/pipeline.yml'
 
@@ -40,6 +42,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0 # Compare archives against the PR base or pre-push commit.
       
       - name: Setup Python
         uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
@@ -60,6 +64,12 @@ jobs:
         run: |
           pytest -q scripts/tests
           node --test scripts/tests/*.test.mjs
+
+      - name: Reject archive loss in proposed changes
+        if: github.event_name == 'pull_request' || github.event_name == 'push'
+        env:
+          BASE_REF: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: python scripts/validate_archive.py --base-ref "$BASE_REF"
       
       - name: Run data pipeline
         if: github.event_name != 'pull_request'
@@ -68,6 +78,10 @@ jobs:
         run: |
           echo "Running data pipeline..."
           python scripts/build_dataset.py --validate
+
+      - name: Verify refresh preserves the committed archive
+        if: github.event_name != 'pull_request'
+        run: python scripts/validate_archive.py --base-ref HEAD
       
       - name: Check for changes
         if: github.event_name != 'pull_request'
