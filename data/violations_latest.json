@@ -43640,5 +43640,425 @@
       "document": null
     },
     "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:8340a30c780754bcb559",
+    "source": "ABQ",
+    "establishment": {
+      "name": "JAPANESE KITCHEN",
+      "address": "6521 AMERICAS PKWY NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-09-28",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Single-Service",
+          "observation": "Observed single-use containers being re-used. Location: Cold holding units Use: Frozen Seaweed and Calamari Salad containers being reused with existing label still on container. JAPANESE KITCHEN - 6521 AMERICAS PKWY NE Food Establishment Class B Date: 09/28/2026 - #: RT-FOODEST-064117-2025 - Inspection Result: Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed utensil food-contact surface with the buildup of soil residues. Utensil Type: Grater for ginger Location: Stored inside cabinet inside sushi bar area. Condition of the Location: Stored away with substantial ginger debris build up."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Functionality and Accuracy",
+          "observation": "Observed in a mechanically refrigerated food storage unit the temperature measuring device was not placed in the warmest part of the unit. Equipment Location: Cold holding display unit for sushi Thermometer Location: None available"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Not Clean",
+          "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located inside cabinets behind sushi preparation area The surface was made out of synthetic wood The condition of the surface was debris build up and miscellaneous items stored."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Records",
+          "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Raw meats and prepared vegetables in Sushi bar area Activity of the Food: Stored Food Establishments shall calibrate measuring equipment in accordance with the manufacturer recommendations and shall maintain adequate and contemporaneous calibration logs for calibration of equipment. Observed the food establishment does not have calibration logs for temperature measuring devices. KIDS PLANET CDC - 1200 4TH ST SW - Approved KIDS PLANET CDC - 1200 4TH ST SW Food Establishment Class C Date: 09/28/2026 - #: RT-FOODEST-019349-2026 - Inspection Result: Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Training Records",
+          "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Single-Service",
+        "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "Functionality and Accuracy"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:7b6610caeb7afafca358",
+    "source": "ABQ",
+    "establishment": {
+      "name": "JAPANESE KITCHEN",
+      "address": "6521 AMERICAS PKWY NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-09-28",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:fe2a5a03a2e2865a9cf7",
+    "source": "ABQ",
+    "establishment": {
+      "name": "MURPHY EXPRESS #8909",
+      "address": "221 UNSER BLVD SW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-09-29",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:3365929afc4e9a44c984",
+    "source": "ABQ",
+    "establishment": {
+      "name": "RISING STAR CHINESE EATERY",
+      "address": "7001 SAN ANTONIO DR NE, S",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-09-28",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Ventilation and Hood Systems",
+          "observation": "Observed hood ventilation system inadequately collecting grease and condensation allowing for accumulation and drips to occur, observed grease and condensation drip on to and contaminating equipment surface. Location Hood Ventilation System vents. Equipment: dripping on walls behind wok and fryer area."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Cleaning",
+          "observation": "Observed build up and debris in the following areas at the time of inspection: 1.) observed grease build up and debris on the floor underneath fryer and on the wall around the fryer and wok station. 2.) on the floor and bottom shelf of prep tables in the kitchen area. 3.) on the exterior surfaces of the prep top and upright coolers and freezers. 4.) on the wall in the warewashing area."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Storage",
+          "observation": "Observed utensils during a pause in use stored incorrectly. Utensil was stored in food with their handle not above the top of the food and the container. Utensil Type: ice scoop. Location: stored with handle and scoop lying flat on ice. RISING STAR CHINESE EATERY - 7001 SAN ANTONIO DR NE, S Food Establishment Class C Date: 09/28/2026 - #: RT-FOODEST-060761-2025 - Inspection Result: Closure Re-Inspection Required"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed chlorine solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: wiping cloth containers. Concentration:0 ppm. Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: stainless steel bowl. Location: three compartment sink. Condition of the Location: observed employee rinse out a bowl used to store raw beef and place in in clean ware shelving above three compartment sink without properly cleaning and sanitizing bowl."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Cooling",
+          "observation": "Observed cooling TCS food items fail to reach seventy (70) \u00b0F within two (2) hour period. Location: Kitchen area. Food Items: Breaded fried chicken. Temperature: 99\u00b0F and 101\u00b0F. Time transpired: 2.75 hours"
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Ventilation and Hood Systems",
+        "Physical Facilities, Cleaning",
+        "Storage"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:79cb2a2d16eb7a620b5b",
+    "source": "ABQ",
+    "establishment": {
+      "name": "RISING STAR CHINESE EATERY",
+      "address": "7001 SAN ANTONIO DR NE, S",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-09-28",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:da94bc19be6227fbfc01",
+    "source": "ABQ",
+    "establishment": {
+      "name": "STARRY MOON",
+      "address": "10131 COORS BLVD NW, H2",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-09-30",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Ventilation and Hood Systems",
+          "observation": "Observed interior cooler fan guard missing. Location: walk in cooler."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Condition",
+          "observation": "Observed nonfood contact surface that was absorbent. The surface was located back prep area. The surface was made out of Wood cutting board. The condition of the surface was absorbent and not easily cleanable."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Cold Holding",
+          "observation": "Observed food items in cold holding unit measuring above 41\u00b0F. Location: Prep top cooler top and bottom. Food Items: Sliced Jalapenos-45*F, beef brisket- 44 *F, Tofu- 44*F, Bean sprouts 45.08*F, Shredded Lettuce 44.5* F, Sliced Cucumber- 47*F."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Construction and Repair",
+          "observation": "Observed 3 compartment sink tiles missing and is not easily cleanable. The surface was made out of dry wall. Observed corner wall and top base coving near hand wash station damaged and not easily cleanable. STARRY MOON - 10131 COORS BLVD NW, H2 - Unsatisfactory Re-Inspection required STARRY MOON - 10131 COORS BLVD NW, H2 Food Establishment Class C Date: 09/30/2026 - #: CAC-Food-093055-2026 - Inspection Result: Unsatisfactory Re-Inspection required Equipment, Food-Contact Surfaces and Utensils - Ice machine Ready-To-Eat Time/Temperature Control for Safety Food, Date Marking and disposition- 6 Handwashing Cleanser, Availability Controlling Pests, If Present: Treatment Facility will remain a red unsatisfactory for 5 days and facility will be reinspected. Facility is approved to operate under unsatisfactory STARRY MOON - 10131 COORS BLVD NW, H2 Food Establishment Class C Date: 09/28/2026 - #: PT0157821 - Inspection Result: Closure Re-Inspection Required"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice Machine. Location: Interior of the ice machine ceiling with excessive soil build up and rust."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Pest Control",
+          "observation": "Observed pests in the facility with no control methods in place. Location: Kitchen prep area. Pest Type: Mice Pest Condition: Mice droppings behind the prep tables. sinks, grease trap."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Date Marking and Disposition",
+          "observation": ""
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:527cf299bf4dc70514ee",
+    "source": "ABQ",
+    "establishment": {
+      "name": "STARRY MOON",
+      "address": "10131 COORS BLVD NW, H2",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-09-28",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:f1f1cf2b5add3982f281",
+    "source": "ABQ",
+    "establishment": {
+      "name": "STRIPES BURRITO LLC",
+      "address": "10621 UNSER BLVD NW, B5",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-09-29",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Construction and Repair",
+          "observation": "Observed Floors, base coving is not easily cleanable. The surface was made out of epoxy. base coving is absorbent."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Records",
+          "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Milks, creams, cut fruits. No temperature logs were observed. STRIPES BURRITO LLC - 10621 UNSER BLVD NW, B5 - Unsatisfactory Re-Inspection required STRIPES BURRITO LLC - 10621 UNSER BLVD NW, B5 Food Establishment Class C Date: 09/29/2026 - #: PT0161324 - Inspection Result: Unsatisfactory Re-Inspection required"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed quaternary ammonium compound solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Front sanitizer bucket. Concentration: 100 ppm. Temperature:69* F."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Pooled Eggs",
+          "observation": "Observed pooled eggs in the food establishment that were not being combined for a customer\u2019s order or for a batter. Location: 8 Pitchers at the upright refrigerator by the grill, 4 pitchers in the walk-in cooler, 8 5-gallon buckets of pooled eggs walk in cooler."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Date Marking and Disposition",
+          "observation": "Observed ready-to-eat time and temperature controlled for safety food prepared and held within the establishment with no date marking indicators. Location: Prep top cooler. Food Items: Crema 2 squeeze bottle units with no Expiration Dates."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Miscellaneous",
+          "observation": "Method of contamination: Observed two ready to eat pans of Chicharr\u00f3nes under a prep table uncovered at the time of inspection."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Operation and Maintenance",
+          "observation": "Observed handwashing fixtures with the buildup of soil residues. The plumbing fixture was located Food prep areas. The condition of the surface was soiled with substantial soil and hard water build up."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Cleaning",
+          "observation": "Observed build up and debris on the drains, floors under equipment along with cooler floors under shelving, walls through the kitchen with buildup."
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
   }
 ]
