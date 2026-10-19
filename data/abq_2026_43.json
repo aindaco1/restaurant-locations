@@ -1,0 +1,264 @@
+[
+  {
+    "name": "EMBUDO TOWERS",
+    "address": "8010 CONSTITUTION AVE NE",
+    "date": "2026-10-07",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Training Records",
+        "observation": "Observed that the food establishment does not have a certified food protection manager on staff. Observed that food employees were not in possession of a food handler card or had been trained in another approved food safety course."
+      },
+      {
+        "category": "Surface Condition",
+        "observation": "Observed nonfood contact surface that was absorbent. The surface was located inside storage room in kitchen. The surface was made out of synthetic wood. The condition of the surface was unsealed Observed nonfood contact surface that was not smooth. The surface was located inside storage room in kitchen. The surface was made out of synthetic wood. The condition of the surface unsealed not smooth and easily cleanable."
+      },
+      {
+        "category": "Cold Holding",
+        "observation": "Observed food items stored at room temperature measuring above 41\u00b0F. Location: Stored on baking sheet inside kitchen Food Items: Grapes Temperature: 55 \u00b0F"
+      },
+      {
+        "category": "Operation and Maintenance",
+        "observation": "Observed no approved method of hand drying at handwashing sink(s). Location: Hand washing sink inside kitchen"
+      },
+      {
+        "category": "Operations",
+        "observation": "Observed that the facility was operating with an expired permit. FAMILY DOLLAR STORES OF NM INC 8685 - 9550 SAGE RD SW - Approved FAMILY DOLLAR STORES OF NM INC 8685 - 9550 SAGE RD SW"
+      }
+    ]
+  },
+  {
+    "name": "EMBUDO TOWERS",
+    "address": "8010 CONSTITUTION AVE NE",
+    "date": "2026-10-06",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "FAMILY DOLLAR STORES/NM INC",
+    "address": "4201 CENTRAL AVE NW",
+    "date": "2026-10-08",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": "Observed the following areas of the facility in disrepair. Observed backstock room door leading to the outside of the facility in disrepair by a gap under door instructed pic to repair gap to prevent exterior elements or pests from entering the facility"
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Reach in Milk Cooler and Ice Cream Freezer Location: Retail Area Condition of the Location: Debris build up inside the reach in cooler and freezer FAMILY DOLLAR STORES/NM INC - 4201 Central Ave NW - Approved FAMILY DOLLAR STORES/NM INC - 4201 CENTRAL AVE NW Retail Food Establishment Class 3 Date: 10/08/2026 - #: RT-RET-097726-2025 - Inspection Result: Approved FAMILY DOLLAR STORES/NM INC - 2801 EUBANK BLVD NE - Conditional Approved FAMILY DOLLAR STORES/NM INC - 2801 EUBANK BLVD NE Retail Food Establishment Class 3 Date: 10/09/2026 - #: RT-RET-070233-2025 - Inspection Result: Conditional Approved"
+      },
+      {
+        "category": "Functionality and Accuracy",
+        "observation": "Observed in a mechanically refrigerated food storage unit the temperature measuring device was not placed in the warmest part of the unit. Equipment Location: Cold holding displays units Thermometer Location: Only one ambient air thermometer available in one cold holding unit."
+      },
+      {
+        "category": "Maintenance",
+        "observation": "Observed items on the premises of the food establishment that is no longer used or is non-functional. Location: In back of facility Items list: Storage shelving and display signage etc. Condition of the items: Unorganized and cluttered"
+      },
+      {
+        "category": "Surface Not Clean",
+        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located inside cold holding units and shelving in dry storage display areas. The surface was made out of metal The condition of the surface was food debris build up."
+      },
+      {
+        "category": "Food Separation",
+        "observation": "Observed non-ready-to-eat raw animal food stored with ready-to-eat raw animal food without protection from contamination. Location: Inside cold holding displays unit Food Item: Raw eggs Condition: Raw eggs stored above bottled beverages."
+      },
+      {
+        "category": "Records",
+        "observation": ""
+      }
+    ]
+  },
+  {
+    "name": "FAMILY DOLLAR STORES/NM INC",
+    "address": "4201 CENTRAL AVE NW",
+    "date": "2026-10-09",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "LITTLE LOBITOS",
+    "address": "5015 4TH ST NW",
+    "date": "2026-10-09",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Result of a Complaint",
+        "observation": ""
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Reach in cooler and shelfing where canned food and dry goods are stored Location: Dry goods/backstock area Condition of the Location: debris build up on dry good shelfing and reach in cooler."
+      },
+      {
+        "category": "Pest Control",
+        "observation": "Observed pests in the facility with no control methods in place. Location: kitchen and backstock area Pest Type: cockroach rodent droppings Pest Condition: dead cockroaches and mice droppings seen in the kitchen and back stock areas Observed pests allowed to accumulate in traps. Location: in trap by reach in coolers in backstock area Pest Type: cockroach Pest Condition: dead Number of Pests Present: ten dead cockroaches"
+      },
+      {
+        "category": "Imminent Health Hazard",
+        "observation": ""
+      },
+      {
+        "category": "Plumbing",
+        "observation": "Observed lines below sink is not maintained in good repair or is not repaired by law. Observed lines found in disrepair by water leaking."
+      },
+      {
+        "category": "Training Records",
+        "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
+      },
+      {
+        "category": "Storage",
+        "observation": "Observed food stored improperly in an unclean location. Location: backstock area Food Item: canned goods and single service items Condition: debris build up falling on top of canned goods in backstock areas."
+      }
+    ]
+  },
+  {
+    "name": "LITTLE LOBITOS",
+    "address": "5015 4TH ST NW",
+    "date": "2026-10-07",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "NMR",
+    "address": "4th ST, LLC DBA Dunkin Donuts - 5502 4TH ST NW",
+    "date": "2026-10-08",
+    "outcome": "failed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "NMR",
+    "address": "4th ST, LLC DBA Dunkin Donuts - 5502 4TH ST NW",
+    "date": "2026-10-06",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "OJOS LOCOS SPORTS CANTINA",
+    "address": "2105 LOUISIANA BLVD NE",
+    "date": "2026-10-09",
+    "outcome": "conditional",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": [
+      {
+        "category": "Physical Facilities, Cleaning",
+        "observation": "Observed build up and debris under donut cases, storage shelving, storage shelving in the walk-in coolers."
+      },
+      {
+        "category": "Storage",
+        "observation": "Observed clean single-service and single-use articles stored improperly. Single-service and single-use articles was not stored in a clean, dry location. Single- service and single-use articles Type Lids, cups , Location: Entry to freezer. Condition of the Location: Service articles stored on the floor."
+      },
+      {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": "Observed Base coving, ceiling tiles, walls.is not smooth and easily cleanable. The surface was located Mop sink areas and storage areas. The surface was made out of dry wall holes in walls and missing dry wall ceiling in mop sink area. missing base coving around storage area."
+      },
+      {
+        "category": "Records",
+        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Eggs, Sausage, Bacon, Cheeses, cream cheese. milk. last temperatures taken on September 29th 2026 OJOS LOCOS SPORTS CANTINA - 2105 LOUISIANA BLVD NE \u2013 Conditional Approved OJOS LOCOS SPORTS CANTINA - 2105 LOUISIANA BLVD NE Food Establishment Class C Date: 10/09/2026 - #: RT-FOODEST-096598-2026 - Inspection Result: Conditional Approved"
+      },
+      {
+        "category": "Training Records",
+        "observation": "Observed that the food establishment does not have a certified food protection manager on staff. Jonathan Summers manager food safety certification expired as of 8/14/2026. Observed that food employees were not in possession of a food handler card or had been trained in another approved food safety course."
+      },
+      {
+        "category": "Ventilation and Hood Systems",
+        "observation": "Observed interior intake and exhaust air ducts with debris buildup. Location: In back prep area."
+      },
+      {
+        "category": "Hands Clean & Properly Washed",
+        "observation": ""
+      },
+      {
+        "category": "Physical Facilities, Cleaning",
+        "observation": "Observed a soiled mop not in use, stored directly on the floor. Observed build up and debris underneath kitchen equipment such as fryer, dish machine area, prep tables, cold holding units and ice machine."
+      },
+      {
+        "category": "Physical Facilities, Construction and Repair",
+        "observation": "Observed the following areas of the facility in disrepair. Observed multiple ceiling tiles missing above ice machines in disrepair by missing ceiling tiles."
+      },
+      {
+        "category": "Records",
+        "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Cooked meats, raw meats, prepared vegetables, salsas and dairy products Activity of the Food: Stored, received, cooled Food Establishments shall calibrate measuring equipment in accordance with the manufacturer recommendations and shall maintain adequate and contemporaneous calibration logs for calibration of equipment. Observed the food establishment does not have calibration logs for temperature measuring devices. OJOS LOCOS SPORTS CANTINA - 2105 LOUISIANA BLVD NE Food Establishment Class C Date: 10/09/2026 - #: RT-FOODEST-097628-2025 - Inspection Result: Closure Re-Inspection Required"
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed quaternary ammonium compound solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Red sanitizer buckets Concentration: 200 parts per million Temperature: 68 to 69 \u00b0F. Main kitchen line producing food had no sanitizer bucket set up on main kitchen line. Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine, cheese grater, vegetable dicer, vegetable slicer Location: Clean dish storage rack Condition of the Location: Ice machine with debris build up. Cheese grater, vegetable dicer and vegetable slicer stored away with food debris build up."
+      },
+      {
+        "category": "Maintenance and Operation",
+        "observation": "Observed soiled or dirty warewashing machine. Location: Inside kitchen Condition: Dish machine and dish machine washing racks with substantial debris build up."
+      },
+      {
+        "category": "Poisonous and Toxic/Chemical Substances",
+        "observation": ""
+      },
+      {
+        "category": "Equipment, Food Contact Surfaces, and Utensils Clean",
+        "observation": "Observed quaternary ammonium compound solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Red sanitizer bucket Concentration: 300 parts per million Temperature: 70 \u00b0F"
+      },
+      {
+        "category": "Plumbing",
+        "observation": "Observed an inadequate air gap underneath hand washing sink."
+      },
+      {
+        "category": "Training Records",
+        "observation": "Observed that food employees were not in possession of a food handler card or had been trained in another approved food safety course."
+      },
+      {
+        "category": "Designated Areas",
+        "observation": "Observed facility did not provide a designated area for employees to eat, drink, or use tobacco products. Observed facility did not provide lockers or other suitable facilities for storage of employees clothing or other personal belongings."
+      },
+      {
+        "category": "Surface Not Clean",
+        "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located in bar area soda nozzle holder The surface was made out of rubber The condition of the surface was substantial debris build up. Slim Chickens - 8240 MONTGOMERY BLVD NE - Approved Slim Chickens - 8240 MONTGOMERY BLVD NE"
+      }
+    ]
+  },
+  {
+    "name": "OJOS LOCOS SPORTS CANTINA",
+    "address": "2105 LOUISIANA BLVD NE",
+    "date": "2026-10-09",
+    "outcome": "closed",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  },
+  {
+    "name": "OJOS LOCOS SPORTS CANTINA",
+    "address": "2105 LOUISIANA BLVD NE",
+    "date": "2026-10-09",
+    "outcome": "approved",
+    "operational_status": "Open",
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "violations": []
+  }
+]
