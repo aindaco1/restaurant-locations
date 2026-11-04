@@ -34,6 +34,38 @@ def test_full_archive_round_trip_and_compression():
     assert unpack_dataset(packed) == records
     compact = lambda data: json.dumps(data, ensure_ascii=False, separators=(",", ":")).encode()
     assert len(gzip.compress(compact(packed))) < len(gzip.compress(compact(records)))
+    assert len(gzip.compress(compact(packed))) <= 140_000
+
+
+def test_repeated_establishments_preserve_values_without_aliasing():
+    records = [{"establishment": {"name": "Café", "address": "One"},
+                "inspection": {"violations": []}} for _ in range(2)]
+    records.append({"establishment": {"name": "Café", "address": "Two"},
+                    "inspection": {"violations": []}})
+    packed = pack_dataset(records)
+    assert len(packed["establishments"]) == 2
+    decoded = unpack_dataset(packed)
+    assert decoded == records
+    decoded[0]["establishment"]["name"] = "Edited"
+    assert decoded[1]["establishment"]["name"] == "Café"
+    assert unpack_dataset(packed) == records
+
+
+@pytest.mark.parametrize("reference", [-1, 1, 0.5, True, "0", None])
+def test_rejects_invalid_establishment_references(reference):
+    packed = pack_dataset([{"establishment": {"name": "Café"},
+                            "inspection": {"violations": []}}])
+    packed["records"][0]["establishment"] = reference
+    with pytest.raises(ValueError, match="Invalid establishment reference"):
+        unpack_dataset(packed)
+
+
+@pytest.mark.parametrize("table", [None, {}, [None], [[]]])
+def test_rejects_invalid_establishment_tables(table):
+    packed = pack_dataset([])
+    packed["establishments"] = table
+    with pytest.raises(ValueError, match="Invalid establishment table"):
+        unpack_dataset(packed)
 
 
 def test_empty_archive_and_legacy_array():

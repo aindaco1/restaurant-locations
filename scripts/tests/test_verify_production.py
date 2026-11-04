@@ -24,7 +24,7 @@ def test_verifier_checks_browser_download_against_public_archive(monkeypatch, co
             }}}).encode()
         if "violations_latest.json" in url:
             return json.dumps(records).encode()
-        if "violations_browser.v1.json" in url:
+        if BROWSER_DATASET_URL in url:
             return json.dumps(payload).encode()
         return (f'<script src="{ALPINE_URL}"></script>'
                 '<script src="/assets/js/app.0123456789ab.js"></script>').encode()
