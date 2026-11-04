@@ -33,7 +33,7 @@ const plain = value => JSON.parse(JSON.stringify(value));
 test('browser decoder restores every archive field and grouping result', () => {
   const store = createStore();
   const decoded = store.decodeDataset(structuredClone(packed));
-  assert.deepEqual(decoded, records);
+  assert.deepEqual(plain(decoded), records);
   assert.deepEqual(plain(store.groupByRestaurant(decoded)), plain(store.groupByRestaurant(records)));
   assert.equal(store.decodeDataset(records), records);
 });
@@ -49,6 +49,37 @@ test('browser decoder rejects corrupt observation references and unknown formats
   assert.throws(() => store.decodeDataset({ format: 'future' }), /Unsupported browser dataset format/);
 });
 
+test('browser decoder rejects corrupt establishment references and tables', () => {
+  const store = createStore();
+  for (const establishment of [-1, 1, 0.5, true, '0', null]) {
+    assert.throws(() => store.decodeDataset({
+      format: 'observations-establishments-v2', observations: [],
+      establishments: [{ name: 'Café' }],
+      records: [{ establishment, inspection: { violations: [] } }],
+    }), /Invalid establishment reference/);
+  }
+  for (const establishments of [null, {}, [null], [[]]]) {
+    assert.throws(() => store.decodeDataset({
+      format: 'observations-establishments-v2', observations: [], establishments, records: [],
+    }), /Invalid establishment table/);
+  }
+});
+
+test('browser decoder keeps repeated establishments independent and accepts v1', () => {
+  const store = createStore();
+  const decoded = store.decodeDataset({
+    format: 'observations-establishments-v2', observations: [],
+    establishments: [{ name: 'Café' }],
+    records: [0, 0].map(establishment => ({ establishment, inspection: { violations: [] } })),
+  });
+  decoded[0].establishment.name = 'Edited';
+  assert.equal(decoded[1].establishment.name, 'Café');
+  assert.deepEqual(plain(store.decodeDataset({
+    format: 'observations-v1', observations: ['Text'],
+    records: [{ inspection: { violations: [{ observation: 0 }] } }],
+  })), [{ inspection: { violations: [{ observation: 'Text' }] } }]);
+});
+
 test('loader selects the browser URL with the manifest hash and caching contract', async () => {
   const requests = [];
   const store = createStore(async (url, options) => {
@@ -56,7 +87,7 @@ test('loader selects the browser URL with the manifest hash and caching contract
     return { ok: true, json: async () => requests.length === 1 ? {
       datasets: { latest: {
         hash: 'testhash', url: '/data/violations_latest.json',
-        browser_url: '/data/violations_browser.v1.json',
+        browser_url: '/data/violations_browser.v2.json',
       } },
     } : structuredClone(packed) };
   });
@@ -67,9 +98,9 @@ test('loader selects the browser URL with the manifest hash and caching contract
   assert.match(requests[0].url, /^\/preview\/data\/manifest.json\?ts=/);
   assert.equal(requests[0].cache, 'no-store');
   assert.deepEqual(requests[1], {
-    url: '/preview/data/violations_browser.v1.json?v=testhash', cache: 'force-cache',
+    url: '/preview/data/violations_browser.v2.json?v=testhash', cache: 'force-cache',
   });
-  assert.deepEqual(store.violations, records);
+  assert.deepEqual(plain(store.violations), records);
 });
 
 for (const scenario of ['old manifest', 'missing manifest']) {
@@ -85,6 +116,6 @@ for (const scenario of ['old manifest', 'missing manifest']) {
     await store.loadViolations();
     assert.equal(store.error, null);
     assert.match(requests[1], /^\/preview\/data\/violations_latest.json\?v=/);
-    assert.deepEqual(store.violations, records);
+    assert.deepEqual(plain(store.violations), records);
   });
 }

@@ -77,12 +77,24 @@ document.addEventListener('alpine:init', () => {
     decodeDataset(payload) {
       // Local previews and older manifests still serve the public JSON array.
       if (Array.isArray(payload)) return payload;
-      if (payload?.format !== 'observations-v1' ||
+      const sharedEstablishments = payload?.format === 'observations-establishments-v2';
+      if ((!sharedEstablishments && payload?.format !== 'observations-v1') ||
           !Array.isArray(payload.records) || !Array.isArray(payload.observations) ||
           !payload.observations.every(text => typeof text === 'string')) {
         throw new Error('Unsupported browser dataset format');
       }
+      if (sharedEstablishments && (!Array.isArray(payload.establishments) ||
+          !payload.establishments.every(item => item && typeof item === 'object' && !Array.isArray(item)))) {
+        throw new Error('Invalid establishment table');
+      }
       for (const record of payload.records) {
+        if (sharedEstablishments && Object.hasOwn(record, 'establishment')) {
+          const index = record.establishment;
+          if (!Number.isInteger(index) || index < 0 || index >= payload.establishments.length) {
+            throw new Error('Invalid establishment reference');
+          }
+          record.establishment = JSON.parse(JSON.stringify(payload.establishments[index]));
+        }
         for (const violation of record.inspection.violations) {
           if (!Object.hasOwn(violation, 'observation')) continue;
           const index = violation.observation;
