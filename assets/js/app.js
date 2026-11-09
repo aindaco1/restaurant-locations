@@ -77,10 +77,25 @@ document.addEventListener('alpine:init', () => {
     decodeDataset(payload) {
       // Local previews and older manifests still serve the public JSON array.
       if (Array.isArray(payload)) return payload;
-      const sharedEstablishments = payload?.format === 'observations-establishments-v2';
+      const prefixed = payload?.format === 'observations-prefixes-v3';
+      const sharedEstablishments = prefixed || payload?.format === 'observations-establishments-v2';
       if ((!sharedEstablishments && payload?.format !== 'observations-v1') ||
-          !Array.isArray(payload.records) || !Array.isArray(payload.observations) ||
-          !payload.observations.every(text => typeof text === 'string')) {
+          !Array.isArray(payload.records) || !Array.isArray(payload.observations)) {
+        throw new Error('Unsupported browser dataset format');
+      }
+      let observations = payload.observations;
+      if (prefixed) {
+        let previous = [];
+        observations = observations.map(entry => {
+          if (!Array.isArray(entry) || entry.length !== 2 || !Number.isInteger(entry[0]) ||
+              entry[0] < 0 || entry[0] > previous.length || typeof entry[1] !== 'string') {
+            throw new Error('Invalid observation prefix');
+          }
+          const text = previous.slice(0, entry[0]).join('') + entry[1];
+          previous = Array.from(text); // Unicode code points, matching Python's string indexes.
+          return text;
+        });
+      } else if (!observations.every(text => typeof text === 'string')) {
         throw new Error('Unsupported browser dataset format');
       }
       if (sharedEstablishments && (!Array.isArray(payload.establishments) ||
@@ -98,10 +113,10 @@ document.addEventListener('alpine:init', () => {
         for (const violation of record.inspection.violations) {
           if (!Object.hasOwn(violation, 'observation')) continue;
           const index = violation.observation;
-          if (!Number.isInteger(index) || index < 0 || index >= payload.observations.length) {
+          if (!Number.isInteger(index) || index < 0 || index >= observations.length) {
             throw new Error('Invalid observation reference');
           }
-          violation.observation = payload.observations[index];
+          violation.observation = observations[index];
         }
       }
       return payload.records;
