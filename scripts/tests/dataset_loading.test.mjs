@@ -87,7 +87,7 @@ test('loader selects the browser URL with the manifest hash and caching contract
     return { ok: true, json: async () => requests.length === 1 ? {
       datasets: { latest: {
         hash: 'testhash', url: '/data/violations_latest.json',
-        browser_url: '/data/violations_browser.v2.json',
+        browser_url: '/data/violations_browser.v3.json',
       } },
     } : structuredClone(packed) };
   });
@@ -98,7 +98,7 @@ test('loader selects the browser URL with the manifest hash and caching contract
   assert.match(requests[0].url, /^\/preview\/data\/manifest.json\?ts=/);
   assert.equal(requests[0].cache, 'no-store');
   assert.deepEqual(requests[1], {
-    url: '/preview/data/violations_browser.v2.json?v=testhash', cache: 'force-cache',
+    url: '/preview/data/violations_browser.v3.json?v=testhash', cache: 'force-cache',
   });
   assert.deepEqual(plain(store.violations), records);
 });
@@ -119,3 +119,16 @@ for (const scenario of ['old manifest', 'missing manifest']) {
     assert.deepEqual(plain(store.violations), records);
   });
 }
+
+
+test('v3 prefixes preserve Unicode code points and reject corrupt prefix entries', () => {
+  const store = createStore();
+  const payload = observations => ({ format: 'observations-prefixes-v3', observations,
+    establishments: [], records: [{ inspection: { violations: [{ observation: 1 }] } }] });
+  assert.equal(store.decodeDataset(payload([[0, '😀 café\nfirst'], [7, 'second']]))[0]
+    .inspection.violations[0].observation, '😀 café\nsecond');
+  for (const entry of [null, 'text', [], [0], [0, 'x', 'extra'], [-1, 'x'], [1, 'x'],
+    [true, 'x'], [0.5, 'x'], [0, null]]) {
+    assert.throws(() => store.decodeDataset(payload([entry])), /Invalid observation prefix/);
+  }
+});

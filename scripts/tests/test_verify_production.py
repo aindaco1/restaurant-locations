@@ -13,7 +13,7 @@ def test_verifier_checks_browser_download_against_public_archive(monkeypatch, co
     expected_hash = hashlib.sha256(json.dumps(records, sort_keys=True).encode()).hexdigest()[:8]
     payload = pack_dataset(records)
     if corrupt:
-        payload["observations"][0] = "Changed text"
+        payload["observations"][0] = [0, "Changed text"]
     requests = []
 
     def fetch(url):

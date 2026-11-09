@@ -8,8 +8,8 @@ from copy import deepcopy
 import json
 
 
-FORMAT = "observations-establishments-v2"
-BROWSER_DATASET_URL = "/data/violations_browser.v2.json"
+FORMAT = "observations-prefixes-v3"
+BROWSER_DATASET_URL = "/data/violations_browser.v3.json"
 
 
 def pack_dataset(records: list) -> dict:
@@ -39,7 +39,15 @@ def pack_dataset(records: list) -> dict:
         for violation in record["inspection"]["violations"]:
             if "observation" in violation:
                 violation["observation"] = indexes[violation["observation"]]
-    return {"format": FORMAT, "observations": observations,
+    prefixes = []
+    previous = ""
+    for text in observations:
+        prefix = 0
+        while prefix < min(len(previous), len(text)) and previous[prefix] == text[prefix]:
+            prefix += 1
+        prefixes.append([prefix, text[prefix:]])
+        previous = text
+    return {"format": FORMAT, "observations": prefixes,
             "establishments": establishments, "records": packed}
 
 
@@ -48,22 +56,34 @@ def unpack_dataset(payload: list | dict) -> list:
         return payload
     if (
         not isinstance(payload, dict)
-        or payload.get("format") not in ("observations-v1", FORMAT)
+        or payload.get("format") not in ("observations-v1", "observations-establishments-v2", FORMAT)
         or not isinstance(payload.get("records"), list)
         or not isinstance(payload.get("observations"), list)
-        or not all(isinstance(text, str) for text in payload["observations"])
     ):
         raise ValueError("Unsupported browser dataset format")
     records = deepcopy(payload["records"])
     observations = payload["observations"]
+    if payload["format"] == FORMAT:
+        observations = []
+        previous = ""
+        for entry in payload["observations"]:
+            if (not isinstance(entry, list) or len(entry) != 2
+                    or type(entry[0]) is not int or not 0 <= entry[0] <= len(previous)
+                    or not isinstance(entry[1], str)):
+                raise ValueError("Invalid observation prefix")
+            previous = previous[:entry[0]] + entry[1]
+            observations.append(previous)
+    elif not all(isinstance(text, str) for text in observations):
+        raise ValueError("Unsupported browser dataset format")
     establishments = payload.get("establishments")
-    if payload["format"] == FORMAT and (
+    shared_establishments = payload["format"] != "observations-v1"
+    if shared_establishments and (
         not isinstance(establishments, list)
         or not all(isinstance(item, dict) for item in establishments)
     ):
         raise ValueError("Invalid establishment table")
     for record in records:
-        if payload["format"] == FORMAT and "establishment" in record:
+        if shared_establishments and "establishment" in record:
             index = record["establishment"]
             if type(index) is not int or not 0 <= index < len(establishments):
                 raise ValueError("Invalid establishment reference")

@@ -21,7 +21,7 @@ def test_round_trip_preserves_observations_missing_fields_and_order():
     ]}}]
     original = deepcopy(records)
     packed = pack_dataset(records)
-    assert packed["observations"] == ["", "A repeated phrase", "Z café\n\"quoted\""]
+    assert packed["observations"] == [[0, ""], [0, "A repeated phrase"], [0, "Z café\n\"quoted\""]]
     assert unpack_dataset(json.loads(json.dumps(packed))) == original
     assert records == original
     assert isinstance(packed["records"][0]["inspection"]["violations"][0]["observation"], int)
@@ -72,6 +72,32 @@ def test_empty_archive_and_legacy_array():
     assert unpack_dataset(pack_dataset([])) == []
     records = [{"id": "legacy"}]
     assert unpack_dataset(records) is records
+
+
+def test_prefixes_count_unicode_characters_and_preserve_exact_text():
+    texts = ["😀 café\nfirst", "😀 café\nsecond", "😀 café", "", "é", "é"]
+    records = [{"inspection": {"violations": [{"observation": text} for text in texts]}}]
+    packed = pack_dataset(records)
+    assert packed["format"] == "observations-prefixes-v3"
+    assert [7, "second"] in packed["observations"]
+    assert unpack_dataset(packed) == records
+
+
+@pytest.mark.parametrize("entry", [None, "text", [], [0], [0, "text", "extra"],
+                                   [-1, "x"], [1, "x"], [True, "x"], [0.5, "x"], [0, None]])
+def test_rejects_invalid_observation_prefixes(entry):
+    packed = pack_dataset([])
+    packed["observations"] = [entry]
+    with pytest.raises(ValueError, match="Invalid observation prefix"):
+        unpack_dataset(packed)
+
+
+def test_legacy_v2_still_decodes():
+    payload = {"format": "observations-establishments-v2", "observations": ["text"],
+               "establishments": [{"name": "Café"}], "records": [
+                   {"establishment": 0, "inspection": {"violations": [{"observation": 0}]}}]}
+    assert unpack_dataset(payload) == [{"establishment": {"name": "Café"},
+                                       "inspection": {"violations": [{"observation": "text"}]}}]
 
 
 @pytest.mark.parametrize("reference", [-1, 1, 0.5, True, "0", None])
