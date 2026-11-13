@@ -47782,5 +47782,1437 @@
       "document": null
     },
     "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:5a13e8f2b2d0056cefe8",
+    "source": "ABQ",
+    "establishment": {
+      "name": "ANNAPURNA CHAI HOUSE",
+      "address": "2201 SILVER SE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-04",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Result of a Complaint",
+          "observation": ""
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Imminent Health Hazard",
+          "observation": "- Observed walk in cooler is not holding food items inside at 41\u00b0F or below."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed chlorine solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Kitchen dishwashing machine and tea station sanitizer bucket Concentration: 0 PPM Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Dicer, knives, spatulas, French fry press and spoons. Location: Make line and kitchen Condition of the Location: Had significant amount of debris accumulation and residue. Observed improper storage of these utensils to be inside a container of standing water with no way to prevent bacteria from spreading."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Poisonous and Toxic/Chemical Substances",
+          "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Spray bottle Alleged Material: Degreaser"
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:4b9619e70368c1c20c3e",
+    "source": "ABQ",
+    "establishment": {
+      "name": "ANNAPURNA CHAI HOUSE",
+      "address": "2201 SILVER SE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-02",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:421b986736f8c81ced60",
+    "source": "ABQ",
+    "establishment": {
+      "name": "BLAKES LOTABURGER",
+      "address": "3700 4TH ST NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-02",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:2769360e10719d79dba3",
+    "source": "ABQ",
+    "establishment": {
+      "name": "DONUT MART",
+      "address": "831 JUAN TABO BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-03",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Pest Control",
+          "observation": "Observed pests allowed to accumulate in facility. Location: NW corner behind shelving, SE corner next to upright cooler, underneath sheet rack in entry way area Pest Type: 1 centipede, 1 roach, 1 spider, 1 cricket Pest Condition: dead Number of Pests Present: 1 centipede, 1, roach, 1 spider, 1 cricket"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Not Clean",
+          "observation": "Observed nonfood contact surface with the buildup of soil residues. Location: bottom shelf of prep table. Type of nonfood contact surface: Dry food items: waffle mix, boba powder. Condition: observed build up and debris on the exterior surfaces of the containers."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Food Separation",
+          "observation": "eat food from contamination. Observed PIC rearrange upright cooler and move raw shell eggs to the bottom of the cooler below the containers of dairy and non- dairy products. Observed non-ready-to-eat raw animal food stored with ready-to-eat food without protection from contamination. Location: Upright Cooler. Food Item: a flat of Raw shell eggs. Condition: raw shell eggs were stored on top shelf in upright cooler above containers of half in half, milk, heavy cream and oat milk."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities",
+          "observation": "Observed holes or other gaps in the structure of the facility. Location: along the wall next to the entrance door. Size: 4in x 3in"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Operations",
+          "observation": "Observed that the facility was operating with an expired permit. DONUT MART - 831 JUAN TABO BLVD NE - Conditional Approved DONUT MART - 831 JUAN TABO BLVD NE Food Establishment Class C Date: 11/03/2026 - #: RT-FOODEST-103708-2026 - Inspection Result: Conditional Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed utensil food-contact surface with the buildup of soil residues. Utensil Type: glazing machine Location: Back prep area Condition of the Location: Soiled with food buildup"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Maintenance and Operation",
+          "observation": "Observed equipment not maintained in good repair. Location: Behind counter Type of Equipment: Ice machine Condition of the equipment: coated with brown organic matter."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Records",
+          "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: turkey bacon Milk, sausage, Activity of the Food: cooled DONUT MART - 831 JUAN TABO BLVD NE Food Establishment Class C Date: 11/03/2026 - #: RT-FOODEST-097674-2025 - Inspection Result: Closure Re-Inspection Required"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed utensil food-contact surface with the buildup of soil residues. Utensil Type: glazing machine Location: Back prep area Condition of the Location: Soiled with food buildup"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Date Marking and Disposition",
+          "observation": "Observed ready-to-eat time and temperature controlled for safety food prepared and held within the establishment with no date marking indicators. Location: Reach-in Food Items: sausage, cheese, green chile Expiration Dates: none observed"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Maintenance and Operation",
+          "observation": "Observed equipment not maintained in good repair. Location: Behind counter Type of Equipment: Ice machine Condition of the equipment: coated with brown organic matter."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Preventing Contamination From Hands",
+          "observation": "Observed a food employee touching non-ready-to-eat food with bare hands. Location: prep table Activity: Employee was making a breakfast sandwich Food Contacted: Sausage and cheese croissant"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Training Records",
+          "observation": ""
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Food Identification, Safe, Unadulterated and Honestly Presented",
+          "observation": ""
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:f1670f3633155a30753a",
+    "source": "ABQ",
+    "establishment": {
+      "name": "DONUT MART",
+      "address": "831 JUAN TABO BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-03",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:dfe2ea82a9791667883e",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Duke City BBQ 3 LLC",
+      "address": "12501 CANDELARIA RD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-06",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Records",
+          "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: turkey bacon Milk, sausage, Activity of the Food: cooled Duke City BBQ 3 LLC - 12501 CANDELARIA RD NE - Approved Duke City BBQ 3 LLC - 12501 CANDELARIA RD NE Food Establishment Class C Date: 11/06/2026 - #: CAC-Food-105302-2026 - Inspection Result: Approved Packaged and Unpackaged Food-Separation, Packaging, and Segregation, Cross Contamination- Corrected by moving and storing all raw animal products below RTE food items Toilet Tissue, Availability- Corrected by putting toilet tissue in restroom Due to correction made facility is back into the green approved status Duke City BBQ 3 LLC - 12501 CANDELARIA RD NE Food Establishment Class C Date: 11/06/2026 - #: RT-FOODEST-097596-2025 - Inspection Result: Conditional Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Poisonous and Toxic/Chemical Substances",
+          "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Spray bottle Alleged Material: window cleaner"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Thawing",
+          "observation": "Observed frozen time/temperature control for safety food improperly thawing. Food: Bags of chopped green chile Location: Three compartment sink Condition: frozen Method: sitting in sink basin with no water running"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Food Separation",
+          "observation": "Observed non-ready-to-eat raw animal food stored with ready-to-eat food without protection from contamination. Location: Back kitchen coolers Food Item: Eggs, raw pork, raw turkey, raw sausage, green chile, Potatoes, Jalapenos Condition: Raw eggs stored over green chile and sauces and raw sausage, raw pork and raw turkey stored over green chile, and potatoes"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Toilet Facilities",
+          "observation": "Observed no toilet tissue available at every toilet."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Designated Areas",
+          "observation": "Observed facility did not provide lockers or other suitable facilities for storage of employees clothing or other personal belongings."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Lighting",
+          "observation": "Observed light bulbs with no protective shielding, coating or by other means shatter-resistant. Location: Behind front counter above food and food prep and make"
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Records",
+        "Poisonous and Toxic/Chemical Substances",
+        "Thawing"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:18edac4955c2a75f8128",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Duke City BBQ 3 LLC",
+      "address": "12501 CANDELARIA RD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-06",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:89312bf1208c6ed56f51",
+    "source": "ABQ",
+    "establishment": {
+      "name": "FASTINOS-PT0115516",
+      "address": "3723 4TH ST NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-02",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:86ac54f16e4abbe423fb",
+    "source": "ABQ",
+    "establishment": {
+      "name": "FROST, A GELATO SHOPPE-PT0160304",
+      "address": "2201 Q ST NE, 9-A",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-05",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Plumbing",
+          "observation": "Observed drains. is not maintained in good repair or is not repaired by law. Observed drains found in disrepair by missing the required drain screens and covers."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Condition",
+          "observation": "Observed nonfood contact surface that was non corrosion resistant. The surface was located Walk in cooler. The surface was made out of metal the condition of the surface was food storage shelving was rusted and damaged."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities",
+          "observation": "Observed windows with openings to the outside. Location: south wall where window used to be and ceiling tile also south side of the kitchen. 4x5 window and ceiling about a 4-inch hole"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Cleaning",
+          "observation": "Observed build up and debris on the floors and walls with dry debris and liquid build up behind and under prep tables and equipment and sinks."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Construction and Repair",
+          "observation": "Observed Flooring, base Boards. located in Kitchen cooking and prep areas. missing base boards and floors not smooth and easily cleanable."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Records",
+          "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Chickens, meats, sauces cut veggies, soups, cheeses cakes without logs. Food stored in steam tables, refrigerator, coolers FROST, A GELATO SHOPPE-PT0160304 - 2201 Q ST NE, 9-A - Approved FROST, A GELATO SHOPPE-PT0160304 - 2201 Q ST NE, 9-A Food Establishment Class C Date: 11/05/2026 - #: COM-FOODES-104785-2026 - Inspection Result: Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Result of a Complaint",
+          "observation": ""
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Plumbing",
+        "Surface Condition",
+        "Physical Facilities"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:33a635f1d83bbeb0096d",
+    "source": "ABQ",
+    "establishment": {
+      "name": "FROST, A GELATO SHOPPE-PT0160304",
+      "address": "2201 Q ST NE, 9-A",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-02",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:ce6b0d6a15cd094aec97",
+    "source": "ABQ",
+    "establishment": {
+      "name": "GARCIAS KITCHENS",
+      "address": "8518 INDIAN SCHOOL RD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-04",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Not Clean",
+          "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located in back of facility. The surface was made out of stainless steel The condition of the surface was all cold holding units in back of facility with substantial debris build up on shelving, flooring and side walls."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Records",
+          "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Dairy products, prepared fruit, Gelato Activity of the Food: Stored and received GARCIAS KITCHENS - 8518 INDIAN SCHOOL RD NE - Conditional Approved GARCIAS KITCHENS - 8518 INDIAN SCHOOL RD NE Food Establishment Class C Date: 11/04/2026 - #: CAC-Food-104187-2026 - Inspection Result: Approved - Equipment, Food-Contact Surfaces and Utensils - Clean to Sight and Touch PIC washed rinsed and sanitizer all equipment and surrounding area. - Common Name-Working Containers PIC corrected on site by labeling all chemicals. GARCIAS KITCHENS - 8518 INDIAN SCHOOL RD NE Food Establishment Class C Date: 11/04/2026 - #: RT-FOODEST-062794-2025 - Inspection Result: Conditional Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed quaternary ammonium compound solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: Two quat sanitizer buckets Concentration: 300 Temperature: 65 \u00b0F and 69 \u00b0F. Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Food processor, graters and other food contact surface attachments Location: Back of facility next to prep sink Condition of the Location: Equipment stored away with food debris build up"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Poisonous and Toxic/Chemical Substances",
+          "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Spray bottles, stainless steel container, plastic food container Alleged Material: Spray bottles degreaser and window cleaner, stainless steel container quaternary ammonium sanitizer, plastic food container soap and water."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Plumbing",
+          "observation": "Observed prep sink faucet in back of facility and three compartment sink faucet is not maintained in good repair or is not repaired by law. Observed found in disrepair by prep sink dispensing plumbing very loose and slightly attached and three compartment sink with leak at faucet."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Condition",
+          "observation": ""
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Surface Not Clean",
+        "Records",
+        "Equipment, Food Contact Surfaces, and Utensils Clean"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:c4a0b76b9bac488bc522",
+    "source": "ABQ",
+    "establishment": {
+      "name": "GARCIAS KITCHENS",
+      "address": "8518 INDIAN SCHOOL RD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-04",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:61b7dc05d3cec80dc0d9",
+    "source": "ABQ",
+    "establishment": {
+      "name": "GOLDEN CROWN PANADERIA",
+      "address": "1103 MOUNTAIN RD NW",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-04",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:53d0c48781130d441d19",
+    "source": "ABQ",
+    "establishment": {
+      "name": "IRONWOOD KITCHEN LLC",
+      "address": "5740 NIGHT WHISPER RD NW, 250",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-06",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Result of a Complaint",
+          "observation": ""
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed utensil food-contact surface with the buildup of soil residues. Utensil Type: Can opener, Meat slicer, quart containers. Location Kitchen cut and prep areas Condition of the Location:1. Can opener with dry food build up, 2. meat slicer with substantial soil build up on the clade and blade guard. 3. quart containers on shelf with substantial soil build up."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Cooling",
+          "observation": "Observed insufficient equipment to properly cool food. Location: Prep table. Condition: Green chili sauce and gravy, Potatoes and Hamburger meat. being cooled at room temperature and no time stamp as to when the cooling started."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Food Identification, Safe, Unadulterated and Honestly Presented",
+          "observation": "Observed food that is not readily and unmistakably recognized removed from original packaging without proper labeling or identification. Working Container of Food: Sugar and Flour. Location: Storage shelf."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Operation and Maintenance",
+          "observation": "Observed sinks other than handwashing sink(s) supplied with handwashing aids or devices. Location: Front hand wash area and cooking area. Manner: observed three pots used for cooking food stored in the hand wash sink to cool."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Personal Cleanliness",
+          "observation": "Observed a food employee without proper hair restraints. Location Cooking area. Activity: PIC was doing the cooking with a long beard and beard was not restrained."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Cleaning",
+          "observation": "Observed build up and debris on the Floors, walls, drains under sinks, ceiling tiles cooking areas."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Storage",
+          "observation": ""
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:8172fc55f720a8689a57",
+    "source": "ABQ",
+    "establishment": {
+      "name": "KUKRI",
+      "address": "3600 CUTLER AVE NE, 6",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-04",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Not Clean",
+          "observation": "- Observed nonfood contact surface with the buildup of soil residues. Nonfood contact surfaces of equipment shall be cleaned at a frequency to prevent the buildup of soil residues. The presence of food debris or dirt on nonfood contact surfaces may provide a suitable environment for the growth of microorganisms which employees may inadvertently transfer to food. If these areas are not kept clean, they may also provide harborage for insects, rodents, and other pests. Instructed PIC to create a cleaning schedule and to clean the surface. Observed nonfood contact surface with the buildup of soil residues. The surface was located Kitchen storage food racks. and reach in freezer hand contact surfaces. The surface was made out of Metal. The condition of the surface was soiled with debris build up."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Construction and Repair",
+          "observation": "Observed bottom of walls is not easily cleanable. The surface was made out of dry wall bottom of wall damaged and base coving does not secure to the wall."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Records",
+          "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Beef, sauces eggs, lurch meats prepared TCS taco meat, Beans, spuds, Chicken. Activity of the Food: last time temperatures were taken was 9/2/2026 KUKRI - 3600 CUTLER AVE NE, 6 - Approved KUKRI - 3600 CUTLER AVE NE, 6 Food Establishment Class C Date: 11/04/2026 - #: CAC-Food-104336-2026 - Inspection Result: Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Result of a Complaint",
+          "observation": ""
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed chlorine solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: wiping cloth bucket by handwashing sink Concentration: 0ppm"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Date Marking and Disposition",
+          "observation": "Observed ready-to-eat time and temperature controlled for safety food held within the establishment exceeding the seven (7) day limit. Location: Upright cooler Food Items: Honey Butter 10/21/2026, Buffalo sauce 11/2/2026, Kukri Sauce 11/2/2026"
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Surface Not Clean",
+        "Physical Facilities, Construction and Repair",
+        "Records"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:4e1e07c8b2d9260fffef",
+    "source": "ABQ",
+    "establishment": {
+      "name": "KUKRI",
+      "address": "3600 CUTLER AVE NE, 6",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-04",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:10fc7605e90e40a4b75c",
+    "source": "ABQ",
+    "establishment": {
+      "name": "MARIELENAS BAKERY LLC",
+      "address": "640 COORS BLVD NW, 3",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-03",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:29f4d21d8f1bbbc79f73",
+    "source": "ABQ",
+    "establishment": {
+      "name": "OUR PLAYCE LEARNING CENTER",
+      "address": "4714 INDIAN SCHOOL RD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-04",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Pest Control",
+          "observation": "Observed the facility has inadequate procedures to effectively control pests. Current Policy: use preventive pest for pest control. however, mice droppings under hand wash sinks in kitchen area."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Training Records",
+          "observation": "Observed that the food establishment does not have a certified food protection manager on staff or food handler\u2019s certificate."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Toilet Facilities",
+          "observation": "Observed toilet room is not equipped with a self-closing door."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Cold Holding",
+          "observation": "Observed food items in cold holding unit measuring above 41\u00b0F. Location: Kitchen refrigerator. Food Items: Urea measured. Milk 55\u00b0F, Milk# 2 55\u00b0F, Milk 56\u00b0F, Milk#4 50\u00b0F Whipping cream 57\u00b0F, Yogurt 56\u00b0F."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Warewashing Temperature and Concentration",
+          "observation": "Observed chemical sanitizer concentration exceeding the maximum level permitted. Type of Sanitizer: wiping cloth container 200 ppm, spray bottle 200 ppm, quat sanitizer spray bottle over 400 ppm. Location: kitchen areas."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Cleaning",
+          "observation": "Observed build up and debris on the floors under shelving, tables. storage racks."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Not Clean",
+          "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located Kitchen. The surface was made out of wooden cabinets The condition of the surface was debris and soil build up."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Records",
+          "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items Milk, Yogurt, heavy cream, cheeses, casseroles. PHAT STAX BURGERS - 1301 EUBANK BLVD NE - Unsatisfactory Re-Inspection required"
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:5827361b27f7cf51ab8a",
+    "source": "ABQ",
+    "establishment": {
+      "name": "PHAT STAX BURGERS",
+      "address": "1301 EUBANK BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-05",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed food-contact surface of cooking equipment and pans with encrusted grease deposits or of soil residues. Food contact surface type: Tomato Slicer Location: Equipment Rack Condition of the Location: Soiled with food particles"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Pest Control",
+          "observation": "Observed pests in the facility with no control methods in place. Location: Droppings throughout Pest Type: rodent Pest Condition: n/a"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Date Marking and Disposition",
+          "observation": "Observed ready-to-eat time and temperature controlled for safety food prepared and held within the establishment with no date marking indicators. Location: Reach-in Food Items: Unknown sauces and condiments Expiration Dates: N/A"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Training Records",
+          "observation": ""
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Food Separation",
+          "observation": "Observed non-ready-to-eat raw animal food stored with ready-to-eat food without protection from contamination. Location: Reach-in Food Item: Eggs Condition: Eggs stored above condiments"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities",
+          "observation": ""
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:d386e7cbb93d7631b8d2",
+    "source": "ABQ",
+    "establishment": {
+      "name": "PHAT STAX BURGERS",
+      "address": "1301 EUBANK BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-03",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:652c39c72a570e1cfe4d",
+    "source": "ABQ",
+    "establishment": {
+      "name": "POTATO CORNER",
+      "address": "6600 MENAUL NE, K1",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-03",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Records",
+          "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: All TCS Food Activity of the Food: Cooled POTATO CORNER - 6600 MENAUL NE, K1 - Approved POTATO CORNER - 6600 MENAUL NE, K1 Food Establishment Class C Date: 11/03/2026 - #: CAC-Food-103895-2026 - Inspection Result: Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Result of a Complaint",
+          "observation": ""
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine Location: Back of facility Condition of the Location: Substantial debris build up"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Plumbing",
+          "observation": "Observed three compartment sink faucet is not maintained in good repair or is not repaired by law. Observed three compartment sink faucets found in disrepair three compartment sink is held on with a towel and is unable to completely shut off."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Ventilation and Hood Systems",
+          "observation": "Observed interior intake and exhaust air ducts with debris build up. Location: Back of facility Observed heating and air conditioning system vents not properly designed and located to be easily cleanable. Location: back of facility Manner: Substantial debris buildup"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Food Identification, Safe, Unadulterated and Honestly Presented",
+          "observation": "Observed food that is not readily and unmistakably recognized removed from original packaging without proper labeling or identification. Working Container of Food: Flavored seasoning Location: Stored in multiple single use beverage cups"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Condition",
+          "observation": ""
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Records",
+        "Result of a Complaint",
+        "Equipment, Food Contact Surfaces, and Utensils Clean"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:db0a57df4abc605fd9f6",
+    "source": "ABQ",
+    "establishment": {
+      "name": "POTATO CORNER",
+      "address": "6600 MENAUL NE, K1",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-03",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:63d1622edb7d42ae743d",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Taco Cabana #2",
+      "address": "8330 MONTGOMERY BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-03",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Records",
+          "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Potatoes Activity of the Food: Stored and received Taco Cabana #2 - 8330 MONTGOMERY BLVD NE - Approved Taco Cabana #2 - 8330 MONTGOMERY BLVD NE Food Establishment Class C Date: 11/03/2026 - #: CAC-Food-103890-2026 - Inspection Result: Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Result of a Complaint",
+          "observation": ""
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice machine Location: Back of facility Condition of the Location: Debris build up"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Date Marking and Disposition",
+          "observation": "Observed ready-to-eat time and temperature controlled for safety food prepared and held within the establishment with no date marking indicators. Location: Walk in refrigerator Food Items: Chorizo, chopped green chile, prepared tomatoes, chile rellenos Expiration Dates: None available"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Ventilation and Hood Systems",
+          "observation": "Observed filters or grease extracting equipment improperly designed or constructed to make it easily cleanable. Location: hood vents above oven which can be seen through drive thru area behind oven Manner: Substantial grease and debris build up."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Cold Holding",
+          "observation": "Observed food items in cold holding unit measuring above 41\u00b0F. Location: Drive thru and main kitchen line temporary cold holding units. Food Items and Temperature: Guacamole, salsas, sour cream, chopped tomatoes 47 - 52 \u00b0F."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Storage",
+          "observation": "Observed food stored improperly where it was exposed to contamination from splash, dust, or other contamination. Location: Walk in refrigerator Food Item:"
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Records",
+        "Result of a Complaint",
+        "Equipment, Food Contact Surfaces, and Utensils Clean"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:ed3118927b0db2c8c02e",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Taco Cabana #2",
+      "address": "8330 MONTGOMERY BLVD NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-03",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:6e031cef9f2201679c93",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Tamashi",
+      "address": "6400 HOLLY AVE NE, G",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-04",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Cleaning",
+          "observation": "Observed build up and debris underneath cold holding units, shelving, storage racks, prep tables hard to reach areas."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Records",
+          "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: Prepared vegetables, cooked meats, dairy products, salsa Activity of the Food: Stored, cooled, received Food Establishments shall calibrate measuring equipment in accordance with the manufacturer recommendations and shall maintain adequate and contemporaneous calibration logs for calibration of equipment. Observed the food establishment does not have calibration logs for temperature measuring devices. Tamashi - 6400 HOLLY AVE NE, G - Conditional Approved Tamashi - 6400 HOLLY AVE NE, G Food Establishment Class D Date: 11/04/2026 - #: COM-FOODES-104334-2026 - Inspection Result: Conditional Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Result of a Complaint",
+          "observation": ""
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice Machine Location: Kitchen Condition of the Location: Red and brown organic matter build-up on the inside of ice machine."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Knowledgeable",
+          "observation": "Observed that the person in charge was unable to demonstrate knowledge of foodborne disease prevention and other requirements of the Food Code and local ordinances. Knowledge Tested: PIC did not know about slacking ROP food and parasite destruction forms."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities",
+          "observation": "Observed holes or other gaps in the structure of the facility."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Designated Areas",
+          "observation": "Observed facility did not provide a designated area for employees to eat, drink, or use tobacco products. Observed facility did not provide lockers or other suitable facilities for storage of employees clothing or other personal belongings."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Personal Cleanliness",
+          "observation": ""
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Parasite Destruction",
+          "observation": "Observed fish intended to be consumed as a ready-to-eat form, raw, raw-marinated without parasite destruction documentation or verification. Type of Fish: Tuna Location: Walk-in Condition: Frozen and slacked"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Cleaning",
+          "observation": "Observed build up and debris on the Back of range and fryer. Behind all equipment."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Consumer Advisories",
+          "observation": "Observed inadequate consumer advisory warning for the consumption of raw, undercooked and not otherwise treated animal products. Manner: Items on menu that contain raw or undercooked meat/egg/fish were not noted on menu."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Not Clean",
+          "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located Kitchen hood The surface was made out of Stainless Steel The condition of the surface was Soiled with old grease"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Records",
+          "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: All TCS Foods Activity of the Food: Stored, cooled, and heated. Tamashi - 6400 HOLLY AVE NE, G Food Establishment Class D Date: 11/04/2026 - #: COM-FOODES-104260-2026 - Inspection Result: Closure Re-Inspection Required"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Result of a Complaint",
+          "observation": ""
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed utensil food-contact surface with the buildup of soil residues. Utensil Type: Ice machine Location: In kitchen Condition of the Location: Ice dispenser was coated in brown and red organic matter."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Thawing",
+          "observation": ""
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:75192ce2115fc44789f7",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Tamashi",
+      "address": "6400 HOLLY AVE NE, G",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-04",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
   }
 ]
