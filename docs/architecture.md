@@ -74,9 +74,9 @@ The visible controls offer date presets (all time, 30, 90, 180, and 365 days), s
 
 Alpine initialization is idempotent. The browser requests the manifest with `cache: 'no-store'`, then fetches a dataset URL containing `?v=<manifest hash>` with `cache: 'force-cache'`. If the manifest cannot be loaded, a timestamp supplies the version fallback. Results and accordions require Alpine/JavaScript; there is no rendered no-JavaScript results fallback.
 
-Production optimization retains the complete JSON array at `data/violations_latest.json` and generates `data/violations_browser.v3.json`. The `observations-prefixes-v3` transport retains the v2 establishment and observation tables, encoding sorted observation text as `[sharedPrefixLength, remainingText]` relative to the previous observation. Prefix lengths count Unicode code points in both Python and JavaScript. Both decoders reject malformed prefixes and invalid references and restore independent establishment objects before filtering, grouping, and export. Record order, missing fields, addresses, and all other values are preserved. Legacy arrays and the v1/v2 transports still decode. No inspection is removed or rescored. The November 8 archive's 985 records compress to 136,671 bytes, below the unchanged 140,000-byte gzip budget; further growth remains subject to that gate.
+Production optimization retains the complete JSON array at `data/violations_latest.json` and generates `data/violations_browser.v3.json`. The `observations-prefixes-v3` transport retains the v2 establishment and observation tables, encoding sorted observation text as `[sharedPrefixLength, remainingText]` relative to the previous observation. Prefix lengths count Unicode code points in both Python and JavaScript. Both decoders reject malformed prefixes and invalid references and restore independent establishment objects before filtering, grouping, and export. Record order, missing fields, addresses, and all other values are preserved. Legacy arrays and the v1/v2 transports still decode. No inspection is removed or rescored. The November 8 archive's 985 records compress to 136,671 bytes, below the then-current 140,000-byte gzip budget.
 
-Only the generated manifest gains `datasets.latest.browser_url`. The browser prefers that URL, keeps the same manifest hash in `?v=`, and still accepts the ordinary array for local previews, older manifests, or a failed manifest request. The public array URL and logical dataset hash remain unchanged. Build validation compares the entire decoded browser file with the public array and its manifest hash, and applies the 140,000-byte gzip budget to the browser download. Change the format identifier and filename version together if the transport contract changes; immutable caches use the logical data hash rather than an encoding hash.
+Only the generated manifest gains `datasets.latest.browser_url`. The browser prefers that URL, keeps the same manifest hash in `?v=`, and still accepts the ordinary array for local previews, older manifests, or a failed manifest request. The public array URL and logical dataset hash remain unchanged. Build validation compares the entire decoded browser file with the public array and its manifest hash, and applies the 180,000-byte gzip budget to the browser download. Change the format identifier and filename version together if the transport contract changes; immutable caches use the logical data hash rather than an encoding hash.
 
 The optimizer also fingerprints the stylesheet, app/theme scripts, logo, and favicon with 12-character content hashes. Generated HTML/XML references are updated, and the CSS source map is removed. Source JSON and asset filenames remain readable and stable. Cloudflare rule management and deployment verification are described in [operations](operations.md).
 
@@ -92,3 +92,21 @@ These items are deferred or observed implementation limitations, not completed m
 - Restore per-report document provenance. Review CSV score output: the exporter reads `insp.score`, while grouping currently stores `individualScore`.
 - Consider geocoding, maps/clustering, distance sorting, historical trends, scouting contact-sheet exports, closure alerts, and immediate refresh triggers after the core data contract is strengthened.
 - Reconsider Workers only if an API proxy becomes necessary. Treat zone-wide WebMCP settings separately from hostname-scoped caching.
+
+### Archive download budget review — November 16, 2026
+
+The accumulated archive now has 1,011 inspection outcomes and its v3 browser
+transport measures 141,414 bytes gzip. This growth exceeded the former
+140,000-byte limit and stopped the daily pipeline before fetching new reports.
+The full-archive budget is now 180,000 bytes gzip, with one shared constant for
+the unit and generated-site checks. This is an explicit transfer-budget increase,
+not a compression improvement. No records, detail fields, source data, or scoring
+are removed or changed. The lossless round-trip, compression benefit, manifest
+hash, and archive-preservation checks remain required.
+
+Reordering and additional dictionary prototypes did not provide useful durable
+headroom over v3. The new limit leaves roughly 38 KB for further archive growth;
+it remains finite. Before that is exhausted, review a separately scoped lazy
+detail-loading or partitioned-data design rather than repeatedly changing the
+transport or discarding inspection history. JavaScript and CSS budgets remain
+8,000 bytes gzip and 26,000 bytes, respectively.
