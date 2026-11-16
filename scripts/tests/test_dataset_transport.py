@@ -7,7 +7,7 @@ from pathlib import Path
 import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from dataset_transport import pack_dataset, unpack_dataset
+from dataset_transport import MAX_BROWSER_DATASET_GZIP_BYTES, pack_dataset, unpack_dataset
 
 
 def test_round_trip_preserves_observations_missing_fields_and_order():
@@ -34,7 +34,7 @@ def test_full_archive_round_trip_and_compression():
     assert unpack_dataset(packed) == records
     compact = lambda data: json.dumps(data, ensure_ascii=False, separators=(",", ":")).encode()
     assert len(gzip.compress(compact(packed))) < len(gzip.compress(compact(records)))
-    assert len(gzip.compress(compact(packed))) <= 140_000
+    assert len(gzip.compress(compact(packed))) <= MAX_BROWSER_DATASET_GZIP_BYTES
 
 
 def test_repeated_establishments_preserve_values_without_aliasing():

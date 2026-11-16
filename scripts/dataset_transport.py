@@ -10,6 +10,8 @@ import json
 
 FORMAT = "observations-prefixes-v3"
 BROWSER_DATASET_URL = "/data/violations_browser.v3.json"
+# Budget for the complete growing archive; shared by unit and generated-site gates.
+MAX_BROWSER_DATASET_GZIP_BYTES = 180_000
 
 
 def pack_dataset(records: list) -> dict:

@@ -8,7 +8,7 @@ import json
 from pathlib import Path
 import re
 
-from dataset_transport import BROWSER_DATASET_URL, unpack_dataset
+from dataset_transport import BROWSER_DATASET_URL, MAX_BROWSER_DATASET_GZIP_BYTES, unpack_dataset
 
 
 ALPINE_URL = "https://cdn.jsdelivr.net/npm/alpinejs@3.16.3/dist/cdn.min.js"
@@ -128,9 +128,9 @@ def main() -> None:
     require(javascript_gzip <= 8_000, "First-party JavaScript exceeds 8 KB gzip")
     require(len(stylesheet.encode()) <= 26_000, "Compiled CSS exceeds 26 KB")
     require(
-        dataset_gzip <= 140_000,
+        dataset_gzip <= MAX_BROWSER_DATASET_GZIP_BYTES,
         f"Browser dataset is {dataset_gzip:,} B gzip across {len(dataset):,} records; "
-        "exceeds 140,000 B budget",
+        f"exceeds {MAX_BROWSER_DATASET_GZIP_BYTES:,} B budget",
     )
 
     print(
