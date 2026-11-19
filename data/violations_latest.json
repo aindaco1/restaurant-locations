@@ -49214,5 +49214,529 @@
       "document": null
     },
     "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:0ea99c4cfaca3a788f39",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Church's Chicken #5341",
+      "address": "401 Louisiana BLVD SE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-10",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Ventilation and Hood Systems",
+          "observation": "Observed exterior exhaust duct outlet not being maintained in a clean and sanitary manner. Location: Grill station"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Operation and Maintenance",
+          "observation": "Observed handwashing fixtures with the buildup of soil residues. The plumbing fixture was located two of the kitchen hand wash stations. The condition of the surface was Grease and soil buildup Observed handwashing sink(s) was observed blocked or inaccessible. Location: Front hand wash station. Manner: Brooms and dust pans stored in front of the hand wash station."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Cleaning",
+          "observation": "Observed buildup and debris and grease s on the walls, floors behind equipment sink, shelving, freezers floors."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Not Clean",
+          "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located Kitchen cooking and preparing areas. The surface was made out of Stainless steel, synthetic plastic, glass tv monitors. The condition of the surface was soiled with substantial grease, soil and debris buildup Church's Chicken #5341 - 401 Louisiana BLVD SE - Unsatisfactory Re-Inspection required Church's Chicken #5341 - 401 Louisiana BLVD SE Food Establishment Class C Date: 11/10/2026 - #: CAC-Food-106089-2026 - Inspection Result: Unsatisfactory Re-Inspection required - Time/Temperature Control for Safety Food, Cold Holding PIC stated refrigerator was in defrost mode during inspection. Walk in refrigerator is able to cold hold at 41 \u00b0F. Advised PIC to read and record temperatures periodically during the day to ensure walk in is able to cold hold at 41 \u00b0F. - Cold Holding Capacities-Equipment Walk in is working properly - Manual and Mechanical Warewashing Equipment, Chemical Sanitization- Temperature, pH, Concentration and Hardness Quaternary Ammonium Sanitizer was mixed and in compliance 300 parts per million. - Equipment, Food-Contact Surfaces and Utensils - Clean to Sight and Touch PIC provide documentation of food contact surfaces being washed rinsed and sanitized. - Ready-To-Eat Time/Temperature Control for Safety Food, Date Marking and Disposition PIC voluntarily discarded all food items with no date marking all food items inside walk in refrigerator were date marked. - Using a Handwashing Sink-Operation and Maintenance PIC has removed all items from hand washing sink basin. - Handwashing Cleanser, Availability Hand cleanser was added to restroom and stocked at all hand washing sinks inside kitchen. - Hand Drying Provision Paper towels were stocked at all hand washing stations and dispensers were working properly. - Nonfood-Contact Surfaces, Smooth, Corrosion-Resistant, Non-Absorbent PIC repaired area. - Effectiveness-Hair Restraints All employees had hair restraint's Church's Chicken #5341 - 401 Louisiana BLVD SE Food Establishment Class C Date: 11/09/2026 - #: RT-FOODEST-030013-2026 - Inspection Result: Closure Re-Inspection Required"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": ""
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:193f45f65ead85717b1b",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Church's Chicken #5341",
+      "address": "401 Louisiana BLVD SE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-09",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:88c65325f7446f6d42fd",
+    "source": "ABQ",
+    "establishment": {
+      "name": "CORLEYS ALBUQ LINCOLN MERCURY",
+      "address": "9000 PAN AMERICAN FWY NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-12",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Plumbing",
+          "observation": "Observed handwashing sink is not maintained in good repair or is not repaired by law. Observed handwashing sink found in disrepair unable to drain/slow drain and a leak on the hot water handle/knob."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Training Records",
+          "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Ventilation and Hood Systems",
+          "observation": "Observed hood ventilation system inadequately collecting grease and condensation allowing for accumulation and drips to occur. Location: Hood System vents"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Installation",
+          "observation": "Observed handwashing sink with hot water not available. Location: sole hand washing sink in facility. Condition: Max Temperature reached: 77\u00b0F."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Personal Cleanliness",
+          "observation": "Observed a food employee without proper facial hair restraints. Location: food service areas. Activity: preparing food items."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Records",
+          "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: raw shell eggs, cut vegetables, cheeses and other TCS Foods. Activity of the Food: stored, thawed, cooled. CORLEYS ALBUQ LINCOLN MERCURY - 9000 PAN AMERICAN FWY NE Food Establishment Class C Date: 11/12/2026 - #: PT0143457 - Inspection Result: Closure Re-Inspection Required"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Ice Machine. Location: internal surfaces of ice machine. Condition"
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:10c4176adf4f949edccb",
+    "source": "ABQ",
+    "establishment": {
+      "name": "CORLEYS ALBUQ LINCOLN MERCURY",
+      "address": "9000 PAN AMERICAN FWY NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-12",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:6155cefe76d102622f84",
+    "source": "ABQ",
+    "establishment": {
+      "name": "CRAFT REPUBLIC",
+      "address": "4301 THE LANE 25 NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-09",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Date Marking and Disposition",
+          "observation": "Observed ready-to-eat time and temperature controlled for safety food prepared and held within the establishment with no date marking indicators. Location: Prep Top Cooler Food Items: portions of sliced turkey, sliced cheese, sliced tomatoes, cut lettuce. Expiration Dates: no dates available."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Plumbing",
+          "observation": "Observed handwashing sink is not maintained in good repair or is not repaired by law. Observed handwashing sink found in disrepair unable to drain/slow drain and a leak on the hot water handle/knob."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Training Records",
+          "observation": "Observed that the food establishment does not have a certified food protection manager on staff."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Ventilation and Hood Systems",
+          "observation": "Observed hood ventilation system inadequately collecting grease and condensation allowing for accumulation and drips to occur. Location: Hood System vents"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Installation",
+          "observation": "Observed facility with an inadequate number of handwashing sinks necessary for the convenient use by employees. Location: Food service area. Condition: only one hand washing sink is available in the facility. Observed handwashing sink with hot water not available. Location: sole hand washing sink in facility. Condition: Max Temperature reached: 77\u00b0F."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Personal Cleanliness",
+          "observation": "Observed a food employee without proper facial hair restraints. Location: food service areas. Activity: preparing food items."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Records",
+          "observation": "Observed that the food establishment does not have temperature logs available for TCS foods items. Food Items: raw shell eggs, cut vegetables, cheeses and other TCS Foods. Activity of the Food: stored, thawed, cooled. CRAFT REPUBLIC - 4301 THE LANE 25 NE - Approved CRAFT REPUBLIC - 4301 THE LANE 25 NE Food Establishment Class C Date: 11/09/2026 - #: COM-FOODES-105793-2026 - Inspection Result: Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Surface Not Clean",
+          "observation": "Observed nonfood contact surface with the buildup of soil residues. The surface was located in the microwave and on the radio The condition of the surface was Food and soil debris buildup"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Construction and Repair",
+          "observation": "Observed the following areas of the facility in disrepair. Observed flooring on main cook line in disrepair by holes and flooring coming up CRAFT REPUBLIC - 4301 THE LANE 25 NE Food Establishment Class C Date: 11/09/2026 - #: COM-FOODES-105700-2026 - Inspection Result: Unsatisfactory Re-Inspection required"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Result of a Complaint",
+          "observation": ""
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": "Observed quaternary ammonium compound solution utilized to sanitize food contact surfaces failing to meet parameters to adequately achieve sanitization. Location: back kitchen main cook line Concentration: 0ppm Observed equipment food-contact surface with the buildup of soil residues. Equipment Type: Food Dicer, Chef knifes, Food processor and can opener Location: back kitchen area Condition of the Location: dried food debris buildup on food contact equipment"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Poisonous and Toxic/Chemical Substances",
+          "observation": "Observed poisonous or toxic materials stored in a manner that has the potential to contaminate food. Poisonous/Toxic Substance: Ecolab Medallion stainless steel cleaner and polish and hand soap Location: on main cook line stored with bottles of BBQ sauce"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Use Limitations",
+          "observation": "Observed wiping cloths improperly used. Observed soiled wiping cloths stored on prep table"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Training Records",
+          "observation": ""
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Date Marking and Disposition",
+        "Plumbing",
+        "Training Records"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:bda1c0abbc5f4c1f1bbe",
+    "source": "ABQ",
+    "establishment": {
+      "name": "CRAFT REPUBLIC",
+      "address": "4301 THE LANE 25 NE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-09",
+      "type": "routine",
+      "outcome": "failed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:60d334be2b541bcc7d6f",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Frontier Restaurant",
+      "address": "2400 CENTRAL AVE SE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-10",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Cold Holding",
+          "observation": "Observed food items in cold holding unit measuring above 41\u00b0F. Location: Reach in refrigerator. Food Items: Macaroni- 45\u00b0F. Liquid Eggs-44\u00b0F, Mozzarella 45 \u00b0F."
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Physical Facilities, Construction and Repair",
+          "observation": "Observed floor is not smooth and easily cleanable. The surface was located Kitchen cooking, prep and washing and storage areas. surface the surface was made out of Epoxy. throughout the areas noted floors were pitted and not smooth and easily cleanable. Frontier Restaurant - 2400 CENTRAL AVE SE - Approved Frontier Restaurant - 2400 CENTRAL AVE SE Food Processor Class C Date: 11/10/2026 - #: COM-PRC-106198-2026 - Inspection Result: Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Result of a Complaint",
+          "observation": ""
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Food Identification, Safe, Unadulterated and Honestly Presented",
+          "observation": "Observed food that is not readily and unmistakably recognized removed from original packaging without proper labeling or identification. Working Container of Food: Bulk ingredient storage containers Location: Food production area"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Poisonous and Toxic/Chemical Substances",
+          "observation": "Observed working containers used for storing poisonous or toxic materials taken from bulk supplies not properly labeled or identified. Container Type: Spray bottle Alleged Material: Chemical cleaner"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Plumbing",
+          "observation": "Observed prep sink faucet is not maintained in good repair or is not repaired by law. Observed faucet found in disrepair by having a continuous leak even when the faucet is in the off position. Frontier Restaurant - 2400 CENTRAL AVE SE Food Establishment Class C Date: 11/10/2026 - #: COM-FOODES-106045-2026 - Inspection Result: Conditional Approved"
+        },
+        {
+          "code": "",
+          "critical": false,
+          "desc": "Equipment, Food Contact Surfaces, and Utensils Clean",
+          "observation": ""
+        }
+      ],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": [
+        "Cold Holding",
+        "Physical Facilities, Construction and Repair",
+        "Result of a Complaint"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:0ed203708c26d161cfc7",
+    "source": "ABQ",
+    "establishment": {
+      "name": "Frontier Restaurant",
+      "address": "2400 CENTRAL AVE SE",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-10",
+      "type": "routine",
+      "outcome": "conditional",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 2.0,
+      "reasons": [
+        "conditional/failed within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:8fbe4060b1f7bb48dfef",
+    "source": "ABQ",
+    "establishment": {
+      "name": "MARIELENAS BAKERY LLC",
+      "address": "640 COORS BLVD NW, 3",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-13",
+      "type": "routine",
+      "outcome": "approved",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 0.0,
+      "reasons": []
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Open"
+  },
+  {
+    "id": "abq:v2:f330c8331e9d636bd3ac",
+    "source": "ABQ",
+    "establishment": {
+      "name": "MARIELENAS BAKERY LLC",
+      "address": "640 COORS BLVD NW, 3",
+      "city": "Albuquerque",
+      "county": "Bernalillo",
+      "geo": {
+        "lat": 35.0844,
+        "lng": -106.6504
+      }
+    },
+    "inspection": {
+      "date": "2026-11-12",
+      "type": "routine",
+      "outcome": "closed",
+      "violations": [],
+      "writeup": ""
+    },
+    "score": {
+      "severity": 3.0,
+      "reasons": [
+        "closure within 180d"
+      ]
+    },
+    "links": {
+      "source": "https://www.cabq.gov/environmentalhealth",
+      "document": null
+    },
+    "operational_status": "Closed"
   }
 ]
